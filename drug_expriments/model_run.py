@@ -13,7 +13,6 @@ token = os.getenv("HF_TOKEN")
 parser = argparse.ArgumentParser(description="Baseline Experiments")
 parser.add_argument("--model_name", type=str, help="Model Name")
 parser.add_argument("--output_path", type=str, help="Input output path")
-
 parser.add_argument("--prompt_type", type=str, help="Input the Prompt Type (raw, cot, phenotype, gene...)")
 parser.add_argument("--shuffle_num", type=int, help="For one question, shufflue x times")
 args = parser.parse_args()
@@ -56,22 +55,23 @@ with jsonlines.open(file_path, "a") as f_write:
             gene = ",".join(map(str, gene))
 
         for drug_pair in drug_lst:
+            print("prompt_type", prompt_type)
             if prompt_type == "phenotype":
                 prefix = f"{dk} includes the following phenotypes: {phenotype}"
-                question = f"{prefix}\nIs {dk} an {drug_pair[1]} for {drug_pair[0]}?"
+                question = f"{prefix}\nIs {dk} an indication for {drug_pair[0]}?"
                 input_text = f"Question: {question} directly answer me with YES or NO\nAnswer:"
                 inputs = tokenizer(input_text, return_tensors="pt").to(device)
             elif prompt_type == "cot":  
-                question = f"Is {dk} an {drug_pair[1]} for {drug_pair[0]}?"
+                question = f"Is {dk} an indication for {drug_pair[0]}?"
                 input_text = f"Question: {question} let's think step by step and then answer me with YES or NO\nAnswer:"
                 inputs = tokenizer(input_text, return_tensors="pt").to(device)
             elif prompt_type == "gene":  
                 prefix = f"{dk} includes the following gene: {gene}"
-                question = f"Is {dk} an {drug_pair[1]} for {drug_pair[0]}?"
+                question = f"Is {dk} an indication for {drug_pair[0]}?"
                 input_text = f"Question: {question} directly answer me with YES or NO\nAnswer:"
                 inputs = tokenizer(input_text, return_tensors="pt").to(device)
             else: 
-                question = f"Is {dk} an {drug_pair[1]} for {drug_pair[0]}?"
+                question = f"Is {dk} an indication for {drug_pair[0]}?"
                 input_text = f"Question: {question} directly answer me with YES or NO\nAnswer:"
                 inputs = tokenizer(input_text, return_tensors="pt").to(device)
             

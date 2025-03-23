@@ -4,7 +4,7 @@ import jsonlines
 import numpy as np
 
 
-file_folder = "./results/llama31_8b"
+file_folder = "./results/llama32_3b"
 answer_dict = {"contraindication":"no", "indication":"yes"}
 
 for filename in os.listdir(file_folder):
