@@ -14,10 +14,14 @@ df_drug = pd.read_csv(Drug_Path)
 
 Edge_Path = "../PrimeKG/edges.csv"
 df_edge = pd.read_csv(Edge_Path)
+<<<<<<< HEAD
 # ralation_type = set(list(df_edge['relation']))
 df_drug = df_drug.drop_duplicates(subset=['node_index'], keep='first')
 print(len(df_drug))
 
+=======
+ralation_type = set(list(df_edge['relation']))
+>>>>>>> 69e4be1e14bf4fe272fab8120fa177920a683000
 """
 {'indication', 'bioprocess_bioprocess', 'phenotype_protein', 'pathway_protein', 'anatomy_protein_absent', 
 'cellcomp_cellcomp', 'drug_protein', 'protein_protein', 'disease_phenotype_negative', 'molfunc_protein', 

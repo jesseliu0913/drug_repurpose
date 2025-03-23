@@ -1,6 +1,4 @@
 #!/bin/bash
-
-
 CUDA_VISIBLE_DEVICES=6 nohup python model_run.py \
     --model_name "meta-llama/Llama-3.2-1B-Instruct" \
     --output_path "results/llama32_1b/" \
@@ -55,4 +53,3 @@ CUDA_VISIBLE_DEVICES=6 nohup python model_pharmDB.py \
     --output_path "results_pharmDB/llama32_1b/" \
     --prompt_type "cot" \
     --shuffle_num 1 > ./log/llama32_1b.log 2>&1 &
-

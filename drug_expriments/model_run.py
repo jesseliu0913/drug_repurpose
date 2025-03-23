@@ -1,7 +1,10 @@
 import os
 import json
 import torch
+<<<<<<< HEAD
 import json
+=======
+>>>>>>> 69e4be1e14bf4fe272fab8120fa177920a683000
 import argparse
 import jsonlines
 
@@ -13,6 +16,7 @@ token = os.getenv("HF_TOKEN")
 parser = argparse.ArgumentParser(description="Baseline Experiments")
 parser.add_argument("--model_name", type=str, help="Model Name")
 parser.add_argument("--output_path", type=str, help="Input output path")
+
 parser.add_argument("--prompt_type", type=str, help="Input the Prompt Type (raw, cot, phenotype, gene...)")
 parser.add_argument("--shuffle_num", type=int, help="For one question, shufflue x times")
 args = parser.parse_args()

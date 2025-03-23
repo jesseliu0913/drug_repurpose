@@ -22,7 +22,3 @@ model.to(device)
 input_text = f"Question: {question} \nAnswer:"
 inputs = tokenizer(input_text, return_tensors="pt").to(device)
 output = model.generate(**inputs, max_new_tokens=1000, do_sample=True, top_p=0.1, temperature=0.8)
-answer = tokenizer.decode(output[0], skip_special_tokens=True)
-answer = answer.replace(input_text, "").strip()
-print("Model's Answer:", answer)
-
