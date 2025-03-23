@@ -1,10 +1,7 @@
 import os
 import json
 import torch
-<<<<<<< HEAD
 import json
-=======
->>>>>>> 69e4be1e14bf4fe272fab8120fa177920a683000
 import argparse
 import jsonlines
 
