@@ -6,7 +6,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16, device_map="auto")
 
 question = "What is the capital of the UK?"
-target_answer = " London"
+target_answer = "London"
 
 input_text = f"Question: {question}\nAnswer:"
 input_ids = tokenizer(input_text, return_tensors="pt").input_ids.to(model.device)
