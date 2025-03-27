@@ -2,20 +2,54 @@ import os
 import json
 import torch
 import json
+import time
+
 import argparse
 import jsonlines
 
+import google.genai.errors
 import pandas as pd
+from google import genai
+from google.genai import types
 from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 token = os.getenv("HF_TOKEN")
 
 parser = argparse.ArgumentParser(description="Baseline Experiments")
-parser.add_argument("--model_name", type=str, help="Model Name")
 parser.add_argument("--output_path", type=str, help="Input output path")
 parser.add_argument("--prompt_type", type=str, help="Input the Prompt Type (raw, cot, phenotype, gene...)")
 parser.add_argument("--shuffle_num", type=int, help="For one question, shufflue x times")
 args = parser.parse_args()
+
+MAX_RETRIES = 100
+
+def call_gemini(input_text):
+    for attempt in range(MAX_RETRIES):
+        try:
+            response = client.models.generate_content(
+                model="gemini-2.0-flash",
+                contents=input_text,
+                config=types.GenerateContentConfig(
+                    temperature=0.2,
+                    max_output_tokens=1000,
+                    top_p=0.8,
+                    top_k=40,
+                    candidate_count=1,
+                    stop_sequences=["END"],
+                    presence_penalty=0.2,
+                    frequency_penalty=0.3,
+                    seed=42,
+                )
+            )
+            time.sleep(5)
+            return response.text
+        except google.genai.errors.ClientError as e:
+            if 'RESOURCE_EXHAUSTED' in str(e) and attempt < MAX_RETRIES - 1:
+                print(f"Rate limit hit. Retrying in 10 seconds... (Attempt {attempt + 1})")
+                time.sleep(5)
+            else:
+                raise
+
 
 two_shot = """
 Question: Is Pentamidine an indication for hypertensive disorder?
@@ -29,22 +63,14 @@ Answer:$YES$
 with open("../drug_data/data/disease_feature.json", "r", encoding="utf-8") as file:
     disease_data = json.load(file)
     
-model_name = args.model_name
-tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=token)
-model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype="auto", device_map="auto", use_auth_token=token)
-
-if tokenizer.pad_token_id is None:
-    tokenizer.pad_token_id = tokenizer.eos_token_id
-
-device = "cuda" if torch.cuda.is_available() else "cpu"
-model.to(device)
+client = genai.Client(api_key='AIzaSyAbogSNYhQP1HXIgXBBGIpMQvfdfOAAc1I')
 num_smaples = args.shuffle_num
 
 os.makedirs(args.output_path, exist_ok=True)
 prompt_type = args.prompt_type
 file_path = f"{args.output_path}/{prompt_type}_{num_smaples}.jsonl"
 
-disease_keys = list(disease_data.keys())[:400]
+disease_keys = list(disease_data.keys())[8:400]
 with jsonlines.open(file_path, "a") as f_write:
     for dk in disease_keys:
         drug_lst = []
@@ -72,24 +98,18 @@ with jsonlines.open(file_path, "a") as f_write:
             elif prompt_type == "cot":  
                 question = f"Is {dk} an indication for {drug_pair[0]}?"
                 input_text = f"Question: {question} let's think step by step and then answer me with YES or NO\nAnswer:"
-                inputs = tokenizer(input_text, return_tensors="pt").to(device)
             elif prompt_type == "fcot":  
                 question = f"Is {dk} an indication for {drug_pair[0]}?"
                 input_text = f"{two_shot}\nQuestion: {question}."
-                inputs = tokenizer(input_text, return_tensors="pt").to(device)
             elif prompt_type == "gene":  
                 prefix = f"{dk} includes the following gene: {gene}"
                 question = f"Is {dk} an indication for {drug_pair[0]}?"
                 input_text = f"Question: {question} directly answer me with YES or NO\nAnswer:"
-                inputs = tokenizer(input_text, return_tensors="pt").to(device)
             else: 
                 question = f"Is {dk} an indication for {drug_pair[0]}?"
                 input_text = f"Question: {question} directly answer me with YES or NO\nAnswer:"
-                inputs = tokenizer(input_text, return_tensors="pt").to(device)
             
-            output = model.generate(**inputs, max_new_tokens=1000, do_sample=True, temperature=0.2)
-            answer = tokenizer.decode(output[0], skip_special_tokens=True)
-            answer = answer.replace(input_text, "").strip()
+            answer = call_gemini(input_text)
             answer_lst.append(answer)
 
         line_dict = {"drug_name": drug_lst, "disease_name": dk, "answer": answer_lst}
