@@ -88,14 +88,40 @@ CUDA_VISIBLE_DEVICES=7 nohup python model_pharmDB.py \
     --prompt_type "cot" \
     --shuffle_num 1 > ./log/llama32_1b.log 2>&1 &
 
-CUDA_VISIBLE_DEVICES=6 nohup python model_pharmDB.py \
+CUDA_VISIBLE_DEVICES=7 nohup python model_pharmDB.py \
     --model_name "meta-llama/Llama-3.2-3B-Instruct" \
     --output_path "results_pharmDB/llama32_3b/" \
-    --prompt_type "cot" \
+    --prompt_type "raw" \
     --shuffle_num 1 > ./log/llama32_3b.log 2>&1 &
 
-CUDA_VISIBLE_DEVICES=6 nohup python model_pharmDB.py \
+CUDA_VISIBLE_DEVICES=7 nohup python model_pharmDB.py \
     --model_name "meta-llama/Llama-3.2-1B-Instruct" \
     --output_path "results_pharmDB/llama32_1b/" \
-    --prompt_type "cot" \
+    --prompt_type "raw" \
     --shuffle_num 1 > ./log/llama32_1b.log 2>&1 &
+
+
+nohup python gemini_eval.py \
+    --output_path "results/gemini/" \
+    --prompt_type "raw" \
+    --shuffle_num 1 > ./log/gemini_raw.log 2>&1 &
+
+nohup python gemini_eval.py \
+    --output_path "results/gemini/" \
+    --prompt_type "cot" \
+    --shuffle_num 1 > ./log/gemini_raw.log 2>&1 &
+
+nohup python gemini_eval.py \
+    --output_path "results/gemini/" \
+    --prompt_type "fcot" \
+    --shuffle_num 1 > ./log/gemini_raw.log 2>&1 &
+
+nohup python gemini_eval.py \
+    --output_path "results/gemini/" \
+    --prompt_type "phenotype" \
+    --shuffle_num 1 > ./log/gemini_phenotype.log 2>&1 &
+
+nohup python gemini_eval.py \
+    --output_path "results/gemini/" \
+    --prompt_type "gene" \
+    --shuffle_num 1 > ./log/gemini_gene.log 2>&1 &
