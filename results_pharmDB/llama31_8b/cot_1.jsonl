@@ -1,0 +1,1388 @@
+{"drug_name": "Donepezil", "disease_name": "Alzheimer's disease", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Galantamine", "disease_name": "Alzheimer's disease", "answer": "B\nStep 1:  Alzheimer's disease"}
+{"drug_name": "Memantine", "disease_name": "Alzheimer's disease", "answer": "B.symptomatic\nExplanation: Memantine is"}
+{"drug_name": "Rivastigmine", "disease_name": "Alzheimer's disease", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Benzatropine", "disease_name": "Alzheimer's disease", "answer": "B.symptomatic\nExplanation: Benzatrop"}
+{"drug_name": "Haloperidol", "disease_name": "Alzheimer's disease", "answer": "B\nStep 1:  Alzheimer's disease"}
+{"drug_name": "Quetiapine", "disease_name": "Alzheimer's disease", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Ropinirole", "disease_name": "Alzheimer's disease", "answer": "B.symptomatic\nExplanation: Ropini"}
+{"drug_name": "Selegiline", "disease_name": "Alzheimer's disease", "answer": "B\nStep 1:  Alzheimer's disease"}
+{"drug_name": "Biperiden", "disease_name": "Alzheimer's disease", "answer": "B.symptomatic\nExplanation: Biperiden"}
+{"drug_name": "Carbidopa", "disease_name": "Alzheimer's disease", "answer": "B\nExplanation: Carbidopa is a dec"}
+{"drug_name": "Pramipexole", "disease_name": "Alzheimer's disease", "answer": "B\nStep 1: Alzheimer's disease is"}
+{"drug_name": "Procyclidine", "disease_name": "Alzheimer's disease", "answer": "B\nExplanation: Procyclidine is an ant"}
+{"drug_name": "Scopolamine", "disease_name": "Alzheimer's disease", "answer": "B.symptomatic\nStep 1: Alzheimer"}
+{"drug_name": "Valproic Acid", "disease_name": "Alzheimer's disease", "answer": "A.disease modifying \nExplanation: Valproic"}
+{"drug_name": "Vitamin E", "disease_name": "Alzheimer's disease", "answer": "B\nExplanation: Alzheimer's disease is a progressive"}
+{"drug_name": "Esomeprazole", "disease_name": "Barrett's esophagus", "answer": "A\nExplanation: Barrett's esophagus is"}
+{"drug_name": "Omeprazole", "disease_name": "Barrett's esophagus", "answer": "A. disease modifying\nStep 1:"}
+{"drug_name": "Azathioprine", "disease_name": "Crohn's disease", "answer": "A.disease modifying \nExplanation: Azathiop"}
+{"drug_name": "Balsalazide", "disease_name": "Crohn's disease", "answer": "A.disease modifying \nExplanation: Balsal"}
+{"drug_name": "Mercaptopurine", "disease_name": "Crohn's disease", "answer": "A\nExplanation: Mercaptopurine is a"}
+{"drug_name": "Mesalazine", "disease_name": "Crohn's disease", "answer": "A.disease modifying \nExplanation: Crohn's"}
+{"drug_name": "Prednisone", "disease_name": "Crohn's disease", "answer": "A.disease modifying \nExplanation: Crohn's"}
+{"drug_name": "Sulfasalazine", "disease_name": "Crohn's disease", "answer": "A.disease modifying \nExplanation: Sulfasal"}
+{"drug_name": "Atropine", "disease_name": "Crohn's disease", "answer": "B\nExplanation: Atropine is used to"}
+{"drug_name": "Hyoscyamine", "disease_name": "Crohn's disease", "answer": "B.symptomatic\nExplanation: Hyoscy"}
+{"drug_name": "Folic Acid", "disease_name": "Crohn's disease", "answer": "A.disease modifying \nExplanation: Crohn's"}
+{"drug_name": "Metronidazole", "disease_name": "Crohn's disease", "answer": "B.symptomatic\nExplanation: Metronid"}
+{"drug_name": "Clonidine", "disease_name": "Gilles de la Tourette syndrome", "answer": "B.symptomatic\nExplanation: Gilles de la"}
+{"drug_name": "Haloperidol", "disease_name": "Gilles de la Tourette syndrome", "answer": "B.symptomatic\nExplanation: Gilles de la"}
+{"drug_name": "Mecamylamine", "disease_name": "Gilles de la Tourette syndrome", "answer": "B\nExplanation: Gilles de la Tourette syndrome"}
+{"drug_name": "Olanzapine", "disease_name": "Gilles de la Tourette syndrome", "answer": "B\nExplanation: Gilles de la Tourette syndrome"}
+{"drug_name": "Pergolide", "disease_name": "Gilles de la Tourette syndrome", "answer": "B\nExplanation: Gilles de la Tourette syndrome"}
+{"drug_name": "Perphenazine", "disease_name": "Gilles de la Tourette syndrome", "answer": "B\nExplanation: Gilles de la Tourette syndrome"}
+{"drug_name": "Pimozide", "disease_name": "Gilles de la Tourette syndrome", "answer": "B\nExplanation: Gilles de la Tourette syndrome"}
+{"drug_name": "Risperidone", "disease_name": "Gilles de la Tourette syndrome", "answer": "B.symptomatic\nExplanation: Gilles de la"}
+{"drug_name": "Ziprasidone", "disease_name": "Gilles de la Tourette syndrome", "answer": "B.symptomatic\nExplanation: Gilles de la"}
+{"drug_name": "Methimazole", "disease_name": "Graves' disease", "answer": "A.disease modifying \nExplanation: Methimazole"}
+{"drug_name": "Propylthiouracil", "disease_name": "Graves' disease", "answer": "A.disease modifying \nExplanation: Graves' disease"}
+{"drug_name": "Dextrothyroxine", "disease_name": "Graves' disease", "answer": "B.symptomatic\nExplanation: Dextro"}
+{"drug_name": "Levothyroxine", "disease_name": "Graves' disease", "answer": "B\nStep 1:  Graves' disease"}
+{"drug_name": "Liothyronine", "disease_name": "Graves' disease", "answer": "A.disease modifying \nExplanation: Liothy"}
+{"drug_name": "Liotrix", "disease_name": "Graves' disease", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Acetylsalicylic acid", "disease_name": "Kawasaki disease", "answer": "A.disease modifying \nExplanation: Kawasaki disease is"}
+{"drug_name": "Alendronate", "disease_name": "Paget's disease of bone", "answer": "A\nExplanation: Alendronate is used"}
+{"drug_name": "Etidronic acid", "disease_name": "Paget's disease of bone", "answer": "A.disease modifying \nExplanation: Etidronic"}
+{"drug_name": "Pamidronate", "disease_name": "Paget's disease of bone", "answer": "A. disease modifying \nExplanation: Paget's"}
+{"drug_name": "Risedronate", "disease_name": "Paget's disease of bone", "answer": "A.disease modifying \nExplanation: Risedron"}
+{"drug_name": "Tiludronate", "disease_name": "Paget's disease of bone", "answer": "A.disease modifying \nExplanation: Paget's"}
+{"drug_name": "Zoledronate", "disease_name": "Paget's disease of bone", "answer": "A.disease modifying \nExplanation: Zoledron"}
+{"drug_name": "Amantadine", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Amantad"}
+{"drug_name": "Apomorphine", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Apomorph"}
+{"drug_name": "Atropine", "disease_name": "Parkinson's disease", "answer": "B\nExplanation: Atropine is used to"}
+{"drug_name": "Benzatropine", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Benzatrop"}
+{"drug_name": "Biperiden", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Biperiden"}
+{"drug_name": "Bromocriptine", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Bromocri"}
+{"drug_name": "Cabergoline", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Cabergoline"}
+{"drug_name": "Carbidopa", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Carbidopa"}
+{"drug_name": "Clonazepam", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Clonaz"}
+{"drug_name": "Diphenhydramine", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Diphenhy"}
+{"drug_name": "Entacapone", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Entacap"}
+{"drug_name": "Fludrocortisone", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Fludroc"}
+{"drug_name": "Gabapentin", "disease_name": "Parkinson's disease", "answer": "B\nExplanation: The relationship between Parkinson's disease"}
+{"drug_name": "Hyoscyamine", "disease_name": "Parkinson's disease", "answer": "B\nExplanation: Hyoscyamine is an"}
+{"drug_name": "L-DOPA", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: L-DOP"}
+{"drug_name": "Memantine", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Memantine is"}
+{"drug_name": "Modafinil", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Modafin"}
+{"drug_name": "Pergolide", "disease_name": "Parkinson's disease", "answer": "B\nExplanation: Pergolide is a"}
+{"drug_name": "Pramipexole", "disease_name": "Parkinson's disease", "answer": "B\nExplanation: Pramipexole is"}
+{"drug_name": "Procyclidine", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Procyclidine"}
+{"drug_name": "Ramelteon", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Ramelte"}
+{"drug_name": "Rasagiline", "disease_name": "Parkinson's disease", "answer": "A.disease modifying\nExplanation: Rasagiline"}
+{"drug_name": "Rivastigmine", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Rivastig"}
+{"drug_name": "Ropinirole", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Ropini"}
+{"drug_name": "Rotigotine", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Rotigotine"}
+{"drug_name": "Selegiline", "disease_name": "Parkinson's disease", "answer": "B\nExplanation: Selegiline is a mono"}
+{"drug_name": "Tolcapone", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Tolcapone"}
+{"drug_name": "Trihexyphenidyl", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Trihexy"}
+{"drug_name": "Citalopram", "disease_name": "Parkinson's disease", "answer": "B\nExplanation: Citalopram is an"}
+{"drug_name": "Dimenhydrinate", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Dimenhydr"}
+{"drug_name": "Escitalopram", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Escitalop"}
+{"drug_name": "Quetiapine", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Quetiap"}
+{"drug_name": "Scopolamine", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Scopolamine"}
+{"drug_name": "Sertraline", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Sertral"}
+{"drug_name": "Zolpidem", "disease_name": "Parkinson's disease", "answer": "B.symptomatic\nExplanation: Zolpid"}
+{"drug_name": "Abacavir", "disease_name": "acquired immunodeficiency syndrome", "answer": "A.disease modifying \nExplanation: Abacavir"}
+{"drug_name": "Amprenavir", "disease_name": "acquired immunodeficiency syndrome", "answer": "A.disease modifying \nExplanation: The correct answer"}
+{"drug_name": "Delavirdine", "disease_name": "acquired immunodeficiency syndrome", "answer": "B.symptomatic\nExplanation: Delavird"}
+{"drug_name": "Didanosine", "disease_name": "acquired immunodeficiency syndrome", "answer": "A\nExplanation: Didanosine is an ant"}
+{"drug_name": "Efavirenz", "disease_name": "acquired immunodeficiency syndrome", "answer": "A.disease modifying \nExplanation: Efaviren"}
+{"drug_name": "Indinavir", "disease_name": "acquired immunodeficiency syndrome", "answer": "A.disease modifying\nExplanation: Indinavir"}
+{"drug_name": "Lamivudine", "disease_name": "acquired immunodeficiency syndrome", "answer": "A.disease modifying\nExplanation: Lamivud"}
+{"drug_name": "Lopinavir", "disease_name": "acquired immunodeficiency syndrome", "answer": "A.disease modifying \nExplanation: Lopin"}
+{"drug_name": "Nelfinavir", "disease_name": "acquired immunodeficiency syndrome", "answer": "A.disease modifying \nExplanation: Nelfin"}
+{"drug_name": "Nevirapine", "disease_name": "acquired immunodeficiency syndrome", "answer": "A.disease modifying \nExplanation: Nevirap"}
+{"drug_name": "Ritonavir", "disease_name": "acquired immunodeficiency syndrome", "answer": "A.disease modifying\nExplanation: Ritonavir"}
+{"drug_name": "Saquinavir", "disease_name": "acquired immunodeficiency syndrome", "answer": "A.disease modifying \nExplanation: Saquinavir"}
+{"drug_name": "Stavudine", "disease_name": "acquired immunodeficiency syndrome", "answer": "A.disease modifying\nStep 1: Ac"}
+{"drug_name": "Zidovudine", "disease_name": "acquired immunodeficiency syndrome", "answer": "A\nExplanation: Zidovudine is"}
+{"drug_name": "Aciclovir", "disease_name": "acquired immunodeficiency syndrome", "answer": "B.symptomatic\nExplanation: Aciclov"}
+{"drug_name": "Doxorubicin", "disease_name": "acquired immunodeficiency syndrome", "answer": "B.symptomatic\nExplanation: Doxorubic"}
+{"drug_name": "Epirubicin", "disease_name": "acquired immunodeficiency syndrome", "answer": "B.symptomatic\nExplanation: Epirubic"}
+{"drug_name": "Fluconazole", "disease_name": "acquired immunodeficiency syndrome", "answer": "A.disease modifying \nExplanation: Fluconazole"}
+{"drug_name": "Ganciclovir", "disease_name": "acquired immunodeficiency syndrome", "answer": "A\nExplanation: Ganciclovir is"}
+{"drug_name": "Rifabutin", "disease_name": "acquired immunodeficiency syndrome", "answer": "A.disease modifying \nExplanation: Rifabutin"}
+{"drug_name": "Acamprosate", "disease_name": "alcohol dependence", "answer": "B.symptomatic\nExplanation: Acampro"}
+{"drug_name": "Citalopram", "disease_name": "alcohol dependence", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Disulfiram", "disease_name": "alcohol dependence", "answer": "B.symptomatic\nExplanation: Disulfiram"}
+{"drug_name": "Naltrexone", "disease_name": "alcohol dependence", "answer": "A.disease modifying \nExplanation: Naltrex"}
+{"drug_name": "Chlordiazepoxide", "disease_name": "alcohol dependence", "answer": "B.symptomatic\nExplanation: Chlordiaz"}
+{"drug_name": "Ondansetron", "disease_name": "alcohol dependence", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Folic Acid", "disease_name": "alcohol dependence", "answer": "B\nStep 1: Alcohol dependence is a"}
+{"drug_name": "Betamethasone", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Allergic rh"}
+{"drug_name": "Cetirizine", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Cetir"}
+{"drug_name": "Cyproheptadine", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Cyprohe"}
+{"drug_name": "Desloratadine", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Deslorat"}
+{"drug_name": "Dexamethasone", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Allergic rh"}
+{"drug_name": "Dimenhydrinate", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Dimenhydr"}
+{"drug_name": "Diphenhydramine", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Allergic rh"}
+{"drug_name": "Flunisolide", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Flunisol"}
+{"drug_name": "Hydrocortisone", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Hydrocort"}
+{"drug_name": "Loratadine", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Loratad"}
+{"drug_name": "Methylprednisolone", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Allergic rh"}
+{"drug_name": "Montelukast", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Allergic rh"}
+{"drug_name": "Olopatadine", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Allergic rh"}
+{"drug_name": "Prednisolone", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Allergic rh"}
+{"drug_name": "Triamcinolone", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Allergic rh"}
+{"drug_name": "Ephedrine", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Allergic rh"}
+{"drug_name": "Epinephrine", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Allergic rh"}
+{"drug_name": "Oxymetazoline", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Oxymet"}
+{"drug_name": "Pseudoephedrine", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Pseudoeph"}
+{"drug_name": "Salbutamol", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Salbutam"}
+{"drug_name": "Cefdinir", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Cefdin"}
+{"drug_name": "Clindamycin", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Allergic rh"}
+{"drug_name": "Esomeprazole", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Allergic rh"}
+{"drug_name": "Omeprazole", "disease_name": "allergic rhinitis", "answer": "B.symptomatic\nExplanation: Allergic rh"}
+{"drug_name": "Triamcinolone", "disease_name": "alopecia areata", "answer": "B.symptomatic\nExplanation: Alopecia are"}
+{"drug_name": "Riluzole", "disease_name": "amyotrophic lateral sclerosis", "answer": "A.disease modifying \nExplanation: Riluz"}
+{"drug_name": "Dextromethorphan", "disease_name": "amyotrophic lateral sclerosis", "answer": "B\nExplanation: Dextromethorphan"}
+{"drug_name": "Aminocaproic Acid", "disease_name": "anemia", "answer": "B.symptomatic\nExplanation: Aminoc"}
+{"drug_name": "Betamethasone", "disease_name": "anemia", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Decitabine", "disease_name": "anemia", "answer": "A.disease modifying\nStep 1:"}
+{"drug_name": "Deferiprone", "disease_name": "anemia", "answer": "B.symptomatic\nExplanation: Deferip"}
+{"drug_name": "Dexamethasone", "disease_name": "anemia", "answer": "B.symptomatic\nExplanation: Dexameth"}
+{"drug_name": "Felbamate", "disease_name": "anemia", "answer": "B.symptomatic\nExplanation: Felbamate"}
+{"drug_name": "Folic Acid", "disease_name": "anemia", "answer": "B\nStep 1: Anemia is a"}
+{"drug_name": "Methylprednisolone", "disease_name": "anemia", "answer": "B.symptomatic\nExplanation: Methylpred"}
+{"drug_name": "Prednisolone", "disease_name": "anemia", "answer": "B.symptomatic\nExplanation: Prednisol"}
+{"drug_name": "Prednisone", "disease_name": "anemia", "answer": "B.symptomatic\nExplanation: Prednisone"}
+{"drug_name": "Pyridoxine", "disease_name": "anemia", "answer": "B.symptomatic\nExplanation: Pyridox"}
+{"drug_name": "Triamcinolone", "disease_name": "anemia", "answer": "B.symptomatic\nExplanation: Triamcin"}
+{"drug_name": "Vitamin C", "disease_name": "anemia", "answer": "B\nStep 1: Anemia is a"}
+{"drug_name": "Vitamin E", "disease_name": "anemia", "answer": "B\nStep 1:  Anemia is"}
+{"drug_name": "Betamethasone", "disease_name": "ankylosing spondylitis", "answer": "B\nExplanation: Ankylosing spondyl"}
+{"drug_name": "Dexamethasone", "disease_name": "ankylosing spondylitis", "answer": "B\nExplanation: Ankylosing spondyl"}
+{"drug_name": "Methotrexate", "disease_name": "ankylosing spondylitis", "answer": "A.disease modifying \nExplanation: Ankylosing"}
+{"drug_name": "Methylprednisolone", "disease_name": "ankylosing spondylitis", "answer": "B\nExplanation: Ankylosing spondyl"}
+{"drug_name": "Prednisolone", "disease_name": "ankylosing spondylitis", "answer": "B\nExplanation: Ankylosing spondyl"}
+{"drug_name": "Prednisone", "disease_name": "ankylosing spondylitis", "answer": "A.disease modifying\nExplanation: Ankylosing"}
+{"drug_name": "Sulfasalazine", "disease_name": "ankylosing spondylitis", "answer": "A.disease modifying\nExplanation: Sulfasal"}
+{"drug_name": "Triamcinolone", "disease_name": "ankylosing spondylitis", "answer": "B\nExplanation: Ankylosing spondyl"}
+{"drug_name": "Celecoxib", "disease_name": "ankylosing spondylitis", "answer": "B.symptomatic\nExplanation: Ankylosing"}
+{"drug_name": "Diclofenac", "disease_name": "ankylosing spondylitis", "answer": "B.symptomatic\nExplanation: Ankylosing"}
+{"drug_name": "Indomethacin", "disease_name": "ankylosing spondylitis", "answer": "B\nExplanation: Indomethacin is used"}
+{"drug_name": "Meloxicam", "disease_name": "ankylosing spondylitis", "answer": "B\nExplanation: Meloxicam is a non"}
+{"drug_name": "Naproxen", "disease_name": "ankylosing spondylitis", "answer": "B\nExplanation: Ankylosing spondyl"}
+{"drug_name": "Piroxicam", "disease_name": "ankylosing spondylitis", "answer": "B\nExplanation: Piroxicam is a"}
+{"drug_name": "Tolmetin", "disease_name": "ankylosing spondylitis", "answer": "B\nExplanation: Tolmetin is a non"}
+{"drug_name": "Cyclobenzaprine", "disease_name": "ankylosing spondylitis", "answer": "B.symptomatic\nExplanation: Ankylosing"}
+{"drug_name": "Esomeprazole", "disease_name": "ankylosing spondylitis", "answer": "B\nExplanation: Ankylosing spondyl"}
+{"drug_name": "Folic Acid", "disease_name": "ankylosing spondylitis", "answer": "A.disease modifying\nExplanation: Ankylosing"}
+{"drug_name": "Omeprazole", "disease_name": "ankylosing spondylitis", "answer": "B.symptomatic\nExplanation: Ankylosing"}
+{"drug_name": "Aminophylline", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Aminoph"}
+{"drug_name": "Arformoterol", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Arformoter"}
+{"drug_name": "Beclomethasone", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Beclom"}
+{"drug_name": "Betamethasone", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Betameth"}
+{"drug_name": "Budesonide", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Budeson"}
+{"drug_name": "Ciclesonide", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Cicleson"}
+{"drug_name": "Cromoglicic acid", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Cromoglic"}
+{"drug_name": "Dexamethasone", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Dexameth"}
+{"drug_name": "Dyphylline", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Dyphyll"}
+{"drug_name": "Flunisolide", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Flunisol"}
+{"drug_name": "Fluticasone Propionate", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Fluticas"}
+{"drug_name": "Fluticasone furoate", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Fluticas"}
+{"drug_name": "Formoterol", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Formoterol"}
+{"drug_name": "Hydrocortisone", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Hydrocort"}
+{"drug_name": "Indacaterol", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Indacater"}
+{"drug_name": "Ipratropium bromide", "disease_name": "asthma", "answer": "B.symptomatic\nStep 1: I"}
+{"drug_name": "Isoetarine", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Isoetarine"}
+{"drug_name": "Isoprenaline", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Isoprenal"}
+{"drug_name": "Ketotifen", "disease_name": "asthma", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Loratadine", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Loratad"}
+{"drug_name": "Methylprednisolone", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Methylpred"}
+{"drug_name": "Mometasone", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Mometas"}
+{"drug_name": "Montelukast", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Monteluk"}
+{"drug_name": "Nedocromil", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Asthma is"}
+{"drug_name": "Orciprenaline", "disease_name": "asthma", "answer": "B.symptomatic\nStep 1: Ast"}
+{"drug_name": "Pirbuterol", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Pirbuter"}
+{"drug_name": "Prednisolone", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Prednisol"}
+{"drug_name": "Prednisone", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Asthma is"}
+{"drug_name": "Salbutamol", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Salbutam"}
+{"drug_name": "Salmeterol", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Salmeter"}
+{"drug_name": "Terbutaline", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Terbutal"}
+{"drug_name": "Theophylline", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Theophyll"}
+{"drug_name": "Tiotropium", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Tiotrop"}
+{"drug_name": "Triamcinolone", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Triamcin"}
+{"drug_name": "WF10", "disease_name": "asthma", "answer": "A\nExplanation: WF10 is a drug that"}
+{"drug_name": "Zafirlukast", "disease_name": "asthma", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Zileuton", "disease_name": "asthma", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Ephedrine", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Ephedrine"}
+{"drug_name": "Epinephrine", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Asthma is"}
+{"drug_name": "Pseudoephedrine", "disease_name": "asthma", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Cefdinir", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Cefdin"}
+{"drug_name": "Ciprofloxacin", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Ciprof"}
+{"drug_name": "Levofloxacin", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Levoflox"}
+{"drug_name": "Moxifloxacin", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Moxif"}
+{"drug_name": "Trimethoprim", "disease_name": "asthma", "answer": "B.symptomatic\nExplanation: Trimethop"}
+{"drug_name": "Ezetimibe", "disease_name": "atherosclerosis", "answer": "A.disease modifying \nExplanation: Atherosclerosis"}
+{"drug_name": "Lovastatin", "disease_name": "atherosclerosis", "answer": "A.disease modifying\nStep 1:"}
+{"drug_name": "Niacin", "disease_name": "atherosclerosis", "answer": "A.disease modifying \nExplanation: Niacin"}
+{"drug_name": "Pravastatin", "disease_name": "atherosclerosis", "answer": "A.disease modifying \nExplanation: Pravast"}
+{"drug_name": "Rosuvastatin", "disease_name": "atherosclerosis", "answer": "A.disease modifying\nStep 1: A"}
+{"drug_name": "Simvastatin", "disease_name": "atherosclerosis", "answer": "A.disease modifying\nExplanation: Simvast"}
+{"drug_name": "Clopidogrel", "disease_name": "atherosclerosis", "answer": "A.disease modifying \nExplanation: Atherosclerosis"}
+{"drug_name": "Epoprostenol", "disease_name": "atherosclerosis", "answer": "A.disease modifying \nExplanation: Epopro"}
+{"drug_name": "Tolazoline", "disease_name": "atherosclerosis", "answer": "B\nStep 1:  Atherosclerosis"}
+{"drug_name": "Betamethasone", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Betameth"}
+{"drug_name": "Desonide", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Atopic dermat"}
+{"drug_name": "Dexamethasone", "disease_name": "atopic dermatitis", "answer": "A. disease modifying \nExplanation: Atopic dermat"}
+{"drug_name": "Dimenhydrinate", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Dimenhydr"}
+{"drug_name": "Diphenhydramine", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Atopic dermat"}
+{"drug_name": "Fluocinolone Acetonide", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Fluocin"}
+{"drug_name": "Fluocinonide", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Atopic dermat"}
+{"drug_name": "Hydrocortisone", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Atopic dermat"}
+{"drug_name": "Loratadine", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Atopic dermat"}
+{"drug_name": "Methylprednisolone", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Atopic dermat"}
+{"drug_name": "Mometasone", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Mometas"}
+{"drug_name": "Pimecrolimus", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Pimec"}
+{"drug_name": "Prednisolone", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Atopic dermat"}
+{"drug_name": "Prednisone", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Atopic dermat"}
+{"drug_name": "Tacrolimus", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Tacrolimus"}
+{"drug_name": "Triamcinolone", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Triamcin"}
+{"drug_name": "Doxepin", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Doxep"}
+{"drug_name": "Triprolidine", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Triprolid"}
+{"drug_name": "Clindamycin", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Clindam"}
+{"drug_name": "Mupirocin", "disease_name": "atopic dermatitis", "answer": "B.symptomatic\nExplanation: Mupiro"}
+{"drug_name": "Amphetamine", "disease_name": "attention deficit hyperactivity disorder", "answer": "B.symptomatic\nExplanation: Amphetamine is"}
+{"drug_name": "Atomoxetine", "disease_name": "attention deficit hyperactivity disorder", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Bupropion", "disease_name": "attention deficit hyperactivity disorder", "answer": "B.symptomatic\nExplanation: Buprop"}
+{"drug_name": "Clonidine", "disease_name": "attention deficit hyperactivity disorder", "answer": "B.symptomatic\nExplanation: Clonidine"}
+{"drug_name": "Desipramine", "disease_name": "attention deficit hyperactivity disorder", "answer": "B.symptomatic\nExplanation: Desipram"}
+{"drug_name": "Dextroamphetamine", "disease_name": "attention deficit hyperactivity disorder", "answer": "B.symptomatic\nExplanation: Dextro"}
+{"drug_name": "Guanfacine", "disease_name": "attention deficit hyperactivity disorder", "answer": "B.symptomatic\nExplanation: Guanfac"}
+{"drug_name": "Imipramine", "disease_name": "attention deficit hyperactivity disorder", "answer": "B.symptomatic\nExplanation: Imipram"}
+{"drug_name": "Lisdexamfetamine", "disease_name": "attention deficit hyperactivity disorder", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Methamphetamine", "disease_name": "attention deficit hyperactivity disorder", "answer": "B.symptomatic\nExplanation: Methamphetamine is"}
+{"drug_name": "Methylphenidate", "disease_name": "attention deficit hyperactivity disorder", "answer": "B.symptomatic\nExplanation: Methylphen"}
+{"drug_name": "Modafinil", "disease_name": "attention deficit hyperactivity disorder", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Nortriptyline", "disease_name": "attention deficit hyperactivity disorder", "answer": "B.symptomatic\nExplanation: Nortri"}
+{"drug_name": "Venlafaxine", "disease_name": "attention deficit hyperactivity disorder", "answer": "B.symptomatic\nExplanation: Venlaf"}
+{"drug_name": "Aripiprazole", "disease_name": "autistic disorder", "answer": "B.symptomatic\nExplanation: Aripip"}
+{"drug_name": "Atomoxetine", "disease_name": "autistic disorder", "answer": "B.symptomatic\nExplanation: Atomoxetine is"}
+{"drug_name": "Benzatropine", "disease_name": "autistic disorder", "answer": "B.symptomatic\nExplanation: Benzatrop"}
+{"drug_name": "Clonazepam", "disease_name": "autistic disorder", "answer": "B.symptomatic\nExplanation: Clonaz"}
+{"drug_name": "Clonidine", "disease_name": "autistic disorder", "answer": "B.symptomatic\nExplanation: Clonidine"}
+{"drug_name": "Quetiapine", "disease_name": "autistic disorder", "answer": "B\nStep 1:  First, we"}
+{"drug_name": "Risperidone", "disease_name": "autistic disorder", "answer": "B.symptomatic\nExplanation: Risperid"}
+{"drug_name": "Sertraline", "disease_name": "autistic disorder", "answer": "B.symptomatic\nExplanation: Sertral"}
+{"drug_name": "L-Carnitine", "disease_name": "autistic disorder", "answer": "B\nExplanation: L-Carnitine is"}
+{"drug_name": "Clomifene", "disease_name": "azoospermia", "answer": "C\nExplanation: Clomifene is a"}
+{"drug_name": "Aripiprazole", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Carbamazepine", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: The correct answer"}
+{"drug_name": "Chlorpromazine", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: The correct answer"}
+{"drug_name": "Citalopram", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Citalop"}
+{"drug_name": "Clonazepam", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Clonaz"}
+{"drug_name": "Clozapine", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Clozapine"}
+{"drug_name": "Duloxetine", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Duloxetine is"}
+{"drug_name": "Escitalopram", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Escitalop"}
+{"drug_name": "Gabapentin", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Gabapentin"}
+{"drug_name": "Lamotrigine", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Lamotrig"}
+{"drug_name": "Olanzapine", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Olanzap"}
+{"drug_name": "Oxcarbazepine", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Oxcarbaz"}
+{"drug_name": "Paroxetine", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Paroxetine is"}
+{"drug_name": "Quetiapine", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Quetiap"}
+{"drug_name": "Risperidone", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Risperid"}
+{"drug_name": "Tiagabine", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Tiagab"}
+{"drug_name": "Topiramate", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Topiramate"}
+{"drug_name": "Trazodone", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Trazod"}
+{"drug_name": "Valproic Acid", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Valproic"}
+{"drug_name": "Ziprasidone", "disease_name": "bipolar disorder", "answer": "B.symptomatic\nExplanation: Ziprasid"}
+{"drug_name": "Carboplatin", "disease_name": "bone cancer", "answer": "B\nExplanation: The relationship between bone cancer and"}
+{"drug_name": "Cisplatin", "disease_name": "bone cancer", "answer": "A\nExplanation: Cisplatin is a"}
+{"drug_name": "Doxorubicin", "disease_name": "bone cancer", "answer": "A\nExplanation: Doxorubicin is a"}
+{"drug_name": "Epirubicin", "disease_name": "bone cancer", "answer": "A.disease modifying \nExplanation: Epirubic"}
+{"drug_name": "Methotrexate", "disease_name": "bone cancer", "answer": "B\nExplanation: Methotrexate is a"}
+{"drug_name": "Leucovorin", "disease_name": "bone cancer", "answer": "B\nExplanation: Leucovorin is"}
+{"drug_name": "Zoledronate", "disease_name": "bone cancer", "answer": "B\nExplanation: Zoledronate is a"}
+{"drug_name": "Carboplatin", "disease_name": "brain cancer", "answer": "B.symptomatic\nExplanation: Carboplatin"}
+{"drug_name": "Carmustine", "disease_name": "brain cancer", "answer": "A.disease modifying \nExplanation: Carmustine"}
+{"drug_name": "Etoposide", "disease_name": "brain cancer", "answer": "A.disease modifying \nExplanation: Etopos"}
+{"drug_name": "Hydroxyurea", "disease_name": "brain cancer", "answer": "A.disease modifying \nExplanation: Hydroxyure"}
+{"drug_name": "Lomustine", "disease_name": "brain cancer", "answer": "A.disease modifying\nStep 1: L"}
+{"drug_name": "Procarbazine", "disease_name": "brain cancer", "answer": "A.disease modifying \nExplanation: Procarb"}
+{"drug_name": "Temozolomide", "disease_name": "brain cancer", "answer": "A.disease modifying\nExplanation: Temoz"}
+{"drug_name": "Betamethasone", "disease_name": "brain cancer", "answer": "B.symptomatic\nExplanation: Betameth"}
+{"drug_name": "Dexamethasone", "disease_name": "brain cancer", "answer": "B.symptomatic\nExplanation: Dexameth"}
+{"drug_name": "Methylprednisolone", "disease_name": "brain cancer", "answer": "B.symptomatic\nExplanation: Methylpred"}
+{"drug_name": "Triamcinolone", "disease_name": "brain cancer", "answer": "B.symptomatic\nExplanation: Triamcin"}
+{"drug_name": "Mifepristone", "disease_name": "brain cancer", "answer": "B.symptomatic\nStep 1: M"}
+{"drug_name": "Anastrozole", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Anastroz"}
+{"drug_name": "Capecitabine", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Capecit"}
+{"drug_name": "Carboplatin", "disease_name": "breast cancer", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Chlorambucil", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Chlorambuc"}
+{"drug_name": "Docetaxel", "disease_name": "breast cancer", "answer": "A. disease modifying \nExplanation: Docetax"}
+{"drug_name": "Doxorubicin", "disease_name": "breast cancer", "answer": "A.disease modifying\nStep 1: Do"}
+{"drug_name": "Epirubicin", "disease_name": "breast cancer", "answer": "A.disease modifying\nExplanation: Epirubic"}
+{"drug_name": "Eribulin", "disease_name": "breast cancer", "answer": "A.disease modifying\nExplanation: Eribulin"}
+{"drug_name": "Exemestane", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Exemest"}
+{"drug_name": "Fluorouracil", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Fluorour"}
+{"drug_name": "Fluoxymesterone", "disease_name": "breast cancer", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Fulvestrant", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Fulvestrant"}
+{"drug_name": "Gemcitabine", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Gemcitab"}
+{"drug_name": "Goserelin", "disease_name": "breast cancer", "answer": "B\nExplanation: Goserelin is a synthetic"}
+{"drug_name": "Idarubicin", "disease_name": "breast cancer", "answer": "A.disease modifying\nExplanation: Idarubic"}
+{"drug_name": "Irinotecan", "disease_name": "breast cancer", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Ixabepilone", "disease_name": "breast cancer", "answer": "A.disease modifying\nStep 1: I"}
+{"drug_name": "Lapatinib", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Lapatinib"}
+{"drug_name": "Letrozole", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Letrozole"}
+{"drug_name": "Melphalan", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Melphalan"}
+{"drug_name": "Methotrexate", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Methotrex"}
+{"drug_name": "Mitoxantrone", "disease_name": "breast cancer", "answer": "B\nStep 1:  Mitoxan"}
+{"drug_name": "Paclitaxel", "disease_name": "breast cancer", "answer": "A\nExplanation: Paclitaxel is"}
+{"drug_name": "Raloxifene", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Ralox"}
+{"drug_name": "Tamoxifen", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Tamoxifen"}
+{"drug_name": "Thiotepa", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Thiotep"}
+{"drug_name": "Toremifene", "disease_name": "breast cancer", "answer": "B.symptomatic\nStep 1: T"}
+{"drug_name": "Vinblastine", "disease_name": "breast cancer", "answer": "A\nExplanation: Vinblastine is a chem"}
+{"drug_name": "Vinorelbine", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Vinorelb"}
+{"drug_name": "Aprepitant", "disease_name": "breast cancer", "answer": "B.symptomatic\nExplanation: Aprepit"}
+{"drug_name": "Betamethasone", "disease_name": "breast cancer", "answer": "B\nExplanation: Betamethasone is"}
+{"drug_name": "Conjugated Estrogens", "disease_name": "breast cancer", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Dexamethasone", "disease_name": "breast cancer", "answer": "B.symptomatic\nExplanation: Dexameth"}
+{"drug_name": "Estradiol", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Estradiol"}
+{"drug_name": "Estradiol valerate/Dienogest", "disease_name": "breast cancer", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Estrone", "disease_name": "breast cancer", "answer": "A.disease modifying\nStep 1: Estr"}
+{"drug_name": "Ethinyl Estradiol", "disease_name": "breast cancer", "answer": "A\nStep 1: Ethinyl estr"}
+{"drug_name": "Medroxyprogesterone Acetate", "disease_name": "breast cancer", "answer": "A. disease modifying \nStep 1: Med"}
+{"drug_name": "Megestrol acetate", "disease_name": "breast cancer", "answer": "B.symptomatic\nExplanation: Megestrol"}
+{"drug_name": "Methyltestosterone", "disease_name": "breast cancer", "answer": "B.symptomatic\nStep 1: M"}
+{"drug_name": "Prochlorperazine", "disease_name": "breast cancer", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Testosterone", "disease_name": "breast cancer", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Testosterone Propionate", "disease_name": "breast cancer", "answer": "B.symptomatic\nExplanation: Testosterone prop"}
+{"drug_name": "Alendronate", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Alendron"}
+{"drug_name": "Dexrazoxane", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: Dexrazox"}
+{"drug_name": "Pamidronate", "disease_name": "breast cancer", "answer": "B.symptomatic\nExplanation: Pamidron"}
+{"drug_name": "Potassium Chloride", "disease_name": "breast cancer", "answer": "B.symptomatic\nExplanation: Potassium chloride"}
+{"drug_name": "Risedronate", "disease_name": "breast cancer", "answer": "C.non-indication\nExplanation: Risedron"}
+{"drug_name": "Tiludronate", "disease_name": "breast cancer", "answer": "A.disease modifying \nExplanation: The correct answer"}
+{"drug_name": "Zoledronate", "disease_name": "breast cancer", "answer": "A.disease modifying\nStep 1: Z"}
+{"drug_name": "Topotecan", "disease_name": "cervical cancer", "answer": "A.disease modifying \nExplanation: Topotecan"}
+{"drug_name": "Bumetanide", "disease_name": "chronic kidney failure", "answer": "B\nExplanation: Bumetanide is"}
+{"drug_name": "Calcitriol", "disease_name": "chronic kidney failure", "answer": "A\nExplanation: Calcitriol is the"}
+{"drug_name": "Calcium Acetate", "disease_name": "chronic kidney failure", "answer": "A.disease modifying \nExplanation: Calcium Acet"}
+{"drug_name": "Cholecalciferol", "disease_name": "chronic kidney failure", "answer": "A\nStep 1:  First, let"}
+{"drug_name": "Cinacalcet", "disease_name": "chronic kidney failure", "answer": "B\nExplanation: Cinacalcet is a"}
+{"drug_name": "Deferoxamine", "disease_name": "chronic kidney failure", "answer": "B.symptomatic\nExplanation: Deferox"}
+{"drug_name": "Ethacrynic acid", "disease_name": "chronic kidney failure", "answer": "A. disease modifying\nStep 1:"}
+{"drug_name": "Furosemide", "disease_name": "chronic kidney failure", "answer": "B.symptomatic\nExplanation: Furosem"}
+{"drug_name": "Paricalcitol", "disease_name": "chronic kidney failure", "answer": "A.disease modifying \nExplanation: Paricalc"}
+{"drug_name": "Torasemide", "disease_name": "chronic kidney failure", "answer": "B\nExplanation: Torasemide is a"}
+{"drug_name": "Cephalexin", "disease_name": "chronic kidney failure", "answer": "C.non-indication\nExplanation: Cephalex"}
+{"drug_name": "Aminophylline", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Arformoterol", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Formoterol", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nExplanation: Formoterol"}
+{"drug_name": "Montelukast", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Prednisolone", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nExplanation: The use of"}
+{"drug_name": "Prednisone", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nExplanation: Prednisone"}
+{"drug_name": "Roflumilast", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nExplanation: Roflum"}
+{"drug_name": "Salbutamol", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nExplanation: Salbutam"}
+{"drug_name": "Tiotropium", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nExplanation: Tiotrop"}
+{"drug_name": "Acetylcysteine", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nExplanation: Acetylc"}
+{"drug_name": "Ciprofloxacin", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nExplanation: Ciprof"}
+{"drug_name": "Doxycycline", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Levofloxacin", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nExplanation: Levoflox"}
+{"drug_name": "Moxifloxacin", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nExplanation: Moxif"}
+{"drug_name": "Ofloxacin", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nExplanation: Ofloxacin"}
+{"drug_name": "Nicotine", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nExplanation: Chronic obstructive"}
+{"drug_name": "Tadalafil", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nExplanation: Tadalafil is"}
+{"drug_name": "WF10", "disease_name": "chronic obstructive pulmonary disease", "answer": "A.disease modifying \nExplanation: WF10 is"}
+{"drug_name": "Zolpidem", "disease_name": "chronic obstructive pulmonary disease", "answer": "B.symptomatic\nExplanation: Zolpid"}
+{"drug_name": "Capecitabine", "disease_name": "colon cancer", "answer": "A. disease modifying \nExplanation: Capecit"}
+{"drug_name": "Fluorouracil", "disease_name": "colon cancer", "answer": "A\nExplanation: Fluorouracil is"}
+{"drug_name": "Irinotecan", "disease_name": "colon cancer", "answer": "A.disease modifying \nExplanation: Irinotec"}
+{"drug_name": "Methotrexate", "disease_name": "colon cancer", "answer": "A.disease modifying \nExplanation: Methotrex"}
+{"drug_name": "Vincristine", "disease_name": "colon cancer", "answer": "A.disease modifying \nExplanation: Vincrist"}
+{"drug_name": "Aprepitant", "disease_name": "colon cancer", "answer": "B.symptomatic\nExplanation: Aprepit"}
+{"drug_name": "Betamethasone", "disease_name": "colon cancer", "answer": "A.disease modifying \nExplanation: Betameth"}
+{"drug_name": "Celecoxib", "disease_name": "colon cancer", "answer": "A.disease modifying \nExplanation: Celecoxib"}
+{"drug_name": "Dexamethasone", "disease_name": "colon cancer", "answer": "B\nExplanation: Dexamethasone is"}
+{"drug_name": "Busulfan", "disease_name": "colon cancer", "answer": "A.disease modifying \nExplanation: Busulfan"}
+{"drug_name": "Cytarabine", "disease_name": "colon cancer", "answer": "C.non-indication\nExplanation: Cytar"}
+{"drug_name": "Gabapentin", "disease_name": "colon cancer", "answer": "B.symptomatic\nExplanation: Gabapentin"}
+{"drug_name": "Leucovorin", "disease_name": "colon cancer", "answer": "A.disease modifying \nExplanation: Leucov"}
+{"drug_name": "Chlorpromazine", "disease_name": "conduct disorder", "answer": "B.symptomatic\nExplanation: Conduct disorder is"}
+{"drug_name": "Haloperidol", "disease_name": "conduct disorder", "answer": "B.symptomatic\nExplanation: Conduct disorder is"}
+{"drug_name": "Risperidone", "disease_name": "conduct disorder", "answer": "B.symptomatic\nExplanation: Risperid"}
+{"drug_name": "Acetylsalicylic acid", "disease_name": "coronary artery disease", "answer": "A.disease modifying\nExplanation: Acetyls"}
+{"drug_name": "Atorvastatin", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Atorv"}
+{"drug_name": "Captopril", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Captopril"}
+{"drug_name": "Clopidogrel", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Clopidog"}
+{"drug_name": "Enalapril", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Enalap"}
+{"drug_name": "Eplerenone", "disease_name": "coronary artery disease", "answer": "A.disease modifying\nExplanation: Epleren"}
+{"drug_name": "Ezetimibe", "disease_name": "coronary artery disease", "answer": "A.disease modifying\nExplanation: Ezetimibe"}
+{"drug_name": "Fenofibrate", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Fenofibrate"}
+{"drug_name": "Furosemide", "disease_name": "coronary artery disease", "answer": "B\nStep 1:  Furosem"}
+{"drug_name": "Gemfibrozil", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Gemfibroz"}
+{"drug_name": "Lisinopril", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Lisinop"}
+{"drug_name": "Losartan", "disease_name": "coronary artery disease", "answer": "A.disease modifying\nExplanation: Losartan"}
+{"drug_name": "Lovastatin", "disease_name": "coronary artery disease", "answer": "A.disease modifying\nExplanation: Lovastatin"}
+{"drug_name": "Niacin", "disease_name": "coronary artery disease", "answer": "A.disease modifying\nStep 1: N"}
+{"drug_name": "Olmesartan", "disease_name": "coronary artery disease", "answer": "A.disease modifying\nStep 1:"}
+{"drug_name": "Penbutolol", "disease_name": "coronary artery disease", "answer": "B.symptomatic\nExplanation: Penbutol"}
+{"drug_name": "Perindopril", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Perindop"}
+{"drug_name": "Pitavastatin", "disease_name": "coronary artery disease", "answer": "A.disease modifying\nExplanation: Pitavast"}
+{"drug_name": "Pravastatin", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Pravast"}
+{"drug_name": "Ramipril", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Ramipril"}
+{"drug_name": "Rosuvastatin", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Rosuvast"}
+{"drug_name": "Simvastatin", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Simvast"}
+{"drug_name": "Telmisartan", "disease_name": "coronary artery disease", "answer": "A.disease modifying\nStep 1:"}
+{"drug_name": "Ticagrelor", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Ticagrel"}
+{"drug_name": "Timolol", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Timolol"}
+{"drug_name": "Tirofiban", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Tirof"}
+{"drug_name": "Trandolapril", "disease_name": "coronary artery disease", "answer": "A.disease modifying\nExplanation: Trandol"}
+{"drug_name": "Valsartan", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Valsart"}
+{"drug_name": "Amlodipine", "disease_name": "coronary artery disease", "answer": "B.symptomatic\nStep 1: A"}
+{"drug_name": "Digoxin", "disease_name": "coronary artery disease", "answer": "B\nStep 1:  The question is"}
+{"drug_name": "Diltiazem", "disease_name": "coronary artery disease", "answer": "B.symptomatic\nExplanation: Diltiaz"}
+{"drug_name": "Dipyridamole", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: Dipyrid"}
+{"drug_name": "Isosorbide Dinitrate", "disease_name": "coronary artery disease", "answer": "B.symptomatic\nExplanation: Isosorb"}
+{"drug_name": "Isosorbide Mononitrate", "disease_name": "coronary artery disease", "answer": "B\nExplanation: Isosorbide monon"}
+{"drug_name": "Lidocaine", "disease_name": "coronary artery disease", "answer": "B.symptomatic\nExplanation: Lidocaine"}
+{"drug_name": "Morphine", "disease_name": "coronary artery disease", "answer": "B.symptomatic\nExplanation: Morphine is"}
+{"drug_name": "Nifedipine", "disease_name": "coronary artery disease", "answer": "B\nStep 1: Nifedip"}
+{"drug_name": "Nitroglycerin", "disease_name": "coronary artery disease", "answer": "B.symptomatic\nExplanation: Nitroglycer"}
+{"drug_name": "Amiodarone", "disease_name": "coronary artery disease", "answer": "B.symptomatic\nExplanation: Amiodar"}
+{"drug_name": "Dextrothyroxine", "disease_name": "coronary artery disease", "answer": "A. disease modifying\nStep 1:"}
+{"drug_name": "Dopamine", "disease_name": "coronary artery disease", "answer": "B\nExplanation: Dopamine is a medication used"}
+{"drug_name": "Estradiol", "disease_name": "coronary artery disease", "answer": "A.disease modifying \nExplanation: The relationship between"}
+{"drug_name": "Levothyroxine", "disease_name": "coronary artery disease", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Liotrix", "disease_name": "coronary artery disease", "answer": "B.symptomatic\nExplanation: Liotrix"}
+{"drug_name": "Potassium Chloride", "disease_name": "coronary artery disease", "answer": "B\nExplanation: Potassium chloride is used in"}
+{"drug_name": "Cocaine", "disease_name": "dental caries", "answer": "B.symptomatic\nExplanation: Cocaine is"}
+{"drug_name": "Furosemide", "disease_name": "dilated cardiomyopathy", "answer": "B\nStep 1: Dilated cardiomy"}
+{"drug_name": "Lisinopril", "disease_name": "dilated cardiomyopathy", "answer": "A\nExplanation: Dilated cardiomyopathy is"}
+{"drug_name": "Spironolactone", "disease_name": "dilated cardiomyopathy", "answer": "A.disease modifying \nExplanation: Spironol"}
+{"drug_name": "Amrinone", "disease_name": "dilated cardiomyopathy", "answer": "A\nExplanation: Amrinone is a phosph"}
+{"drug_name": "Digoxin", "disease_name": "dilated cardiomyopathy", "answer": "C\nStep 1: Dilated cardiomy"}
+{"drug_name": "Amitriptyline", "disease_name": "endogenous depression", "answer": "B.symptomatic\nExplanation: Amitripty"}
+{"drug_name": "Aripiprazole", "disease_name": "endogenous depression", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Citalopram", "disease_name": "endogenous depression", "answer": "B.symptomatic\nExplanation: Citalop"}
+{"drug_name": "Duloxetine", "disease_name": "endogenous depression", "answer": "B.symptomatic\nStep 1: Dul"}
+{"drug_name": "Escitalopram", "disease_name": "endogenous depression", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Fluvoxamine", "disease_name": "endogenous depression", "answer": "B.symptomatic\nExplanation: Fluvoxamine"}
+{"drug_name": "Imipramine", "disease_name": "endogenous depression", "answer": "B.symptomatic\nExplanation: Imipram"}
+{"drug_name": "Nefazodone", "disease_name": "endogenous depression", "answer": "B.symptomatic\nExplanation: Nefaz"}
+{"drug_name": "Nortriptyline", "disease_name": "endogenous depression", "answer": "B.symptomatic\nExplanation: Nortri"}
+{"drug_name": "Paroxetine", "disease_name": "endogenous depression", "answer": "B.symptomatic\nExplanation: Paroxetine is"}
+{"drug_name": "Selegiline", "disease_name": "endogenous depression", "answer": "B.symptomatic\nExplanation: Selegiline"}
+{"drug_name": "Sertraline", "disease_name": "endogenous depression", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Trazodone", "disease_name": "endogenous depression", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Valproic Acid", "disease_name": "endogenous depression", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Vilazodone", "disease_name": "endogenous depression", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Acetazolamide", "disease_name": "epilepsy syndrome", "answer": "B.symptomatic\nExplanation: Acetaz"}
+{"drug_name": "Amobarbital", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: Amobarbital is a"}
+{"drug_name": "Carbamazepine", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: The relationship between epilepsy syndrome and"}
+{"drug_name": "Clobazam", "disease_name": "epilepsy syndrome", "answer": "B.symptomatic\nExplanation: Clobaz"}
+{"drug_name": "Clonazepam", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: Clonazepam is a"}
+{"drug_name": "Diazepam", "disease_name": "epilepsy syndrome", "answer": "B.symptomatic\nExplanation: Diazepam is"}
+{"drug_name": "Felbamate", "disease_name": "epilepsy syndrome", "answer": "B\nStep 1:  To answer this"}
+{"drug_name": "Fosphenytoin", "disease_name": "epilepsy syndrome", "answer": "B.symptomatic\nExplanation: Fosphen"}
+{"drug_name": "Gabapentin", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: B - symptomatic \n-"}
+{"drug_name": "Lacosamide", "disease_name": "epilepsy syndrome", "answer": "B.symptomatic\nExplanation: Lacosamide"}
+{"drug_name": "Lamotrigine", "disease_name": "epilepsy syndrome", "answer": "A. disease modifying \nExplanation: Lamotrig"}
+{"drug_name": "Levetiracetam", "disease_name": "epilepsy syndrome", "answer": "B\nStep 1:  To determine the"}
+{"drug_name": "Midazolam", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: Midazolam is used"}
+{"drug_name": "Oxcarbazepine", "disease_name": "epilepsy syndrome", "answer": "B\nStep 1:  To determine the"}
+{"drug_name": "Phenobarbital", "disease_name": "epilepsy syndrome", "answer": "B\nStep 1:  To answer this"}
+{"drug_name": "Phenytoin", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: Phenytoin is used"}
+{"drug_name": "Pregabalin", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: Pregabalin is used"}
+{"drug_name": "Primidone", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: B - symptomatic \nPrim"}
+{"drug_name": "Propofol", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: B - symptomatic \nProp"}
+{"drug_name": "Rufinamide", "disease_name": "epilepsy syndrome", "answer": "B\nStep 1:  To answer this"}
+{"drug_name": "Topiramate", "disease_name": "epilepsy syndrome", "answer": "B\nStep 1:  To answer this"}
+{"drug_name": "Trimethadione", "disease_name": "epilepsy syndrome", "answer": "B.symptomatic\nExplanation: Trimethad"}
+{"drug_name": "Valproic Acid", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: Valproic acid is used"}
+{"drug_name": "Vigabatrin", "disease_name": "epilepsy syndrome", "answer": "B\nStep 1:  To answer this"}
+{"drug_name": "Zonisamide", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: Zonisamide is used in"}
+{"drug_name": "Buspirone", "disease_name": "epilepsy syndrome", "answer": "B.symptomatic\nExplanation: Buspirone"}
+{"drug_name": "Etomidate", "disease_name": "epilepsy syndrome", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Finasteride", "disease_name": "epilepsy syndrome", "answer": "B.symptomatic\nExplanation: Finasteride"}
+{"drug_name": "Folic Acid", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: Folic acid is not a"}
+{"drug_name": "Minoxidil", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: Minoxidil is a"}
+{"drug_name": "Quinidine barbiturate", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: The correct answer is B."}
+{"drug_name": "Spironolactone", "disease_name": "epilepsy syndrome", "answer": "B.symptomatic\nExplanation: Spironol"}
+{"drug_name": "Sulfasalazine", "disease_name": "epilepsy syndrome", "answer": "B.symptomatic\nExplanation: Sulfasal"}
+{"drug_name": "Tiagabine", "disease_name": "epilepsy syndrome", "answer": "B\nExplanation: Tiagabine is used"}
+{"drug_name": "Triamcinolone", "disease_name": "epilepsy syndrome", "answer": "B.symptomatic\nExplanation: Triamcin"}
+{"drug_name": "Capecitabine", "disease_name": "esophageal cancer", "answer": "A.disease modifying\nStep 1:"}
+{"drug_name": "Carboplatin", "disease_name": "esophageal cancer", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Cisplatin", "disease_name": "esophageal cancer", "answer": "A.disease modifying \nExplanation: Cispl"}
+{"drug_name": "Methotrexate", "disease_name": "esophageal cancer", "answer": "A. disease modifying\nExplanation: Methotrex"}
+{"drug_name": "Esomeprazole", "disease_name": "esophageal cancer", "answer": "B.symptomatic\nExplanation: Esomepr"}
+{"drug_name": "Omeprazole", "disease_name": "esophageal cancer", "answer": "B.symptomatic\nExplanation: Omepr"}
+{"drug_name": "Porfimer", "disease_name": "esophageal cancer", "answer": "A\nExplanation: Porfimer is a drug"}
+{"drug_name": "Cyclosporine", "disease_name": "focal segmental glomerulosclerosis", "answer": "A.disease modifying \nExplanation: Cyclospor"}
+{"drug_name": "Bleomycin", "disease_name": "germ cell cancer", "answer": "A.disease modifying \nExplanation: Bleomycin"}
+{"drug_name": "Cisplatin", "disease_name": "germ cell cancer", "answer": "A.disease modifying \nExplanation: Cispl"}
+{"drug_name": "Dactinomycin", "disease_name": "germ cell cancer", "answer": "A\nExplanation: Dactinomycin is"}
+{"drug_name": "Etoposide", "disease_name": "germ cell cancer", "answer": "A.disease modifying \nExplanation: Etopos"}
+{"drug_name": "Ifosfamide", "disease_name": "germ cell cancer", "answer": "A. disease modifying \nExplanation: Ifosf"}
+{"drug_name": "Methotrexate", "disease_name": "germ cell cancer", "answer": "A. disease modifying\nStep 1:"}
+{"drug_name": "Vinblastine", "disease_name": "germ cell cancer", "answer": "A. disease modifying \nExplanation: Vinblastine"}
+{"drug_name": "Dinoprostone", "disease_name": "germ cell cancer", "answer": "B.symptomatic\nExplanation: Dinoprostone"}
+{"drug_name": "Glyburide", "disease_name": "gestational diabetes", "answer": "C.non-indication\nExplanation: The correct answer"}
+{"drug_name": "Acetazolamide", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Acetaz"}
+{"drug_name": "Apraclonidine", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Apraclon"}
+{"drug_name": "Betaxolol", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Betaxol"}
+{"drug_name": "Bimatoprost", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Bimatop"}
+{"drug_name": "Brimonidine", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Brimonidine"}
+{"drug_name": "Brinzolamide", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Brinzol"}
+{"drug_name": "Carbachol", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Carbachol"}
+{"drug_name": "Carteolol", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Carteol"}
+{"drug_name": "Clonidine", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Clonidine"}
+{"drug_name": "Diclofenamide", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Diclo"}
+{"drug_name": "Dipivefrin", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Dipivefr"}
+{"drug_name": "Dorzolamide", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Glaucoma"}
+{"drug_name": "Echothiophate", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Echothi"}
+{"drug_name": "Latanoprost", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Latanop"}
+{"drug_name": "Levobunolol", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Levobun"}
+{"drug_name": "Methazolamide", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Methazol"}
+{"drug_name": "Metipranolol", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Metipran"}
+{"drug_name": "Physostigmine", "disease_name": "glaucoma", "answer": "B.symptomatic\nStep 1: Phys"}
+{"drug_name": "Pilocarpine", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Pilocarp"}
+{"drug_name": "Timolol", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Timolol"}
+{"drug_name": "Travoprost", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Travoprost"}
+{"drug_name": "Epinephrine", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Glaucoma"}
+{"drug_name": "Mannitol", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Mannitol is"}
+{"drug_name": "Mitomycin", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Glaucoma"}
+{"drug_name": "Phenylephrine", "disease_name": "glaucoma", "answer": "B.symptomatic\nExplanation: Phenyleph"}
+{"drug_name": "Allopurinol", "disease_name": "gout", "answer": "A. disease modifying\nExplanation: Allopur"}
+{"drug_name": "Colchicine", "disease_name": "gout", "answer": "B.symptomatic\nExplanation: Colchicine"}
+{"drug_name": "Hydrocortisone", "disease_name": "gout", "answer": "B.symptomatic\nExplanation: Hydrocort"}
+{"drug_name": "Indomethacin", "disease_name": "gout", "answer": "B.symptomatic\nExplanation: Indometh"}
+{"drug_name": "Methylprednisolone", "disease_name": "gout", "answer": "B.symptomatic\nExplanation: Methylpred"}
+{"drug_name": "Naproxen", "disease_name": "gout", "answer": "B.symptomatic\nExplanation: Naproxen"}
+{"drug_name": "Prednisolone", "disease_name": "gout", "answer": "B.symptomatic\nExplanation: Gout is"}
+{"drug_name": "Prednisone", "disease_name": "gout", "answer": "B.symptomatic\nExplanation: Gout is"}
+{"drug_name": "Probenecid", "disease_name": "gout", "answer": "B\nStep 1: Gout is a"}
+{"drug_name": "Acetylsalicylic acid", "disease_name": "gout", "answer": "B.symptomatic\nExplanation: Aspirin"}
+{"drug_name": "Docetaxel", "disease_name": "head and neck cancer", "answer": "A\nExplanation: Docetaxel is a"}
+{"drug_name": "Fluorouracil", "disease_name": "head and neck cancer", "answer": "A.disease modifying \nExplanation: Fluorour"}
+{"drug_name": "Hydroxyurea", "disease_name": "head and neck cancer", "answer": "A.disease modifying \nExplanation: Hydroxyure"}
+{"drug_name": "Vinblastine", "disease_name": "head and neck cancer", "answer": "B\nStep 1:  Vinblastine"}
+{"drug_name": "Pilocarpine", "disease_name": "head and neck cancer", "answer": "B.symptomatic\nExplanation: Pilocarp"}
+{"drug_name": "Alitretinoin", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Alitret"}
+{"drug_name": "Anagrelide", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Anagrel"}
+{"drug_name": "Betamethasone", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Betameth"}
+{"drug_name": "Bexarotene", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Bexar"}
+{"drug_name": "Bleomycin", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Bleomycin"}
+{"drug_name": "Bortezomib", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Bortez"}
+{"drug_name": "Busulfan", "disease_name": "hematologic cancer", "answer": "A.disease modifying\nExplanation: Busulfan"}
+{"drug_name": "Carmustine", "disease_name": "hematologic cancer", "answer": "A.disease modifying\nExplanation: Carmustine"}
+{"drug_name": "Chlorambucil", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Chlorambuc"}
+{"drug_name": "Cisplatin", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Cispl"}
+{"drug_name": "Cladribine", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Cladrib"}
+{"drug_name": "Clofarabine", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Clofarab"}
+{"drug_name": "Cytarabine", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Cytar"}
+{"drug_name": "Dacarbazine", "disease_name": "hematologic cancer", "answer": "A. disease modifying \nExplanation: Dacarb"}
+{"drug_name": "Dasatinib", "disease_name": "hematologic cancer", "answer": "A\nExplanation: Dasatinib is a drug"}
+{"drug_name": "Daunorubicin", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Daunor"}
+{"drug_name": "Dexamethasone", "disease_name": "hematologic cancer", "answer": "B\nStep 1:  Dexameth"}
+{"drug_name": "Doxorubicin", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Doxorubic"}
+{"drug_name": "Epirubicin", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Epirubic"}
+{"drug_name": "Etoposide", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Etopos"}
+{"drug_name": "Fludarabine", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Fludar"}
+{"drug_name": "Gemcitabine", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Gemcitab"}
+{"drug_name": "Hydroxyurea", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Hydroxyure"}
+{"drug_name": "Idarubicin", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Idarubic"}
+{"drug_name": "Ifosfamide", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Ifosf"}
+{"drug_name": "Imatinib", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Imatinib"}
+{"drug_name": "Irinotecan", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Irinotec"}
+{"drug_name": "Lenalidomide", "disease_name": "hematologic cancer", "answer": "A.disease modifying\nExplanation: Lenalid"}
+{"drug_name": "Lomustine", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Lomust"}
+{"drug_name": "Mechlorethamine", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Mechloreth"}
+{"drug_name": "Melphalan", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Melphalan"}
+{"drug_name": "Mercaptopurine", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Mercaptopur"}
+{"drug_name": "Methotrexate", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Methotrex"}
+{"drug_name": "Methoxsalen", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Methoxsal"}
+{"drug_name": "Mitoxantrone", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Mitoxan"}
+{"drug_name": "Nelarabine", "disease_name": "hematologic cancer", "answer": "A.disease modifying\nStep 1:"}
+{"drug_name": "Nilotinib", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Nilotin"}
+{"drug_name": "Pentostatin", "disease_name": "hematologic cancer", "answer": "A.disease modifying\nExplanation: Pentostatin"}
+{"drug_name": "Prednisolone", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Prednisol"}
+{"drug_name": "Prednisone", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Prednisone"}
+{"drug_name": "Procarbazine", "disease_name": "hematologic cancer", "answer": "A.disease modifying\nStep 1:"}
+{"drug_name": "Ruxolitinib", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Ruxol"}
+{"drug_name": "Teniposide", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Tenipos"}
+{"drug_name": "Thalidomide", "disease_name": "hematologic cancer", "answer": "A.disease modifying\nExplanation: Thalid"}
+{"drug_name": "Thiotepa", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Thiotep"}
+{"drug_name": "Tioguanine", "disease_name": "hematologic cancer", "answer": "A.disease modifying\nExplanation: Tioguan"}
+{"drug_name": "Triamcinolone", "disease_name": "hematologic cancer", "answer": "B.symptomatic\nExplanation: Triamcin"}
+{"drug_name": "Vinblastine", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Vinblastine"}
+{"drug_name": "Vincristine", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Vincrist"}
+{"drug_name": "Vinorelbine", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Vinorelb"}
+{"drug_name": "Vorinostat", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Vorinostat"}
+{"drug_name": "Celecoxib", "disease_name": "hematologic cancer", "answer": "B\nExplanation: The relationship between hematologic cancer"}
+{"drug_name": "Methylprednisolone", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Methylpred"}
+{"drug_name": "Allopurinol", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Allopur"}
+{"drug_name": "Isotretinoin", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Isotret"}
+{"drug_name": "Pamidronate", "disease_name": "hematologic cancer", "answer": "B.symptomatic\nExplanation: Pamidron"}
+{"drug_name": "Plerixafor", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Plerixa"}
+{"drug_name": "Streptozocin", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Streptoz"}
+{"drug_name": "Tretinoin", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Tretin"}
+{"drug_name": "Zoledronate", "disease_name": "hematologic cancer", "answer": "A.disease modifying \nExplanation: Zoledron"}
+{"drug_name": "Adefovir Dipivoxil", "disease_name": "hepatitis B", "answer": "A\nExplanation: Adefovir Dipiv"}
+{"drug_name": "Entecavir", "disease_name": "hepatitis B", "answer": "A.disease modifying\nExplanation: Entecavir"}
+{"drug_name": "Lamivudine", "disease_name": "hepatitis B", "answer": "A.disease modifying \nExplanation: Lamivud"}
+{"drug_name": "Telbivudine", "disease_name": "hepatitis B", "answer": "A.disease modifying \nExplanation: Telbiv"}
+{"drug_name": "Acebutolol", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: The correct answer"}
+{"drug_name": "Amiloride", "disease_name": "hypertension", "answer": "A. disease modifying\nStep 1: Am"}
+{"drug_name": "Amlodipine", "disease_name": "hypertension", "answer": "A. disease modifying \nExplanation: Amlod"}
+{"drug_name": "Atorvastatin", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Atorv"}
+{"drug_name": "Benazepril", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Benazepr"}
+{"drug_name": "Bendroflumethiazide", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: The correct answer"}
+{"drug_name": "Bepridil", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Beprid"}
+{"drug_name": "Betaxolol", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Betaxol"}
+{"drug_name": "Bumetanide", "disease_name": "hypertension", "answer": "B.symptomatic\nStep 1: B"}
+{"drug_name": "Candesartan", "disease_name": "hypertension", "answer": "A.disease modifying\nExplanation: Candesart"}
+{"drug_name": "Captopril", "disease_name": "hypertension", "answer": "A.disease modifying\nExplanation: Captopril"}
+{"drug_name": "Carvedilol", "disease_name": "hypertension", "answer": "A.disease modifying\nExplanation: Carvedil"}
+{"drug_name": "Chlorothiazide", "disease_name": "hypertension", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Chlorthalidone", "disease_name": "hypertension", "answer": "A. disease modifying\nStep 1: Ch"}
+{"drug_name": "Clonidine", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Clonidine"}
+{"drug_name": "Diltiazem", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Diltiaz"}
+{"drug_name": "Doxazosin", "disease_name": "hypertension", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Enalapril", "disease_name": "hypertension", "answer": "A. disease modifying\nStep 1: En"}
+{"drug_name": "Eplerenone", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Epleren"}
+{"drug_name": "Eprosartan", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Epros"}
+{"drug_name": "Esmolol", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Esmol"}
+{"drug_name": "Ethacrynic acid", "disease_name": "hypertension", "answer": "A. disease modifying\nStep 1: Eth"}
+{"drug_name": "Felodipine", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Felodip"}
+{"drug_name": "Fenoldopam", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Fenoldop"}
+{"drug_name": "Fosinopril", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Fosin"}
+{"drug_name": "Furosemide", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Furosem"}
+{"drug_name": "Guanabenz", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Guanab"}
+{"drug_name": "Guanadrel", "disease_name": "hypertension", "answer": "B.symptomatic\nStep 1: Gu"}
+{"drug_name": "Guanethidine", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Guaneth"}
+{"drug_name": "Guanfacine", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Guanfac"}
+{"drug_name": "Hydralazine", "disease_name": "hypertension", "answer": "A. disease modifying \nExplanation: Hydral"}
+{"drug_name": "Hydrochlorothiazide", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Hydrochloroth"}
+{"drug_name": "Hydroflumethiazide", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Hydroflum"}
+{"drug_name": "Indapamide", "disease_name": "hypertension", "answer": "A. disease modifying \nExplanation: Indapamide"}
+{"drug_name": "Irbesartan", "disease_name": "hypertension", "answer": "A.disease modifying\nStep 1: Identify"}
+{"drug_name": "Isradipine", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Isradip"}
+{"drug_name": "Labetalol", "disease_name": "hypertension", "answer": "B.symptomatic\nStep 1: L"}
+{"drug_name": "Lisinopril", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Lisinop"}
+{"drug_name": "Losartan", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Losartan"}
+{"drug_name": "Mecamylamine", "disease_name": "hypertension", "answer": "B.symptomatic\nStep 1: Mec"}
+{"drug_name": "Methyldopa", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Methyld"}
+{"drug_name": "Metolazone", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Metolaz"}
+{"drug_name": "Metoprolol", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Metoprol"}
+{"drug_name": "Minoxidil", "disease_name": "hypertension", "answer": "A.disease modifying\nExplanation: Minoxid"}
+{"drug_name": "Moexipril", "disease_name": "hypertension", "answer": "A. disease modifying\nStep 1: Mo"}
+{"drug_name": "Nadolol", "disease_name": "hypertension", "answer": "A. disease modifying\nStep 1:"}
+{"drug_name": "Nebivolol", "disease_name": "hypertension", "answer": "A.disease modifying\nStep 1:"}
+{"drug_name": "Nicardipine", "disease_name": "hypertension", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Nifedipine", "disease_name": "hypertension", "answer": "B\nExplanation: Nifedipine is"}
+{"drug_name": "Nisoldipine", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Nisold"}
+{"drug_name": "Olmesartan", "disease_name": "hypertension", "answer": "A.disease modifying\nStep 1:"}
+{"drug_name": "Penbutolol", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Penbutol"}
+{"drug_name": "Perindopril", "disease_name": "hypertension", "answer": "A.disease modifying\nExplanation: Perindop"}
+{"drug_name": "Pindolol", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Pindol"}
+{"drug_name": "Prazosin", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Prazos"}
+{"drug_name": "Propranolol", "disease_name": "hypertension", "answer": "A. disease modifying\nStep 1:"}
+{"drug_name": "Quinapril", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Quinap"}
+{"drug_name": "Ramipril", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Ramipril"}
+{"drug_name": "Reserpine", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Reserpine"}
+{"drug_name": "Spironolactone", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Spironol"}
+{"drug_name": "Telmisartan", "disease_name": "hypertension", "answer": "A.disease modifying\nExplanation: Telmisart"}
+{"drug_name": "Terazosin", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Terazos"}
+{"drug_name": "Timolol", "disease_name": "hypertension", "answer": "A.disease modifying\nStep 1:"}
+{"drug_name": "Torasemide", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Torasem"}
+{"drug_name": "Trandolapril", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Trandol"}
+{"drug_name": "Triamterene", "disease_name": "hypertension", "answer": "B\nExplanation: Triamterene is a"}
+{"drug_name": "Valsartan", "disease_name": "hypertension", "answer": "A\nExplanation: Valsartan is an"}
+{"drug_name": "Verapamil", "disease_name": "hypertension", "answer": "B\nExplanation: Verapamil is used in"}
+{"drug_name": "Diazoxide", "disease_name": "hypertension", "answer": "A. disease modifying \nExplanation: Diazoxide is"}
+{"drug_name": "Phentolamine", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Phentol"}
+{"drug_name": "Acetylsalicylic acid", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Aspirin"}
+{"drug_name": "Alprostadil", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Alprostad"}
+{"drug_name": "Amiodarone", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Amiodar"}
+{"drug_name": "Betamethasone", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Betameth"}
+{"drug_name": "Bimatoprost", "disease_name": "hypertension", "answer": "B\nExplanation: Bimatoprost is a"}
+{"drug_name": "Bosentan", "disease_name": "hypertension", "answer": "A.disease modifying\nExplanation: Bosentan"}
+{"drug_name": "Brimonidine", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Brimonidine"}
+{"drug_name": "Brinzolamide", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Brinzol"}
+{"drug_name": "Carteolol", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Carteol"}
+{"drug_name": "Clopidogrel", "disease_name": "hypertension", "answer": "A. disease modifying\nStep 1:"}
+{"drug_name": "Desflurane", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Desflur"}
+{"drug_name": "Dexamethasone", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Dexameth"}
+{"drug_name": "Dipivefrin", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Dipivefr"}
+{"drug_name": "Dopamine", "disease_name": "hypertension", "answer": "B\nStep 1:  To understand the"}
+{"drug_name": "Dorzolamide", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Dorzol"}
+{"drug_name": "Epoprostenol", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Epopro"}
+{"drug_name": "Iloprost", "disease_name": "hypertension", "answer": "B\nExplanation: Iloprost is a"}
+{"drug_name": "Isosorbide Dinitrate", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Isosorb"}
+{"drug_name": "Latanoprost", "disease_name": "hypertension", "answer": "B.symptomatic\nStep 1: Lat"}
+{"drug_name": "Levobunolol", "disease_name": "hypertension", "answer": "B.symptomatic\nStep 1: Lev"}
+{"drug_name": "Lovastatin", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Lovastatin"}
+{"drug_name": "Magnesium Sulfate", "disease_name": "hypertension", "answer": "A. disease modifying \nReasoning skill: Ident"}
+{"drug_name": "Metyrosine", "disease_name": "hypertension", "answer": "B.symptomatic\nStep 1: M"}
+{"drug_name": "Moxifloxacin", "disease_name": "hypertension", "answer": "C.non-indication  \nExplanation: Moxif"}
+{"drug_name": "Nitric Oxide", "disease_name": "hypertension", "answer": "A\nStep 1:  First, let"}
+{"drug_name": "Nitroglycerin", "disease_name": "hypertension", "answer": "B\nExplanation: Nitroglycerin is a"}
+{"drug_name": "Nitroprusside", "disease_name": "hypertension", "answer": "A. disease modifying \nExplanation: Nitropr"}
+{"drug_name": "Orlistat", "disease_name": "hypertension", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Phenobarbital", "disease_name": "hypertension", "answer": "C.non-indication\nExplanation: Phenobarb"}
+{"drug_name": "Pilocarpine", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Pilocarp"}
+{"drug_name": "Potassium Chloride", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Potassium chloride"}
+{"drug_name": "Quinidine barbiturate", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Quinidine"}
+{"drug_name": "Salbutamol", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Salbutam"}
+{"drug_name": "Sildenafil", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Sildenafil is"}
+{"drug_name": "Simvastatin", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: Simvast"}
+{"drug_name": "Sucralfate", "disease_name": "hypertension", "answer": "C.non-indication\nExplanation: Sucralf"}
+{"drug_name": "Tadalafil", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Tadalafil is"}
+{"drug_name": "Tolazoline", "disease_name": "hypertension", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Travoprost", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Travoprost"}
+{"drug_name": "Treprostinil", "disease_name": "hypertension", "answer": "B.symptomatic\nExplanation: Treprostin"}
+{"drug_name": "WF10", "disease_name": "hypertension", "answer": "A.disease modifying \nExplanation: WF10 is"}
+{"drug_name": "Dextrothyroxine", "disease_name": "hypothyroidism", "answer": "C\nExplanation: Dextrothyroxine"}
+{"drug_name": "Levothyroxine", "disease_name": "hypothyroidism", "answer": "A.disease modifying \nExplanation: Levothy"}
+{"drug_name": "Liothyronine", "disease_name": "hypothyroidism", "answer": "B.symptomatic\nExplanation: Liothy"}
+{"drug_name": "Liotrix", "disease_name": "hypothyroidism", "answer": "B.symptomatic\nExplanation: Liotrix"}
+{"drug_name": "Prednisolone", "disease_name": "idiopathic pulmonary fibrosis", "answer": "A.disease modifying \nExplanation: Idiopathic"}
+{"drug_name": "Capecitabine", "disease_name": "kidney cancer", "answer": "C.non-indication \nExplanation: Capecit"}
+{"drug_name": "Dactinomycin", "disease_name": "kidney cancer", "answer": "A\nExplanation: Dactinomycin is"}
+{"drug_name": "Doxorubicin", "disease_name": "kidney cancer", "answer": "B\nStep 1: Identify the relationship between"}
+{"drug_name": "Erlotinib", "disease_name": "kidney cancer", "answer": "A\nExplanation: Erlotinib is a"}
+{"drug_name": "Everolimus", "disease_name": "kidney cancer", "answer": "A\nExplanation: Everolimus is a drug"}
+{"drug_name": "Gemcitabine", "disease_name": "kidney cancer", "answer": "C\nExplanation: Gemcitabine is a"}
+{"drug_name": "Paclitaxel", "disease_name": "kidney cancer", "answer": "A\nExplanation: Paclitaxel is"}
+{"drug_name": "Pazopanib", "disease_name": "kidney cancer", "answer": "A.disease modifying \nExplanation: Pazopan"}
+{"drug_name": "Sorafenib", "disease_name": "kidney cancer", "answer": "A.disease modifying \nExplanation: Sorafenib"}
+{"drug_name": "Sunitinib", "disease_name": "kidney cancer", "answer": "A.disease modifying \nExplanation: Sunitin"}
+{"drug_name": "Temsirolimus", "disease_name": "kidney cancer", "answer": "A.disease modifying\nExplanation: Temsirol"}
+{"drug_name": "Vinblastine", "disease_name": "kidney cancer", "answer": "A\nExplanation: Vinblastine is a chem"}
+{"drug_name": "Vincristine", "disease_name": "kidney cancer", "answer": "A. disease modifying \nExplanation: Vincrist"}
+{"drug_name": "Betamethasone", "disease_name": "kidney cancer", "answer": "B\nExplanation: Betamethasone is"}
+{"drug_name": "Celecoxib", "disease_name": "kidney cancer", "answer": "A.disease modifying \nExplanation: Celecoxib"}
+{"drug_name": "Dexamethasone", "disease_name": "kidney cancer", "answer": "B\nExplanation: Dexamethasone is"}
+{"drug_name": "Esomeprazole", "disease_name": "kidney cancer", "answer": "B.symptomatic\nExplanation: Esomepr"}
+{"drug_name": "Hydrocortisone", "disease_name": "kidney cancer", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Omeprazole", "disease_name": "kidney cancer", "answer": "B.symptomatic\nExplanation: Omepr"}
+{"drug_name": "Clopidogrel", "disease_name": "kidney cancer", "answer": "C.non-indication\nExplanation: Clopidog"}
+{"drug_name": "Gabapentin", "disease_name": "kidney cancer", "answer": "B.symptomatic\nExplanation: Gabapentin"}
+{"drug_name": "Hydroxyurea", "disease_name": "kidney cancer", "answer": "A.disease modifying \nExplanation: Hydroxyure"}
+{"drug_name": "Lisinopril", "disease_name": "kidney cancer", "answer": "C.non-indication  \nExplanation: Lisinop"}
+{"drug_name": "Lomustine", "disease_name": "kidney cancer", "answer": "A. disease modifying \nExplanation: Lomust"}
+{"drug_name": "Medroxyprogesterone Acetate", "disease_name": "kidney cancer", "answer": "A. disease modifying \nExplanation: Medroxy"}
+{"drug_name": "Melatonin", "disease_name": "kidney cancer", "answer": "A.disease modifying \nExplanation: Melatonin is"}
+{"drug_name": "Metformin", "disease_name": "kidney cancer", "answer": "A.disease modifying \nExplanation: Metformin"}
+{"drug_name": "Zoledronate", "disease_name": "kidney cancer", "answer": "A.disease modifying \nExplanation: Zoledron"}
+{"drug_name": "Dapsone", "disease_name": "leprosy", "answer": "A.disease modifying \nExplanation: Dapsone"}
+{"drug_name": "Rifampicin", "disease_name": "leprosy", "answer": "A.disease modifying\nExplanation: Leprosy"}
+{"drug_name": "Thalidomide", "disease_name": "leprosy", "answer": "A.disease modifying\nExplanation: Thalid"}
+{"drug_name": "Doxorubicin", "disease_name": "liver cancer", "answer": "A.disease modifying\nExplanation: Doxorubic"}
+{"drug_name": "Epirubicin", "disease_name": "liver cancer", "answer": "A.disease modifying \nExplanation: Epirubic"}
+{"drug_name": "Sorafenib", "disease_name": "liver cancer", "answer": "A.disease modifying \nExplanation: Sorafenib"}
+{"drug_name": "Metformin", "disease_name": "liver cancer", "answer": "A.disease modifying \nExplanation: Metformin"}
+{"drug_name": "Cisplatin", "disease_name": "lung cancer", "answer": "A.disease modifying \nExplanation: Cispl"}
+{"drug_name": "Crizotinib", "disease_name": "lung cancer", "answer": "A.disease modifying \nExplanation: Crizot"}
+{"drug_name": "Docetaxel", "disease_name": "lung cancer", "answer": "A.disease modifying \nExplanation: Docetax"}
+{"drug_name": "Doxorubicin", "disease_name": "lung cancer", "answer": "A. disease modifying \nExplanation: Doxorubic"}
+{"drug_name": "Erlotinib", "disease_name": "lung cancer", "answer": "A.disease modifying \nExplanation: Erlotin"}
+{"drug_name": "Etoposide", "disease_name": "lung cancer", "answer": "A.disease modifying \nExplanation: Etopos"}
+{"drug_name": "Gefitinib", "disease_name": "lung cancer", "answer": "A.disease modifying \nExplanation: Gefitinib"}
+{"drug_name": "Gemcitabine", "disease_name": "lung cancer", "answer": "A.disease modifying \nExplanation: The correct answer"}
+{"drug_name": "Irinotecan", "disease_name": "lung cancer", "answer": "A.disease modifying \nExplanation: Irinotec"}
+{"drug_name": "Methotrexate", "disease_name": "lung cancer", "answer": "B\nStep 1: Methotrexate"}
+{"drug_name": "Paclitaxel", "disease_name": "lung cancer", "answer": "A. disease modifying \nExplanation: Paclit"}
+{"drug_name": "Pemetrexed", "disease_name": "lung cancer", "answer": "A.disease modifying\nStep 1: P"}
+{"drug_name": "Teniposide", "disease_name": "lung cancer", "answer": "A.disease modifying \nExplanation: Tenipos"}
+{"drug_name": "Topotecan", "disease_name": "lung cancer", "answer": "A.disease modifying \nExplanation: Topotecan"}
+{"drug_name": "Vinblastine", "disease_name": "lung cancer", "answer": "A.disease modifying \nExplanation: Vinblastine"}
+{"drug_name": "Vinorelbine", "disease_name": "lung cancer", "answer": "B\nStep 1: Vinorelbine"}
+{"drug_name": "Fentanyl", "disease_name": "lung cancer", "answer": "B.symptomatic\nExplanation: Fentanyl is"}
+{"drug_name": "Folic Acid", "disease_name": "lung cancer", "answer": "A.disease modifying \nExplanation: Folic acid"}
+{"drug_name": "Hydroxyurea", "disease_name": "lung cancer", "answer": "A.disease modifying\nExplanation: Hydroxyure"}
+{"drug_name": "Procarbazine", "disease_name": "lung cancer", "answer": "A. disease modifying \nExplanation: Procarb"}
+{"drug_name": "Bleomycin", "disease_name": "lymphatic system cancer", "answer": "A.disease modifying \nExplanation: Bleomycin"}
+{"drug_name": "Carmustine", "disease_name": "lymphatic system cancer", "answer": "A.disease modifying \nExplanation: Carmustine"}
+{"drug_name": "Cytarabine", "disease_name": "lymphatic system cancer", "answer": "A.disease modifying \nExplanation: Cytar"}
+{"drug_name": "Fludarabine", "disease_name": "lymphatic system cancer", "answer": "A.disease modifying \nExplanation: Fludar"}
+{"drug_name": "Mechlorethamine", "disease_name": "lymphatic system cancer", "answer": "A.disease modifying\nStep 1: Mech"}
+{"drug_name": "Methotrexate", "disease_name": "lymphatic system cancer", "answer": "A.disease modifying\nExplanation: Methotrex"}
+{"drug_name": "Mitoxantrone", "disease_name": "lymphatic system cancer", "answer": "A.disease modifying \nExplanation: Mitoxan"}
+{"drug_name": "Teniposide", "disease_name": "lymphatic system cancer", "answer": "A.disease modifying \nExplanation: Tenipos"}
+{"drug_name": "Vincristine", "disease_name": "lymphatic system cancer", "answer": "A\nExplanation: Vincristine is a"}
+{"drug_name": "Artemether", "disease_name": "malaria", "answer": "A.disease modifying \nExplanation: Artemether is"}
+{"drug_name": "Clindamycin", "disease_name": "malaria", "answer": "A. disease modifying \nExplanation: Clindam"}
+{"drug_name": "Dapsone", "disease_name": "malaria", "answer": "A.disease modifying \nExplanation: Dapsone"}
+{"drug_name": "Doxycycline", "disease_name": "malaria", "answer": "A. disease modifying\nStep 1: M"}
+{"drug_name": "Pentoxifylline", "disease_name": "malaria", "answer": "B.symptomatic\nExplanation: Pentoxify"}
+{"drug_name": "Proguanil", "disease_name": "malaria", "answer": "A. disease modifying\nStep 1: M"}
+{"drug_name": "Pyrimethamine", "disease_name": "malaria", "answer": "A.disease modifying \nExplanation: Pyrimeth"}
+{"drug_name": "Quinidine", "disease_name": "malaria", "answer": "B.symptomatic\nExplanation: Quinidine"}
+{"drug_name": "Quinidine barbiturate", "disease_name": "malaria", "answer": "B.symptomatic\nExplanation: The correct answer"}
+{"drug_name": "Quinine", "disease_name": "malaria", "answer": "B\nStep 1: Malaria is a"}
+{"drug_name": "Sulfadiazine", "disease_name": "malaria", "answer": "C.non-indication\nExplanation: Sulfad"}
+{"drug_name": "Carmustine", "disease_name": "malignant glioma", "answer": "A.disease modifying \nExplanation: Carmustine"}
+{"drug_name": "Temozolomide", "disease_name": "malignant glioma", "answer": "A.disease modifying \nExplanation: Temoz"}
+{"drug_name": "Bleomycin", "disease_name": "melanoma", "answer": "A.disease modifying \nExplanation: Bleomycin"}
+{"drug_name": "Carmustine", "disease_name": "melanoma", "answer": "A.disease modifying \nExplanation: Melanoma"}
+{"drug_name": "Dacarbazine", "disease_name": "melanoma", "answer": "A. disease modifying\nExplanation: Dacarb"}
+{"drug_name": "Dactinomycin", "disease_name": "melanoma", "answer": "A\nExplanation: Dactinomycin is"}
+{"drug_name": "Docetaxel", "disease_name": "melanoma", "answer": "A\nExplanation: Docetaxel is a"}
+{"drug_name": "Temozolomide", "disease_name": "melanoma", "answer": "A.disease modifying\nStep 1:"}
+{"drug_name": "Vemurafenib", "disease_name": "melanoma", "answer": "A\nExplanation: Vemurafenib is"}
+{"drug_name": "Hydroxyurea", "disease_name": "melanoma", "answer": "A.disease modifying \nExplanation: Hydroxyure"}
+{"drug_name": "Lomustine", "disease_name": "melanoma", "answer": "A\nExplanation: Lomustine is a"}
+{"drug_name": "Melphalan", "disease_name": "melanoma", "answer": "A\nExplanation: Melphalan is a chemotherapy"}
+{"drug_name": "Procarbazine", "disease_name": "melanoma", "answer": "A\nExplanation: Procarbazine is a"}
+{"drug_name": "Cytarabine", "disease_name": "meningioma", "answer": "A.disease modifying \nExplanation: Cytar"}
+{"drug_name": "Mifepristone", "disease_name": "meningioma", "answer": "A.disease modifying\nStep 1: M"}
+{"drug_name": "Metformin", "disease_name": "metabolic syndrome X", "answer": "A\nExplanation: Metabolic syndrome X is a"}
+{"drug_name": "Ergocalciferol", "disease_name": "metabolic syndrome X", "answer": "A\nExplanation: Metabolic syndrome X is a"}
+{"drug_name": "Amitriptyline", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Amitripty"}
+{"drug_name": "Gabapentin", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Gabapentin"}
+{"drug_name": "Propranolol", "disease_name": "migraine", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Timolol", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Timolol"}
+{"drug_name": "Topiramate", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Topiramate"}
+{"drug_name": "Valproic Acid", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Valproic"}
+{"drug_name": "Verapamil", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Verapamil"}
+{"drug_name": "Acetaminophen", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Acetamin"}
+{"drug_name": "Acetylsalicylic acid", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Acetyls"}
+{"drug_name": "Almotriptan", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Almotri"}
+{"drug_name": "Antipyrine", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Antipyr"}
+{"drug_name": "Butalbital", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Butalb"}
+{"drug_name": "Caffeine", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Caffeine"}
+{"drug_name": "Cyclobenzaprine", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Cyclobenz"}
+{"drug_name": "Cyproheptadine", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Cyprohe"}
+{"drug_name": "Diclofenac", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Diclo"}
+{"drug_name": "Dihydroergotamine", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Dihydro"}
+{"drug_name": "Eletriptan", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Eletript"}
+{"drug_name": "Ergotamine", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Ergotamine"}
+{"drug_name": "Frovatriptan", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Frovatri"}
+{"drug_name": "Indomethacin", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Indometh"}
+{"drug_name": "Methylergometrine", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Methyler"}
+{"drug_name": "Metoclopramide", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Metoclo"}
+{"drug_name": "Naproxen", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Naproxen"}
+{"drug_name": "Naratriptan", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Naratript"}
+{"drug_name": "Orphenadrine", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Orphenadr"}
+{"drug_name": "Prednisone", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Migraine"}
+{"drug_name": "Rizatriptan", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Rizatri"}
+{"drug_name": "Sumatriptan", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Sumatript"}
+{"drug_name": "Tizanidine", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Tizan"}
+{"drug_name": "Zolmitriptan", "disease_name": "migraine", "answer": "B.symptomatic\nExplanation: Zolmit"}
+{"drug_name": "Azathioprine", "disease_name": "multiple sclerosis", "answer": "A\nExplanation: Azathioprine is a"}
+{"drug_name": "Betamethasone", "disease_name": "multiple sclerosis", "answer": "A.disease modifying\nExplanation: Betameth"}
+{"drug_name": "Cladribine", "disease_name": "multiple sclerosis", "answer": "A.disease modifying\nExplanation: Cladrib"}
+{"drug_name": "Dexamethasone", "disease_name": "multiple sclerosis", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Fingolimod", "disease_name": "multiple sclerosis", "answer": "A\nExplanation: Fingolimod is"}
+{"drug_name": "Methotrexate", "disease_name": "multiple sclerosis", "answer": "A. disease modifying \nExplanation: Methotrex"}
+{"drug_name": "Methylprednisolone", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Methylprednisolone"}
+{"drug_name": "Mitoxantrone", "disease_name": "multiple sclerosis", "answer": "A.disease modifying \nExplanation: Mitoxan"}
+{"drug_name": "Prednisolone", "disease_name": "multiple sclerosis", "answer": "B.symptomatic\nExplanation: Prednisol"}
+{"drug_name": "Prednisone", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Prednisone is a cort"}
+{"drug_name": "Triamcinolone", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Triamcinolone is"}
+{"drug_name": "Amantadine", "disease_name": "multiple sclerosis", "answer": "B\nStep 1: Amantadine"}
+{"drug_name": "Amitriptyline", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Amitriptyline is a"}
+{"drug_name": "Baclofen", "disease_name": "multiple sclerosis", "answer": "B\nStep 1: Multiple sclerosis (MS"}
+{"drug_name": "Carbamazepine", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: B - symptomatic\nMultiple"}
+{"drug_name": "Clonazepam", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Clonazepam is a"}
+{"drug_name": "Dalfampridine", "disease_name": "multiple sclerosis", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Dantrolene", "disease_name": "multiple sclerosis", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Dextromethorphan", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Dextromethorphan"}
+{"drug_name": "Diazepam", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Diazepam is used to treat"}
+{"drug_name": "Eszopiclone", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Eszopiclone is"}
+{"drug_name": "Gabapentin", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: B - symptomatic\nMultiple"}
+{"drug_name": "Modafinil", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Modafinil is used"}
+{"drug_name": "Nortriptyline", "disease_name": "multiple sclerosis", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Oxcarbazepine", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Oxcarbazepine is"}
+{"drug_name": "Pregabalin", "disease_name": "multiple sclerosis", "answer": "B\nStep 1: Multiple sclerosis (MS"}
+{"drug_name": "Quazepam", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Quazepam is a benz"}
+{"drug_name": "Sildenafil", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Sildenafil is used to treat"}
+{"drug_name": "Solifenacin", "disease_name": "multiple sclerosis", "answer": "B.symptomatic\nExplanation: Solifenacin"}
+{"drug_name": "Tizanidine", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Tizanidine is used"}
+{"drug_name": "Tolterodine", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Tolterodine is used"}
+{"drug_name": "Zolpidem", "disease_name": "multiple sclerosis", "answer": "B.symptomatic\nExplanation: Zolpid"}
+{"drug_name": "Zopiclone", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Zopiclone is a"}
+{"drug_name": "Phenytoin", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Phenytoin is a"}
+{"drug_name": "Rizatriptan", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Rizatriptan is"}
+{"drug_name": "Ropinirole", "disease_name": "multiple sclerosis", "answer": "B\nExplanation: Ropinirole is a"}
+{"drug_name": "Dacarbazine", "disease_name": "muscle cancer", "answer": "A.disease modifying\nExplanation: Dacarb"}
+{"drug_name": "Dactinomycin", "disease_name": "muscle cancer", "answer": "A\nExplanation: Dactinomycin is"}
+{"drug_name": "Doxorubicin", "disease_name": "muscle cancer", "answer": "A\nExplanation: Doxorubicin is a"}
+{"drug_name": "Etoposide", "disease_name": "muscle cancer", "answer": "B\nExplanation: Etoposide is used"}
+{"drug_name": "Methotrexate", "disease_name": "muscle cancer", "answer": "A.disease modifying\nExplanation: Methotrex"}
+{"drug_name": "Vincristine", "disease_name": "muscle cancer", "answer": "A\nExplanation: Vincristine is a"}
+{"drug_name": "Melphalan", "disease_name": "muscle cancer", "answer": "A\nExplanation: Melphalan is a chemotherapy"}
+{"drug_name": "Amphetamine", "disease_name": "narcolepsy", "answer": "B\nStep 1: Narcolepsy is"}
+{"drug_name": "Dextroamphetamine", "disease_name": "narcolepsy", "answer": "B.symptomatic\nExplanation: Narcolepsy"}
+{"drug_name": "Gamma Hydroxybutyric Acid", "disease_name": "narcolepsy", "answer": "B.symptomatic\nExplanation: Narcolepsy"}
+{"drug_name": "Methamphetamine", "disease_name": "narcolepsy", "answer": "B\nStep 1: Narcolepsy is"}
+{"drug_name": "Modafinil", "disease_name": "narcolepsy", "answer": "B.symptomatic\nExplanation: Narcolepsy"}
+{"drug_name": "Hydrochlorothiazide", "disease_name": "nephrolithiasis", "answer": "B.symptomatic\nExplanation: Hydrochloroth"}
+{"drug_name": "Varenicline", "disease_name": "nicotine dependence", "answer": "B.symptomatic\nExplanation: Varenic"}
+{"drug_name": "Nicotine", "disease_name": "nicotine dependence", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Benzphetamine", "disease_name": "obesity", "answer": "B.symptomatic\nExplanation: Benzphetamine is"}
+{"drug_name": "Bupropion", "disease_name": "obesity", "answer": "B.symptomatic\nStep 1: B"}
+{"drug_name": "Cimetidine", "disease_name": "obesity", "answer": "B.symptomatic\nExplanation: Cimetidine"}
+{"drug_name": "Diethylpropion", "disease_name": "obesity", "answer": "B.symptomatic\nExplanation: Diethylprop"}
+{"drug_name": "Methamphetamine", "disease_name": "obesity", "answer": "B.symptomatic\nExplanation: Methamphetamine is"}
+{"drug_name": "Orlistat", "disease_name": "obesity", "answer": "B.symptomatic\nExplanation: Orlistat"}
+{"drug_name": "Phendimetrazine", "disease_name": "obesity", "answer": "B.symptomatic\nExplanation: Phendimet"}
+{"drug_name": "Phentermine", "disease_name": "obesity", "answer": "B.symptomatic\nExplanation: Phentermine"}
+{"drug_name": "Phenylpropanolamine", "disease_name": "obesity", "answer": "B.symptomatic\nExplanation: The relationship between"}
+{"drug_name": "Sibutramine", "disease_name": "obesity", "answer": "B.symptomatic\nExplanation: Sibut"}
+{"drug_name": "Topiramate", "disease_name": "obesity", "answer": "B.symptomatic\nStep 1: Top"}
+{"drug_name": "Carboplatin", "disease_name": "ocular cancer", "answer": "A.disease modifying \nExplanation: The relationship between"}
+{"drug_name": "Dactinomycin", "disease_name": "ocular cancer", "answer": "A.disease modifying \nExplanation: Dactin"}
+{"drug_name": "Acetaminophen", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nExplanation: Acetamin"}
+{"drug_name": "Acetylsalicylic acid", "disease_name": "osteoarthritis", "answer": "B\nExplanation: Acetylsalicylic"}
+{"drug_name": "Celecoxib", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nExplanation: Celecoxib"}
+{"drug_name": "Choline", "disease_name": "osteoarthritis", "answer": "B\nStep 1: Osteoar"}
+{"drug_name": "Codeine", "disease_name": "osteoarthritis", "answer": "B\nExplanation: Osteoarthritis is"}
+{"drug_name": "Cyclobenzaprine", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nExplanation: Cyclobenz"}
+{"drug_name": "Diclofenac", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nStep 1: O"}
+{"drug_name": "Diflunisal", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nExplanation: Diflun"}
+{"drug_name": "Etodolac", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nStep 1: O"}
+{"drug_name": "Fenoprofen", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Flurbiprofen", "disease_name": "osteoarthritis", "answer": "B\nStep 1: Osteoar"}
+{"drug_name": "Glucosamine", "disease_name": "osteoarthritis", "answer": "B\nStep 1:  Osteo"}
+{"drug_name": "Ibuprofen", "disease_name": "osteoarthritis", "answer": "B\nStep 1: Osteoar"}
+{"drug_name": "Indomethacin", "disease_name": "osteoarthritis", "answer": "B\nStep 1: Osteoar"}
+{"drug_name": "Ketoprofen", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nExplanation: Osteo"}
+{"drug_name": "Lidocaine", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nStep 1: O"}
+{"drug_name": "Meloxicam", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nStep 1: O"}
+{"drug_name": "Methylprednisolone", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nStep 1: O"}
+{"drug_name": "Nabumetone", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nExplanation: Nabumet"}
+{"drug_name": "Naproxen", "disease_name": "osteoarthritis", "answer": "B\nExplanation: Naproxen is a non"}
+{"drug_name": "Oxaprozin", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nExplanation: Osteo"}
+{"drug_name": "Piroxicam", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nExplanation: Piroxic"}
+{"drug_name": "Prednisone", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nExplanation: Osteo"}
+{"drug_name": "Sulindac", "disease_name": "osteoarthritis", "answer": "B\nStep 1:  Osteo"}
+{"drug_name": "Tolmetin", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nStep 1: O"}
+{"drug_name": "Caffeine", "disease_name": "osteoarthritis", "answer": "B\nStep 1: Osteoar"}
+{"drug_name": "Clonazepam", "disease_name": "osteoarthritis", "answer": "B.symptomatic\nExplanation: Clonaz"}
+{"drug_name": "Misoprostol", "disease_name": "osteoarthritis", "answer": "B\nStep 1: Osteoar"}
+{"drug_name": "Alendronate", "disease_name": "osteoporosis", "answer": "A. disease modifying\nExplanation: Alendron"}
+{"drug_name": "Calcitriol", "disease_name": "osteoporosis", "answer": "A.disease modifying \nExplanation: Calcitri"}
+{"drug_name": "Calcium Acetate", "disease_name": "osteoporosis", "answer": "B\nExplanation: Calcium Acetate is used"}
+{"drug_name": "Cholecalciferol", "disease_name": "osteoporosis", "answer": "A.disease modifying \nExplanation: Cholecalc"}
+{"drug_name": "Conjugated Estrogens", "disease_name": "osteoporosis", "answer": "A.disease modifying \nExplanation: Conjugated"}
+{"drug_name": "Ergocalciferol", "disease_name": "osteoporosis", "answer": "B\nStep 1:  To answer this"}
+{"drug_name": "Estradiol", "disease_name": "osteoporosis", "answer": "A.disease modifying \nExplanation: Estradiol"}
+{"drug_name": "Estropipate", "disease_name": "osteoporosis", "answer": "B.symptomatic\nExplanation: Estropip"}
+{"drug_name": "Ethinyl Estradiol", "disease_name": "osteoporosis", "answer": "A. disease modifying\nStep 1:"}
+{"drug_name": "Etidronic acid", "disease_name": "osteoporosis", "answer": "B.symptomatic\nExplanation: Etidronic"}
+{"drug_name": "Ibandronate", "disease_name": "osteoporosis", "answer": "B\nStep 1: Osteoporosis"}
+{"drug_name": "Pamidronate", "disease_name": "osteoporosis", "answer": "A.disease modifying \nExplanation: Pamidron"}
+{"drug_name": "Raloxifene", "disease_name": "osteoporosis", "answer": "A.disease modifying \nExplanation: Ralox"}
+{"drug_name": "Risedronate", "disease_name": "osteoporosis", "answer": "A.disease modifying \nExplanation: Risedron"}
+{"drug_name": "Zoledronate", "disease_name": "osteoporosis", "answer": "A.disease modifying\nExplanation: Zoledron"}
+{"drug_name": "Oxandrolone", "disease_name": "osteoporosis", "answer": "B.symptomatic\nExplanation: Oxandrol"}
+{"drug_name": "Hydrochlorothiazide", "disease_name": "osteoporosis", "answer": "B.symptomatic\nStep 1: O"}
+{"drug_name": "Medroxyprogesterone Acetate", "disease_name": "osteoporosis", "answer": "B.symptomatic\nExplanation: Medroxy"}
+{"drug_name": "Methyltestosterone", "disease_name": "osteoporosis", "answer": "B.symptomatic\nExplanation: Methyltest"}
+{"drug_name": "Norethindrone", "disease_name": "osteoporosis", "answer": "B.symptomatic\nExplanation: Noreth"}
+{"drug_name": "Altretamine", "disease_name": "ovarian cancer", "answer": "B.symptomatic\nExplanation: Altretamine"}
+{"drug_name": "Carboplatin", "disease_name": "ovarian cancer", "answer": "A.disease modifying \nExplanation: The correct answer"}
+{"drug_name": "Chlorambucil", "disease_name": "ovarian cancer", "answer": "A.disease modifying \nExplanation: Chlorambuc"}
+{"drug_name": "Docetaxel", "disease_name": "ovarian cancer", "answer": "A. disease modifying \nExplanation: Docetax"}
+{"drug_name": "Doxorubicin", "disease_name": "ovarian cancer", "answer": "A.disease modifying \nExplanation: Doxorubic"}
+{"drug_name": "Epirubicin", "disease_name": "ovarian cancer", "answer": "A.disease modifying \nExplanation: Epirubic"}
+{"drug_name": "Melphalan", "disease_name": "ovarian cancer", "answer": "A.disease modifying \nExplanation: Melphalan"}
+{"drug_name": "Paclitaxel", "disease_name": "ovarian cancer", "answer": "A\nExplanation: Paclitaxel is"}
+{"drug_name": "Topotecan", "disease_name": "ovarian cancer", "answer": "A.disease modifying \nExplanation: Topotecan"}
+{"drug_name": "Vinorelbine", "disease_name": "ovarian cancer", "answer": "A.disease modifying \nExplanation: Vinorelb"}
+{"drug_name": "Hydroxyurea", "disease_name": "ovarian cancer", "answer": "A.disease modifying \nExplanation: Hydroxyure"}
+{"drug_name": "Mestranol", "disease_name": "ovarian cancer", "answer": "B\nExplanation: Mestranol is a"}
+{"drug_name": "Dacarbazine", "disease_name": "pancreatic cancer", "answer": "A\nExplanation: Dacarbazine is a"}
+{"drug_name": "Docetaxel", "disease_name": "pancreatic cancer", "answer": "A. disease modifying \nExplanation: Docetax"}
+{"drug_name": "Doxorubicin", "disease_name": "pancreatic cancer", "answer": "B\nStep 1:  To answer this"}
+{"drug_name": "Epirubicin", "disease_name": "pancreatic cancer", "answer": "B\nExplanation: Epirubicin is a"}
+{"drug_name": "Erlotinib", "disease_name": "pancreatic cancer", "answer": "A.disease modifying\nExplanation: Erlotin"}
+{"drug_name": "Fluorouracil", "disease_name": "pancreatic cancer", "answer": "A\nStep 1:  The question is"}
+{"drug_name": "Gemcitabine", "disease_name": "pancreatic cancer", "answer": "A.disease modifying \nExplanation: Gemcitab"}
+{"drug_name": "Irinotecan", "disease_name": "pancreatic cancer", "answer": "A.disease modifying \nExplanation: Irinotec"}
+{"drug_name": "Sunitinib", "disease_name": "pancreatic cancer", "answer": "B\nStep 1:  Sunitin"}
+{"drug_name": "Tamoxifen", "disease_name": "pancreatic cancer", "answer": "C\nExplanation: Tamoxifen is a selective"}
+{"drug_name": "Octreotide", "disease_name": "pancreatic cancer", "answer": "B.symptomatic\nExplanation: Octreotide"}
+{"drug_name": "Hyoscyamine", "disease_name": "pancreatitis", "answer": "B.symptomatic\nExplanation: Hyoscy"}
+{"drug_name": "Propantheline", "disease_name": "pancreatitis", "answer": "B.symptomatic\nExplanation: Propanth"}
+{"drug_name": "Octreotide", "disease_name": "pancreatitis", "answer": "B.symptomatic\nExplanation: Octreotide"}
+{"drug_name": "Atropine", "disease_name": "pancreatitis", "answer": "B.symptomatic\nExplanation: Atropine"}
+{"drug_name": "Gemfibrozil", "disease_name": "pancreatitis", "answer": "B.symptomatic\nExplanation: Gemfibroz"}
+{"drug_name": "Niacin", "disease_name": "pancreatitis", "answer": "B\nStep 1: Pancreatitis is"}
+{"drug_name": "Alprazolam", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Alpraz"}
+{"drug_name": "Bupropion", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Buprop"}
+{"drug_name": "Buspirone", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Buspirone"}
+{"drug_name": "Citalopram", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Citalop"}
+{"drug_name": "Clomipramine", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Clomip"}
+{"drug_name": "Clonazepam", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Clonaz"}
+{"drug_name": "Diazepam", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Diazepam is"}
+{"drug_name": "Fluoxetine", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: The relationship between"}
+{"drug_name": "Fluvoxamine", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: The correct answer"}
+{"drug_name": "Imipramine", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Imipram"}
+{"drug_name": "Isocarboxazid", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Isocar"}
+{"drug_name": "Lorazepam", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Lorazepam"}
+{"drug_name": "Maprotiline", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Maprotil"}
+{"drug_name": "Nortriptyline", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Nortri"}
+{"drug_name": "Olanzapine", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Olanzap"}
+{"drug_name": "Paroxetine", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Paroxetine is"}
+{"drug_name": "Sertraline", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Sertral"}
+{"drug_name": "Venlafaxine", "disease_name": "panic disorder", "answer": "B.symptomatic\nExplanation: Venlaf"}
+{"drug_name": "Penicillin V", "disease_name": "periodontitis", "answer": "C.non-indication\nExplanation: Penicillin"}
+{"drug_name": "Alitretinoin", "disease_name": "peripheral nervous system neoplasm", "answer": "B.symptomatic\nExplanation: Alitret"}
+{"drug_name": "Cisplatin", "disease_name": "peripheral nervous system neoplasm", "answer": "A.disease modifying \nExplanation: Cispl"}
+{"drug_name": "Dacarbazine", "disease_name": "peripheral nervous system neoplasm", "answer": "A\nExplanation: The peripheral nervous system neopl"}
+{"drug_name": "Dactinomycin", "disease_name": "peripheral nervous system neoplasm", "answer": "B.symptomatic\nExplanation: Dactin"}
+{"drug_name": "Doxorubicin", "disease_name": "peripheral nervous system neoplasm", "answer": "A\nExplanation: Doxorubicin is a"}
+{"drug_name": "Epirubicin", "disease_name": "peripheral nervous system neoplasm", "answer": "B\nExplanation: Epirubicin is a"}
+{"drug_name": "Etoposide", "disease_name": "peripheral nervous system neoplasm", "answer": "A\nExplanation: Etoposide is a"}
+{"drug_name": "Isotretinoin", "disease_name": "peripheral nervous system neoplasm", "answer": "A.disease modifying\nExplanation: Isotret"}
+{"drug_name": "Melphalan", "disease_name": "peripheral nervous system neoplasm", "answer": "A\nExplanation: Melphalan is a chem"}
+{"drug_name": "Topotecan", "disease_name": "peripheral nervous system neoplasm", "answer": "A.disease modifying \nExplanation: Topotecan"}
+{"drug_name": "Tretinoin", "disease_name": "peripheral nervous system neoplasm", "answer": "A.disease modifying \nExplanation: Tretin"}
+{"drug_name": "Vincristine", "disease_name": "peripheral nervous system neoplasm", "answer": "A\nExplanation: Vincristine is a"}
+{"drug_name": "Metformin", "disease_name": "polycystic ovary syndrome", "answer": "B.symptomatic\nExplanation: Metformin"}
+{"drug_name": "Desogestrel", "disease_name": "polycystic ovary syndrome", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Drospirenone", "disease_name": "polycystic ovary syndrome", "answer": "B.symptomatic\nExplanation: Drospire"}
+{"drug_name": "Ethinyl Estradiol", "disease_name": "polycystic ovary syndrome", "answer": "B.symptomatic\nExplanation: Polycyst"}
+{"drug_name": "Levonorgestrel", "disease_name": "polycystic ovary syndrome", "answer": "B\nExplanation: Levonorgestrel is"}
+{"drug_name": "Norethindrone", "disease_name": "polycystic ovary syndrome", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Chenodeoxycholic acid", "disease_name": "primary biliary cirrhosis", "answer": "A.disease modifying \nExplanation: Primary biliary"}
+{"drug_name": "Colchicine", "disease_name": "primary biliary cirrhosis", "answer": "B\nExplanation: Colchicine is used in"}
+{"drug_name": "Ursodeoxycholic acid", "disease_name": "primary biliary cirrhosis", "answer": "A.disease modifying \nExplanation: Ursodeoxy"}
+{"drug_name": "Penicillamine", "disease_name": "primary biliary cirrhosis", "answer": "A.disease modifying\nExplanation: Penicill"}
+{"drug_name": "Abiraterone", "disease_name": "prostate cancer", "answer": "A.disease modifying \nExplanation: Abirater"}
+{"drug_name": "Bicalutamide", "disease_name": "prostate cancer", "answer": "B\nExplanation: Bicalutamide is a"}
+{"drug_name": "Cabazitaxel", "disease_name": "prostate cancer", "answer": "A\nExplanation: Cabazitaxel is"}
+{"drug_name": "Capecitabine", "disease_name": "prostate cancer", "answer": "B\nStep 1:  To answer this"}
+{"drug_name": "Conjugated Estrogens", "disease_name": "prostate cancer", "answer": "A\nExplanation: Conjugated estrogens"}
+{"drug_name": "Degarelix", "disease_name": "prostate cancer", "answer": "A.disease modifying \nExplanation: Degarelix"}
+{"drug_name": "Docetaxel", "disease_name": "prostate cancer", "answer": "A\nExplanation: Docetaxel is a"}
+{"drug_name": "Doxorubicin", "disease_name": "prostate cancer", "answer": "A\nExplanation: Doxorubicin is a"}
+{"drug_name": "Epirubicin", "disease_name": "prostate cancer", "answer": "A.disease modifying \nExplanation: Epirubic"}
+{"drug_name": "Estradiol", "disease_name": "prostate cancer", "answer": "A.disease modifying \nExplanation: Estradiol"}
+{"drug_name": "Estradiol valerate/Dienogest", "disease_name": "prostate cancer", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Estramustine", "disease_name": "prostate cancer", "answer": "B.symptomatic\nExplanation: Estramust"}
+{"drug_name": "Estrone", "disease_name": "prostate cancer", "answer": "A\nExplanation: The correct answer is A."}
+{"drug_name": "Ethinyl Estradiol", "disease_name": "prostate cancer", "answer": "B\nStep 1:  To answer this"}
+{"drug_name": "Etoposide", "disease_name": "prostate cancer", "answer": "A.disease modifying \nExplanation: Etopos"}
+{"drug_name": "Flutamide", "disease_name": "prostate cancer", "answer": "B\nStep 1: Flutamide is"}
+{"drug_name": "Goserelin", "disease_name": "prostate cancer", "answer": "B\nStep 1:  To answer this"}
+{"drug_name": "Mitoxantrone", "disease_name": "prostate cancer", "answer": "B\nStep 1:  To answer this"}
+{"drug_name": "Nilutamide", "disease_name": "prostate cancer", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Prednisone", "disease_name": "prostate cancer", "answer": "B.symptomatic\nExplanation: Prednisone"}
+{"drug_name": "Vitamin C", "disease_name": "prostate cancer", "answer": "A\nExplanation: Vitamin C has been shown to"}
+{"drug_name": "Betamethasone", "disease_name": "prostate cancer", "answer": "B\nStep 1:  To answer this"}
+{"drug_name": "Celecoxib", "disease_name": "prostate cancer", "answer": "B.symptomatic\nExplanation: Celecoxib"}
+{"drug_name": "Dexamethasone", "disease_name": "prostate cancer", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Esomeprazole", "disease_name": "prostate cancer", "answer": "B.symptomatic\nExplanation: Esomepr"}
+{"drug_name": "Fentanyl", "disease_name": "prostate cancer", "answer": "B.symptomatic\nExplanation: Fentanyl is"}
+{"drug_name": "Hydrocortisone", "disease_name": "prostate cancer", "answer": "B\nStep 1:  To determine the"}
+{"drug_name": "Metoclopramide", "disease_name": "prostate cancer", "answer": "B.symptomatic\nExplanation: Metoclo"}
+{"drug_name": "Omeprazole", "disease_name": "prostate cancer", "answer": "B.symptomatic\nExplanation: Omepr"}
+{"drug_name": "Tamsulosin", "disease_name": "prostate cancer", "answer": "B.symptomatic\nExplanation: Tamsulos"}
+{"drug_name": "Aminocaproic Acid", "disease_name": "prostate cancer", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Ciprofloxacin", "disease_name": "prostate cancer", "answer": "B.symptomatic\nExplanation: Ciprof"}
+{"drug_name": "Finasteride", "disease_name": "prostate cancer", "answer": "A.disease modifying \nExplanation: Finasteride"}
+{"drug_name": "Hydroxyurea", "disease_name": "prostate cancer", "answer": "B\nStep 1:  To understand the"}
+{"drug_name": "Melatonin", "disease_name": "prostate cancer", "answer": "A.disease modifying \nExplanation: Melatonin is"}
+{"drug_name": "Metformin", "disease_name": "prostate cancer", "answer": "A.disease modifying \nExplanation: Metformin"}
+{"drug_name": "Pravastatin", "disease_name": "prostate cancer", "answer": "A.disease modifying \nExplanation: Pravast"}
+{"drug_name": "Pregabalin", "disease_name": "prostate cancer", "answer": "B.symptomatic\nStep 1: P"}
+{"drug_name": "Sirolimus", "disease_name": "prostate cancer", "answer": "A.disease modifying \nExplanation: Sirolimus"}
+{"drug_name": "Zoledronate", "disease_name": "prostate cancer", "answer": "A.disease modifying \nExplanation: Zoledron"}
+{"drug_name": "Acitretin", "disease_name": "psoriasis", "answer": "A.disease modifying\nExplanation: Acitret"}
+{"drug_name": "Beclomethasone", "disease_name": "psoriasis", "answer": "B\nExplanation: Beclomethasone"}
+{"drug_name": "Betamethasone", "disease_name": "psoriasis", "answer": "B.symptomatic\nExplanation: Betameth"}
+{"drug_name": "Calcipotriol", "disease_name": "psoriasis", "answer": "A.disease modifying \nExplanation: Calcipot"}
+{"drug_name": "Calcitriol", "disease_name": "psoriasis", "answer": "A.disease modifying \nExplanation: Psoriasis is"}
+{"drug_name": "Cholecalciferol", "disease_name": "psoriasis", "answer": "A.disease modifying \nExplanation: Psoriasis is"}
+{"drug_name": "Clobetasol propionate", "disease_name": "psoriasis", "answer": "B.symptomatic\nExplanation: Clobetas"}
+{"drug_name": "Cyclosporine", "disease_name": "psoriasis", "answer": "A. disease modifying \nExplanation: Psoriasis is"}
+{"drug_name": "Dexamethasone", "disease_name": "psoriasis", "answer": "A. disease modifying \nExplanation: Dexameth"}
+{"drug_name": "Fluocinolone Acetonide", "disease_name": "psoriasis", "answer": "B.symptomatic\nExplanation: Psoriasis is"}
+{"drug_name": "Fluocinonide", "disease_name": "psoriasis", "answer": "B.symptomatic\nExplanation: Fluocin"}
+{"drug_name": "Hydrocortisone", "disease_name": "psoriasis", "answer": "B.symptomatic\nExplanation: Hydrocort"}
+{"drug_name": "Hydroxyurea", "disease_name": "psoriasis", "answer": "B\nExplanation: Hydroxyurea is used"}
+{"drug_name": "Methotrexate", "disease_name": "psoriasis", "answer": "A. disease modifying\nExplanation: Psoriasis is"}
+{"drug_name": "Methoxsalen", "disease_name": "psoriasis", "answer": "A. disease modifying \nExplanation: Psoralen"}
+{"drug_name": "Mycophenolate mofetil", "disease_name": "psoriasis", "answer": "A.disease modifying \nExplanation: Psoriasis is"}
+{"drug_name": "Mycophenolic acid", "disease_name": "psoriasis", "answer": "A.disease modifying \nExplanation: Mycoph"}
+{"drug_name": "Prednisolone", "disease_name": "psoriasis", "answer": "B.symptomatic\nExplanation: Psoriasis is"}
+{"drug_name": "Prednisone", "disease_name": "psoriasis", "answer": "B.symptomatic\nExplanation: Psoriasis is"}
+{"drug_name": "Tazarotene", "disease_name": "psoriasis", "answer": "B\nStep 1: Psoriasis is a"}
+{"drug_name": "Triamcinolone", "disease_name": "psoriasis", "answer": "B.symptomatic\nExplanation: Triamcin"}
+{"drug_name": "Magnesium salicylate", "disease_name": "psoriasis", "answer": "B.symptomatic\nExplanation: Magnesium sal"}
+{"drug_name": "Salicylate-sodium", "disease_name": "psoriasis", "answer": "B.symptomatic\nExplanation: Salicylate"}
+{"drug_name": "Salicylic acid", "disease_name": "psoriasis", "answer": "B.symptomatic\nExplanation: Salicylic"}
+{"drug_name": "Trisalicylate-choline", "disease_name": "psoriasis", "answer": "B\nExplanation: Trisalicylate-ch"}
+{"drug_name": "Bismuth Subsalicylate", "disease_name": "psoriasis", "answer": "B.symptomatic\nExplanation: Bismuth"}
+{"drug_name": "Butenafine", "disease_name": "psoriasis", "answer": "B.symptomatic\nExplanation: Butenaf"}
+{"drug_name": "Auranofin", "disease_name": "psoriatic arthritis", "answer": "A.disease modifying \nExplanation: Auranof"}
+{"drug_name": "Betamethasone", "disease_name": "psoriatic arthritis", "answer": "B\nExplanation: Betamethasone is"}
+{"drug_name": "Dexamethasone", "disease_name": "psoriatic arthritis", "answer": "B\nExplanation: Dexamethasone is"}
+{"drug_name": "Methotrexate", "disease_name": "psoriatic arthritis", "answer": "A.disease modifying\nExplanation: Psoriatic"}
+{"drug_name": "Methylprednisolone", "disease_name": "psoriatic arthritis", "answer": "B\nExplanation: Psoriatic arthritis is a"}
+{"drug_name": "Prednisolone", "disease_name": "psoriatic arthritis", "answer": "B.symptomatic\nExplanation: Psoriatic"}
+{"drug_name": "Prednisone", "disease_name": "psoriatic arthritis", "answer": "B.symptomatic\nExplanation: Psoriatic"}
+{"drug_name": "Triamcinolone", "disease_name": "psoriatic arthritis", "answer": "B.symptomatic\nExplanation: Triamcin"}
+{"drug_name": "Echothiophate", "disease_name": "refractive error", "answer": "B.symptomatic\nExplanation: Echothi"}
+{"drug_name": "Carbamazepine", "disease_name": "restless legs syndrome", "answer": "B.symptomatic\nExplanation: Restless legs"}
+{"drug_name": "Carbidopa", "disease_name": "restless legs syndrome", "answer": "B.symptomatic\nExplanation: Restless legs"}
+{"drug_name": "Clonazepam", "disease_name": "restless legs syndrome", "answer": "B\nExplanation: Restless legs syndrome (RL"}
+{"drug_name": "Clonidine", "disease_name": "restless legs syndrome", "answer": "B.symptomatic\nExplanation: Restless legs"}
+{"drug_name": "Gabapentin", "disease_name": "restless legs syndrome", "answer": "B.symptomatic\nExplanation: Restless legs"}
+{"drug_name": "L-DOPA", "disease_name": "restless legs syndrome", "answer": "B\nStep 1: Restless legs syndrome"}
+{"drug_name": "Pramipexole", "disease_name": "restless legs syndrome", "answer": "B.symptomatic\nStep 1: Rest"}
+{"drug_name": "Pregabalin", "disease_name": "restless legs syndrome", "answer": "B.symptomatic\nStep 1: Rest"}
+{"drug_name": "Ropinirole", "disease_name": "restless legs syndrome", "answer": "B.symptomatic\nStep 1: Rest"}
+{"drug_name": "Tramadol", "disease_name": "restless legs syndrome", "answer": "B.symptomatic\nExplanation: Restless legs"}
+{"drug_name": "Auranofin", "disease_name": "rheumatoid arthritis", "answer": "A.disease modifying \nExplanation: Auranof"}
+{"drug_name": "Azathioprine", "disease_name": "rheumatoid arthritis", "answer": "A\nStep 1:  Azathiop"}
+{"drug_name": "Betamethasone", "disease_name": "rheumatoid arthritis", "answer": "A.disease modifying \nExplanation: Betameth"}
+{"drug_name": "Cyclosporine", "disease_name": "rheumatoid arthritis", "answer": "A.disease modifying\nExplanation: Cyclospor"}
+{"drug_name": "Dexamethasone", "disease_name": "rheumatoid arthritis", "answer": "A\nExplanation: Dexamethasone is"}
+{"drug_name": "Ergocalciferol", "disease_name": "rheumatoid arthritis", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Hydrocortisone", "disease_name": "rheumatoid arthritis", "answer": "B\nExplanation: Hydrocortisone is"}
+{"drug_name": "Leflunomide", "disease_name": "rheumatoid arthritis", "answer": "A.disease modifying \nExplanation: Leflun"}
+{"drug_name": "Methotrexate", "disease_name": "rheumatoid arthritis", "answer": "A.disease modifying\nStep 1:"}
+{"drug_name": "Methylprednisolone", "disease_name": "rheumatoid arthritis", "answer": "A.disease modifying \nExplanation: Rheumatoid"}
+{"drug_name": "Penicillamine", "disease_name": "rheumatoid arthritis", "answer": "A.disease modifying\nExplanation: Penicill"}
+{"drug_name": "Prednisolone", "disease_name": "rheumatoid arthritis", "answer": "A.disease modifying \nExplanation: Rheumatoid"}
+{"drug_name": "Prednisone", "disease_name": "rheumatoid arthritis", "answer": "A. disease modifying \nExplanation: Rheumatoid"}
+{"drug_name": "Sulfasalazine", "disease_name": "rheumatoid arthritis", "answer": "A.disease modifying\nExplanation: Sulfasal"}
+{"drug_name": "Triamcinolone", "disease_name": "rheumatoid arthritis", "answer": "B\nExplanation: Triamcinolone is"}
+{"drug_name": "Acetylsalicylic acid", "disease_name": "rheumatoid arthritis", "answer": "B\nStep 1:  Rheumatoid"}
+{"drug_name": "Amitriptyline", "disease_name": "rheumatoid arthritis", "answer": "B\nStep 1: Amitriptyline"}
+{"drug_name": "Celecoxib", "disease_name": "rheumatoid arthritis", "answer": "B\nStep 1:  To answer this"}
+{"drug_name": "Diclofenac", "disease_name": "rheumatoid arthritis", "answer": "B\nStep 1:  Rheumatoid"}
+{"drug_name": "Diflunisal", "disease_name": "rheumatoid arthritis", "answer": "B\nExplanation: Diflunisal is"}
+{"drug_name": "Gabapentin", "disease_name": "rheumatoid arthritis", "answer": "B\nExplanation: Gabapentin is used to"}
+{"drug_name": "Indomethacin", "disease_name": "rheumatoid arthritis", "answer": "B\nStep 1: Rheumatoid arthritis"}
+{"drug_name": "Lidocaine", "disease_name": "rheumatoid arthritis", "answer": "B.symptomatic\nExplanation: Rheumatoid"}
+{"drug_name": "Meloxicam", "disease_name": "rheumatoid arthritis", "answer": "B\nExplanation: Meloxicam is a non"}
+{"drug_name": "Nabumetone", "disease_name": "rheumatoid arthritis", "answer": "B\nExplanation: Nabumetone is a"}
+{"drug_name": "Naproxen", "disease_name": "rheumatoid arthritis", "answer": "B\nStep 1:  To answer this"}
+{"drug_name": "Oxaprozin", "disease_name": "rheumatoid arthritis", "answer": "B\nExplanation: Oxaprozin is a non"}
+{"drug_name": "Piroxicam", "disease_name": "rheumatoid arthritis", "answer": "A.disease modifying \nExplanation: Piroxic"}
+{"drug_name": "Salsalate", "disease_name": "rheumatoid arthritis", "answer": "A.disease modifying \nExplanation: Salsal"}
+{"drug_name": "Tolmetin", "disease_name": "rheumatoid arthritis", "answer": "B\nExplanation: Tolmetin is a non"}
+{"drug_name": "Trisalicylate-choline", "disease_name": "rheumatoid arthritis", "answer": "A\nExplanation: Trisalicylate-ch"}
+{"drug_name": "Captopril", "disease_name": "rheumatoid arthritis", "answer": "B\nExplanation: Captopril is an ang"}
+{"drug_name": "Choline", "disease_name": "rheumatoid arthritis", "answer": "A.disease modifying \nExplanation: Choline is"}
+{"drug_name": "Cyclobenzaprine", "disease_name": "rheumatoid arthritis", "answer": "B.symptomatic\nExplanation: Cyclobenz"}
+{"drug_name": "Enalapril", "disease_name": "rheumatoid arthritis", "answer": "B\nExplanation: Enalapril is an"}
+{"drug_name": "Esomeprazole", "disease_name": "rheumatoid arthritis", "answer": "B.symptomatic\nExplanation: Esomepr"}
+{"drug_name": "Folic Acid", "disease_name": "rheumatoid arthritis", "answer": "A.disease modifying \nExplanation: Rheumatoid"}
+{"drug_name": "Naftifine", "disease_name": "rheumatoid arthritis", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Omeprazole", "disease_name": "rheumatoid arthritis", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Oxtriphylline", "disease_name": "rheumatoid arthritis", "answer": "B\nExplanation: Oxtriphylline is"}
+{"drug_name": "Pilocarpine", "disease_name": "rheumatoid arthritis", "answer": "B\nExplanation: Pilocarpine is a"}
+{"drug_name": "Tizanidine", "disease_name": "rheumatoid arthritis", "answer": "B.symptomatic\nExplanation: Tizan"}
+{"drug_name": "Treprostinil", "disease_name": "rheumatoid arthritis", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Zolpidem", "disease_name": "rheumatoid arthritis", "answer": "B.symptomatic\nExplanation: Zolpid"}
+{"drug_name": "Dacarbazine", "disease_name": "sarcoma", "answer": "A.disease modifying\nExplanation: Sarcoma is"}
+{"drug_name": "Dactinomycin", "disease_name": "sarcoma", "answer": "A\nExplanation: Dactinomycin is"}
+{"drug_name": "Doxorubicin", "disease_name": "sarcoma", "answer": "A\nStep 1:  First, let"}
+{"drug_name": "Epirubicin", "disease_name": "sarcoma", "answer": "A.disease modifying \nExplanation: Epirubic"}
+{"drug_name": "Etoposide", "disease_name": "sarcoma", "answer": "A.disease modifying \nExplanation: Etopos"}
+{"drug_name": "Mitoxantrone", "disease_name": "sarcoma", "answer": "B\nExplanation: Mitoxantrone is"}
+{"drug_name": "Thiotepa", "disease_name": "sarcoma", "answer": "A.disease modifying\nExplanation: Thiotep"}
+{"drug_name": "Vincristine", "disease_name": "sarcoma", "answer": "A\nExplanation: Vincristine is a"}
+{"drug_name": "Melphalan", "disease_name": "sarcoma", "answer": "A\nExplanation: Melphalan is a chemotherapy"}
+{"drug_name": "Acetophenazine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Acetoph"}
+{"drug_name": "Aripiprazole", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Aripip"}
+{"drug_name": "Benzatropine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Benzatrop"}
+{"drug_name": "Carbamazepine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Carbamazep"}
+{"drug_name": "Chlorpromazine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Chlorpromazine"}
+{"drug_name": "Clonazepam", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Clonaz"}
+{"drug_name": "Clozapine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Clozapine"}
+{"drug_name": "Cyproheptadine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Cyprohe"}
+{"drug_name": "Dimenhydrinate", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Dimenhydr"}
+{"drug_name": "Diphenhydramine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Diphenhy"}
+{"drug_name": "Eszopiclone", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Eszopic"}
+{"drug_name": "Fluoxetine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Fluoxetine is"}
+{"drug_name": "Fluphenazine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Fluphen"}
+{"drug_name": "Haloperidol", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Haloperid"}
+{"drug_name": "Lamotrigine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Lamotrig"}
+{"drug_name": "Lithium", "disease_name": "schizophrenia", "answer": "B\nStep 1:  To understand the"}
+{"drug_name": "Loxapine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nStep 1: L"}
+{"drug_name": "Mesoridazine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Mesorid"}
+{"drug_name": "Olanzapine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Olanzap"}
+{"drug_name": "Paliperidone", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Paliperid"}
+{"drug_name": "Quetiapine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Quetiap"}
+{"drug_name": "Risperidone", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Risperid"}
+{"drug_name": "Sertraline", "disease_name": "schizophrenia", "answer": "B.symptomatic\nStep 1: Identify"}
+{"drug_name": "Thioridazine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Thiorid"}
+{"drug_name": "Thiothixene", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Thioth"}
+{"drug_name": "Trazodone", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Trazod"}
+{"drug_name": "Trifluoperazine", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Triflu"}
+{"drug_name": "Valproic Acid", "disease_name": "schizophrenia", "answer": "B\nExplanation: Valproic acid is used"}
+{"drug_name": "Ziprasidone", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Ziprasid"}
+{"drug_name": "Zopiclone", "disease_name": "schizophrenia", "answer": "B.symptomatic\nExplanation: Zopicl"}
+{"drug_name": "Gemfibrozil", "disease_name": "sclerosing cholangitis", "answer": "B\nExplanation: Gemfibrozil is a"}
+{"drug_name": "Bleomycin", "disease_name": "skin cancer", "answer": "A. disease modifying \nExplanation: Bleomycin"}
+{"drug_name": "Dacarbazine", "disease_name": "skin cancer", "answer": "A.disease modifying \nExplanation: Dacarb"}
+{"drug_name": "Dactinomycin", "disease_name": "skin cancer", "answer": "A\nExplanation: Dactinomycin is"}
+{"drug_name": "Docetaxel", "disease_name": "skin cancer", "answer": "A.disease modifying \nExplanation: Docetax"}
+{"drug_name": "Fluorouracil", "disease_name": "skin cancer", "answer": "A. disease modifying\nStep 1: Flu"}
+{"drug_name": "Imiquimod", "disease_name": "skin cancer", "answer": "A.disease modifying \nExplanation: Imiquim"}
+{"drug_name": "Temozolomide", "disease_name": "skin cancer", "answer": "A.disease modifying\nStep 1: T"}
+{"drug_name": "Vemurafenib", "disease_name": "skin cancer", "answer": "A\nExplanation: Vemurafenib is"}
+{"drug_name": "Vismodegib", "disease_name": "skin cancer", "answer": "A.disease modifying \nExplanation: Vismode"}
+{"drug_name": "Carmustine", "disease_name": "skin cancer", "answer": "A\nExplanation: A The relationship between skin cancer"}
+{"drug_name": "Hydroxyurea", "disease_name": "skin cancer", "answer": "A.disease modifying \nExplanation: Hydroxyure"}
+{"drug_name": "Lomustine", "disease_name": "skin cancer", "answer": "A\nExplanation: Lomustine is a"}
+{"drug_name": "Melphalan", "disease_name": "skin cancer", "answer": "A.disease modifying \nExplanation: Melphalan"}
+{"drug_name": "Procarbazine", "disease_name": "skin cancer", "answer": "A. disease modifying\nStep 1: Pro"}
+{"drug_name": "Capecitabine", "disease_name": "stomach cancer", "answer": "A.disease modifying \nExplanation: Capecit"}
+{"drug_name": "Docetaxel", "disease_name": "stomach cancer", "answer": "A.disease modifying \nExplanation: Docetax"}
+{"drug_name": "Doxorubicin", "disease_name": "stomach cancer", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Epirubicin", "disease_name": "stomach cancer", "answer": "A.disease modifying \nExplanation: Epirubic"}
+{"drug_name": "Floxuridine", "disease_name": "stomach cancer", "answer": "A.disease modifying \nExplanation: Floxur"}
+{"drug_name": "Fluorouracil", "disease_name": "stomach cancer", "answer": "A.disease modifying \nExplanation: Fluorour"}
+{"drug_name": "Irinotecan", "disease_name": "stomach cancer", "answer": "A.disease modifying \nExplanation: Irinotec"}
+{"drug_name": "Methotrexate", "disease_name": "stomach cancer", "answer": "C.non-indication  \nExplanation: Methotrex"}
+{"drug_name": "Mitomycin", "disease_name": "stomach cancer", "answer": "A\nExplanation: Mitomycin is a chem"}
+{"drug_name": "Azathioprine", "disease_name": "systemic lupus erythematosus", "answer": "A.disease modifying \nExplanation: Azathiop"}
+{"drug_name": "Betamethasone", "disease_name": "systemic lupus erythematosus", "answer": "A.disease modifying\nExplanation: Systemic lup"}
+{"drug_name": "Cyclosporine", "disease_name": "systemic lupus erythematosus", "answer": "A.disease modifying \nExplanation: Cyclospor"}
+{"drug_name": "Dapsone", "disease_name": "systemic lupus erythematosus", "answer": "A\nExplanation: Dapsone is a disease"}
+{"drug_name": "Dexamethasone", "disease_name": "systemic lupus erythematosus", "answer": "A.disease modifying \nExplanation: Systemic lup"}
+{"drug_name": "Hydrocortisone", "disease_name": "systemic lupus erythematosus", "answer": "A.disease modifying \nExplanation: Systemic lup"}
+{"drug_name": "Leflunomide", "disease_name": "systemic lupus erythematosus", "answer": "A\nExplanation: Leflunomide is"}
+{"drug_name": "Methotrexate", "disease_name": "systemic lupus erythematosus", "answer": "A.disease modifying \nExplanation: Systemic lup"}
+{"drug_name": "Methylprednisolone", "disease_name": "systemic lupus erythematosus", "answer": "A.disease modifying \nExplanation: Systemic lup"}
+{"drug_name": "Mycophenolate mofetil", "disease_name": "systemic lupus erythematosus", "answer": "A.disease modifying \nExplanation: Systemic lup"}
+{"drug_name": "Prednisolone", "disease_name": "systemic lupus erythematosus", "answer": "A.disease modifying \nExplanation: Systemic lup"}
+{"drug_name": "Prednisone", "disease_name": "systemic lupus erythematosus", "answer": "A. disease modifying \nExplanation: Systemic lup"}
+{"drug_name": "Triamcinolone", "disease_name": "systemic lupus erythematosus", "answer": "A.disease modifying \nExplanation: Systemic lup"}
+{"drug_name": "Acetylsalicylic acid", "disease_name": "systemic lupus erythematosus", "answer": "B\nExplanation: Acetylsalicylic"}
+{"drug_name": "Amitriptyline", "disease_name": "systemic lupus erythematosus", "answer": "B\nExplanation: Amitriptyline is a"}
+{"drug_name": "Celecoxib", "disease_name": "systemic lupus erythematosus", "answer": "B\nExplanation: Celecoxib is a non"}
+{"drug_name": "Gabapentin", "disease_name": "systemic lupus erythematosus", "answer": "B\nStep 1: Systemic lupus"}
+{"drug_name": "Meloxicam", "disease_name": "systemic lupus erythematosus", "answer": "A. disease modifying \nExplanation: Meloxicam"}
+{"drug_name": "Naproxen", "disease_name": "systemic lupus erythematosus", "answer": "B\nExplanation: Systemic lupus erythem"}
+{"drug_name": "Pregabalin", "disease_name": "systemic lupus erythematosus", "answer": "B\nExplanation: Pregabalin is used"}
+{"drug_name": "Cyclobenzaprine", "disease_name": "systemic lupus erythematosus", "answer": "B\nExplanation: Cyclobenzaprine is"}
+{"drug_name": "Esomeprazole", "disease_name": "systemic lupus erythematosus", "answer": "B\nExplanation: Esomeprazole is a"}
+{"drug_name": "Folic Acid", "disease_name": "systemic lupus erythematosus", "answer": "B\nExplanation: Systemic lupus erythem"}
+{"drug_name": "Lisinopril", "disease_name": "systemic lupus erythematosus", "answer": "A.disease modifying\nExplanation: Systemic lup"}
+{"drug_name": "Omeprazole", "disease_name": "systemic lupus erythematosus", "answer": "B\nExplanation: Systemic lupus erythem"}
+{"drug_name": "Azathioprine", "disease_name": "systemic scleroderma", "answer": "A\nExplanation: Azathioprine is a"}
+{"drug_name": "Captopril", "disease_name": "systemic scleroderma", "answer": "A. disease modifying \nExplanation: Systemic scl"}
+{"drug_name": "Leflunomide", "disease_name": "systemic scleroderma", "answer": "A.disease modifying\nExplanation: Leflun"}
+{"drug_name": "Lisinopril", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nExplanation: Systemic scl"}
+{"drug_name": "Methotrexate", "disease_name": "systemic scleroderma", "answer": "A.disease modifying \nExplanation: Systemic scl"}
+{"drug_name": "Mometasone", "disease_name": "systemic scleroderma", "answer": "B\nExplanation: Mometasone is a"}
+{"drug_name": "Mycophenolate mofetil", "disease_name": "systemic scleroderma", "answer": "A.disease modifying \nExplanation: Systemic scl"}
+{"drug_name": "Mycophenolic acid", "disease_name": "systemic scleroderma", "answer": "A.disease modifying \nExplanation: Mycoph"}
+{"drug_name": "Pentoxifylline", "disease_name": "systemic scleroderma", "answer": "B\nExplanation: Systemic scleroderma"}
+{"drug_name": "Prednisone", "disease_name": "systemic scleroderma", "answer": "A.disease modifying \nExplanation: Systemic scl"}
+{"drug_name": "Alprazolam", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nExplanation: Systemic scl"}
+{"drug_name": "Celecoxib", "disease_name": "systemic scleroderma", "answer": "B\nExplanation: Systemic scleroderma"}
+{"drug_name": "Cilostazol", "disease_name": "systemic scleroderma", "answer": "B\nExplanation: Cilostazol is"}
+{"drug_name": "Colchicine", "disease_name": "systemic scleroderma", "answer": "B\nExplanation: Systemic scleroderma"}
+{"drug_name": "Diclofenac", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nExplanation: Systemic scl"}
+{"drug_name": "Epoprostenol", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nExplanation: Epopro"}
+{"drug_name": "Esomeprazole", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nStep 1: System"}
+{"drug_name": "Lidocaine", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nExplanation: Systemic scl"}
+{"drug_name": "Meloxicam", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nExplanation: Meloxicam"}
+{"drug_name": "Metoclopramide", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nExplanation: Metoclo"}
+{"drug_name": "Nifedipine", "disease_name": "systemic scleroderma", "answer": "B\nExplanation: Nifedipine is"}
+{"drug_name": "Omeprazole", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nExplanation: Systemic scl"}
+{"drug_name": "Sildenafil", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nExplanation: Sildenafil is"}
+{"drug_name": "Tadalafil", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nExplanation: Tadalafil is"}
+{"drug_name": "Tolazoline", "disease_name": "systemic scleroderma", "answer": "B\nStep 1:  Systemic scl"}
+{"drug_name": "Cyclobenzaprine", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nExplanation: Cyclobenz"}
+{"drug_name": "Folic Acid", "disease_name": "systemic scleroderma", "answer": "A. disease modifying\nExplanation: Systemic scl"}
+{"drug_name": "Furosemide", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nExplanation: Furosem"}
+{"drug_name": "Metronidazole", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nExplanation: Metronid"}
+{"drug_name": "Minocycline", "disease_name": "systemic scleroderma", "answer": "A.disease modifying \nExplanation: Systemic scl"}
+{"drug_name": "WF10", "disease_name": "systemic scleroderma", "answer": "A\nExplanation: WF10 is a drug that"}
+{"drug_name": "Zolpidem", "disease_name": "systemic scleroderma", "answer": "B.symptomatic\nExplanation: Zolpid"}
+{"drug_name": "Bleomycin", "disease_name": "testicular cancer", "answer": "A.disease modifying \nExplanation: Bleomycin"}
+{"drug_name": "Carboplatin", "disease_name": "testicular cancer", "answer": "A.disease modifying \nExplanation: Carboplatin"}
+{"drug_name": "Chlorambucil", "disease_name": "testicular cancer", "answer": "A.disease modifying \nExplanation: Chlorambuc"}
+{"drug_name": "Cisplatin", "disease_name": "testicular cancer", "answer": "A.disease modifying \nExplanation: Cispl"}
+{"drug_name": "Dactinomycin", "disease_name": "testicular cancer", "answer": "A\nExplanation: Dactinomycin is"}
+{"drug_name": "Doxorubicin", "disease_name": "testicular cancer", "answer": "A. disease modifying \nExplanation: Doxorubic"}
+{"drug_name": "Epirubicin", "disease_name": "testicular cancer", "answer": "A.disease modifying \nExplanation: Epirubic"}
+{"drug_name": "Etoposide", "disease_name": "testicular cancer", "answer": "A.disease modifying \nExplanation: Etopos"}
+{"drug_name": "Ifosfamide", "disease_name": "testicular cancer", "answer": "A\nExplanation: Ifosfamide is a"}
+{"drug_name": "Methotrexate", "disease_name": "testicular cancer", "answer": "A. disease modifying \nExplanation: Methotrex"}
+{"drug_name": "Vinblastine", "disease_name": "testicular cancer", "answer": "A.disease modifying \nExplanation: Vinblastine"}
+{"drug_name": "Octreotide", "disease_name": "thymus cancer", "answer": "B\nExplanation: Octreotide is used in"}
+{"drug_name": "Doxorubicin", "disease_name": "thyroid cancer", "answer": "B\nStep 1:  First, let"}
+{"drug_name": "Epirubicin", "disease_name": "thyroid cancer", "answer": "C\nExplanation: Epirubicin is a"}
+{"drug_name": "Sorafenib", "disease_name": "thyroid cancer", "answer": "A.disease modifying \nExplanation: Sorafenib"}
+{"drug_name": "Vandetanib", "disease_name": "thyroid cancer", "answer": "A.disease modifying \nExplanation: Vandetan"}
+{"drug_name": "Dextrothyroxine", "disease_name": "thyroid cancer", "answer": "A\nExplanation: Dextrothyroxine"}
+{"drug_name": "Levothyroxine", "disease_name": "thyroid cancer", "answer": "A.disease modifying \nExplanation: Levothy"}
+{"drug_name": "Liothyronine", "disease_name": "thyroid cancer", "answer": "A.disease modifying \nExplanation: Liothy"}
+{"drug_name": "Liotrix", "disease_name": "thyroid cancer", "answer": "B.symptomatic\nExplanation: Liotrix"}
+{"drug_name": "Ramipril", "disease_name": "type 1 diabetes mellitus", "answer": "A.disease modifying \nExplanation: Ramipril"}
+{"drug_name": "Octreotide", "disease_name": "type 1 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Octreotide"}
+{"drug_name": "Sildenafil", "disease_name": "type 1 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Sildenafil is"}
+{"drug_name": "Acarbose", "disease_name": "type 2 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Acarbose"}
+{"drug_name": "Bromocriptine", "disease_name": "type 2 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Bromocri"}
+{"drug_name": "Chlorpropamide", "disease_name": "type 2 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Chlorpropamide"}
+{"drug_name": "Gliclazide", "disease_name": "type 2 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Gliclaz"}
+{"drug_name": "Glimepiride", "disease_name": "type 2 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Glimepir"}
+{"drug_name": "Glipizide", "disease_name": "type 2 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Glipiz"}
+{"drug_name": "Glyburide", "disease_name": "type 2 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Glyburide"}
+{"drug_name": "Irbesartan", "disease_name": "type 2 diabetes mellitus", "answer": "A.disease modifying \nExplanation: Irbesart"}
+{"drug_name": "Linagliptin", "disease_name": "type 2 diabetes mellitus", "answer": "A.disease modifying \nExplanation: Linaglipt"}
+{"drug_name": "Losartan", "disease_name": "type 2 diabetes mellitus", "answer": "A.disease modifying \nExplanation: Losartan"}
+{"drug_name": "Metformin", "disease_name": "type 2 diabetes mellitus", "answer": "A. disease modifying \nExplanation: Metformin"}
+{"drug_name": "Miglitol", "disease_name": "type 2 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Miglitol"}
+{"drug_name": "Nateglinide", "disease_name": "type 2 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Nateglin"}
+{"drug_name": "Orlistat", "disease_name": "type 2 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Orlistat"}
+{"drug_name": "Pioglitazone", "disease_name": "type 2 diabetes mellitus", "answer": "A.disease modifying \nExplanation: Pioglit"}
+{"drug_name": "Ramipril", "disease_name": "type 2 diabetes mellitus", "answer": "A.disease modifying \nExplanation: Ramipril"}
+{"drug_name": "Repaglinide", "disease_name": "type 2 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Repaglin"}
+{"drug_name": "Rosiglitazone", "disease_name": "type 2 diabetes mellitus", "answer": "A.disease modifying \nExplanation: Rosiglit"}
+{"drug_name": "Sitagliptin", "disease_name": "type 2 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Sitaglipt"}
+{"drug_name": "Tolazamide", "disease_name": "type 2 diabetes mellitus", "answer": "A.disease modifying \nExplanation: Tolazamide"}
+{"drug_name": "Tolbutamide", "disease_name": "type 2 diabetes mellitus", "answer": "B.symptomatic\nExplanation: Tolbutamide"}
+{"drug_name": "Valsartan", "disease_name": "type 2 diabetes mellitus", "answer": "A.disease modifying\nExplanation: Valsart"}
+{"drug_name": "Atorvastatin", "disease_name": "type 2 diabetes mellitus", "answer": "A.disease modifying \nExplanation: Atorv"}
+{"drug_name": "Simvastatin", "disease_name": "type 2 diabetes mellitus", "answer": "A.disease modifying \nExplanation: Simvast"}
+{"drug_name": "Varenicline", "disease_name": "type 2 diabetes mellitus", "answer": "C.non-indication  \nExplanation: Varenic"}
+{"drug_name": "Azathioprine", "disease_name": "ulcerative colitis", "answer": "A.disease modifying \nExplanation: Azathiop"}
+{"drug_name": "Balsalazide", "disease_name": "ulcerative colitis", "answer": "A.disease modifying \nExplanation: Balsal"}
+{"drug_name": "Betamethasone", "disease_name": "ulcerative colitis", "answer": "B.symptomatic\nExplanation: Ulcerative"}
+{"drug_name": "Budesonide", "disease_name": "ulcerative colitis", "answer": "B.symptomatic\nExplanation: Budeson"}
+{"drug_name": "Cholecalciferol", "disease_name": "ulcerative colitis", "answer": "A.disease modifying \nExplanation: Ulcerative"}
+{"drug_name": "Dexamethasone", "disease_name": "ulcerative colitis", "answer": "A.disease modifying\nExplanation: Ulcerative"}
+{"drug_name": "Hydrocortisone", "disease_name": "ulcerative colitis", "answer": "A. disease modifying \nExplanation: Ulcerative"}
+{"drug_name": "Mercaptopurine", "disease_name": "ulcerative colitis", "answer": "A.disease modifying \nExplanation: Mercaptopur"}
+{"drug_name": "Mesalazine", "disease_name": "ulcerative colitis", "answer": "A.disease modifying \nExplanation: Mesalazine"}
+{"drug_name": "Methylprednisolone", "disease_name": "ulcerative colitis", "answer": "A.disease modifying \nExplanation: Ulcerative"}
+{"drug_name": "Nicotine", "disease_name": "ulcerative colitis", "answer": "B.symptomatic\nExplanation: Ulcerative"}
+{"drug_name": "Olsalazine", "disease_name": "ulcerative colitis", "answer": "A.disease modifying \nExplanation: Olsal"}
+{"drug_name": "Prednisolone", "disease_name": "ulcerative colitis", "answer": "A. disease modifying\nExplanation: Ulcerative"}
+{"drug_name": "Prednisone", "disease_name": "ulcerative colitis", "answer": "A. disease modifying \nExplanation: Ulcerative"}
+{"drug_name": "Sulfasalazine", "disease_name": "ulcerative colitis", "answer": "A.disease modifying\nExplanation: Sulfasal"}
+{"drug_name": "Triamcinolone", "disease_name": "ulcerative colitis", "answer": "B.symptomatic\nExplanation: Triamcin"}
+{"drug_name": "Ciprofloxacin", "disease_name": "ulcerative colitis", "answer": "B.symptomatic\nExplanation: Ciprof"}
+{"drug_name": "Folic Acid", "disease_name": "ulcerative colitis", "answer": "A. disease modifying \nExplanation: Ulcerative"}
+{"drug_name": "Carboplatin", "disease_name": "urinary bladder cancer", "answer": "B.symptomatic\nExplanation: The relationship between"}
+{"drug_name": "Cisplatin", "disease_name": "urinary bladder cancer", "answer": "A.disease modifying \nExplanation: Cispl"}
+{"drug_name": "Doxorubicin", "disease_name": "urinary bladder cancer", "answer": "B.symptomatic\nStep 1:"}
+{"drug_name": "Epirubicin", "disease_name": "urinary bladder cancer", "answer": "B\nStep 1:  Epirubic"}
+{"drug_name": "Etoposide", "disease_name": "urinary bladder cancer", "answer": "A.disease modifying \nExplanation: Etopos"}
+{"drug_name": "Fluorouracil", "disease_name": "urinary bladder cancer", "answer": "A\nExplanation: Fluorouracil is"}
+{"drug_name": "Gemcitabine", "disease_name": "urinary bladder cancer", "answer": "A.disease modifying \nExplanation: Gemcitab"}
+{"drug_name": "Methotrexate", "disease_name": "urinary bladder cancer", "answer": "B.symptomatic\nExplanation: Methotrex"}
+{"drug_name": "Mitomycin", "disease_name": "urinary bladder cancer", "answer": "A\nExplanation: Mitomycin is a chem"}
+{"drug_name": "Thiotepa", "disease_name": "urinary bladder cancer", "answer": "A.disease modifying \nExplanation: Thiotep"}
+{"drug_name": "Valrubicin", "disease_name": "urinary bladder cancer", "answer": "B.symptomatic\nExplanation: Valrubic"}
+{"drug_name": "Carboplatin", "disease_name": "uterine cancer", "answer": "A.disease modifying \nExplanation: Carboplatin"}
+{"drug_name": "Dactinomycin", "disease_name": "uterine cancer", "answer": "A\nExplanation: Dactinomycin is"}
+{"drug_name": "Doxorubicin", "disease_name": "uterine cancer", "answer": "A.disease modifying \nExplanation: Doxorubic"}
+{"drug_name": "Epirubicin", "disease_name": "uterine cancer", "answer": "A.disease modifying \nExplanation: Epirubic"}
+{"drug_name": "Etoposide", "disease_name": "uterine cancer", "answer": "A.disease modifying \nExplanation: Etopos"}
+{"drug_name": "Medroxyprogesterone Acetate", "disease_name": "uterine cancer", "answer": "B.symptomatic\nExplanation: Medroxy"}
+{"drug_name": "Progesterone", "disease_name": "uterine cancer", "answer": "A\nExplanation: The relationship between uterine"}
+{"drug_name": "Dinoprostone", "disease_name": "uterine cancer", "answer": "B.symptomatic\nExplanation: Dinoprostone"}
+{"drug_name": "Estradiol", "disease_name": "uterine cancer", "answer": "A\nExplanation: Estradiol is a form"}
+{"drug_name": "Hydroxyurea", "disease_name": "uterine cancer", "answer": "A.disease modifying \nExplanation: Hydroxyure"}
+{"drug_name": "Methoxsalen", "disease_name": "vitiligo", "answer": "A. disease modifying \nExplanation: A. disease"}
+{"drug_name": "Monobenzone", "disease_name": "vitiligo", "answer": "A. disease modifying \nExplanation: Monoben"}
