@@ -1,15 +1,1 @@
 nohup: ignoring input
-Traceback (most recent call last):
-  File "/playpen/jesse/drug_repurpose/drug_expriments/gemini_eval.py", line 97, in <module>
-    inputs = tokenizer(input_text, return_tensors="pt").to(device)
-NameError: name 'tokenizer' is not defined. Did you mean: 'AutoTokenizer'?
-Exception ignored in: <function SyncHttpxClient.__del__ at 0x7d9e76537520>
-Traceback (most recent call last):
-  File "/home/jesseliu/miniconda3/envs/dynh/lib/python3.10/site-packages/google/genai/_api_client.py", line 253, in __del__
-  File "/home/jesseliu/miniconda3/envs/dynh/lib/python3.10/site-packages/httpx/_client.py", line 228, in is_closed
-AttributeError: 'NoneType' object has no attribute 'CLOSED'
-Exception ignored in: <function AsyncHttpxClient.__del__ at 0x7d9e765371c0>
-Traceback (most recent call last):
-  File "/home/jesseliu/miniconda3/envs/dynh/lib/python3.10/site-packages/google/genai/_api_client.py", line 270, in __del__
-  File "/home/jesseliu/miniconda3/envs/dynh/lib/python3.10/site-packages/httpx/_client.py", line 228, in is_closed
-AttributeError: 'NoneType' object has no attribute 'CLOSED'
