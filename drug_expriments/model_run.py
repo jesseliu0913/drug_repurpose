@@ -39,7 +39,8 @@ if tokenizer.pad_token_id is None:
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model.to(device)
 num_smaples = args.shuffle_num
-
+nodes_name = pd.read_csv("/playpen/jesse/drug_repurpose/PrimeKG/nodes.csv")
+disease_df = pd.read_csv("/playpen/jesse/drug_repurpose/PrimeKG/disease_features.csv")
 os.makedirs(args.output_path, exist_ok=True)
 prompt_type = args.prompt_type
 file_path = f"{args.output_path}/{prompt_type}_{num_smaples}.jsonl"
@@ -47,6 +48,14 @@ file_path = f"{args.output_path}/{prompt_type}_{num_smaples}.jsonl"
 disease_keys = list(disease_data.keys())[:400]
 with jsonlines.open(file_path, "a") as f_write:
     for dk in disease_keys:
+        # umls_description = ""
+        # disease_node = nodes_name[nodes_name["node_name"].str.lower() == dk.lower()].head(1).iloc[0]["node_index"]
+        # match = disease_df[disease_df["node_index"] == disease_node]
+
+        # if not match.empty:
+        #     umls_description = match.iloc[0]["umls_description"]
+        # else:
+        #     print(f"No match found for node_index = {disease_node}")
         drug_lst = []
         answer_lst = []
         line_dict = {}
@@ -94,4 +103,5 @@ with jsonlines.open(file_path, "a") as f_write:
 
         line_dict = {"drug_name": drug_lst, "disease_name": dk, "answer": answer_lst}
         f_write.write(line_dict)
+        # break
     
