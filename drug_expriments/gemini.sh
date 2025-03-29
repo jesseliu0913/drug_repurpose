@@ -32,3 +32,8 @@ nohup python gemini_eval.py \
     --prompt_type "fraw" \
     --shuffle_num 1 > ./log/gemini.log 2>&1
 
+nohup python gemini_pharmDB.py \
+    --output_path "results_pharmDB/gemini/" \
+    --prompt_type "cot" \
+    --shuffle_num 1 > ./log/gemini.log 2>&1
+
