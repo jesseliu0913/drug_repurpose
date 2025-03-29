@@ -1,10 +1,10 @@
 nohup: ignoring input
-Exception ignored in: <function SyncHttpxClient.__del__ at 0x72b6a3737520>
+Exception ignored in: <function SyncHttpxClient.__del__ at 0x7215a054beb0>
 Traceback (most recent call last):
   File "/home/jesseliu/miniconda3/envs/dynh/lib/python3.10/site-packages/google/genai/_api_client.py", line 253, in __del__
   File "/home/jesseliu/miniconda3/envs/dynh/lib/python3.10/site-packages/httpx/_client.py", line 228, in is_closed
 AttributeError: 'NoneType' object has no attribute 'CLOSED'
-Exception ignored in: <function AsyncHttpxClient.__del__ at 0x72b6a37371c0>
+Exception ignored in: <function AsyncHttpxClient.__del__ at 0x7215a054bd90>
 Traceback (most recent call last):
   File "/home/jesseliu/miniconda3/envs/dynh/lib/python3.10/site-packages/google/genai/_api_client.py", line 270, in __del__
   File "/home/jesseliu/miniconda3/envs/dynh/lib/python3.10/site-packages/httpx/_client.py", line 228, in is_closed
