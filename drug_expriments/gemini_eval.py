@@ -50,16 +50,6 @@ def call_gemini(input_text):
             else:
                 raise
 
-
-two_shot = """
-Question: Is Pentamidine an indication for hypertensive disorder?
-Reasoning: Pentamidine is contraindicated in patients with hypertensive disorders because it can cause significant cardiovascular side effects, including sudden hypotension, cardiac arrhythmias (such as QT prolongation), and electrolyte disturbances like hypoglycemia and hyperkalemia. These effects can exacerbate underlying cardiovascular instability in hypertensive individuals, increasing the risk of serious complications. Additionally, many patients with hypertension may be on medications that interact adversely with Pentamidine, further compounding the risks.
-Answer:$NO$
-Question: Is Moxonidine an indication for hypertensive disorder?
-Reasoning: Hypertensive disorders are an indication for Moxonidine because it effectively lowers blood pressure by selectively stimulating imidazoline receptors in the brainstem, which reduces sympathetic nervous system activity—a key contributor to high blood pressure. Unlike traditional antihypertensives that may affect heart rate or electrolyte balance, Moxonidine offers targeted central action with fewer metabolic side effects, making it particularly suitable for patients with essential hypertension, especially those with metabolic syndrome or diabetes.
-Answer:$YES$
-"""
-
 with open("../drug_data/data/disease_feature.json", "r", encoding="utf-8") as file:
     disease_data = json.load(file)
     
@@ -90,21 +80,9 @@ with jsonlines.open(file_path, "a") as f_write:
             gene = ",".join(map(str, gene))
 
         for drug_pair in drug_lst:
-            if prompt_type == "phenotype":
-                prefix = f"{dk} includes the following phenotypes: {phenotype}"
-                question = f"{prefix}\nIs {dk} an indication for {drug_pair[0]}?"
-                input_text = f"Question: {question} directly answer me with YES or NO\nAnswer:"
-                inputs = tokenizer(input_text, return_tensors="pt").to(device)
-            elif prompt_type == "cot":  
+            if prompt_type == "cot":  
                 question = f"Is {dk} an indication for {drug_pair[0]}?"
                 input_text = f"Question: {question} let's think step by step and then answer me with YES or NO\nAnswer:"
-            elif prompt_type == "fcot":  
-                question = f"Is {dk} an indication for {drug_pair[0]}?"
-                input_text = f"{two_shot}\nQuestion: {question}."
-            elif prompt_type == "gene":  
-                prefix = f"{dk} includes the following gene: {gene}"
-                question = f"Is {dk} an indication for {drug_pair[0]}?"
-                input_text = f"Question: {question} directly answer me with YES or NO\nAnswer:"
             else: 
                 question = f"Is {dk} an indication for {drug_pair[0]}?"
                 input_text = f"Question: {question} directly answer me with YES or NO\nAnswer:"
