@@ -4,7 +4,7 @@ import jsonlines
 import numpy as np
 
 
-file_folder = "./results/llama31_8b"
+file_folder = "./results/llama32_1b"
 answer_dict = {"contraindication":"no", "indication":"yes"}
 
 for filename in os.listdir(file_folder):
@@ -23,7 +23,7 @@ for filename in os.listdir(file_folder):
             for drug, answer in zip(info_dict['drug_name'], info_dict['answer']):
                 total_count += 1
                 label = answer_dict.get(drug[-1])  
-                pred = answer.split("\n")[0].split(".")[0].lower().strip()  
+                pred = answer.split("\n")[0].split(".")[0].replace("$", "").lower().strip()  
 
                 if label == pred:
                     correct += 1

@@ -1,5 +1,5 @@
 #!/bin/bash
-CUDA_VISIBLE_DEVICES=6 nohup python model_run.py \
+CUDA_VISIBLE_DEVICES=7 nohup python model_run.py \
     --model_name "meta-llama/Llama-3.2-1B-Instruct" \
     --output_path "results/llama32_1b/" \
     --prompt_type "fcot" \
