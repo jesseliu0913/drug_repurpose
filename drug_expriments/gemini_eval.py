@@ -70,7 +70,7 @@ os.makedirs(args.output_path, exist_ok=True)
 prompt_type = args.prompt_type
 file_path = f"{args.output_path}/{prompt_type}_{num_smaples}.jsonl"
 
-disease_keys = list(disease_data.keys())[143:400]
+disease_keys = list(disease_data.keys())[:400]
 with jsonlines.open(file_path, "a") as f_write:
     for dk in disease_keys:
         drug_lst = []
