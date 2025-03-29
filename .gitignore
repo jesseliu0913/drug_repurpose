@@ -1,4 +1,5 @@
 /drug_data/data/*
+/drug_expriments/log/*
 /drug_expriments/results/*
 /drug_expriments/results_base/*
 /drug_expriments/results_pharmDB/*
