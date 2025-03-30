@@ -4,7 +4,7 @@ import jsonlines
 import numpy as np
 
 
-file_folder = "./results/llama32_1b"
+file_folder = "./results/gemini"
 answer_dict = {"contraindication":"no", "indication":"yes"}
 
 for filename in os.listdir(file_folder):
@@ -12,18 +12,23 @@ for filename in os.listdir(file_folder):
     tp = fp = tn = fn = 0
     total_count = 0
     correct = 0
-
+    # print(filename)
+    
     with open(file_path, 'r') as f_read:
         for line in f_read:
             line_dict = {}
             yes_answer = []
             no_answer = []
+            # print(line)
 
             info_dict = json.loads(line)
             for drug, answer in zip(info_dict['drug_name'], info_dict['answer']):
                 total_count += 1
                 label = answer_dict.get(drug[-1])  
-                pred = answer.split("\n")[0].split(".")[0].replace("$", "").lower().strip()  
+                if "f" in filename or "cot" in filename:
+                    pred = "yes" if "YES" in answer else "no"
+                else:
+                    pred = answer.split("\n")[0].split(".")[0].replace("$", "").lower().strip()  
 
                 if label == pred:
                     correct += 1
