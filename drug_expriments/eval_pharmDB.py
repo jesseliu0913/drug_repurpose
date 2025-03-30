@@ -4,7 +4,7 @@ import jsonlines
 import numpy as np
 
 
-file_folder = "./results_pharmDB/llama32_3b"
+file_folder = "./results_pharmDB/gemini"
 
 for filename in os.listdir(file_folder):
     file_path = os.path.join(file_folder, filename)
