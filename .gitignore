@@ -2,7 +2,10 @@
 /drug_expriments/log/*
 /drug_expriments/results/*
 /drug_expriments/results_base/*
+/drug_expriments/results_random/*
 /drug_expriments/results_pharmDB/*
 /general_exp/results/*
 /PharmacotherapyDB/*
 /PrimeKG/*
+/split_data/results/*
+/split_data/log/*
