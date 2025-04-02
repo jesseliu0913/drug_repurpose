@@ -75,7 +75,8 @@ training_args = TrainingArguments(
     save_steps=100,
     learning_rate=1e-5, 
     weight_decay=0.01,
-    fp16=True,
+    fp16=False,
+    bf16=True,
     per_device_train_batch_size=1,  
     per_device_eval_batch_size=1,
     num_train_epochs=3,
@@ -83,7 +84,7 @@ training_args = TrainingArguments(
     load_best_model_at_end=True,
     gradient_accumulation_steps=16,  
     report_to="wandab",
-    gradient_checkpointing=True,  
+    gradient_checkpointing=False,  
     optim="adamw_torch",
 )
 
