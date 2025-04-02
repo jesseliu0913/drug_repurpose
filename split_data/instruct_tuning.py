@@ -13,7 +13,7 @@ from transformers import (
     DataCollatorForLanguageModeling,
     set_seed
 )
-
+from peft import LoraConfig, get_peft_model, TaskType
 
 set_seed(42)
 
@@ -33,8 +33,8 @@ prompts = [item['prompt'] for item in combined_data]
 dataset = Dataset.from_dict({"text": prompts})
 dataset = dataset.train_test_split(test_size=0.1)
 
-model_name = "meta-llama/Llama-2-7b-hf"  
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+model_name = "meta-llama/Llama-3.2-3B-Instruct"  
+tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=token)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "right"
 
@@ -58,15 +58,37 @@ tokenized_datasets = dataset.map(
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
     torch_dtype=torch.float16,
-    device_map="auto"
+    use_auth_token=token
 )
+
+lora_config = LoraConfig(
+    r=8,
+    lora_alpha=32,
+    target_modules=["q_proj", "k_proj", "v_proj", "o_proj"], 
+    lora_dropout=0.05,
+    bias="none",
+    task_type=TaskType.CAUSAL_LM,
+)
+
+for param in model.parameters():
+    param.requires_grad = False
+
+model = get_peft_model(model, lora_config)
+
+for name, param in model.named_parameters():
+    if "lora" in name:  
+        if not param.requires_grad:
+            param.requires_grad = True
+
+model.print_trainable_parameters()  
+
 data_collator = DataCollatorForLanguageModeling(
     tokenizer=tokenizer, 
     mlm=False  
 )
 
 training_args = TrainingArguments(
-    output_dir="./llama32-1b-model",
+    output_dir="./llama32-3b-model",
     evaluation_strategy="steps",
     eval_steps=100,
     logging_dir="./logs",
@@ -83,11 +105,9 @@ training_args = TrainingArguments(
     warmup_steps=100,
     load_best_model_at_end=True,
     gradient_accumulation_steps=16,  
-    report_to="wandab",
     gradient_checkpointing=False,  
     optim="adamw_torch",
 )
-
 
 trainer = Trainer(
     model=model,
@@ -98,4 +118,6 @@ trainer = Trainer(
 )
 
 trainer.train()
-trainer.save_model("./llama32-1b-model")
+trainer.save_model("./llama32-3b-model")
+
+# CUDA_VISIBLE_DEIVCES=0,1,6,7 torchrun --nproc_per_node=2 instruct_tuning.py > llama32-3b.log 2>&1 &
