@@ -61,26 +61,26 @@ model = AutoModelForCausalLM.from_pretrained(
     use_auth_token=token
 )
 
-lora_config = LoraConfig(
-    r=8,
-    lora_alpha=32,
-    target_modules=["q_proj", "k_proj", "v_proj", "o_proj"], 
-    lora_dropout=0.05,
-    bias="none",
-    task_type=TaskType.CAUSAL_LM,
-)
+# lora_config = LoraConfig(
+#     r=8,
+#     lora_alpha=32,
+#     target_modules=["q_proj", "k_proj", "v_proj", "o_proj"], 
+#     lora_dropout=0.05,
+#     bias="none",
+#     task_type=TaskType.CAUSAL_LM,
+# )
 
 for param in model.parameters():
-    param.requires_grad = False
+    param.requires_grad = True
 
-model = get_peft_model(model, lora_config)
+# model = get_peft_model(model, lora_config)
 
-for name, param in model.named_parameters():
-    if "lora" in name:  
-        if not param.requires_grad:
-            param.requires_grad = True
+# for name, param in model.named_parameters():
+#     if "lora" in name:  
+#         if not param.requires_grad:
+#             param.requires_grad = True
 
-model.print_trainable_parameters()  
+# model.print_trainable_parameters()  
 
 data_collator = DataCollatorForLanguageModeling(
     tokenizer=tokenizer, 
