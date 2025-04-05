@@ -31,7 +31,11 @@ Question: Is Ceftizoxime an indication for infectious meningitis?
 ANSWER:$YES$
 """
 
-genai.configure(api_key="AIzaSyB2GIsp9o0emOw3DBDqkWG29Dug4u978gc")
+genai.configure(api_key="AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI")
+# AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI
+# AIzaSyB2GIsp9o0emOw3DBDqkWG29Dug4u978gc
+# AIzaSyAbogSNYhQP1HXIgXBBGIpMQvfdfOAAc1I
+# AIzaSyAmGjvNInLdFV7N9Oxp3FhJFIE81WUdDgw
 
 def call_gemini(message, temperature=0.7, max_output_tokens=1000, top_p=0.9, max_retries=10, initial_delay=2):
     model = genai.GenerativeModel('gemini-2.0-flash')
@@ -73,9 +77,9 @@ file_path = f"{args.output_path}/{prompt_type}.jsonl"
 
 test_data = pd.read_csv("/playpen/jesse/drug_repurpose/split_data/test_data.csv")
 node_data = pd.read_csv("/playpen/jesse/drug_repurpose/PrimeKG/nodes.csv")
-
+start_index = 463
 with jsonlines.open(file_path, "a") as f_write:
-    for index, row in test_data.iterrows():
+    for index, row in test_data.iloc[start_index:].iterrows():
         drug_name = row.drug_name
         disease_name = row.disease_name
         disease_index = row.disease_index
