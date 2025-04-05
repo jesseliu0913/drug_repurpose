@@ -24,7 +24,7 @@ with jsonlines.open(file_path_protein, "a") as f_write:
         gene_name = row.gene_name
         drug_name = row.drug_name
         
-        input_text = f"Given the association between {disease_name} and {gene_name}, and the fact that {drug_name} targets {gene_name}, {disease_name} is a potential indication for {drug_name}."
+        input_text = f"Given the association between {disease_name} and {gene_name}, and the fact that {drug_name} targets {gene_name}, {disease_name} is an indication for {drug_name}."
         line_dict = {"drug_name": drug_name, "disease_name": disease_name, "gene_name": gene_name, "prompt": input_text}
         f_write.write(line_dict)
 
