@@ -1,0 +1,121 @@
+name: Tests
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.12"]
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/setup.py') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Setup java
+      uses: actions/setup-java@v1
+      with:
+        java-version: 8
+    - name: Install dependencies
+      run: |
+        echo $GITHUB_EVENT_NAME
+        sudo apt-get update
+        sudo apt-get install libstdc++6 graphviz python3-dev libgraphviz-dev pkg-config
+        # Install test/CI-specific dependencies not covered elsewhere
+        pip install --upgrade pip setuptools wheel
+        pip install pytest pytest-cov pydot jsonschema awscli pycodestyle
+        mkdir -p $HOME/.pybel/data
+        wget -nv https://bigmech.s3.amazonaws.com/travis/pybel_cache.db -O $HOME/.pybel/data/pybel_cache.db
+        # PySB and dependencies
+        wget "https://github.com/RuleWorld/bionetgen/releases/download/BioNetGen-2.4.0/BioNetGen-2.4.0-Linux.tgz" -O bionetgen.tar.gz -nv
+        tar xzf bionetgen.tar.gz
+        pip install git+https://github.com/pysb/pysb.git
+        # Temporary fix. Ensure cython is installed before pyjnius
+        pip install "cython<3"
+        # Now install INDRA with all its extras
+        pip install .[all]
+        # Run slow tests only if we're in the cron setting
+        #- |
+        #  if [[ $TRAVIS_EVENT_TYPE == "cron" ]]; then
+        #      export RUN_SLOW=true;
+        #  fi
+        # Install TEES only if slow tests are being run
+        #- |
+        #  if [[ $RUN_SLOW == "true" ]]; then
+        #      sudo pip2 install numpy
+        #      sudo apt-get --yes install ruby;
+        #      aws s3 cp s3://bigmech/travis/TEES.tar.bz2 . --no-sign-request --no-sign-request;
+        #      tar xjf TEES.tar.bz2;
+        #      mv TEES ~/TEES;
+        #      export TEES_SETTINGS=~/TEES/tees_local_settings.py
+        #  fi
+        # Download adeft models
+        python -m adeft.download
+        python -m gilda.resources
+        # Get INDRA World
+        git clone https://github.com/indralab/indra_world.git
+        # Download Reach
+        wget -nv https://bigmech.s3.amazonaws.com/travis/reach-82631d-biores-e9ee36.jar
+        # Get INDRA Bioontology
+        BIOONTOLOGY_VERSION=$(python -m indra.ontology.bio version)
+        echo $BIOONTOLOGY_VERSION
+        mkdir -p $HOME/.indra/bio_ontology/$BIOONTOLOGY_VERSION
+        wget -nv https://bigmech.s3.amazonaws.com/travis/bio_ontology/$BIOONTOLOGY_VERSION/mock_ontology.pkl -O $HOME/.indra/bio_ontology/$BIOONTOLOGY_VERSION/bio_ontology.pkl
+    - name: Run unit tests
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        INDRA_DB_REST_URL: ${{ secrets.INDRA_DB_REST_URL }}
+        INDRA_DB_REST_API_KEY: ${{ secrets.INDRA_DB_REST_API_KEY }}
+        ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
+        ELSEVIER_INST_KEY: ${{ secrets.ELSEVIER_INST_KEY }}
+        BIOGRID_API_KEY: ${{ secrets.BIOGRID_API_KEY }}
+      run: |
+        # Set pytest attributes based on the context in which we are running
+        export PYTESTMARKS="(not nogha) and (not slow) and (not cron)"
+        export PYTESTMARKS=$(if [ "$GITHUB_EVENT_NAME" == "pull_request" ]; then echo $PYTESTMARKS "and (not nonpublic)"; else echo $PYTESTMARKS; fi)
+        export PYTHONPATH=$PYTHONPATH:`pwd`/indra_world
+        export _JAVA_OPTIONS="-Xmx4g -Xms1g"
+        export BNGPATH=`pwd`/BioNetGen-2.4.0
+        export REACHPATH=`pwd`/reach-82631d-biores-e9ee36.jar
+        export CLASSPATH=$REACHPATH
+        # These are files that are ignored so that doctests don't fail
+        #export NOSE_IGNORE_FILES="find_full_text_sentence.py";
+        #- cd $TRAVIS_BUILD_DIR
+        # Now run all INDRA tests
+        pytest -v -m "$PYTESTMARKS" --ignore-glob='*tees*' --ignore-glob='*isi*' --ignore-glob='*test_reach*' --cov=indra --cov-report=term-missing --doctest-modules --durations=10 --continue-on-collection-errors indra/tests
+        pytest -v -m "$PYTESTMARKS" indra/tests/test_reach.py
+        # TEES tests
+        #- python -m nose_notify indra/tests/test_tees.py --slack_hook $SLACK_NOTIFY_HOOK
+        #  --label "$TRAVIS_REPO_SLUG - $TRAVIS_BRANCH" -v -a $NOSEATTR --process-restartworker;
+        # Run NL model examples only when the environmental variable
+        # RUN_NL_MODELS is set to true in the Travis build
+        # NOTE: if blocks in Travis DO NOT FAIL even if there is
+        # and error in one of the commands inside. Therefore passing
+        # alone does not mean that all the operations inside were
+        # successful. Rather, the log needs to be inspected and compared
+        # to desired behavior.
+        #- |
+        #  if [[ $RUN_NL_MODELS == "true" ]]; then
+        #      cd $TRAVIS_BUILD_DIR/models
+        #      python hello_indra.py
+        #      cd $TRAVIS_BUILD_DIR/models/p53_model
+        #      python run_p53_model.py noplot
+        #      cd $TRAVIS_BUILD_DIR/models/braf_model
+        #      python assemble_model.py
+        #      cd $TRAVIS_BUILD_DIR/models/ras_pathway
+        #      python run_ras_pathway.py trips
+        #   fi
+        #- cd $TRAVIS_BUILD_DIR
+        # Run code style report on diff
+        #- git remote set-branches --add origin master
+        #- git fetch
+        #- git diff origin/master | pycodestyle --diff > pep8.txt; cat pep8.txt;
