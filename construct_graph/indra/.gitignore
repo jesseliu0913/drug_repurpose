@@ -1,0 +1,125 @@
+# INDRA specific ignores
+elsevier_api_keys
+cr_clickthrough_key
+biogrid_api_key
+data
+
+.ipynb_checkpoints
+models
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Rope
+.ropeproject
+
+# Django stuff:
+*.log
+*.pot
+
+# Sphinx documentation
+doc/_build/
+doc/_templates/
+doc/_static/
+
+# Vim temp files
+*.swp
+large_corpus.rdf
+
+# Data files
+*.rdf
+*.owl
+*.xml
+*.nxml
+*.bel
+*.json
+*.bson
+*.dat
+
+# Documents, graphs, images
+*.pdf
+*.dot
+*.bngl
+*.jpg
+
+# Pickle
+*.pkl
+
+# JARs
+*.jar
+
+.eggs
+.coverage
+cover
+setuptools*.zip
+
+indra/literature/elsevier_api_key
+indra/literature/cr_clickthrough_key
+indra/benchmarks/assembly_eval/batch4/trips
+indra/benchmarks/assembly_eval/batch4/reach
+models/fallahi_eval/output
+indra/sources/eidos/cache/geonames/index/
+indra/tests/tempfile.html
+
+# Other
+*.txt
+*.cx
+*.zip
+*.csv
+*.java
+*.xbel
+*.tsv
+*.ai
+*.png
+*.eps
+*.gz
+
+# For the cool cats using PyCharm
+.idea
+.idea/*
+
+.pytest_cache
+.DS_Store
+.noseids
+.venv
