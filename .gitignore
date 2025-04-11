@@ -9,3 +9,7 @@
 /PrimeKG/*
 /split_data/results/*
 /split_data/log/*
+/split_data/data/*
+/split_data/gemini_select/all_correct/*
+/split_data/gemini_select/output/*
+/split_data/gemini_select/log/*
