@@ -8,6 +8,7 @@
 /PharmacotherapyDB/*
 /PrimeKG/*
 /split_data/results/*
+/split_data/results_nogood/*
 /split_data/log/*
 /split_data/data/*
 /split_data/gemini_select/all_correct/*
