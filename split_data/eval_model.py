@@ -72,7 +72,7 @@ with jsonlines.open(file_path, "a") as f_write:
         gene = gene[:] if len(gene) < 10 else gene[:10]
 
         if prompt_type == "phenotype":
-            prefix = f"{disease_name} includes the following phenotypes: {phenotype}"
+            prefix = f"{disease_name} have several phenotypes like: {phenotype}"
             question = f"{prefix}\nIs {disease_name} an indication for {drug_name}?"
             input_text = f"Question: {question} directly answer me with $YES$ or $NO$\nANSWER:"
             inputs = tokenizer(input_text, return_tensors="pt").to(device)
@@ -85,13 +85,17 @@ with jsonlines.open(file_path, "a") as f_write:
             input_text = f"{two_shot}\nQuestion: {question}."
             inputs = tokenizer(input_text, return_tensors="pt").to(device)
         elif prompt_type == "gene":  
-            prefix = f"{disease_name} includes the following genes: {gene}"
+            prefix = f"{disease_name} associate with several genes like: {gene}"
             question = f"{prefix}\nIs {disease_name} an indication for {drug_name}?"
             input_text = f"Question: {question} directly answer me with $YES$ or $NO$\nANSWER:"
             inputs = tokenizer(input_text, return_tensors="pt").to(device)
         elif prompt_type == "fraw":  
             question = f"Is {disease_name} an indication for {drug_name}?"
             input_text = f"{raw_shot}\nQuestion: {question} directly answer me with $YES$ or $NO$\nANSWER:"
+            inputs = tokenizer(input_text, return_tensors="pt").to(device)
+        elif prompt_type == "raw3":  
+            question = f"Is {disease_name} an indication for {drug_name}?"
+            input_text = f"{raw_shot}\nQuestion: {question} directly answer me with $YES$, $NO$ or $Not Sure$\nANSWER:"
             inputs = tokenizer(input_text, return_tensors="pt").to(device)
         else: 
             question = f"Is {disease_name} an indication for {drug_name}?"
