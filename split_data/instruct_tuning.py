@@ -120,4 +120,4 @@ trainer = Trainer(
 trainer.train()
 trainer.save_model("./llama32-3b-model")
 
-# CUDA_VISIBLE_DEIVCES=0,1,6,7 torchrun --nproc_per_node=2 instruct_tuning.py > llama32-3b.log 2>&1 &
+# CUDA_VISIBLE_DEIVCES=7 instruct_tuning.py > llama32-3b.log 2>&1 &

@@ -19,19 +19,19 @@ parser.add_argument("--shuffle_num", type=int, help="For one question, shufflue 
 args = parser.parse_args()
 
 two_shot = """
-Question: Is Metformin an indication for stroke disorder?
-REASONING: Metformin is an antidiabetic medication primarily indicated for the treatment of type 2 diabetes mellitus, not for stroke or stroke disorders. While some studies suggest metformin may have secondary vascular benefits (like reducing the risk of cardiovascular events), it is not indicated or approved for the treatment or prevention of stroke itself. Therefore, its use in stroke disorders would be considered off-label and not based on formal clinical guidelines.
-ANSWER:$NO$
-Question: Is Ceftizoxime an indication for infectious meningitis?
-REASONING: Ceftizoxime is an indication for infectious meningitis because it is a third-generation cephalosporin with broad-spectrum activity against key meningitis pathogens such as Neisseria meningitidis, Haemophilus influenzae, and some Streptococcus pneumoniae strains. It effectively penetrates the blood-brain barrier and reaches therapeutic levels in the cerebrospinal fluid, making it suitable for CNS infections like meningitis, particularly when the causative organism is susceptible.
+Question: Is Fosinopril an indication for hypertensive disorder?
+REASONING: Fosinopril is indicated for hypertensive disorders because it functions as an angiotensin-converting enzyme (ACE) inhibitor, which blocks the conversion of angiotensin I to angiotensin II—a potent vasoconstrictor. By reducing angiotensin II levels, Fosinopril promotes vasodilation, decreases peripheral vascular resistance, and ultimately lowers blood pressure. This mechanism directly addresses the pathophysiology of hypertension, making Fosinopril an effective and commonly prescribed medication for managing high blood pressure and reducing the risk of associated cardiovascular complications.
 ANSWER:$YES$
+Question: Is Rotigotine an indication for hypertensive disorder?
+REASONING: Rotigotine is a dopamine agonist primarily used to treat Parkinson’s disease and restless legs syndrome (RLS). It works by stimulating dopamine receptors in the brain to help manage motor symptoms. While it may have some effects on blood pressure as a side effect (e.g., causing orthostatic hypotension), it is not approved or used as a treatment for hypertension or other hypertensive disorders.
+ANSWER:$NO$
 """
 
 raw_shot = """
-Question: Is Metformin an indication for stroke disorder?
-ANSWER:$NO$
-Question: Is Ceftizoxime an indication for infectious meningitis?
+Question: Is Fosinopril an indication for hypertensive disorder?
 ANSWER:$YES$
+Question: Is Rotigotine an indication for hypertensive disorder?
+ANSWER:$NO$
 """
 
 model_name = args.model_name
