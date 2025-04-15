@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for prompt_type in fcot phenotype cot gene fraw raw; do
+for prompt_type in fcot phenotype cot gene fraw raw raw3; do
   CUDA_VISIBLE_DEVICES=7 nohup python eval_model.py \
     --model_name "JesseLiu/llama32-1b-lora_cot" \
     --output_path "results/llama32_1b_loracot/" \

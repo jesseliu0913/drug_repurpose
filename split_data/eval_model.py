@@ -50,12 +50,21 @@ file_path = f"{args.output_path}/{prompt_type}.jsonl"
 test_data = pd.read_csv("/playpen/jesse/drug_repurpose/split_data/data_analysis/test_data_new.csv")
 node_data = pd.read_csv("/playpen/jesse/drug_repurpose/PrimeKG/nodes.csv")
 
+existing_pairs = set()
+if os.path.exists(file_path):
+    with jsonlines.open(file_path, "r") as f_read:
+        for line in f_read:
+            existing_pairs.add((line["drug_name"], line["disease_name"]))
+
 with jsonlines.open(file_path, "a") as f_write:
     for index, row in test_data.iterrows():
         drug_name = row.drug_name
         disease_name = row.disease_name
         disease_index = row.disease_index
         relation = row.relation
+        if (drug_name, disease_name) in existing_pairs:
+            print(f"Skipping {drug_name} - {disease_name}, already processed.")
+            continue
         related_phenotypes = ast.literal_eval(row.related_phenotypes)
         related_proteins = ast.literal_eval(row.related_proteins)
         phenotype = []
