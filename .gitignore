@@ -14,3 +14,5 @@
 /split_data/gemini_select/all_correct/*
 /split_data/gemini_select/output/*
 /split_data/gemini_select/log/*
+/split_data/model_weight/*
+/split_data/wandb/*
