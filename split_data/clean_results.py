@@ -1,6 +1,6 @@
 import os
 
-# drug,Calcitriol,disease,hypercalcemia disease
+# drug,pgrep -u $(whoami) -a python,disease,hypercalcemia disease
 
 import os
 import json
