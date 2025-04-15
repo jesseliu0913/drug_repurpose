@@ -16,60 +16,85 @@ parser.add_argument("--shuffle_num", type=int, help="For one question, shufflue 
 args = parser.parse_args()
 
 two_shot = """
-Question: Is Metformin an indication for stroke disorder?
-REASONING: Metformin is an antidiabetic medication primarily indicated for the treatment of type 2 diabetes mellitus, not for stroke or stroke disorders. While some studies suggest metformin may have secondary vascular benefits (like reducing the risk of cardiovascular events), it is not indicated or approved for the treatment or prevention of stroke itself. Therefore, its use in stroke disorders would be considered off-label and not based on formal clinical guidelines.
-ANSWER:$NO$
-Question: Is Ceftizoxime an indication for infectious meningitis?
-REASONING: Ceftizoxime is an indication for infectious meningitis because it is a third-generation cephalosporin with broad-spectrum activity against key meningitis pathogens such as Neisseria meningitidis, Haemophilus influenzae, and some Streptococcus pneumoniae strains. It effectively penetrates the blood-brain barrier and reaches therapeutic levels in the cerebrospinal fluid, making it suitable for CNS infections like meningitis, particularly when the causative organism is susceptible.
+Question: Is Fosinopril an indication for hypertensive disorder?
+REASONING: Fosinopril is indicated for hypertensive disorders because it functions as an angiotensin-converting enzyme (ACE) inhibitor, which blocks the conversion of angiotensin I to angiotensin II—a potent vasoconstrictor. By reducing angiotensin II levels, Fosinopril promotes vasodilation, decreases peripheral vascular resistance, and ultimately lowers blood pressure. This mechanism directly addresses the pathophysiology of hypertension, making Fosinopril an effective and commonly prescribed medication for managing high blood pressure and reducing the risk of associated cardiovascular complications.
 ANSWER:$YES$
+Question: Is Rotigotine an indication for hypertensive disorder?
+REASONING: Rotigotine is a dopamine agonist primarily used to treat Parkinson’s disease and restless legs syndrome (RLS). It works by stimulating dopamine receptors in the brain to help manage motor symptoms. While it may have some effects on blood pressure as a side effect (e.g., causing orthostatic hypotension), it is not approved or used as a treatment for hypertension or other hypertensive disorders.
+ANSWER:$NO$
 """
 
 raw_shot = """
-Question: Is Metformin an indication for stroke disorder?
-ANSWER:$NO$
-Question: Is Ceftizoxime an indication for infectious meningitis?
+Question: Is Fosinopril an indication for hypertensive disorder?
 ANSWER:$YES$
+Question: Is Rotigotine an indication for hypertensive disorder?
+ANSWER:$NO$
 """
 
-genai.configure(api_key="AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI")
+# genai.configure(api_key="AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI")
 # AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI
 # AIzaSyB2GIsp9o0emOw3DBDqkWG29Dug4u978gc
 # AIzaSyAbogSNYhQP1HXIgXBBGIpMQvfdfOAAc1I
 # AIzaSyAmGjvNInLdFV7N9Oxp3FhJFIE81WUdDgw
 
-def call_gemini(message, temperature=0.7, max_output_tokens=1000, top_p=0.9, max_retries=10, initial_delay=2):
-    model = genai.GenerativeModel('gemini-2.0-flash')
-    
-    for attempt in range(max_retries + 1):
-        try:
-            response = model.generate_content(
-                contents=[
-                    {
-                        "role": "user",
-                        "parts": [{"text": message}]
+KEY_POOL = [
+    "AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI",
+    "AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI",
+    "AIzaSyB2GIsp9o0emOw3DBDqkWG29Dug4u978gc",
+    "AIzaSyAbogSNYhQP1HXIgXBBGIpMQvfdfOAAc1I",
+    "AIzaSyAmGjvNInLdFV7N9Oxp3FhJFIE81WUdDgw",
+]
+
+def call_gemini(message, 
+                temperature=0.7, 
+                max_output_tokens=1000, 
+                top_p=0.9, 
+                max_retries=10, 
+                initial_delay=2):
+
+    current_key_index = 0
+
+    while current_key_index < len(KEY_POOL):
+        genai.configure(api_key=KEY_POOL[current_key_index])
+        model = genai.GenerativeModel('gemini-2.0-flash')
+
+        for attempt in range(max_retries + 1):
+            try:
+                response = model.generate_content(
+                    contents=[
+                        {
+                            "role": "user",
+                            "parts": [{"text": message}]
+                        }
+                    ],
+                    generation_config={
+                        "temperature": temperature,
+                        "max_output_tokens": max_output_tokens,
+                        "top_p": top_p
                     }
-                ],
-                generation_config={
-                    "temperature": temperature,
-                    "max_output_tokens": max_output_tokens,
-                    "top_p": top_p
-                }
-            )
+                )
+                return response.text  
+
+            except (exceptions.ResourceExhausted, 
+                    exceptions.ServiceUnavailable, 
+                    exceptions.TooManyRequests,
+                    exceptions.DeadlineExceeded) as e:
+                if attempt == max_retries:
+                    print(f"Exhausted {max_retries} attempts with current key. Switching to next key.")
+                    current_key_index += 1
+                    break  
+                else:
+                    delay = initial_delay * (2 ** attempt) + random.uniform(0, 1)
+                    print(f"Rate limit or service error. Retrying in {delay:.2f} seconds... "
+                          f"(Attempt {attempt+1}/{max_retries}, Key index: {current_key_index})")
+                    time.sleep(delay)
             
-            return response.text
-            
-        except (exceptions.ResourceExhausted, exceptions.ServiceUnavailable, 
-                exceptions.TooManyRequests, exceptions.DeadlineExceeded) as e:
-            if attempt == max_retries:
+            except Exception as e:
+                print(f"Unexpected error with key index {current_key_index}: {e}")
                 raise
-                
-            delay = initial_delay * (2 ** attempt) + random.uniform(0, 1)
-            print(f"Rate limit hit. Retrying in {delay:.2f} seconds... (Attempt {attempt+1}/{max_retries})")
-            time.sleep(delay)
-        
-        except Exception as e:
-            print(f"Unexpected error: {e}")
-            raise
+
+    raise RuntimeError("All API keys have been exhausted without success.")
+
 
 os.makedirs(args.output_path, exist_ok=True)
 prompt_type = args.prompt_type
@@ -101,7 +126,7 @@ with jsonlines.open(file_path, "a") as f_write:
         gene = gene[:10]
 
         if prompt_type == "phenotype":
-            prefix = f"{disease_name} includes the following phenotypes: {phenotype}"
+            prefix = f"{disease_name} have several phenotypes like: {phenotype}"
             question = f"{prefix}\nIs {disease_name} an indication for {drug_name}?"
             input_text = f"Question: {question} directly answer me with $YES$ or $NO$\nANSWER:"
         elif prompt_type == "cot":  
@@ -111,7 +136,7 @@ with jsonlines.open(file_path, "a") as f_write:
             question = f"Is {disease_name} an indication for {drug_name}?"
             input_text = f"{two_shot}\nQuestion: {question}."
         elif prompt_type == "gene":  
-            prefix = f"{disease_name} includes the following genes: {gene}"
+            prefix = f"{disease_name} associate with several genes like: {gene}"
             question = f"{prefix}\nIs {disease_name} an indication for {drug_name}?"
             input_text = f"Question: {question} directly answer me with $YES$ or $NO$\nANSWER:"
         elif prompt_type == "fraw":  
