@@ -36,54 +36,40 @@ def calculate_token_variance(answers):
 
 def calculate_metrics(jsonl_file, ground_truth_file, prompt_type):
     ground_truth = {}
-    if ground_truth_file and os.path.exists(ground_truth_file):
-        truth_df = pd.read_csv(ground_truth_file)
-        for _, row in truth_df.iterrows():
-            key = (row['drug_name'], row['disease_name'])
-            ground_truth[key] = 1 if row['relation'] == 'indication' else 0
-    
-    
     y_true = []
     y_pred = []
     records = []
     all_answers = []
     
-    try:
-        with jsonlines.open(jsonl_file, 'r') as reader:
-            for obj in reader:
-                drug = obj.get('drug_name')
-                disease = obj.get('disease_name')
-                answer = obj.get('answer', '')
-                if prompt_type != "fcot":
-                    answer = answer.split("\n")[0]
-                all_answers.append(answer)
-                prediction_text = extract_yes_no(answer)
+
+    with jsonlines.open(jsonl_file, 'r') as reader:
+        for obj in reader:
+            drug = obj.get('drug_name')
+            disease = obj.get('disease_name')
+            answer = obj.get('answer', '')
+            label = obj.get('label')
+            if prompt_type != "fcot":
+                answer = answer.split("\n")[0]
+            all_answers.append(answer)
+            prediction_text = extract_yes_no(answer)
+            
+            prediction = 1 if prediction_text == "YES" else 0
+            ground_truth = 1 if label == "indication" else 0
+            
+            y_true.append(ground_truth)
+            y_pred.append(prediction)
                 
-                prediction = 1 if prediction_text == "YES" else 0
-                
-                if (drug, disease) in ground_truth and prediction_text is not None:
-                    true_label = ground_truth[(drug, disease)]
-                    y_true.append(true_label)
-                    y_pred.append(prediction)
-                else:
-                    print("Wrong Drug-Disease pair:", drug, disease)
-                    
-                records.append({
-                    'drug_name': drug,
-                    'disease_name': disease,
-                    'predicted_answer': prediction_text,
-                    'ground_truth': "YES" if (drug, disease) in ground_truth and ground_truth[(drug, disease)] == 1 else "NO",
-                    'correct': prediction == ground_truth.get((drug, disease)) if (drug, disease) in ground_truth else None
-                })
-    except Exception as e:
-        print(f"Error reading file {jsonl_file}: {e}")
-        return {}, pd.DataFrame()
+            records.append({
+                'drug_name': drug,
+                'disease_name': disease,
+                'predicted_answer': prediction_text,
+                'ground_truth': "YES" if label == "indication" else "NO",
+                'correct': prediction == ground_truth
+            })
     
     metrics = {}
     if len(y_true) > 0 and len(y_pred) > 0:
         positive_samples = sum(y_true)
-        print("Current Positive Samples:", sum(y_pred))
-        print("Current Total Samples:", len(y_pred))
         if positive_samples > 0 and positive_samples < len(y_true):
             metrics['accuracy'] = accuracy_score(y_true, y_pred)
             metrics['f1'] = f1_score(y_true, y_pred, zero_division=0)
@@ -185,4 +171,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# python eval_results.py  --input_dir ./results --ground_truth ./test_data.csv
+# python cal_results.py  --input_dir ./results --ground_truth ./data_analysis/test_data_new.csv
