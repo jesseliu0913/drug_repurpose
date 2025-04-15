@@ -16,7 +16,7 @@ from transformers import (
 from peft import LoraConfig, get_peft_model, TaskType
 
 set_seed(42)
-
+token = os.getenv("HF_API_TOKEN")
 ddgene_path = Path("data/ddgene.jsonl")
 ddphenotype_path = Path("data/ddphenotype.jsonl")
 

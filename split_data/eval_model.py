@@ -101,10 +101,21 @@ with jsonlines.open(file_path, "a") as f_write:
             question = f"Is {disease_name} an indication for {drug_name}?"
             input_text = f"Question: {question} directly answer me with $YES$ or $NO$\nANSWER:"
             inputs = tokenizer(input_text, return_tensors="pt").to(device)
+        
+        if args.shuffle_num = 1:
+            output = model.generate(**inputs, max_new_tokens=1000, do_sample=True, temperature=0.2)
+            answer = tokenizer.decode(output[0], skip_special_tokens=True)
+            answer = answer.replace(input_text, "").strip()
 
-        output = model.generate(**inputs, max_new_tokens=1000, do_sample=True, temperature=0.2)
-        answer = tokenizer.decode(output[0], skip_special_tokens=True)
-        answer = answer.replace(input_text, "").strip()
-
-        line_dict = {"drug_name": drug_name, "disease_name": disease_name, "answer": answer, "prompt": input_text}
-        f_write.write(line_dict)
+            line_dict = {"drug_name": drug_name, "disease_name": disease_name, "answer": answer, "prompt": input_text}
+            f_write.write(line_dict)
+        else:
+            answer_lst = []
+            for _ in range(args.shuffle_num):
+                output = model.generate(**inputs, max_new_tokens=1000, do_sample=True, temperature=0.2)
+                answer = tokenizer.decode(output[0], skip_special_tokens=True)
+                answer = answer.replace(input_text, "").strip()
+                answer_lst.append(answer)
+                
+            line_dict = {"drug_name": drug_name, "disease_name": disease_name, "answer": answer_lst, "prompt": input_text}
+            f_write.write(line_dict)

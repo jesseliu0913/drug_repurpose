@@ -34,13 +34,14 @@ def calculate_token_variance(answers):
         return np.var(token_counts)
     return 0
 
-def calculate_metrics(jsonl_file, ground_truth_file=None):
+def calculate_metrics(jsonl_file, ground_truth_file, prompt_type):
     ground_truth = {}
     if ground_truth_file and os.path.exists(ground_truth_file):
         truth_df = pd.read_csv(ground_truth_file)
         for _, row in truth_df.iterrows():
             key = (row['drug_name'], row['disease_name'])
-            ground_truth[key] = 1 if row['relation'] == 'positive' else 0
+            ground_truth[key] = 1 if row['relation'] == 'indication' else 0
+    
     
     y_true = []
     y_pred = []
@@ -53,6 +54,8 @@ def calculate_metrics(jsonl_file, ground_truth_file=None):
                 drug = obj.get('drug_name')
                 disease = obj.get('disease_name')
                 answer = obj.get('answer', '')
+                if prompt_type != "fcot":
+                    answer = answer.split("\n")[0]
                 all_answers.append(answer)
                 prediction_text = extract_yes_no(answer)
                 
@@ -62,6 +65,8 @@ def calculate_metrics(jsonl_file, ground_truth_file=None):
                     true_label = ground_truth[(drug, disease)]
                     y_true.append(true_label)
                     y_pred.append(prediction)
+                else:
+                    print("Wrong Drug-Disease pair:", drug, disease)
                     
                 records.append({
                     'drug_name': drug,
@@ -77,6 +82,8 @@ def calculate_metrics(jsonl_file, ground_truth_file=None):
     metrics = {}
     if len(y_true) > 0 and len(y_pred) > 0:
         positive_samples = sum(y_true)
+        print("Current Positive Samples:", sum(y_pred))
+        print("Current Total Samples:", len(y_pred))
         if positive_samples > 0 and positive_samples < len(y_true):
             metrics['accuracy'] = accuracy_score(y_true, y_pred)
             metrics['f1'] = f1_score(y_true, y_pred, zero_division=0)
@@ -109,7 +116,7 @@ def main():
     
     if args.ground_truth and os.path.exists(args.ground_truth):
         truth_df = pd.read_csv(args.ground_truth)
-        positive_count = sum(truth_df['relation'] == 'positive')
+        positive_count = sum(truth_df['relation'] == 'indication')
         total_count = len(truth_df)
         print(f"Ground truth distribution: {positive_count}/{total_count} positive examples ({positive_count/total_count:.2%})")
     
@@ -118,7 +125,7 @@ def main():
         model_name = os.path.basename(os.path.dirname(file_path))
         
         print(f"Processing: {model_name}/{prompt_type}")
-        metrics, df = calculate_metrics(file_path, args.ground_truth)
+        metrics, df = calculate_metrics(file_path, args.ground_truth, prompt_type)
         
         output_dir = os.path.dirname(args.output_file)
         if output_dir and not os.path.exists(output_dir):
