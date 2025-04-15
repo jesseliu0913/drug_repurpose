@@ -9,6 +9,7 @@ import time
 import random
 from google.api_core import exceptions
 
+
 parser = argparse.ArgumentParser(description="Baseline Experiments")
 parser.add_argument("--output_path", type=str, help="Input output path")
 parser.add_argument("--prompt_type", type=str, help="Input the Prompt Type (raw, cot, phenotype, gene...)")
@@ -37,29 +38,37 @@ ANSWER:$NO$
 # AIzaSyAbogSNYhQP1HXIgXBBGIpMQvfdfOAAc1I
 # AIzaSyAmGjvNInLdFV7N9Oxp3FhJFIE81WUdDgw
 
-KEY_POOL = [
-    "AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI",
-    "AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI",
-    "AIzaSyB2GIsp9o0emOw3DBDqkWG29Dug4u978gc",
+api_keys = [
     "AIzaSyAbogSNYhQP1HXIgXBBGIpMQvfdfOAAc1I",
     "AIzaSyAmGjvNInLdFV7N9Oxp3FhJFIE81WUdDgw",
+    "AIzaSyAsmMUeXmkOKwjmx__-rhZhyCevd5gllFc", 
+    "AIzaSyDK2hSlAMZsrqFBSMR8C2cKW6-u9xCXato",
+    "AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI",
+    "AIzaSyB2GIsp9o0emOw3DBDqkWG29Dug4u978gc",
 ]
 
-def call_gemini(message, 
-                temperature=0.7, 
-                max_output_tokens=1000, 
-                top_p=0.9, 
-                max_retries=10, 
-                initial_delay=2):
-
-    current_key_index = 0
-
-    while current_key_index < len(KEY_POOL):
-        genai.configure(api_key=KEY_POOL[current_key_index])
+def call_gemini(message, api_keys, temperature=0.7, max_output_tokens=1000, top_p=0.9, max_retries=5, initial_delay=2):
+    if not api_keys:
+        raise ValueError("No API keys provided")
+    
+    rate_limited_keys = set()
+    
+    while len(rate_limited_keys) < len(api_keys):
+        available_keys = [key for key in api_keys if key not in rate_limited_keys]
+        if not available_keys:
+            print(f"All keys are rate limited. Waiting for 30 seconds before retrying...")
+            time.sleep(30)
+            rate_limited_keys.clear()
+            continue
+        
+        current_key = available_keys[0]
+        genai.configure(api_key=current_key)
         model = genai.GenerativeModel('gemini-2.0-flash')
-
-        for attempt in range(max_retries + 1):
+        
+        for attempt in range(max_retries):
             try:
+                print(f"Using key {api_keys.index(current_key) + 1}/{len(api_keys)} (Attempt {attempt + 1}/{max_retries})")
+                
                 response = model.generate_content(
                     contents=[
                         {
@@ -73,42 +82,52 @@ def call_gemini(message,
                         "top_p": top_p
                     }
                 )
-                return response.text  
-
-            except (exceptions.ResourceExhausted, 
-                    exceptions.ServiceUnavailable, 
-                    exceptions.TooManyRequests,
-                    exceptions.DeadlineExceeded) as e:
-                if attempt == max_retries:
-                    print(f"Exhausted {max_retries} attempts with current key. Switching to next key.")
-                    current_key_index += 1
-                    break  
-                else:
-                    delay = initial_delay * (2 ** attempt) + random.uniform(0, 1)
-                    print(f"Rate limit or service error. Retrying in {delay:.2f} seconds... "
-                          f"(Attempt {attempt+1}/{max_retries}, Key index: {current_key_index})")
-                    time.sleep(delay)
+                
+                return response.text
+                
+            except (exceptions.ResourceExhausted, exceptions.ServiceUnavailable, 
+                    exceptions.TooManyRequests, exceptions.DeadlineExceeded) as e:
+                delay = initial_delay * (2 ** attempt) + random.uniform(0, 1)
+                print(f"Rate limit hit for key {api_keys.index(current_key) + 1}. "
+                      f"Retrying in {delay:.2f} seconds... (Attempt {attempt + 1}/{max_retries})")
+                time.sleep(delay)
+                
+                if attempt == max_retries - 1:
+                    print(f"Key {api_keys.index(current_key) + 1} is rate limited. Switching to next key.")
+                    rate_limited_keys.add(current_key)
+                    break
             
             except Exception as e:
-                print(f"Unexpected error with key index {current_key_index}: {e}")
-                raise
-
-    raise RuntimeError("All API keys have been exhausted without success.")
-
+                print(f"Unexpected error with key {api_keys.index(current_key) + 1}: {e}")
+                rate_limited_keys.add(current_key)
+                break
+    
+    raise Exception("All API keys have been rate limited or encountered errors. Please try again later.")
 
 os.makedirs(args.output_path, exist_ok=True)
 prompt_type = args.prompt_type
 file_path = f"{args.output_path}/{prompt_type}.jsonl"
 
-test_data = pd.read_csv("/playpen/jesse/drug_repurpose/split_data/test_data.csv")
+test_data = pd.read_csv("/playpen/jesse/drug_repurpose/split_data/data_analysis/test_data_new.csv")
 node_data = pd.read_csv("/playpen/jesse/drug_repurpose/PrimeKG/nodes.csv")
-start_index = 463
+existing_pairs = set()
+if os.path.exists(file_path):
+    with jsonlines.open(file_path, "r") as f_read:
+        for line in f_read:
+            existing_pairs.add((line["drug_name"], line["disease_name"]))
+print("~" * 20)
+print(f"Total existing pairs: {len(existing_pairs)}")
 with jsonlines.open(file_path, "a") as f_write:
-    for index, row in test_data.iloc[start_index:].iterrows():
+    for index, row in test_data.iterrows():
         drug_name = row.drug_name
         disease_name = row.disease_name
         disease_index = row.disease_index
         relation = row.relation
+
+        if (drug_name, disease_name) in existing_pairs:
+            print(f"Skipping {drug_name} - {disease_name}, already processed.")
+            continue
+
         related_phenotypes = ast.literal_eval(row.related_phenotypes)
         related_proteins = ast.literal_eval(row.related_proteins)
         
@@ -148,6 +167,7 @@ with jsonlines.open(file_path, "a") as f_write:
 
         answer = call_gemini(
             message=input_text,
+            api_keys=api_keys,
             temperature=0.2,
             max_output_tokens=1000,
             top_p=0.9
