@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_DIR="/playpen/jesse/drug_repurpose/split_data/results/gemini"
+BASE_DIR="/playpen/jesse/drug_repurpose/split_data/results/qwq_32b"
 TEST_DATA_PATH="/playpen/jesse/drug_repurpose/split_data/data_analysis/test_data_new.csv"
 
 PROMPT_TYPES=("cot" "fcot" "raw" "fraw" "gene" "phenotype" "raw3")
