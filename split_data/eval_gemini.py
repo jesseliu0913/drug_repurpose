@@ -39,12 +39,12 @@ ANSWER:$NO$
 # AIzaSyAmGjvNInLdFV7N9Oxp3FhJFIE81WUdDgw
 
 api_keys = [
-    "AIzaSyAbogSNYhQP1HXIgXBBGIpMQvfdfOAAc1I",
-    "AIzaSyAmGjvNInLdFV7N9Oxp3FhJFIE81WUdDgw",
     "AIzaSyAsmMUeXmkOKwjmx__-rhZhyCevd5gllFc", 
     "AIzaSyDK2hSlAMZsrqFBSMR8C2cKW6-u9xCXato",
     "AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI",
     "AIzaSyB2GIsp9o0emOw3DBDqkWG29Dug4u978gc",
+    "AIzaSyAbogSNYhQP1HXIgXBBGIpMQvfdfOAAc1I",
+    "AIzaSyAmGjvNInLdFV7N9Oxp3FhJFIE81WUdDgw",
 ]
 
 def call_gemini(message, api_keys, temperature=0.7, max_output_tokens=1000, top_p=0.9, max_retries=5, initial_delay=2):
