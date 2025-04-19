@@ -8,7 +8,7 @@ from matplotlib.colors import LinearSegmentedColormap
 
 FOLDER_DIR = "./uncertainty_results"
 OUTPUT_DIR = "./plots"
-MODEL_NAME = "llama32_3b"
+MODEL_NAME = "llama32_1b"
 FILE_FOLDER = os.path.join(FOLDER_DIR, MODEL_NAME)
 
 def cal_acc(clean_answer_lst, ground_truth):
@@ -86,6 +86,10 @@ def create_calibration_plot(uncertainty_scores, accuracies, model_name):
         elif acc > center:
             ax.bar(center, acc - center, bottom=center, width=0.08, color='lightpink',
                   edgecolor='red', hatch='///', alpha=0.7, label='Gap' if i==0 else "")
+        
+        count = int(bin_counts[i])
+        ax.text(center, max(acc + 0.03, center + 0.03), f'n={count}', 
+                ha='center', va='bottom', fontsize=8, rotation=0)
     
     ax.plot([0, 1], [0, 1], 'k--', linewidth=2, color='gray')
     
@@ -114,6 +118,7 @@ for filename in os.listdir(FILE_FOLDER):
         file_uncertainties = []
         file_accuracies = []
         incorrect_uncertainty_score = 0
+        error_count = 0
         
         f_read = open(file_path, 'r', encoding='utf-8')
         for line in f_read:
@@ -134,6 +139,9 @@ for filename in os.listdir(FILE_FOLDER):
             all_uncertainties.append(uncertainty_score)
             all_accuracies.append(acc_score)
 
+            if uncertainty_score >= 0.6:
+                error_count += 1
+
             if acc_score == 0:
                 if incorrect_uncertainty_score == 0:
                     incorrect_uncertainty_score = uncertainty_score
@@ -149,6 +157,7 @@ for filename in os.listdir(FILE_FOLDER):
         file_model_name = f"{os.path.splitext(filename)[0]}"
         file_error = create_calibration_plot(file_uncertainties, file_accuracies, file_model_name)
         print(f"File: {filename}, Calibration Error: {file_error}")
+        # print(f"File: {filename}, Error Count: {error_count}")
 
 # error = create_calibration_plot(all_uncertainties, all_accuracies, MODEL_NAME)
 # print(f"Overall Calibration Error: {error}")
