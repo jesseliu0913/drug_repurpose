@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for prompt_type in fcot phenotype cot gene fraw raw3; do
+for prompt_type in raw; do
     nohup python -u eval_gemini.py \
         --output_path "results/gemini/" \
         --prompt_type "$prompt_type" \
