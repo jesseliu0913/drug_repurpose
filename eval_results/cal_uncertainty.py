@@ -50,17 +50,19 @@ def answer_extractor(answer):
     return answer
 
 def create_calibration_plot(uncertainty_scores, accuracies, model_name):
+    confidence_scores = [1 - u for u in uncertainty_scores]
+    
     bin_edges = np.linspace(0, 1, 11)
     bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
     
     bin_accuracies = np.zeros(len(bin_edges) - 1)
     bin_counts = np.zeros(len(bin_edges) - 1)
     
-    for uncertainty, accuracy in zip(uncertainty_scores, accuracies):
-        if uncertainty == 1.0:
+    for confidence, accuracy in zip(confidence_scores, accuracies):
+        if confidence == 1.0:
             bin_idx = len(bin_edges) - 2
         else:
-            bin_idx = int(uncertainty * 10)
+            bin_idx = int(confidence * 10)
         
         bin_accuracies[bin_idx] += accuracy
         bin_counts[bin_idx] += 1
@@ -89,7 +91,7 @@ def create_calibration_plot(uncertainty_scores, accuracies, model_name):
     
     ax.text(0.5, 0.2, f"Error={error}", bbox=dict(facecolor='lightgray', alpha=0.8), fontsize=12)
     
-    ax.set_xlabel('Uncertainty')
+    ax.set_xlabel('Confidence')
     ax.set_ylabel('Accuracy')
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
