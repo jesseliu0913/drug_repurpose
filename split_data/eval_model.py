@@ -47,8 +47,14 @@ os.makedirs(args.output_path, exist_ok=True)
 prompt_type = args.prompt_type
 file_path = f"{args.output_path}/{prompt_type}.jsonl"
 
-test_data = pd.read_csv("/playpen/jesse/drug_repurpose/split_data/test_data.csv")
+test_data = pd.read_csv("/playpen/jesse/drug_repurpose/split_data/data_analysis/test_data_new.csv")
 node_data = pd.read_csv("/playpen/jesse/drug_repurpose/PrimeKG/nodes.csv")
+
+existing_pairs = set()
+if os.path.exists(file_path):
+    with jsonlines.open(file_path, "r") as f_read:
+        for line in f_read:
+            existing_pairs.add((line["drug_name"], line["disease_name"]))
 
 with jsonlines.open(file_path, "a") as f_write:
     for index, row in test_data.iterrows():
@@ -56,6 +62,9 @@ with jsonlines.open(file_path, "a") as f_write:
         disease_name = row.disease_name
         disease_index = row.disease_index
         relation = row.relation
+        if (drug_name, disease_name) in existing_pairs:
+            print(f"Skipping {drug_name} - {disease_name}, already processed.")
+            continue
         related_phenotypes = ast.literal_eval(row.related_phenotypes)
         related_proteins = ast.literal_eval(row.related_proteins)
         phenotype = []
@@ -101,10 +110,21 @@ with jsonlines.open(file_path, "a") as f_write:
             question = f"Is {disease_name} an indication for {drug_name}?"
             input_text = f"Question: {question} directly answer me with $YES$ or $NO$\nANSWER:"
             inputs = tokenizer(input_text, return_tensors="pt").to(device)
+        
+        if args.shuffle_num == 1:
+            output = model.generate(**inputs, max_new_tokens=1000, do_sample=True, temperature=0.2)
+            answer = tokenizer.decode(output[0], skip_special_tokens=True)
+            answer = answer.replace(input_text, "").strip()
 
-        output = model.generate(**inputs, max_new_tokens=1000, do_sample=True, temperature=0.2)
-        answer = tokenizer.decode(output[0], skip_special_tokens=True)
-        answer = answer.replace(input_text, "").strip()
-
-        line_dict = {"drug_name": drug_name, "disease_name": disease_name, "answer": answer, "prompt": input_text}
-        f_write.write(line_dict)
+            line_dict = {"drug_name": drug_name, "disease_name": disease_name, "answer": answer, "prompt": input_text, "label": row.relation}
+            f_write.write(line_dict)
+        else:
+            answer_lst = []
+            for _ in range(args.shuffle_num):
+                output = model.generate(**inputs, max_new_tokens=1000, do_sample=True, temperature=0.2)
+                answer = tokenizer.decode(output[0], skip_special_tokens=True)
+                answer = answer.replace(input_text, "").strip()
+                answer_lst.append(answer)
+                
+            line_dict = {"drug_name": drug_name, "disease_name": disease_name, "answer": answer_lst, "prompt": input_text, "label": row.relation}
+            f_write.write(line_dict)

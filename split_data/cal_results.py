@@ -34,45 +34,38 @@ def calculate_token_variance(answers):
         return np.var(token_counts)
     return 0
 
-def calculate_metrics(jsonl_file, ground_truth_file=None):
+def calculate_metrics(jsonl_file, ground_truth_file, prompt_type):
     ground_truth = {}
-    if ground_truth_file and os.path.exists(ground_truth_file):
-        truth_df = pd.read_csv(ground_truth_file)
-        for _, row in truth_df.iterrows():
-            key = (row['drug_name'], row['disease_name'])
-            ground_truth[key] = 1 if row['relation'] == 'positive' else 0
-    
     y_true = []
     y_pred = []
     records = []
     all_answers = []
     
-    try:
-        with jsonlines.open(jsonl_file, 'r') as reader:
-            for obj in reader:
-                drug = obj.get('drug_name')
-                disease = obj.get('disease_name')
-                answer = obj.get('answer', '')
-                all_answers.append(answer)
-                prediction_text = extract_yes_no(answer)
+
+    with jsonlines.open(jsonl_file, 'r') as reader:
+        for obj in reader:
+            drug = obj.get('drug_name')
+            disease = obj.get('disease_name')
+            answer = obj.get('answer', '')
+            label = obj.get('label')
+            if prompt_type != "fcot":
+                answer = answer.split("\n")[0]
+            all_answers.append(answer)
+            prediction_text = extract_yes_no(answer)
+            
+            prediction = 1 if prediction_text == "YES" else 0
+            ground_truth = 1 if label == "indication" else 0
+            
+            y_true.append(ground_truth)
+            y_pred.append(prediction)
                 
-                prediction = 1 if prediction_text == "YES" else 0
-                
-                if (drug, disease) in ground_truth and prediction_text is not None:
-                    true_label = ground_truth[(drug, disease)]
-                    y_true.append(true_label)
-                    y_pred.append(prediction)
-                    
-                records.append({
-                    'drug_name': drug,
-                    'disease_name': disease,
-                    'predicted_answer': prediction_text,
-                    'ground_truth': "YES" if (drug, disease) in ground_truth and ground_truth[(drug, disease)] == 1 else "NO",
-                    'correct': prediction == ground_truth.get((drug, disease)) if (drug, disease) in ground_truth else None
-                })
-    except Exception as e:
-        print(f"Error reading file {jsonl_file}: {e}")
-        return {}, pd.DataFrame()
+            records.append({
+                'drug_name': drug,
+                'disease_name': disease,
+                'predicted_answer': prediction_text,
+                'ground_truth': "YES" if label == "indication" else "NO",
+                'correct': prediction == ground_truth
+            })
     
     metrics = {}
     if len(y_true) > 0 and len(y_pred) > 0:
@@ -109,7 +102,7 @@ def main():
     
     if args.ground_truth and os.path.exists(args.ground_truth):
         truth_df = pd.read_csv(args.ground_truth)
-        positive_count = sum(truth_df['relation'] == 'positive')
+        positive_count = sum(truth_df['relation'] == 'indication')
         total_count = len(truth_df)
         print(f"Ground truth distribution: {positive_count}/{total_count} positive examples ({positive_count/total_count:.2%})")
     
@@ -118,7 +111,7 @@ def main():
         model_name = os.path.basename(os.path.dirname(file_path))
         
         print(f"Processing: {model_name}/{prompt_type}")
-        metrics, df = calculate_metrics(file_path, args.ground_truth)
+        metrics, df = calculate_metrics(file_path, args.ground_truth, prompt_type)
         
         output_dir = os.path.dirname(args.output_file)
         if output_dir and not os.path.exists(output_dir):
@@ -178,4 +171,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# python eval_results.py  --input_dir ./results --ground_truth ./test_data.csv
+# python cal_results.py  --input_dir ./results --ground_truth ./data_analysis/test_data_new.csv
