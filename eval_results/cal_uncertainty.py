@@ -6,7 +6,7 @@ import pandas as pd
 
 
 FOLDER_DIR = "./uncertainty_results"
-MODEL_NAME = "llama32_1b"
+MODEL_NAME = "llama32_3b_loracot"
 FILE_FOLDER = os.path.join(FOLDER_DIR, MODEL_NAME)
 
 def cal_acc(clean_answer_lst, ground_truth):
@@ -71,7 +71,6 @@ for filename in os.listdir(FILE_FOLDER):
 
             if acc_score == 0:
                 total_uncertainty_score  = (uncertainty_score + total_uncertainty_score) / 2
-        
+        print(filename)
         print(np.mean(np.array(total_acc_lst)))
-        # print(total_uncertainty_score)
-        break
+        print(total_uncertainty_score)
