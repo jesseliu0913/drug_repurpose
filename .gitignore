@@ -18,4 +18,5 @@
 /split_data/gemini_select/log/*
 /finetune_model/model_weight/*
 /finetune_model/wandb/*
+/eval_results/results/*
 /eval_results/uncertainty_results/*
