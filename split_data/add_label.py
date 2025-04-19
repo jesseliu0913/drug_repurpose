@@ -26,7 +26,7 @@ def add_missing_labels(file_path, test_data_path):
         for item in existing_data:
             key = (item['drug_name'], item['disease_name'])
             
-            if 'label' not in item and key in label_map:
+            if ('label' not in item or pd.isna(item.get('label'))) and key in label_map:
                 item['label'] = label_map[key]
                 updated_count += 1
             
