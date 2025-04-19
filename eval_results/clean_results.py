@@ -5,7 +5,11 @@ import os
 import os
 import json
 
+<<<<<<< HEAD:split_data/clean_results.py
 folder_path = "/playpen/jesse/drug_repurpose/split_data/results/qwq_32b"
+=======
+folder_path = "/playpen/jesse/drug_repurpose/split_data/results/gemini"
+>>>>>>> 31929f16965b2c7202453abdb21937f8f7cd5ace:eval_results/clean_results.py
 
 for filename in os.listdir(folder_path):
     if filename.endswith(".jsonl"):
@@ -18,7 +22,7 @@ for filename in os.listdir(folder_path):
         for line in lines:
             try:
                 data = json.loads(line)
-                if not (data.get("drug_name") == "Alprazolam" and data.get("disease_name") == "anxiety disorder"):
+                if not (data.get("drug_name") == "Calcitriol" and data.get("disease_name") == "hypercalcemia disease"):
                     filtered_lines.append(line)
             except json.JSONDecodeError:
                 continue
