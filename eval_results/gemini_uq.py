@@ -7,6 +7,7 @@ import pandas as pd
 import google.generativeai as genai
 import time
 import random
+import math
 from google.api_core import exceptions
 
 
@@ -14,6 +15,7 @@ parser = argparse.ArgumentParser(description="Baseline Experiments")
 parser.add_argument("--output_path", type=str, help="Input output path")
 parser.add_argument("--prompt_type", type=str, help="Input the Prompt Type (raw, cot, phenotype, gene...)")
 parser.add_argument("--shuffle_num", type=int, help="For one question, shufflue x times")
+parser.add_argument("--logprobs", action="store_true", help="Whether to enable logprobs")
 args = parser.parse_args()
 
 two_shot = """
@@ -21,7 +23,7 @@ Question: Is Fosinopril an indication for hypertensive disorder?
 REASONING: Fosinopril is indicated for hypertensive disorders because it functions as an angiotensin-converting enzyme (ACE) inhibitor, which blocks the conversion of angiotensin I to angiotensin II—a potent vasoconstrictor. By reducing angiotensin II levels, Fosinopril promotes vasodilation, decreases peripheral vascular resistance, and ultimately lowers blood pressure. This mechanism directly addresses the pathophysiology of hypertension, making Fosinopril an effective and commonly prescribed medication for managing high blood pressure and reducing the risk of associated cardiovascular complications.
 ANSWER:$YES$
 Question: Is Rotigotine an indication for hypertensive disorder?
-REASONING: Rotigotine is a dopamine agonist primarily used to treat Parkinson’s disease and restless legs syndrome (RLS). It works by stimulating dopamine receptors in the brain to help manage motor symptoms. While it may have some effects on blood pressure as a side effect (e.g., causing orthostatic hypotension), it is not approved or used as a treatment for hypertension or other hypertensive disorders.
+REASONING: Rotigotine is a dopamine agonist primarily used to treat Parkinson's disease and restless legs syndrome (RLS). It works by stimulating dopamine receptors in the brain to help manage motor symptoms. While it may have some effects on blood pressure as a side effect (e.g., causing orthostatic hypotension), it is not approved or used as a treatment for hypertension or other hypertensive disorders.
 ANSWER:$NO$
 """
 
@@ -32,12 +34,6 @@ Question: Is Rotigotine an indication for hypertensive disorder?
 ANSWER:$NO$
 """
 
-# genai.configure(api_key="AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI")
-# AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI
-# AIzaSyB2GIsp9o0emOw3DBDqkWG29Dug4u978gc
-# AIzaSyAbogSNYhQP1HXIgXBBGIpMQvfdfOAAc1I
-# AIzaSyAmGjvNInLdFV7N9Oxp3FhJFIE81WUdDgw
-
 api_keys = [
     "AIzaSyAsmMUeXmkOKwjmx__-rhZhyCevd5gllFc", 
     "AIzaSyDK2hSlAMZsrqFBSMR8C2cKW6-u9xCXato",
@@ -47,7 +43,10 @@ api_keys = [
     "AIzaSyAmGjvNInLdFV7N9Oxp3FhJFIE81WUdDgw",
 ]
 
-def call_gemini(message, api_keys, temperature=0.7, max_output_tokens=1000, top_p=0.9, max_retries=5, initial_delay=2):
+def logprob_to_prob(logprob):
+    return math.exp(logprob)
+
+def call_gemini(message, api_keys, temperature=0.7, max_output_tokens=1000, top_p=0.9, max_retries=5, initial_delay=2, get_logprobs=False):
     if not api_keys:
         raise ValueError("No API keys provided")
     
@@ -61,14 +60,29 @@ def call_gemini(message, api_keys, temperature=0.7, max_output_tokens=1000, top_
             rate_limited_keys.clear()
             continue
         
-        key_index = random.randint(0, len(available_keys) - 1)
-        current_key = available_keys[key_index]
+        current_key = available_keys[0]
         genai.configure(api_key=current_key)
+        
         model = genai.GenerativeModel('gemini-2.0-flash')
         
         for attempt in range(max_retries):
             try:
                 print(f"Using key {api_keys.index(current_key) + 1}/{len(api_keys)} (Attempt {attempt + 1}/{max_retries})")
+                
+                if get_logprobs:
+                    generation_config = {
+                        "max_output_tokens": max_output_tokens,
+                        "temperature": temperature,
+                        "top_p": top_p,
+                        "response_logprobs": True,
+                        "logprobs": 5,
+                    }
+                else:
+                    generation_config = {
+                        "temperature": temperature,
+                        "max_output_tokens": max_output_tokens,
+                        "top_p": top_p
+                    }
                 
                 response = model.generate_content(
                     contents=[
@@ -77,14 +91,47 @@ def call_gemini(message, api_keys, temperature=0.7, max_output_tokens=1000, top_
                             "parts": [{"text": message}]
                         }
                     ],
-                    generation_config={
-                        "temperature": temperature,
-                        "max_output_tokens": max_output_tokens,
-                        "top_p": top_p
-                    }
+                    generation_config=generation_config
                 )
                 
-                return response.text
+                response_text = response.text
+                
+                logprobs_info = {}
+                if get_logprobs:
+
+                    if hasattr(response, 'candidates') and response.candidates:
+                        candidate = response.candidates[0]
+                        if hasattr(candidate, 'logprobs'):
+                            logprobs_info['logprobs'] = candidate.logprobs
+                        if hasattr(candidate, 'avg_logprobs'):
+                            logprobs_info['avg_logprobs'] = candidate.avg_logprobs
+                        if hasattr(candidate, 'logprobs_result'):
+                            logprobs_info['logprobs_result'] = candidate.logprobs_result
+                        
+                        if hasattr(candidate, 'response_logprobs'):
+                            logprobs_info['response_logprobs'] = candidate.response_logprobs
+                    
+                    if hasattr(response, 'result'):
+                        result = response.result
+                        if hasattr(result, 'logprobs'):
+                            logprobs_info['logprobs'] = result.logprobs
+                
+                token_probs = {}
+                if logprobs_info and 'logprobs' in logprobs_info:
+                    for token_info in logprobs_info['logprobs']:
+                        if isinstance(token_info, dict) and 'token' in token_info and 'logprob' in token_info:
+                            token = token_info['token']
+                            logprob = token_info['logprob']
+                            token_probs[token] = logprob_to_prob(logprob)
+                
+                if get_logprobs:
+                    return {
+                        'text': response_text,
+                        'logprobs': logprobs_info,
+                        'probabilities': token_probs
+                    }
+                else:
+                    return response_text
                 
             except (exceptions.ResourceExhausted, exceptions.ServiceUnavailable, 
                     exceptions.TooManyRequests, exceptions.DeadlineExceeded) as e:
@@ -111,13 +158,16 @@ file_path = f"{args.output_path}/{prompt_type}.jsonl"
 
 test_data = pd.read_csv("/playpen/jesse/drug_repurpose/split_data/data_analysis/test_data_new.csv")
 node_data = pd.read_csv("/playpen/jesse/drug_repurpose/PrimeKG/nodes.csv")
+
 existing_pairs = set()
 if os.path.exists(file_path):
     with jsonlines.open(file_path, "r") as f_read:
         for line in f_read:
             existing_pairs.add((line["drug_name"], line["disease_name"]))
-print("~" * 20)
-print(f"Total existing pairs: {len(existing_pairs)}")
+# print("~" * 20)
+# print(f"Total existing pairs: {len(existing_pairs)}")
+
+
 with jsonlines.open(file_path, "a") as f_write:
     for index, row in test_data.iterrows():
         drug_name = row.drug_name
@@ -166,29 +216,44 @@ with jsonlines.open(file_path, "a") as f_write:
             question = f"Is {disease_name} an indication for {drug_name}?"
             input_text = f"Question: {question} directly answer me with $YES$ or $NO$\nANSWER:"
 
-
-        if args.shuffle_num == 1:
+        if args.logprobs:
+            result = call_gemini(
+                message=input_text,
+                api_keys=api_keys,
+                temperature=0.2,
+                max_output_tokens=1000,
+                top_p=0.9,
+                get_logprobs=True
+            )
+            answer = result['text']
+            logprobs_data = result['logprobs']
+            probabilities = result['probabilities']
+            
+            line_dict = {
+                "drug_name": drug_name, 
+                "disease_name": disease_name, 
+                "answer": answer, 
+                "prompt": input_text,
+                "logprobs": logprobs_data,
+                "probabilities": probabilities,
+                "label": row.relation
+            }
+        else:
             answer = call_gemini(
                 message=input_text,
                 api_keys=api_keys,
                 temperature=0.2,
                 max_output_tokens=1000,
-                top_p=0.9
+                top_p=0.9,
+                get_logprobs=False
             )
             
-            line_dict = {"drug_name": drug_name, "disease_name": disease_name, "answer": answer, "prompt": input_text, "label": row.relation}
-            f_write.write(line_dict)
-        else:
-            answer_lst = []
-            for _ in range(args.shuffle_num):
-                answer = call_gemini(
-                    message=input_text,
-                    api_keys=api_keys,
-                    temperature=0.2,
-                    max_output_tokens=1000,
-                    top_p=0.9
-                )
-                answer_lst.append(answer)
-                
-            line_dict = {"drug_name": drug_name, "disease_name": disease_name, "answer": answer_lst, "prompt": input_text, "label": row.relation}
-            f_write.write(line_dict)
+            line_dict = {
+                "drug_name": drug_name, 
+                "disease_name": disease_name, 
+                "answer": answer, 
+                "prompt": input_text,
+                "label": row.relation
+            }
+        
+        f_write.write(line_dict)
