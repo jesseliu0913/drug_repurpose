@@ -33,18 +33,24 @@ ANSWER:$NO$
 """
 
 # genai.configure(api_key="AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI")
-# AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI
-# AIzaSyB2GIsp9o0emOw3DBDqkWG29Dug4u978gc
-# AIzaSyAbogSNYhQP1HXIgXBBGIpMQvfdfOAAc1I
-# AIzaSyAmGjvNInLdFV7N9Oxp3FhJFIE81WUdDgw
+# "AIzaSyAsmMUeXmkOKwjmx__-rhZhyCevd5gllFc", 
+# "AIzaSyDK2hSlAMZsrqFBSMR8C2cKW6-u9xCXato",
+# "AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI",
+# "AIzaSyB2GIsp9o0emOw3DBDqkWG29Dug4u978gc",
+# "AIzaSyAbogSNYhQP1HXIgXBBGIpMQvfdfOAAc1I",
+# "AIzaSyAmGjvNInLdFV7N9Oxp3FhJFIE81WUdDgw",
 
 api_keys = [
+    "AIzaSyAYmHjpShRB1A0eu4ezl1fcqJtf_AUbz-k", 
+    "AIzaSyBnDOLuRCyG_auCMqIYKoel3piq9b57y38",
+    "AIzaSyCIg2mrbhOxLXAZYKQhAHMQqCsiGTKln1Y",
     "AIzaSyAsmMUeXmkOKwjmx__-rhZhyCevd5gllFc", 
     "AIzaSyDK2hSlAMZsrqFBSMR8C2cKW6-u9xCXato",
     "AIzaSyDHwCBvUG0GYF6S1LNiv4LC-1bZT-UFauI",
     "AIzaSyB2GIsp9o0emOw3DBDqkWG29Dug4u978gc",
     "AIzaSyAbogSNYhQP1HXIgXBBGIpMQvfdfOAAc1I",
     "AIzaSyAmGjvNInLdFV7N9Oxp3FhJFIE81WUdDgw",
+    "AIzaSyDiLNbjetIFemfJCilKS9gboVZH1PSGVjU",
 ]
 
 def call_gemini(message, api_keys, temperature=0.7, max_output_tokens=1000, top_p=0.9, max_retries=5, initial_delay=2):
