@@ -1,6 +1,5 @@
 import os
-from openai import AzureOpenAI
-import os
+import openai
 import json
 import ast
 import argparse
@@ -34,38 +33,31 @@ Question: Is Rotigotine an indication for hypertensive disorder?
 ANSWER:$NO$
 """
 
-endpoint = "https://azure-api-jesse.openai.azure.com/"
-model_name = "gpt-35-turbo"
-deployment = "gpt-35-turbo"
-
-subscription_key = "8H18BGFCgtsRenwiUVLicgiRjVS9PmA44cnOpt2OvvxKgRqIbLMtJQQJ99BDACYeBjFXJ3w3AAABACOGLsu4"
-api_version = "2024-12-01-preview"
-
-client = AzureOpenAI(
-    api_version=api_version,
-    azure_endpoint=endpoint,
-    api_key=subscription_key,
-)
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def call_gpt(prompt):
-    response = client.chat.completions.create(
-        messages=[
-            {
-                "role": "system",
-                "content": "You are a helpful assistant in Drug-Disease relationship task.",
-            },
-            {
-                "role": "user",
-                "content": prompt,
-            }
-        ],
-        max_tokens=1000,
+    response_dict = {}
+    response = openai.Completion.create(
+        model="gpt-3.5-turbo-instruct",
+        prompt=prompt,
+        max_tokens=100,
         temperature=0.7,
-        top_p=0.9,
-        model=deployment
+        logprobs=5
     )
+    output = response.choices[0].text
+    logp = response.choices[0].logprobs
 
-    return response.choices[0].message.content
+    # for token, lp, topk in zip(logp.tokens, logp.token_logprobs, logp.top_logprobs):
+    #     print(f"Token: {token!r}")
+    #     print(f"  → logprob: {lp:.4f}")
+    #     print("  → top alternatives:")
+    #     for alt_tok, alt_lp in topk.items():
+    #         print(f"      {alt_tok!r}: {alt_lp:.4f}")
+    #     print()
+    
+    response_dict["output"] = output
+    response_dict["logprobs"] = logp
+    return response_dict
 
 
 os.makedirs(args.output_path, exist_ok=True)
