@@ -49,6 +49,17 @@ def answer_extractor(answer):
         answer = 1
     return answer
 
+def answer_extractor_cot(answer):
+    if "$NO$" in answer.upper():
+        answer = 0
+    elif "$YES$" in answer.upper():
+        answer = 1
+    elif "YES" in answer.upper():
+        answer = 1
+    elif "$NO$" in answer.upper():
+        answer = 0
+    return answer
+
 def create_calibration_plot(uncertainty_scores, accuracies, model_name):
     confidence_scores = [1 - u for u in uncertainty_scores]
     
@@ -128,7 +139,10 @@ for filename in os.listdir(FILE_FOLDER):
             clean_answer_lst = []
 
             for answer in answer_lst:
-                clean_answer = answer_extractor(answer)
+                if "cot" in filename:
+                    clean_answer = answer_extractor_cot(answer)
+                else:
+                    clean_answer = answer_extractor(answer)
                 clean_answer_lst.append(clean_answer)
             
             uncertainty_score = cal_uncertainty(clean_answer_lst)
@@ -158,6 +172,8 @@ for filename in os.listdir(FILE_FOLDER):
         file_error = create_calibration_plot(file_uncertainties, file_accuracies, file_model_name)
         print(f"File: {filename}, Calibration Error: {file_error}")
         # print(f"File: {filename}, Error Count: {error_count}")
+        print("file_accuracies", np.mean(np.array(file_accuracies)))
+
 
 # error = create_calibration_plot(all_uncertainties, all_accuracies, MODEL_NAME)
 # print(f"Overall Calibration Error: {error}")
