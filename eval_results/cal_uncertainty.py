@@ -8,7 +8,7 @@ from matplotlib.colors import LinearSegmentedColormap
 
 FOLDER_DIR = "./uncertainty_results"
 OUTPUT_DIR = "./plots"
-MODEL_NAME = "llama32_1b"
+MODEL_NAME = "gemini"
 FILE_FOLDER = os.path.join(FOLDER_DIR, MODEL_NAME)
 
 def cal_acc(clean_answer_lst, ground_truth):

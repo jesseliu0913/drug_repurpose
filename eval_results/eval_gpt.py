@@ -40,7 +40,7 @@ def call_gpt(prompt):
     response = openai.Completion.create(
         model="gpt-3.5-turbo-instruct",
         prompt=prompt,
-        max_tokens=100,
+        max_tokens=1000,
         temperature=0.7,
         logprobs=5
     )
