@@ -124,6 +124,7 @@ all_accuracies = []
 file_results = {}
 
 for filename in os.listdir(FILE_FOLDER):
+    print(filename)
     file_path = os.path.join(FILE_FOLDER, filename)
     if os.path.isfile(file_path):
         file_uncertainties = []
@@ -169,8 +170,8 @@ for filename in os.listdir(FILE_FOLDER):
         
         
         file_model_name = f"{os.path.splitext(filename)[0]}"
-        file_error = create_calibration_plot(file_uncertainties, file_accuracies, file_model_name)
-        print(f"File: {filename}, Calibration Error: {file_error}")
+        # file_error = create_calibration_plot(file_uncertainties, file_accuracies, file_model_name)
+        # print(f"File: {filename}, Calibration Error: {file_error}")
         # print(f"File: {filename}, Error Count: {error_count}")
         print("file_accuracies", np.mean(np.array(file_accuracies)))
 
