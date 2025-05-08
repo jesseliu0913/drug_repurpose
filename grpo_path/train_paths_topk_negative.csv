@@ -1,6 +1,14 @@
 drug_index,disease_index,drug_name,disease_name,path_type,original_relation,nodes,score
 15449,27933,Ethosuximide,anxiety disorder,disease-exposure-gene-drug,contraindication,"['anxiety disorder', 'Particulate Matter', 'TSHB', 'Ethosuximide']",0.17942455453620335
 15449,27933,Ethosuximide,anxiety disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['anxiety disorder', 'Particulate Matter', 'mucus layer', 'MUC5AC', 'Ethosuximide']",0.17941044911054857
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['anxiety disorder', 'Particulate Matter', 'mucus layer', 'ZG16', 'Ethosuximide']",0.1794044420408434
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cholinesterase activity', 'ACHE', 'Ethosuximide']",0.17936973995709665
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cholinesterase activity', 'BCHE', 'Ethosuximide']",0.179365568313052
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Arsenic', 'cholinesterase activity', 'ACHE', 'Ethosuximide']",0.1793572168869588
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Arsenic', 'cholinesterase activity', 'BCHE', 'Ethosuximide']",0.17935304524291412
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['anxiety disorder', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Ethosuximide']",0.17934189942494191
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['anxiety disorder', 'Particulate Matter', 'proteasome complex', 'PSMD7', 'Ethosuximide']",0.17934166102974414
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['anxiety disorder', 'Particulate Matter', 'proteasome complex', 'PSMB3', 'Ethosuximide']",0.17934166102974414
 15449,35464,Ethosuximide,anxiety disorder,disease-disease-drug,contraindication,"['anxiety disorder', 'genetic nervous system disorder', 'Ethosuximide']",0.17854380503706455
 15449,36940,Ethosuximide,anxiety disorder,disease-disease-drug,contraindication,"['anxiety disorder', 'nutritional disorder', 'Ethosuximide']",0.17853629012208563
 15449,36661,Ethosuximide,anxiety disorder,disease-disease-drug,contraindication,"['anxiety disorder', 'sleep-wake disorder', 'Ethosuximide']",0.17853629012208563
@@ -33,11 +41,35 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 15449,28249,Ethosuximide,anxiety disorder,disease-disease-drug,contraindication,"['anxiety disorder', 'major affective disorder', 'Ethosuximide']",0.17849449149740765
 14527,33534,Fluoxymesterone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,contraindication,"['pediatric systemic lupus erythematosus', 'Seizure', 'ACHE', 'Fluoxymesterone']",0.03720221222166875
 14527,33534,Fluoxymesterone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,contraindication,"['pediatric systemic lupus erythematosus', 'Seizure', 'BCHE', 'Fluoxymesterone']",0.03719804057762408
+14527,33534,Fluoxymesterone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,contraindication,"['pediatric systemic lupus erythematosus', 'Abdominal pain', 'IFNA2', 'Fluoxymesterone']",0.03716426269563632
+14527,33534,Fluoxymesterone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,contraindication,"['pediatric systemic lupus erythematosus', 'Fever', 'IFNA2', 'Fluoxymesterone']",0.03716426269563632
+14527,33534,Fluoxymesterone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,contraindication,"['pediatric systemic lupus erythematosus', 'Vomiting', 'IFNA2', 'Fluoxymesterone']",0.03716426269563632
+14527,33534,Fluoxymesterone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,contraindication,"['pediatric systemic lupus erythematosus', 'Headache', 'IFNA2', 'Fluoxymesterone']",0.03716426269563632
+14527,33534,Fluoxymesterone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,contraindication,"['pediatric systemic lupus erythematosus', 'Thrombocytopenia', 'IFNA2', 'Fluoxymesterone']",0.03716426269563632
+14527,33534,Fluoxymesterone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,contraindication,"['pediatric systemic lupus erythematosus', 'Seizure', 'CRH', 'Fluoxymesterone']",0.03710877069504139
+14527,33534,Fluoxymesterone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,contraindication,"['pediatric systemic lupus erythematosus', 'Chest pain', 'CRH', 'Fluoxymesterone']",0.03710877069504139
+14527,33534,Fluoxymesterone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,contraindication,"['pediatric systemic lupus erythematosus', 'Fever', 'CRH', 'Fluoxymesterone']",0.03710877069504139
 14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Insecticides', 'cholinesterase activity', 'ACHE', 'Budesonide']",0.02764008926120109
 14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'glyphosate', 'cholinesterase activity', 'ACHE', 'Budesonide']",0.02763985086600331
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Insecticides', 'cholinesterase activity', 'BCHE', 'Budesonide']",0.027635917617156426
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'glyphosate', 'cholinesterase activity', 'BCHE', 'Budesonide']",0.027635679221958642
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Insecticides', 'cholinesterase activity', 'CHKA', 'Budesonide']",0.027498466118517872
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'glyphosate', 'cholinesterase activity', 'CHKA', 'Budesonide']",0.02749822772332009
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hexachlorocyclohexane', 'acetylcholinesterase activity', 'ACHE', 'Budesonide']",0.02749622163414412
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hexachlorocyclohexane', 'acetylcholinesterase activity', 'BCHE', 'Budesonide']",0.02749204999009945
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'ALOX5AP', 'Budesonide']",0.027256688536294434
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MGST2', 'Budesonide']",0.027253743740319605
 14034,32719,Budesonide,congenital hypothyroidism,disease-phenotype-protein-drug,contraindication,"['congenital hypothyroidism', 'Hypothermia', 'TSHB', 'Budesonide']",0.027183325494638515
 14034,32719,Budesonide,congenital hypothyroidism,disease-phenotype-protein-drug,contraindication,"['congenital hypothyroidism', 'Prolonged neonatal jaundice', 'NR1I2', 'Budesonide']",0.027072178138245456
+14034,32719,Budesonide,congenital hypothyroidism,disease-phenotype-protein-drug,contraindication,"['congenital hypothyroidism', 'Paresthesia', 'INS', 'Budesonide']",0.027054282347463935
+14034,32719,Budesonide,congenital hypothyroidism,disease-phenotype-protein-drug,contraindication,"['congenital hypothyroidism', 'Hearing impairment', 'SOD1', 'Budesonide']",0.027047437756477492
+14034,32719,Budesonide,congenital hypothyroidism,disease-phenotype-protein-drug,contraindication,"['congenital hypothyroidism', 'Hypothermia', 'SOD1', 'Budesonide']",0.027047437756477492
+14034,32719,Budesonide,congenital hypothyroidism,disease-protein-drug,contraindication,"['congenital hypothyroidism', 'TSHB', 'Budesonide']",0.027032334106982036
+14034,32719,Budesonide,congenital hypothyroidism,disease-phenotype-protein-drug,contraindication,"['congenital hypothyroidism', 'Paresthesia', 'PMP22', 'Budesonide']",0.027028366037748743
 14034,35432,Budesonide,congenital hypothyroidism,disease-disease-drug,contraindication,"['congenital hypothyroidism', 'Mendelian disease', 'Budesonide']",0.027006247196497055
+14034,32719,Budesonide,congenital hypothyroidism,disease-phenotype-protein-drug,contraindication,"['congenital hypothyroidism', 'Hypothermia', 'GNRH1', 'Budesonide']",0.026997065015134672
+14034,32719,Budesonide,congenital hypothyroidism,disease-phenotype-protein-drug,contraindication,"['congenital hypothyroidism', 'Feeding difficulties', 'MSL3', 'Budesonide']",0.026995369098917404
+14034,32719,Budesonide,congenital hypothyroidism,disease-phenotype-protein-drug,contraindication,"['congenital hypothyroidism', 'Hypothermia', 'NOS2', 'Budesonide']",0.026994868778031495
 14034,38980,Budesonide,hypothyroidism,disease-disease-drug,contraindication,"['hypothyroidism', 'peripheral resistance to thyroid hormones', 'Budesonide']",0.02680341541494386
 14034,27585,Budesonide,hypothyroidism,disease-disease-drug,contraindication,"['hypothyroidism', 'short stature-delayed bone age due to thyroid hormone metabolism deficiency', 'Budesonide']",0.02680341541494386
 14034,98622,Budesonide,hypothyroidism,disease-disease-drug,contraindication,"['hypothyroidism', 'IgG4-related thyroid disease', 'Budesonide']",0.02680341541494386
@@ -61,6 +93,14 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 14034,29370,Budesonide,congenital hypothyroidism,disease-disease-drug,contraindication,"['congenital hypothyroidism', 'hypothyroidism, congenital, nongoitrous', 'Budesonide']",0.026795951374822793
 14060,35669,Levothyroxine,heart disease,disease-exposure-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'TSHB', 'Levothyroxine']",0.023943062862656083
 14060,35669,Levothyroxine,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'mucus layer', 'MUC5AC', 'Levothyroxine']",0.02392895743700129
+14060,35669,Levothyroxine,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'mucus layer', 'ZG16', 'Levothyroxine']",0.02392295036729615
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Arsenic', 'cholinesterase activity', 'ACHE', 'Levothyroxine']",0.023875725213411515
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Arsenic', 'cholinesterase activity', 'BCHE', 'Levothyroxine']",0.023871553569366846
+14060,35669,Levothyroxine,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Levothyroxine']",0.02386040775139465
+14060,35669,Levothyroxine,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'proteasome complex', 'ZFAND2A', 'Levothyroxine']",0.023860169356196868
+14060,35669,Levothyroxine,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'proteasome complex', 'PSMA1', 'Levothyroxine']",0.023860169356196868
+14060,35669,Levothyroxine,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'proteasome complex', 'UBQLN1', 'Levothyroxine']",0.023860169356196868
+14060,35669,Levothyroxine,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'proteasome complex', 'PSME1', 'Levothyroxine']",0.023860169356196868
 14060,35506,Levothyroxine,heart disease,disease-disease-drug,contraindication,"['heart disease', 'cardiac rhythm disease', 'Levothyroxine']",0.023090173911208243
 14060,39777,Levothyroxine,heart disease,disease-disease-drug,contraindication,"['heart disease', 'congenital vertebral-cardiac-renal anomalies syndrome', 'Levothyroxine']",0.023014936386787886
 14060,31712,Levothyroxine,heart disease,disease-disease-drug,contraindication,"['heart disease', 'CHIME syndrome', 'Levothyroxine']",0.023014936386787886
@@ -121,15 +161,39 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 14060,37256,Levothyroxine,heart disease,disease-disease-drug,contraindication,"['heart disease', 'cardiac ventricle disease', 'Levothyroxine']",0.023014936386787886
 17064,39615,Meprobamate,borderline epithelial tumor of ovary,disease-protein-drug,contraindication,"['borderline epithelial tumor of ovary', 'SOD1', 'Meprobamate']",0.01390378014325847
 17064,39615,Meprobamate,borderline epithelial tumor of ovary,disease-protein-drug,contraindication,"['borderline epithelial tumor of ovary', 'IL6', 'Meprobamate']",0.013884193828720038
+17064,39615,Meprobamate,borderline epithelial tumor of ovary,disease-protein-drug,contraindication,"['borderline epithelial tumor of ovary', 'SOD2', 'Meprobamate']",0.01388352726250296
+17064,39615,Meprobamate,borderline epithelial tumor of ovary,disease-protein-drug,contraindication,"['borderline epithelial tumor of ovary', 'TP53', 'Meprobamate']",0.013842738935692028
+17064,39615,Meprobamate,borderline epithelial tumor of ovary,disease-protein-drug,contraindication,"['borderline epithelial tumor of ovary', 'IL6ST', 'Meprobamate']",0.013836019543788339
+17064,39615,Meprobamate,borderline epithelial tumor of ovary,disease-protein-drug,contraindication,"['borderline epithelial tumor of ovary', 'PRKN', 'Meprobamate']",0.013834823027854418
+17064,39615,Meprobamate,borderline epithelial tumor of ovary,disease-protein-drug,contraindication,"['borderline epithelial tumor of ovary', 'CXCL8', 'Meprobamate']",0.013834607496091741
+17064,39615,Meprobamate,borderline epithelial tumor of ovary,disease-protein-drug,contraindication,"['borderline epithelial tumor of ovary', 'EREG', 'Meprobamate']",0.01382647647314209
+17064,39615,Meprobamate,borderline epithelial tumor of ovary,disease-protein-drug,contraindication,"['borderline epithelial tumor of ovary', 'MAPK1', 'Meprobamate']",0.013822806905270844
+17064,39615,Meprobamate,borderline epithelial tumor of ovary,disease-protein-drug,contraindication,"['borderline epithelial tumor of ovary', 'NECTIN2', 'Meprobamate']",0.013816610765568227
 17064,36618,Meprobamate,borderline epithelial tumor of ovary,disease-disease-drug,contraindication,"['borderline epithelial tumor of ovary', 'ovarian epithelial tumor', 'Meprobamate']",0.013801201661801992
 17064,98886,Meprobamate,borderline epithelial tumor of ovary,disease-disease-drug,contraindication,"['borderline epithelial tumor of ovary', 'borderline ovarian serous tumor', 'Meprobamate']",0.013801201661801992
 14220,33241,Apomorphine,hereditary late onset Parkinson disease,disease-phenotype-protein-drug,indication,"['hereditary late onset Parkinson disease', 'Resting tremor', 'ACHE', 'Apomorphine']",0.012773242911858789
 14220,33241,Apomorphine,hereditary late onset Parkinson disease,disease-phenotype-protein-drug,indication,"['hereditary late onset Parkinson disease', 'Weight loss', 'IFNA2', 'Apomorphine']",0.012735293385826362
+14220,33241,Apomorphine,hereditary late onset Parkinson disease,disease-phenotype-protein-drug,indication,"['hereditary late onset Parkinson disease', 'Weight loss', 'CRH', 'Apomorphine']",0.012679801385231431
+14220,33241,Apomorphine,hereditary late onset Parkinson disease,disease-phenotype-protein-drug,indication,"['hereditary late onset Parkinson disease', 'Visual hallucinations', 'HOMER1', 'Apomorphine']",0.01263754941282498
+14220,33241,Apomorphine,hereditary late onset Parkinson disease,disease-phenotype-protein-drug,indication,"['hereditary late onset Parkinson disease', 'Weight loss', 'INS', 'Apomorphine']",0.01261644507771722
+14220,33241,Apomorphine,hereditary late onset Parkinson disease,disease-phenotype-protein-drug,indication,"['hereditary late onset Parkinson disease', 'Shuffling gait', 'SOD1', 'Apomorphine']",0.012614244778361663
+14220,33241,Apomorphine,hereditary late onset Parkinson disease,disease-phenotype-protein-drug,indication,"['hereditary late onset Parkinson disease', 'Weight loss', 'SOD1', 'Apomorphine']",0.012614244778361663
+14220,33241,Apomorphine,hereditary late onset Parkinson disease,disease-phenotype-protein-drug,indication,"['hereditary late onset Parkinson disease', 'Rigidity', 'GCH1', 'Apomorphine']",0.012587350043564887
+14220,33241,Apomorphine,hereditary late onset Parkinson disease,disease-phenotype-protein-drug,indication,"['hereditary late onset Parkinson disease', 'Bradykinesia', 'GCH1', 'Apomorphine']",0.012587350043564887
+14220,33241,Apomorphine,hereditary late onset Parkinson disease,disease-phenotype-protein-drug,indication,"['hereditary late onset Parkinson disease', 'Weight loss', 'EPO', 'Apomorphine']",0.012568812191794017
 17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'cholinesterase activity', 'ACHE', 'Dihydrotachysterol']",0.012557715894059546
 17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'cholinesterase activity', 'BCHE', 'Dihydrotachysterol']",0.012553544250014878
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'cholinesterase activity', 'CHKA', 'Dihydrotachysterol']",0.012416092751376326
 14220,28182,Apomorphine,hereditary late onset Parkinson disease,disease-disease-drug,indication,"['hereditary late onset Parkinson disease', 'Parkinson disease, autosomal dominant, susceptibility to', 'Apomorphine']",0.012362758396706962
 14220,27576,Apomorphine,hereditary late onset Parkinson disease,disease-disease-drug,indication,"['hereditary late onset Parkinson disease', 'autosomal recessive Parkinson disease', 'Apomorphine']",0.012362758396706962
 14220,36447,Apomorphine,hereditary late onset Parkinson disease,disease-disease-drug,indication,"['hereditary late onset Parkinson disease', 'parkinsonian syndrome due to neurodegenerative disease', 'Apomorphine']",0.012362758396706962
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'transaminase activity', 'AADAT', 'Dihydrotachysterol']",0.012170088364975571
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Lead', 'porphobilinogen synthase activity', 'ALAD', 'Dihydrotachysterol']",0.01212970930106187
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPL', 'Dihydrotachysterol']",0.012067796930874997
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPI', 'Dihydrotachysterol']",0.012067216076623083
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPP', 'Dihydrotachysterol']",0.012067216076623083
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPG', 'Dihydrotachysterol']",0.012067216076623083
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'transaminase activity', 'AMT', 'Dihydrotachysterol']",0.012043714308275087
 17739,36253,Dihydrotachysterol,kidney disease,disease-disease-drug,contraindication,"['kidney disease', 'impaired renal function disease', 'Dihydrotachysterol']",0.01171364226159229
 17739,35603,Dihydrotachysterol,kidney disease,disease-disease-drug,contraindication,"['kidney disease', 'abdominal and pelvic region disorder', 'Dihydrotachysterol']",0.011711260803325461
 17739,36267,Dihydrotachysterol,kidney disease,disease-disease-drug,contraindication,"['kidney disease', 'thrombotic microangiopathy', 'Dihydrotachysterol']",0.01171050736474144
@@ -184,8 +248,24 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 17739,98788,Dihydrotachysterol,kidney disease,disease-disease-drug,contraindication,"['kidney disease', 'congenital renal artery stenosis', 'Dihydrotachysterol']",0.011697967777338046
 14543,27933,Desipramine,anxiety disorder,disease-exposure-cellcomp-gene-drug,indication,"['anxiety disorder', 'Particulate Matter', 'mucus layer', 'MUC5AC', 'Desipramine']",0.008221372535823245
 14543,27933,Desipramine,anxiety disorder,disease-exposure-cellcomp-gene-drug,indication,"['anxiety disorder', 'Particulate Matter', 'mucus layer', 'ZG16', 'Desipramine']",0.008215365466118105
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cholinesterase activity', 'ACHE', 'Desipramine']",0.008180663382371346
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cholinesterase activity', 'BCHE', 'Desipramine']",0.008176491738326679
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Arsenic', 'cholinesterase activity', 'ACHE', 'Desipramine']",0.008168140312233469
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Arsenic', 'cholinesterase activity', 'BCHE', 'Desipramine']",0.008163968668188802
+14543,27933,Desipramine,anxiety disorder,disease-exposure-cellcomp-gene-drug,indication,"['anxiety disorder', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Desipramine']",0.008152822850216606
+14543,27933,Desipramine,anxiety disorder,disease-exposure-cellcomp-gene-drug,indication,"['anxiety disorder', 'Particulate Matter', 'proteasome complex', 'PSMC3', 'Desipramine']",0.008152584455018822
+14543,27933,Desipramine,anxiety disorder,disease-exposure-cellcomp-gene-drug,indication,"['anxiety disorder', 'Particulate Matter', 'proteasome complex', 'ECPAS', 'Desipramine']",0.008152584455018822
+14543,27933,Desipramine,anxiety disorder,disease-exposure-cellcomp-gene-drug,indication,"['anxiety disorder', 'Particulate Matter', 'proteasome complex', 'RAD23B', 'Desipramine']",0.008152584455018822
 14602,35565,Voriconazole,liver disease,disease-exposure-molfunc-gene-drug,contraindication,"['liver disease', 'perfluorooctanoic acid', 'L-alanine:2-oxoglutarate aminotransferase activity', 'GPT', 'Voriconazole']",0.008072008338870179
 14602,35565,Voriconazole,liver disease,disease-exposure-molfunc-gene-drug,contraindication,"['liver disease', 'perfluorooctanoic acid', 'L-alanine:2-oxoglutarate aminotransferase activity', 'GPT2', 'Voriconazole']",0.008045187528598459
+14602,35565,Voriconazole,liver disease,disease-exposure-gene-drug,contraindication,"['liver disease', 'perfluorooctanoic acid', 'TSHB', 'Voriconazole']",0.008040448699616488
+14602,35565,Voriconazole,liver disease,disease-exposure-gene-drug,contraindication,"['liver disease', 'perfluorooctane sulfonic acid', 'TSHB', 'Voriconazole']",0.008027073139719535
+14602,35565,Voriconazole,liver disease,disease-exposure-gene-drug,contraindication,"['liver disease', 'perfluorooctanoic acid', 'GPT', 'Voriconazole']",0.007900584272588166
+14602,35565,Voriconazole,liver disease,disease-exposure-gene-drug,contraindication,"['liver disease', 'Cadmium', 'GPT', 'Voriconazole']",0.007887447107888997
+14602,35565,Voriconazole,liver disease,disease-exposure-gene-drug,contraindication,"['liver disease', 'perfluorooctanoic acid', 'IGF2', 'Voriconazole']",0.007874772700619443
+14602,35565,Voriconazole,liver disease,disease-exposure-gene-drug,contraindication,"['liver disease', 'Agent Orange', 'IGF2', 'Voriconazole']",0.00786139714072249
+14602,35565,Voriconazole,liver disease,disease-exposure-gene-drug,contraindication,"['liver disease', 'Manganese', 'NOS2', 'Voriconazole']",0.007838616423112515
+14602,35565,Voriconazole,liver disease,disease-exposure-gene-drug,contraindication,"['liver disease', 'Agent Orange', 'CYP1A1', 'Voriconazole']",0.0078278408294544
 14602,36241,Voriconazole,liver disease,disease-disease-drug,contraindication,"['liver disease', 'hepatitis', 'Voriconazole']",0.007765094893937744
 19699,83760,Dinoprost,dysthymic disorder,disease-protein-drug,contraindication,"['dysthymic disorder', 'CSF3', 'Dinoprost']",0.007688247902923381
 19699,83760,Dinoprost,dysthymic disorder,disease-protein-drug,contraindication,"['dysthymic disorder', 'IL6', 'Dinoprost']",0.0076532304720649084
@@ -216,6 +296,14 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 14602,95178,Voriconazole,liver disease,disease-disease-drug,contraindication,"['liver disease', 'polycystic echinococcosis', 'Voriconazole']",0.007639699019903812
 14602,99881,Voriconazole,liver disease,disease-disease-drug,contraindication,"['liver disease', 'early-onset familial noncirrhotic portal hypertension', 'Voriconazole']",0.007639699019903812
 14602,36532,Voriconazole,liver disease,disease-disease-drug,contraindication,"['liver disease', 'genetic biliary tract disease', 'Voriconazole']",0.007639699019903812
+19699,83760,Dinoprost,dysthymic disorder,disease-protein-drug,contraindication,"['dysthymic disorder', 'IL6R', 'Dinoprost']",0.007605357037387235
+19699,83760,Dinoprost,dysthymic disorder,disease-protein-drug,contraindication,"['dysthymic disorder', 'POMC', 'Dinoprost']",0.007605228122265231
+19699,83760,Dinoprost,dysthymic disorder,disease-protein-drug,contraindication,"['dysthymic disorder', 'NPY', 'Dinoprost']",0.007603963015631183
+19699,83760,Dinoprost,dysthymic disorder,disease-protein-drug,contraindication,"['dysthymic disorder', 'GPX1', 'Dinoprost']",0.007602256939651449
+19699,83760,Dinoprost,dysthymic disorder,disease-protein-drug,contraindication,"['dysthymic disorder', 'TRH', 'Dinoprost']",0.0076011950344564054
+19699,83760,Dinoprost,dysthymic disorder,disease-protein-drug,contraindication,"['dysthymic disorder', 'APP', 'Dinoprost']",0.007590868496424764
+19699,83760,Dinoprost,dysthymic disorder,disease-protein-drug,contraindication,"['dysthymic disorder', 'ABCB1', 'Dinoprost']",0.007589976959120662
+19699,83760,Dinoprost,dysthymic disorder,disease-protein-drug,contraindication,"['dysthymic disorder', 'CACNA1C', 'Dinoprost']",0.007589717694921578
 14543,35464,Desipramine,anxiety disorder,disease-disease-drug,indication,"['anxiety disorder', 'genetic nervous system disorder', 'Desipramine']",0.007354728462339222
 14543,36661,Desipramine,anxiety disorder,disease-disease-drug,indication,"['anxiety disorder', 'sleep-wake disorder', 'Desipramine']",0.007347213547360323
 14543,36940,Desipramine,anxiety disorder,disease-disease-drug,indication,"['anxiety disorder', 'nutritional disorder', 'Desipramine']",0.007347213547360323
@@ -245,11 +333,19 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 14952,35465,Haloperidol,epilepsy,disease-disease-drug,contraindication,"['epilepsy', 'brain disease', 'Haloperidol']",0.0059028931850412065
 17128,36924,Eflornithine,dermatitis,disease-protein-drug,contraindication,"['dermatitis', 'IL4', 'Eflornithine']",0.0058670965667565805
 17128,36924,Eflornithine,dermatitis,disease-protein-drug,contraindication,"['dermatitis', 'IL6R', 'Eflornithine']",0.00586123783821866
+17128,36924,Eflornithine,dermatitis,disease-protein-drug,contraindication,"['dermatitis', 'IL6ST', 'Eflornithine']",0.005860936987964634
 17128,35638,Eflornithine,dermatitis,disease-disease-drug,contraindication,"['dermatitis', 'inflammatory disease', 'Eflornithine']",0.0058496390512212
+17128,36924,Eflornithine,dermatitis,disease-protein-drug,contraindication,"['dermatitis', 'VCAM1', 'Eflornithine']",0.0058375227526605514
+17128,36924,Eflornithine,dermatitis,disease-protein-drug,contraindication,"['dermatitis', 'NOD2', 'Eflornithine']",0.005835911634038276
 17128,97455,Eflornithine,dermatitis,disease-disease-drug,contraindication,"['dermatitis', 'pityriasis rosea', 'Eflornithine']",0.0058350710011496115
 17128,36644,Eflornithine,dermatitis,disease-disease-drug,contraindication,"['dermatitis', 'skin disease', 'Eflornithine']",0.0058350710011496115
+17128,36924,Eflornithine,dermatitis,disease-protein-drug,contraindication,"['dermatitis', 'PARP1', 'Eflornithine']",0.00583401949014687
 17128,36132,Eflornithine,dermatitis,disease-disease-drug,contraindication,"['dermatitis', 'cutaneous vasculitis', 'Eflornithine']",0.005833964566966959
+17128,36924,Eflornithine,dermatitis,disease-protein-drug,contraindication,"['dermatitis', 'CD14', 'Eflornithine']",0.0058331968101918786
 17128,38025,Eflornithine,dermatitis,disease-disease-drug,contraindication,"['dermatitis', 'autoimmune bullous skin disease', 'Eflornithine']",0.005832339064896149
+17128,36924,Eflornithine,dermatitis,disease-protein-drug,contraindication,"['dermatitis', 'HLA-DQA1', 'Eflornithine']",0.005832080901125537
+17128,36924,Eflornithine,dermatitis,disease-protein-drug,contraindication,"['dermatitis', 'CXCL12', 'Eflornithine']",0.00583174636595769
+17128,36924,Eflornithine,dermatitis,disease-protein-drug,contraindication,"['dermatitis', 'HLA-B', 'Eflornithine']",0.005830639569240089
 17128,33683,Eflornithine,dermatitis,disease-disease-drug,contraindication,"['dermatitis', 'urticaria (disease)', 'Eflornithine']",0.005827694773265262
 17128,97442,Eflornithine,dermatitis,disease-disease-drug,contraindication,"['dermatitis', 'granulomatous dermatitis', 'Eflornithine']",0.005827694773265262
 17128,36129,Eflornithine,dermatitis,disease-disease-drug,contraindication,"['dermatitis', 'atopic eczema', 'Eflornithine']",0.005827694773265262
@@ -325,10 +421,34 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 15143,33575,Bicalutamide,diabetes mellitus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['diabetes mellitus (disease)', 'Particulate Matter', 'mucus layer', 'MUC5AC', 'Bicalutamide']",0.005654513261786475
 15143,33575,Bicalutamide,diabetes mellitus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['diabetes mellitus (disease)', 'Particulate Matter', 'mucus layer', 'ZG16', 'Bicalutamide']",0.0056485061920813345
 20454,27434,Mupirocin,epidermolysis bullosa simplex,disease-phenotype-protein-drug,off-label use,"['epidermolysis bullosa simplex', 'Paresthesia', 'INS', 'Mupirocin']",0.005629401231004219
+20454,27434,Mupirocin,epidermolysis bullosa simplex,disease-phenotype-protein-drug,off-label use,"['epidermolysis bullosa simplex', 'Paresthesia', 'PMP22', 'Mupirocin']",0.005603484921289025
 20454,35690,Mupirocin,epidermolysis bullosa simplex,disease-disease-drug,off-label use,"['epidermolysis bullosa simplex', 'syndromic disease', 'Mupirocin']",0.005602621369674409
+15143,33575,Bicalutamide,diabetes mellitus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['diabetes mellitus (disease)', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Bicalutamide']",0.005585963576179836
+15143,33575,Bicalutamide,diabetes mellitus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['diabetes mellitus (disease)', 'Particulate Matter', 'proteasome complex', 'PSMD6', 'Bicalutamide']",0.005585725180982053
+15143,33575,Bicalutamide,diabetes mellitus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['diabetes mellitus (disease)', 'Particulate Matter', 'proteasome complex', 'PAAF1', 'Bicalutamide']",0.005585725180982053
+15143,33575,Bicalutamide,diabetes mellitus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['diabetes mellitus (disease)', 'Particulate Matter', 'proteasome complex', 'PSMD11', 'Bicalutamide']",0.005585725180982053
+15143,33575,Bicalutamide,diabetes mellitus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['diabetes mellitus (disease)', 'Particulate Matter', 'proteasome complex', 'PSMD5', 'Bicalutamide']",0.005585725180982053
+15143,33575,Bicalutamide,diabetes mellitus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['diabetes mellitus (disease)', 'Particulate Matter', 'proteasome complex', 'PSMB5', 'Bicalutamide']",0.005585725180982053
+15143,33575,Bicalutamide,diabetes mellitus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['diabetes mellitus (disease)', 'Particulate Matter', 'proteasome complex', 'PSMC3', 'Bicalutamide']",0.005585725180982053
+15143,33575,Bicalutamide,diabetes mellitus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['diabetes mellitus (disease)', 'Particulate Matter', 'proteasome complex', 'TXNL1', 'Bicalutamide']",0.005585725180982053
 20454,35432,Mupirocin,epidermolysis bullosa simplex,disease-disease-drug,off-label use,"['epidermolysis bullosa simplex', 'Mendelian disease', 'Mupirocin']",0.005581366080037339
+20454,27434,Mupirocin,epidermolysis bullosa simplex,disease-phenotype-protein-drug,off-label use,"['epidermolysis bullosa simplex', 'Fatigue', 'EPO', 'Mupirocin']",0.005578782729032589
+20454,27434,Mupirocin,epidermolysis bullosa simplex,disease-phenotype-protein-drug,off-label use,"['epidermolysis bullosa simplex', 'Erythema', 'OXT', 'Mupirocin']",0.005574441172056577
+20454,27434,Mupirocin,epidermolysis bullosa simplex,disease-phenotype-protein-drug,off-label use,"['epidermolysis bullosa simplex', 'Feeding difficulties', 'MSL3', 'Mupirocin']",0.005570487982457685
+20454,27434,Mupirocin,epidermolysis bullosa simplex,disease-phenotype-protein-drug,off-label use,"['epidermolysis bullosa simplex', 'Fatigue', 'TNFRSF10A', 'Mupirocin']",0.005560741104702578
+20454,27434,Mupirocin,epidermolysis bullosa simplex,disease-phenotype-protein-drug,off-label use,"['epidermolysis bullosa simplex', 'Recurrent infections', 'IL6R', 'Mupirocin']",0.00555675556638413
+20454,27434,Mupirocin,epidermolysis bullosa simplex,disease-phenotype-protein-drug,off-label use,"['epidermolysis bullosa simplex', 'Recurrent infections', 'IL6ST', 'Mupirocin']",0.005556454716130104
+20454,27434,Mupirocin,epidermolysis bullosa simplex,disease-phenotype-protein-drug,off-label use,"['epidermolysis bullosa simplex', 'Fatigue', 'TGFBR2', 'Mupirocin']",0.005553629063841296
 14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYH9', 'Acenocoumarol']",0.005463087522583792
 14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYH15', 'Acenocoumarol']",0.005448008889974185
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'PIN1', 'Acenocoumarol']",0.0054466274180188555
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'KIF18B', 'Acenocoumarol']",0.005446073145840344
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'GPR88', 'Acenocoumarol']",0.005446073145840344
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYO18B', 'Acenocoumarol']",0.005446073145840344
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'KIF1C', 'Acenocoumarol']",0.005446073145840344
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'DYNC2H1', 'Acenocoumarol']",0.005446073145840344
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYH11', 'Acenocoumarol']",0.005446073145840344
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYL3', 'Acenocoumarol']",0.005446073145840344
 20454,35827,Mupirocin,epidermolysis bullosa simplex,disease-disease-drug,off-label use,"['epidermolysis bullosa simplex', 'genetic skin disease', 'Mupirocin']",0.005385479869776429
 20454,38025,Mupirocin,epidermolysis bullosa simplex,disease-disease-drug,off-label use,"['epidermolysis bullosa simplex', 'autoimmune bullous skin disease', 'Mupirocin']",0.00537520672982268
 20454,28150,Mupirocin,epidermolysis bullosa simplex,disease-disease-drug,off-label use,"['epidermolysis bullosa simplex', 'epidermolysis bullosa simplex with pyloric atresia', 'Mupirocin']",0.005372728933945534
@@ -353,6 +473,14 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 14341,96875,Acenocoumarol,pulmonary embolism (disease),disease-disease-drug,indication,"['pulmonary embolism (disease)', 'puerperal pulmonary embolism', 'Acenocoumarol']",0.00505519315401332
 19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['cerebrovascular disorder', 'Particulate Matter', 'mucus layer', 'MUC5AC', 'Isocarboxazid']",0.004989316810031728
 19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['cerebrovascular disorder', 'Particulate Matter', 'mucus layer', 'ZG16', 'Isocarboxazid']",0.004983309740326588
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['cerebrovascular disorder', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Isocarboxazid']",0.004920767124425089
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['cerebrovascular disorder', 'Particulate Matter', 'proteasome complex', 'PSME1', 'Isocarboxazid']",0.004920528729227306
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['cerebrovascular disorder', 'Particulate Matter', 'proteasome complex', 'PSMB3', 'Isocarboxazid']",0.004920528729227306
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['cerebrovascular disorder', 'Particulate Matter', 'proteasome complex', 'PSMA5', 'Isocarboxazid']",0.004920528729227306
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['cerebrovascular disorder', 'Particulate Matter', 'proteasome complex', 'PSMD4', 'Isocarboxazid']",0.004920528729227306
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['cerebrovascular disorder', 'Particulate Matter', 'proteasome complex', 'RAD23A', 'Isocarboxazid']",0.004920528729227306
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['cerebrovascular disorder', 'Particulate Matter', 'proteasome complex', 'PSMA1', 'Isocarboxazid']",0.004920528729227306
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['cerebrovascular disorder', 'Particulate Matter', 'proteasome complex', 'PSMD2', 'Isocarboxazid']",0.004920528729227306
 15143,36376,Bicalutamide,diabetes mellitus (disease),disease-disease-drug,contraindication,"['diabetes mellitus (disease)', 'endocrine pancreas disease', 'Bicalutamide']",0.004812223714611154
 15143,28821,Bicalutamide,diabetes mellitus (disease),disease-disease-drug,contraindication,"['diabetes mellitus (disease)', 'acanthosis nigricans-insulin resistance-muscle cramps-acral enlargement syndrome', 'Bicalutamide']",0.004742235874511353
 15143,27788,Bicalutamide,diabetes mellitus (disease),disease-disease-drug,contraindication,"['diabetes mellitus (disease)', 'familial partial lipodystrophy', 'Bicalutamide']",0.004742235874511353
@@ -386,7 +514,15 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 15143,33327,Bicalutamide,diabetes mellitus (disease),disease-disease-drug,contraindication,"['diabetes mellitus (disease)', 'Berardinelli-Seip congenital lipodystrophy', 'Bicalutamide']",0.004742235874511353
 14183,33577,Tolmetin,hypertensive disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['hypertensive disorder', 'Particulate Matter', 'mucus layer', 'MUC5AC', 'Tolmetin']",0.004265767016337815
 14183,33577,Tolmetin,hypertensive disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['hypertensive disorder', 'Particulate Matter', 'mucus layer', 'ZG16', 'Tolmetin']",0.004259759946632675
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Arsenic', 'cholinesterase activity', 'ACHE', 'Tolmetin']",0.0042125347927480395
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Arsenic', 'cholinesterase activity', 'BCHE', 'Tolmetin']",0.004208363148703371
 19222,35465,Isocarboxazid,cerebrovascular disorder,disease-disease-drug,contraindication,"['cerebrovascular disorder', 'brain disease', 'Isocarboxazid']",0.004206518126736761
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['hypertensive disorder', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Tolmetin']",0.0041972173307311764
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['hypertensive disorder', 'Particulate Matter', 'proteasome complex', 'PSMD14', 'Tolmetin']",0.004196978935533393
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['hypertensive disorder', 'Particulate Matter', 'proteasome complex', 'PSMD5', 'Tolmetin']",0.004196978935533393
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['hypertensive disorder', 'Particulate Matter', 'proteasome complex', 'PSMD12', 'Tolmetin']",0.004196978935533393
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['hypertensive disorder', 'Particulate Matter', 'proteasome complex', 'RAD23B', 'Tolmetin']",0.004196978935533393
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-cellcomp-gene-drug,contraindication,"['hypertensive disorder', 'Particulate Matter', 'proteasome complex', 'ECPAS', 'Tolmetin']",0.004196978935533393
 19222,36776,Isocarboxazid,cerebrovascular disorder,disease-disease-drug,contraindication,"['cerebrovascular disorder', 'brain infarction', 'Isocarboxazid']",0.0041032158114611885
 19222,36788,Isocarboxazid,cerebrovascular disorder,disease-disease-drug,contraindication,"['cerebrovascular disorder', 'intracranial thrombosis', 'Isocarboxazid']",0.004078136636654402
 19222,36303,Isocarboxazid,cerebrovascular disorder,disease-disease-drug,contraindication,"['cerebrovascular disorder', 'carotid artery disease', 'Isocarboxazid']",0.004078136636654402
@@ -410,12 +546,44 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 19222,97425,Isocarboxazid,cerebrovascular disorder,disease-disease-drug,contraindication,"['cerebrovascular disorder', 'basal ganglia cerebrovascular disease', 'Isocarboxazid']",0.004078136636654402
 14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cholinesterase activity', 'ACHE', 'Hydrocortisone acetate']",0.004020890409503966
 14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cholinesterase activity', 'BCHE', 'Hydrocortisone acetate']",0.004016718765459299
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cholinesterase activity', 'CHKA', 'Hydrocortisone acetate']",0.003879267266820747
 14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cholinesterase activity', 'ACHE', 'Etoposide']",0.0038466724836660102
 14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cholinesterase activity', 'BCHE', 'Etoposide']",0.0038425008396213425
 20318,33649,Sulfacetamide,exanthem (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['exanthem (disease)', 'Particulate Matter', 'mucus layer', 'MUC5AC', 'Sulfacetamide']",0.003752654046238882
 20318,33649,Sulfacetamide,exanthem (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['exanthem (disease)', 'Particulate Matter', 'mucus layer', 'ZG16', 'Sulfacetamide']",0.0037466469765337416
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cholinesterase activity', 'CHKA', 'Etoposide']",0.0037050493409827904
 20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-cellcomp-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Particulate Matter', 'mucus layer', 'MUC5AC', 'Phenyltoloxamine']",0.00370140957940772
 20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-cellcomp-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Particulate Matter', 'mucus layer', 'ZG16', 'Phenyltoloxamine']",0.0036954025097025796
+20318,33649,Sulfacetamide,exanthem (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['exanthem (disease)', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Sulfacetamide']",0.0036841043606322425
+20318,33649,Sulfacetamide,exanthem (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['exanthem (disease)', 'Particulate Matter', 'proteasome complex', 'PSMD1', 'Sulfacetamide']",0.0036838659654344595
+20318,33649,Sulfacetamide,exanthem (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['exanthem (disease)', 'Particulate Matter', 'proteasome complex', 'UBQLN1', 'Sulfacetamide']",0.0036838659654344595
+20318,33649,Sulfacetamide,exanthem (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['exanthem (disease)', 'Particulate Matter', 'proteasome complex', 'PSMB8', 'Sulfacetamide']",0.0036838659654344595
+20318,33649,Sulfacetamide,exanthem (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['exanthem (disease)', 'Particulate Matter', 'proteasome complex', 'RAD23A', 'Sulfacetamide']",0.0036838659654344595
+20318,33649,Sulfacetamide,exanthem (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['exanthem (disease)', 'Particulate Matter', 'proteasome complex', 'PSMB5', 'Sulfacetamide']",0.0036838659654344595
+20318,33649,Sulfacetamide,exanthem (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['exanthem (disease)', 'Particulate Matter', 'proteasome complex', 'PSMA1', 'Sulfacetamide']",0.0036838659654344595
+20318,33649,Sulfacetamide,exanthem (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['exanthem (disease)', 'Particulate Matter', 'proteasome complex', 'ZFAND2A', 'Sulfacetamide']",0.0036838659654344595
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'ALOX5AP', 'Hydrocortisone acetate']",0.0036499944146483453
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Arsenic', 'cholinesterase activity', 'ACHE', 'Phenyltoloxamine']",0.0036481773558179435
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'PTGES', 'Hydrocortisone acetate']",0.0036475989856701654
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTP1', 'Hydrocortisone acetate']",0.0036473407229981377
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'MGST2', 'Hydrocortisone acetate']",0.0036470496186735177
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'LTC4S', 'Hydrocortisone acetate']",0.0036470496186735177
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTT1', 'Hydrocortisone acetate']",0.003645083264745582
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Arsenic', 'cholinesterase activity', 'BCHE', 'Phenyltoloxamine']",0.0036440057117732762
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTK1', 'Hydrocortisone acetate']",0.0036429091254139585
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-cellcomp-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Phenyltoloxamine']",0.0036328598938010805
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-cellcomp-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Particulate Matter', 'proteasome complex', 'PAAF1', 'Phenyltoloxamine']",0.0036326214986032975
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-cellcomp-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Particulate Matter', 'proteasome complex', 'PSMD6', 'Phenyltoloxamine']",0.0036326214986032975
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-cellcomp-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Particulate Matter', 'proteasome complex', 'PSMB6', 'Phenyltoloxamine']",0.0036326214986032975
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-cellcomp-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Particulate Matter', 'proteasome complex', 'PSMB10', 'Phenyltoloxamine']",0.0036326214986032975
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-cellcomp-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Particulate Matter', 'proteasome complex', 'PSMB2', 'Phenyltoloxamine']",0.0036326214986032975
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'ALOX5AP', 'Etoposide']",0.0034757764888103887
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'PTGES', 'Etoposide']",0.003473381059832209
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'LTC4S', 'Etoposide']",0.003472831692835561
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'MGST2', 'Etoposide']",0.003472831692835561
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTZ1', 'Etoposide']",0.003468691199576002
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTK1', 'Etoposide']",0.003468691199576002
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTM2', 'Etoposide']",0.003468691199576002
 14183,36313,Tolmetin,hypertensive disorder,disease-disease-drug,contraindication,"['hypertensive disorder', 'arterial disorder', 'Tolmetin']",0.0034352581885889856
 14183,97093,Tolmetin,hypertensive disorder,disease-disease-drug,contraindication,"['hypertensive disorder', 'chemotherapy-induced hypertension', 'Tolmetin']",0.003357930732934728
 14183,83830,Tolmetin,hypertensive disorder,disease-disease-drug,contraindication,"['hypertensive disorder', 'ocular hypertension', 'Tolmetin']",0.003357930732934728
@@ -462,8 +630,18 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 20212,33234,Melphalan,vasculitis,disease-disease-drug,contraindication,"['vasculitis', 'central nervous system vasculitis', 'Melphalan']",0.0029831517494499807
 20212,39220,Melphalan,vasculitis,disease-disease-drug,contraindication,"['vasculitis', 'systemic or rheumatic disease', 'Melphalan']",0.0029831517494499807
 20212,39366,Melphalan,vasculitis,disease-disease-drug,contraindication,"['vasculitis', 'choroiditis', 'Melphalan']",0.0029831517494499807
+14152,36187,Chlorthalidone,coronary artery disease,disease-exposure-cellcomp-gene-drug,contraindication,"['coronary artery disease', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Chlorthalidone']",0.002967258526933905
+14152,36187,Chlorthalidone,coronary artery disease,disease-exposure-cellcomp-gene-drug,contraindication,"['coronary artery disease', 'Particulate Matter', 'proteasome complex', 'PSMA1', 'Chlorthalidone']",0.0029670201317361215
+14152,36187,Chlorthalidone,coronary artery disease,disease-exposure-cellcomp-gene-drug,contraindication,"['coronary artery disease', 'Particulate Matter', 'proteasome complex', 'RAD23A', 'Chlorthalidone']",0.0029670201317361215
+14152,36187,Chlorthalidone,coronary artery disease,disease-exposure-cellcomp-gene-drug,contraindication,"['coronary artery disease', 'Particulate Matter', 'proteasome complex', 'PSMD12', 'Chlorthalidone']",0.0029670201317361215
+14152,36187,Chlorthalidone,coronary artery disease,disease-exposure-cellcomp-gene-drug,contraindication,"['coronary artery disease', 'Particulate Matter', 'proteasome complex', 'PSME1', 'Chlorthalidone']",0.0029670201317361215
+14152,36187,Chlorthalidone,coronary artery disease,disease-exposure-cellcomp-gene-drug,contraindication,"['coronary artery disease', 'Particulate Matter', 'proteasome complex', 'PSMD10', 'Chlorthalidone']",0.0029670201317361215
+14152,36187,Chlorthalidone,coronary artery disease,disease-exposure-cellcomp-gene-drug,contraindication,"['coronary artery disease', 'Particulate Matter', 'proteasome complex', 'PSMC5', 'Chlorthalidone']",0.0029670201317361215
+14152,36187,Chlorthalidone,coronary artery disease,disease-exposure-cellcomp-gene-drug,contraindication,"['coronary artery disease', 'Particulate Matter', 'proteasome complex', 'PSMD1', 'Chlorthalidone']",0.0029670201317361215
+14792,33623,Paclitaxel,macrocytic anemia (disease),disease-protein-drug,contraindication,"['macrocytic anemia (disease)', 'CSF3', 'Paclitaxel']",0.002880285172317743
 20318,97455,Sulfacetamide,exanthem (disease),disease-disease-drug,contraindication,"['exanthem (disease)', 'pityriasis rosea', 'Sulfacetamide']",0.002846312061661694
 20318,36644,Sulfacetamide,exanthem (disease),disease-disease-drug,contraindication,"['exanthem (disease)', 'skin disease', 'Sulfacetamide']",0.002846312061661694
+14792,33623,Paclitaxel,macrocytic anemia (disease),disease-protein-drug,contraindication,"['macrocytic anemia (disease)', 'SOD2', 'Paclitaxel']",0.0028446011752421923
 20318,38012,Sulfacetamide,exanthem (disease),disease-disease-drug,contraindication,"['exanthem (disease)', 'viral exanthem', 'Sulfacetamide']",0.002843834265784548
 20318,97431,Sulfacetamide,exanthem (disease),disease-disease-drug,contraindication,"['exanthem (disease)', 'bacterial exanthem', 'Sulfacetamide']",0.002843834265784548
 20318,29906,Sulfacetamide,exanthem (disease),disease-disease-drug,contraindication,"['exanthem (disease)', 'pityriasis rubra pilaris', 'Sulfacetamide']",0.002843834265784548
@@ -478,6 +656,12 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 20318,99032,Sulfacetamide,exanthem (disease),disease-disease-drug,contraindication,"['exanthem (disease)', 'prurigo', 'Sulfacetamide']",0.002843834265784548
 20318,83979,Sulfacetamide,exanthem (disease),disease-disease-drug,contraindication,"['exanthem (disease)', 'variola major infectious disease', 'Sulfacetamide']",0.002843834265784548
 20318,83978,Sulfacetamide,exanthem (disease),disease-disease-drug,contraindication,"['exanthem (disease)', 'exanthema subitum', 'Sulfacetamide']",0.002843834265784548
+14792,33623,Paclitaxel,macrocytic anemia (disease),disease-protein-drug,contraindication,"['macrocytic anemia (disease)', 'IGF2', 'Paclitaxel']",0.0028350657951616803
+14792,33623,Paclitaxel,macrocytic anemia (disease),disease-protein-drug,contraindication,"['macrocytic anemia (disease)', 'GSR', 'Paclitaxel']",0.002835001761066685
+14792,33623,Paclitaxel,macrocytic anemia (disease),disease-protein-drug,contraindication,"['macrocytic anemia (disease)', 'EPO', 'Paclitaxel']",0.0028194214694300564
+14792,33623,Paclitaxel,macrocytic anemia (disease),disease-protein-drug,contraindication,"['macrocytic anemia (disease)', 'TNF', 'Paclitaxel']",0.002809140489253863
+14792,33623,Paclitaxel,macrocytic anemia (disease),disease-protein-drug,contraindication,"['macrocytic anemia (disease)', 'ASPG', 'Paclitaxel']",0.002805888661003899
+14792,33623,Paclitaxel,macrocytic anemia (disease),disease-protein-drug,contraindication,"['macrocytic anemia (disease)', 'TNFRSF10A', 'Paclitaxel']",0.0028013798451000465
 20294,39493,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-disease-drug,contraindication,"['chronic obstructive pulmonary disease', 'bronchiectasis', 'Phenyltoloxamine']",0.00279775315847243
 20294,36437,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-disease-drug,contraindication,"['chronic obstructive pulmonary disease', 'tracheal disease', 'Phenyltoloxamine']",0.00279775315847243
 20294,37657,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-disease-drug,contraindication,"['chronic obstructive pulmonary disease', 'obstructive lung disease', 'Phenyltoloxamine']",0.00279775315847243
@@ -488,11 +672,21 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 14792,33611,Paclitaxel,macrocytic anemia (disease),disease-disease-drug,contraindication,"['macrocytic anemia (disease)', 'megaloblastic anemia (disease)', 'Paclitaxel']",0.002764673337372999
 14023,35823,Triamcinolone,eye disease,disease-exposure-cellcomp-gene-drug,indication,"['eye disease', 'Particulate Matter', 'mucus layer', 'MUC5AC', 'Triamcinolone']",0.0026333249745852175
 14023,35823,Triamcinolone,eye disease,disease-exposure-cellcomp-gene-drug,indication,"['eye disease', 'Particulate Matter', 'mucus layer', 'ZG16', 'Triamcinolone']",0.0026273179048800777
+14023,35823,Triamcinolone,eye disease,disease-exposure-cellcomp-gene-drug,indication,"['eye disease', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Triamcinolone']",0.002564775288978579
+14023,35823,Triamcinolone,eye disease,disease-exposure-cellcomp-gene-drug,indication,"['eye disease', 'Particulate Matter', 'proteasome complex', 'ADRM1', 'Triamcinolone']",0.0025645368937807955
+14023,35823,Triamcinolone,eye disease,disease-exposure-cellcomp-gene-drug,indication,"['eye disease', 'Particulate Matter', 'proteasome complex', 'PSMD5', 'Triamcinolone']",0.0025645368937807955
+14023,35823,Triamcinolone,eye disease,disease-exposure-cellcomp-gene-drug,indication,"['eye disease', 'Particulate Matter', 'proteasome complex', 'PSMD11', 'Triamcinolone']",0.0025645368937807955
+14023,35823,Triamcinolone,eye disease,disease-exposure-cellcomp-gene-drug,indication,"['eye disease', 'Particulate Matter', 'proteasome complex', 'PSMD14', 'Triamcinolone']",0.0025645368937807955
+14023,35823,Triamcinolone,eye disease,disease-exposure-cellcomp-gene-drug,indication,"['eye disease', 'Particulate Matter', 'proteasome complex', 'UBE3A', 'Triamcinolone']",0.0025645368937807955
+14023,35823,Triamcinolone,eye disease,disease-exposure-cellcomp-gene-drug,indication,"['eye disease', 'Particulate Matter', 'proteasome complex', 'VCP', 'Triamcinolone']",0.0025645368937807955
+14023,35823,Triamcinolone,eye disease,disease-exposure-cellcomp-gene-drug,indication,"['eye disease', 'Particulate Matter', 'proteasome complex', 'PSMC5', 'Triamcinolone']",0.0025645368937807955
 14545,28158,Clindamycin,inflammatory bowel disease,disease-exposure-molfunc-gene-drug,contraindication,"['inflammatory bowel disease', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'SOD1', 'Clindamycin']",0.0023931131759332026
 14545,28158,Clindamycin,inflammatory bowel disease,disease-exposure-molfunc-gene-drug,contraindication,"['inflammatory bowel disease', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'SOD2', 'Clindamycin']",0.0023728602951776923
 14950,35953,Loratadine,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'mucus layer', 'MUC5AC', 'Loratadine']",0.0023623708310477705
 14950,35953,Loratadine,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'mucus layer', 'ZG16', 'Loratadine']",0.0023563637613426306
 20204,35586,Cefixime,gonorrhea,disease-disease-drug,indication,"['gonorrhea', 'primary bacterial infectious disease', 'Cefixime']",0.0023530389590671365
+14545,28158,Clindamycin,inflammatory bowel disease,disease-exposure-molfunc-gene-drug,contraindication,"['inflammatory bowel disease', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'NQO1', 'Clindamycin']",0.0023237615280567205
+14545,28158,Clindamycin,inflammatory bowel disease,disease-exposure-molfunc-gene-drug,contraindication,"['inflammatory bowel disease', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'SOD3', 'Clindamycin']",0.002322413185325173
 14058,35840,Diethylstilbestrol,female reproductive system neoplasm,disease-disease-drug,contraindication,"['female reproductive system neoplasm', 'female reproductive system disease', 'Diethylstilbestrol']",0.00231555710032189
 14058,37258,Diethylstilbestrol,female reproductive system neoplasm,disease-disease-drug,contraindication,"['female reproductive system neoplasm', 'endometrioid tumor', 'Diethylstilbestrol']",0.00231555710032189
 14058,35793,Diethylstilbestrol,female reproductive system neoplasm,disease-disease-drug,contraindication,"['female reproductive system neoplasm', 'vaginal neoplasm', 'Diethylstilbestrol']",0.00231555710032189
@@ -521,6 +715,14 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 14221,36889,Norethisterone,uterine corpus cancer,disease-disease-drug,contraindication,"['uterine corpus cancer', 'uterine body mixed cancer', 'Norethisterone']",0.00231555710032189
 14221,37531,Norethisterone,uterine corpus cancer,disease-disease-drug,contraindication,"['uterine corpus cancer', 'corpus uteri neoplasm', 'Norethisterone']",0.00231555710032189
 14221,96319,Norethisterone,uterine corpus cancer,disease-disease-drug,contraindication,"['uterine corpus cancer', 'uterine corpus serous adenocarcinoma', 'Norethisterone']",0.00231555710032189
+14950,35953,Loratadine,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Loratadine']",0.0022938211454411315
+14950,35953,Loratadine,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'PSMA5', 'Loratadine']",0.002293582750243348
+14950,35953,Loratadine,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'PSMD3', 'Loratadine']",0.002293582750243348
+14950,35953,Loratadine,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'USP14', 'Loratadine']",0.002293582750243348
+14950,35953,Loratadine,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'PSMA3', 'Loratadine']",0.002293582750243348
+14950,35953,Loratadine,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'UBQLN1', 'Loratadine']",0.002293582750243348
+14950,35953,Loratadine,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'VCP', 'Loratadine']",0.002293582750243348
+14950,35953,Loratadine,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'RAD23A', 'Loratadine']",0.002293582750243348
 14028,35519,Hydrocortisone,Langerhans cell histiocytosis,disease-disease-drug,indication,"['Langerhans cell histiocytosis', 'leukocyte disease', 'Hydrocortisone']",0.002277225608109054
 15893,35519,Bleomycin,Langerhans cell histiocytosis,disease-disease-drug,indication,"['Langerhans cell histiocytosis', 'leukocyte disease', 'Bleomycin']",0.002277225608109054
 20204,98924,Cefixime,gonorrhea,disease-disease-drug,indication,"['gonorrhea', 'gonococcal urethritis', 'Cefixime']",0.0022548121910738904
@@ -653,7 +855,31 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 14944,29182,Amlodipine,systemic lupus erythematosus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['systemic lupus erythematosus (disease)', 'Particulate Matter', 'mucus layer', 'ZG16', 'Amlodipine']",0.0017691477045049752
 19712,35953,Doxapram,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'mucus layer', 'ZG16', 'Doxapram']",0.0017691477045049752
 14023,35833,Triamcinolone,pneumonitis,disease-disease-drug,indication,"['pneumonitis', 'lung disease', 'Triamcinolone']",0.0017545065825451108
+14786,35669,Lansoprazole,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Lansoprazole']",0.0017508023823390312
+14786,35669,Lansoprazole,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'proteasome complex', 'PSMD11', 'Lansoprazole']",0.0017505639871412482
+14786,35669,Lansoprazole,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'proteasome complex', 'PSMD5', 'Lansoprazole']",0.0017505639871412482
+14786,35669,Lansoprazole,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'proteasome complex', 'PSMD14', 'Lansoprazole']",0.0017505639871412482
+14786,35669,Lansoprazole,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'proteasome complex', 'PSMC2', 'Lansoprazole']",0.0017505639871412482
+14786,35669,Lansoprazole,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'proteasome complex', 'PSMD10', 'Lansoprazole']",0.0017505639871412482
+14786,35669,Lansoprazole,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'proteasome complex', 'ECPAS', 'Lansoprazole']",0.0017505639871412482
+14786,35669,Lansoprazole,heart disease,disease-exposure-cellcomp-gene-drug,contraindication,"['heart disease', 'Particulate Matter', 'proteasome complex', 'UBE3C', 'Lansoprazole']",0.0017505639871412482
+14610,38957,Ketamine,major depressive disorder,disease-exposure-cellcomp-gene-drug,off-label use,"['major depressive disorder', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Ketamine']",0.0017487670041235704
+14610,38957,Ketamine,major depressive disorder,disease-exposure-cellcomp-gene-drug,off-label use,"['major depressive disorder', 'Particulate Matter', 'proteasome complex', 'PSMB1', 'Ketamine']",0.0017485286089257875
+14610,38957,Ketamine,major depressive disorder,disease-exposure-cellcomp-gene-drug,off-label use,"['major depressive disorder', 'Particulate Matter', 'proteasome complex', 'ECPAS', 'Ketamine']",0.0017485286089257875
+14610,38957,Ketamine,major depressive disorder,disease-exposure-cellcomp-gene-drug,off-label use,"['major depressive disorder', 'Particulate Matter', 'proteasome complex', 'RAD23B', 'Ketamine']",0.0017485286089257875
+14610,38957,Ketamine,major depressive disorder,disease-exposure-cellcomp-gene-drug,off-label use,"['major depressive disorder', 'Particulate Matter', 'proteasome complex', 'PSMC1', 'Ketamine']",0.0017485286089257875
+14610,38957,Ketamine,major depressive disorder,disease-exposure-cellcomp-gene-drug,off-label use,"['major depressive disorder', 'Particulate Matter', 'proteasome complex', 'PSMD13', 'Ketamine']",0.0017485286089257875
+14610,38957,Ketamine,major depressive disorder,disease-exposure-cellcomp-gene-drug,off-label use,"['major depressive disorder', 'Particulate Matter', 'proteasome complex', 'PAAF1', 'Ketamine']",0.0017485286089257875
+14610,38957,Ketamine,major depressive disorder,disease-exposure-cellcomp-gene-drug,off-label use,"['major depressive disorder', 'Particulate Matter', 'proteasome complex', 'PSMD6', 'Ketamine']",0.0017485286089257875
 14023,35552,Triamcinolone,pneumonitis,disease-disease-drug,indication,"['pneumonitis', 'pneumonia', 'Triamcinolone']",0.0017388320982908694
+14201,35552,Oxytetracycline,pneumonia,disease-exposure-cellcomp-gene-drug,indication,"['pneumonia', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Oxytetracycline']",0.0017379540571119591
+14201,35552,Oxytetracycline,pneumonia,disease-exposure-cellcomp-gene-drug,indication,"['pneumonia', 'Particulate Matter', 'proteasome complex', 'PAAF1', 'Oxytetracycline']",0.0017377156619141762
+14201,35552,Oxytetracycline,pneumonia,disease-exposure-cellcomp-gene-drug,indication,"['pneumonia', 'Particulate Matter', 'proteasome complex', 'PSMA2', 'Oxytetracycline']",0.0017377156619141762
+14201,35552,Oxytetracycline,pneumonia,disease-exposure-cellcomp-gene-drug,indication,"['pneumonia', 'Particulate Matter', 'proteasome complex', 'PSMD6', 'Oxytetracycline']",0.0017377156619141762
+14201,35552,Oxytetracycline,pneumonia,disease-exposure-cellcomp-gene-drug,indication,"['pneumonia', 'Particulate Matter', 'proteasome complex', 'PSMB5', 'Oxytetracycline']",0.0017377156619141762
+14201,35552,Oxytetracycline,pneumonia,disease-exposure-cellcomp-gene-drug,indication,"['pneumonia', 'Particulate Matter', 'proteasome complex', 'PSMC3', 'Oxytetracycline']",0.0017377156619141762
+14201,35552,Oxytetracycline,pneumonia,disease-exposure-cellcomp-gene-drug,indication,"['pneumonia', 'Particulate Matter', 'proteasome complex', 'PSMB6', 'Oxytetracycline']",0.0017377156619141762
+14201,35552,Oxytetracycline,pneumonia,disease-exposure-cellcomp-gene-drug,indication,"['pneumonia', 'Particulate Matter', 'proteasome complex', 'HSPB1', 'Oxytetracycline']",0.0017377156619141762
 15778,84122,Tolazamide,injury,disease-disease-drug,contraindication,"['injury', 'burn', 'Tolazamide']",0.001733334298416957
 15778,94657,Tolazamide,injury,disease-disease-drug,contraindication,"['injury', 'ischemia reperfusion injury', 'Tolazamide']",0.001733334298416957
 15778,37730,Tolazamide,injury,disease-disease-drug,contraindication,"['injury', 'bone fracture', 'Tolazamide']",0.001733334298416957
@@ -678,6 +904,30 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 14023,36836,Triamcinolone,pneumonitis,disease-disease-drug,indication,"['pneumonitis', 'interstitial lung disease', 'Triamcinolone']",0.0017231576140366279
 14023,32812,Triamcinolone,pneumonitis,disease-disease-drug,indication,"['pneumonitis', 'ichthyosis prematurity syndrome', 'Triamcinolone']",0.0017231576140366279
 14023,36108,Triamcinolone,pneumonitis,disease-disease-drug,indication,"['pneumonitis', 'extrinsic allergic alveolitis', 'Triamcinolone']",0.0017231576140366279
+14157,35897,Hydromorphone,pulmonary emphysema,disease-exposure-cellcomp-gene-drug,contraindication,"['pulmonary emphysema', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Hydromorphone']",0.0017191446760068695
+14157,35897,Hydromorphone,pulmonary emphysema,disease-exposure-cellcomp-gene-drug,contraindication,"['pulmonary emphysema', 'Particulate Matter', 'proteasome complex', 'PSMB5', 'Hydromorphone']",0.0017189062808090866
+14157,35897,Hydromorphone,pulmonary emphysema,disease-exposure-cellcomp-gene-drug,contraindication,"['pulmonary emphysema', 'Particulate Matter', 'proteasome complex', 'PSMC3', 'Hydromorphone']",0.0017189062808090866
+14157,35897,Hydromorphone,pulmonary emphysema,disease-exposure-cellcomp-gene-drug,contraindication,"['pulmonary emphysema', 'Particulate Matter', 'proteasome complex', 'PSMD12', 'Hydromorphone']",0.0017189062808090866
+14157,35897,Hydromorphone,pulmonary emphysema,disease-exposure-cellcomp-gene-drug,contraindication,"['pulmonary emphysema', 'Particulate Matter', 'proteasome complex', 'ECPAS', 'Hydromorphone']",0.0017189062808090866
+14157,35897,Hydromorphone,pulmonary emphysema,disease-exposure-cellcomp-gene-drug,contraindication,"['pulmonary emphysema', 'Particulate Matter', 'proteasome complex', 'PSMB1', 'Hydromorphone']",0.0017189062808090866
+14157,35897,Hydromorphone,pulmonary emphysema,disease-exposure-cellcomp-gene-drug,contraindication,"['pulmonary emphysema', 'Particulate Matter', 'proteasome complex', 'PSMB7', 'Hydromorphone']",0.0017189062808090866
+14157,35897,Hydromorphone,pulmonary emphysema,disease-exposure-cellcomp-gene-drug,contraindication,"['pulmonary emphysema', 'Particulate Matter', 'proteasome complex', 'UBQLN1', 'Hydromorphone']",0.0017189062808090866
+19712,35953,Doxapram,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Doxapram']",0.0017066050886034765
+14944,29182,Amlodipine,systemic lupus erythematosus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['systemic lupus erythematosus (disease)', 'Particulate Matter', 'proteasome complex', 'PSMB4', 'Amlodipine']",0.0017066050886034765
+19712,35953,Doxapram,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'PSMD5', 'Doxapram']",0.001706366693405693
+19712,35953,Doxapram,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'PSMD11', 'Doxapram']",0.001706366693405693
+19712,35953,Doxapram,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'PSMD14', 'Doxapram']",0.001706366693405693
+19712,35953,Doxapram,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'PSMC1', 'Doxapram']",0.001706366693405693
+19712,35953,Doxapram,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'PSMD6', 'Doxapram']",0.001706366693405693
+19712,35953,Doxapram,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'PSMB7', 'Doxapram']",0.001706366693405693
+19712,35953,Doxapram,atherosclerosis,disease-exposure-cellcomp-gene-drug,contraindication,"['atherosclerosis', 'Particulate Matter', 'proteasome complex', 'TXNL1', 'Doxapram']",0.001706366693405693
+14944,29182,Amlodipine,systemic lupus erythematosus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['systemic lupus erythematosus (disease)', 'Particulate Matter', 'proteasome complex', 'PSMD6', 'Amlodipine']",0.001706366693405693
+14944,29182,Amlodipine,systemic lupus erythematosus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['systemic lupus erythematosus (disease)', 'Particulate Matter', 'proteasome complex', 'PSMD5', 'Amlodipine']",0.001706366693405693
+14944,29182,Amlodipine,systemic lupus erythematosus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['systemic lupus erythematosus (disease)', 'Particulate Matter', 'proteasome complex', 'PSMD11', 'Amlodipine']",0.001706366693405693
+14944,29182,Amlodipine,systemic lupus erythematosus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['systemic lupus erythematosus (disease)', 'Particulate Matter', 'proteasome complex', 'PSMD14', 'Amlodipine']",0.001706366693405693
+14944,29182,Amlodipine,systemic lupus erythematosus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['systemic lupus erythematosus (disease)', 'Particulate Matter', 'proteasome complex', 'ADRM1', 'Amlodipine']",0.001706366693405693
+14944,29182,Amlodipine,systemic lupus erythematosus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['systemic lupus erythematosus (disease)', 'Particulate Matter', 'proteasome complex', 'PSMB2', 'Amlodipine']",0.001706366693405693
+14944,29182,Amlodipine,systemic lupus erythematosus (disease),disease-exposure-cellcomp-gene-drug,contraindication,"['systemic lupus erythematosus (disease)', 'Particulate Matter', 'proteasome complex', 'PSMB10', 'Amlodipine']",0.001706366693405693
 14650,36570,Dabigatran etexilate,blood coagulation disease,disease-disease-drug,contraindication,"['blood coagulation disease', 'coagulation protein disease', 'Dabigatran etexilate']",0.0016964736907230723
 14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYH9', 'Itraconazole']",0.0016788506732928028
 14403,84162,Rilpivirine,rickets (disease),disease-disease-drug,contraindication,"['rickets (disease)', 'renal osteodystrophy', 'Rilpivirine']",0.0016713443739450242
@@ -685,9 +935,20 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 15456,35586,Amphotericin B,relapsing fever,disease-disease-drug,indication,"['relapsing fever', 'primary bacterial infectious disease', 'Amphotericin B']",0.0016671818646945091
 14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYH15', 'Itraconazole']",0.001663772040683196
 14403,33626,Rilpivirine,rickets (disease),disease-protein-drug,contraindication,"['rickets (disease)', 'PTH', 'Rilpivirine']",0.0016629265688889983
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'PIN1', 'Itraconazole']",0.0016623905687278662
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'KIF15', 'Itraconazole']",0.0016618362965493553
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYO9A', 'Itraconazole']",0.0016618362965493553
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYH11', 'Itraconazole']",0.0016618362965493553
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYL3', 'Itraconazole']",0.0016618362965493553
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'KIF3C', 'Itraconazole']",0.0016618362965493553
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'DNAI1', 'Itraconazole']",0.0016618362965493553
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'KLC1', 'Itraconazole']",0.0016618362965493553
 14403,27800,Rilpivirine,rickets (disease),disease-disease-drug,contraindication,"['rickets (disease)', 'hypophosphatemic rickets', 'Rilpivirine']",0.0016556698896907829
 14403,28703,Rilpivirine,rickets (disease),disease-disease-drug,contraindication,"['rickets (disease)', 'vitamin D-dependent rickets', 'Rilpivirine']",0.0016556698896907829
 14403,33626,Rilpivirine,rickets (disease),disease-protein-drug,contraindication,"['rickets (disease)', 'LRP2', 'Rilpivirine']",0.0016556698896907829
+14403,33626,Rilpivirine,rickets (disease),disease-protein-drug,contraindication,"['rickets (disease)', 'PTH1R', 'Rilpivirine']",0.0016556698896907829
+14403,33626,Rilpivirine,rickets (disease),disease-protein-drug,contraindication,"['rickets (disease)', 'VDR', 'Rilpivirine']",0.0016556698896907829
+14403,33626,Rilpivirine,rickets (disease),disease-protein-drug,contraindication,"['rickets (disease)', 'CYP27B1', 'Rilpivirine']",0.0016556698896907829
 14403,35855,Rilpivirine,rickets (disease),disease-disease-drug,contraindication,"['rickets (disease)', 'bone remodeling disease', 'Rilpivirine']",0.0016556698896907829
 14403,38752,Rilpivirine,rickets (disease),disease-disease-drug,contraindication,"['rickets (disease)', 'hypocalcemic rickets', 'Rilpivirine']",0.0016556698896907829
 14510,36570,Heparin,hemophilia,disease-disease-drug,contraindication,"['hemophilia', 'coagulation protein disease', 'Heparin']",0.0016353806237563665
@@ -768,6 +1029,22 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 15079,36918,Betaxolol,psoriasis,disease-disease-drug,contraindication,"['psoriasis', 'scalp disease', 'Betaxolol']",0.0014445969809015256
 17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH15', 'Butorphanol']",0.001436263693268686
 14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH15', 'Adenosine']",0.001436263693268686
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'PIN1', 'Adenosine']",0.0014348822213133563
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'PIN1', 'Butorphanol']",0.0014348822213133563
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF5A', 'Adenosine']",0.0014343279491348454
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF3C', 'Adenosine']",0.0014343279491348454
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO16', 'Adenosine']",0.0014343279491348454
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO3B', 'Adenosine']",0.0014343279491348454
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO9A', 'Adenosine']",0.0014343279491348454
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH1', 'Adenosine']",0.0014343279491348454
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH7B', 'Adenosine']",0.0014343279491348454
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO6', 'Butorphanol']",0.0014343279491348454
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO18B', 'Butorphanol']",0.0014343279491348454
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF1C', 'Butorphanol']",0.0014343279491348454
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYL6B', 'Butorphanol']",0.0014343279491348454
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF1A', 'Butorphanol']",0.0014343279491348454
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH11', 'Butorphanol']",0.0014343279491348454
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYL6', 'Butorphanol']",0.0014343279491348454
 20414,35552,Cefoxitin,bacterial pneumonia,disease-disease-drug,indication,"['bacterial pneumonia', 'pneumonia', 'Cefoxitin']",0.0014317595653792693
 20414,84015,Cefoxitin,bacterial pneumonia,disease-disease-drug,indication,"['bacterial pneumonia', ""Legionnaires' disease"", 'Cefoxitin']",0.0014160850811250278
 20414,37879,Cefoxitin,bacterial pneumonia,disease-disease-drug,indication,"['bacterial pneumonia', 'pneumonia caused by gram negative bacteria', 'Cefoxitin']",0.0014160850811250278
@@ -786,6 +1063,14 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 14306,35464,Pioglitazone,"combined pituitary hormone deficiencies, genetic form",disease-disease-drug,contraindication,"['combined pituitary hormone deficiencies, genetic form', 'genetic nervous system disorder', 'Pioglitazone']",0.0013796171863853528
 15113,28780,Galantamine,Alzheimer disease,disease-exposure-cellcomp-gene-drug,indication,"['Alzheimer disease', 'Particulate Matter', 'proteasome complex', 'PSMA3', 'Galantamine']",0.001362257173839278
 15113,28780,Galantamine,Alzheimer disease,disease-exposure-cellcomp-gene-drug,indication,"['Alzheimer disease', 'Particulate Matter', 'proteasome complex', 'PSME2', 'Galantamine']",0.001362257173839278
+15113,28780,Galantamine,Alzheimer disease,disease-exposure-cellcomp-gene-drug,indication,"['Alzheimer disease', 'Particulate Matter', 'proteasome complex', 'VCP', 'Galantamine']",0.001362257173839278
+15113,28780,Galantamine,Alzheimer disease,disease-exposure-cellcomp-gene-drug,indication,"['Alzheimer disease', 'Particulate Matter', 'proteasome complex', 'PSMC5', 'Galantamine']",0.001362257173839278
+15113,28780,Galantamine,Alzheimer disease,disease-exposure-cellcomp-gene-drug,indication,"['Alzheimer disease', 'Particulate Matter', 'proteasome complex', 'PSMA4', 'Galantamine']",0.001362257173839278
+15113,28780,Galantamine,Alzheimer disease,disease-exposure-cellcomp-gene-drug,indication,"['Alzheimer disease', 'Particulate Matter', 'proteasome complex', 'PSMB3', 'Galantamine']",0.001362257173839278
+15113,28780,Galantamine,Alzheimer disease,disease-exposure-cellcomp-gene-drug,indication,"['Alzheimer disease', 'Particulate Matter', 'proteasome complex', 'PSMC4', 'Galantamine']",0.001362257173839278
+15113,28780,Galantamine,Alzheimer disease,disease-exposure-cellcomp-gene-drug,indication,"['Alzheimer disease', 'Particulate Matter', 'proteasome complex', 'PSMA7', 'Galantamine']",0.001362257173839278
+15113,28780,Galantamine,Alzheimer disease,disease-exposure-cellcomp-gene-drug,indication,"['Alzheimer disease', 'Particulate Matter', 'proteasome complex', 'PSMA5', 'Galantamine']",0.001362257173839278
+15113,28780,Galantamine,Alzheimer disease,disease-exposure-cellcomp-gene-drug,indication,"['Alzheimer disease', 'Particulate Matter', 'proteasome complex', 'PSME1', 'Galantamine']",0.001362257173839278
 20424,28374,Magnesium trisilicate,gastroesophageal reflux disease,disease-phenotype-protein-drug,indication,"['gastroesophageal reflux disease', 'Gastroesophageal reflux', 'TRPV1', 'Magnesium trisilicate']",0.0013584176162235295
 14306,38428,Pioglitazone,"combined pituitary hormone deficiencies, genetic form",disease-disease-drug,contraindication,"['combined pituitary hormone deficiencies, genetic form', 'female infertility due to a congenital hypogonadotropic hypogonadism', 'Pioglitazone']",0.0013479789478212552
 14306,99478,Pioglitazone,"combined pituitary hormone deficiencies, genetic form",disease-disease-drug,contraindication,"['combined pituitary hormone deficiencies, genetic form', 'Kaplowitz-Bodurtha syndrome', 'Pioglitazone']",0.0013479789478212552
@@ -856,10 +1141,16 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 14402,83920,Pitavastatin,gallbladder disease,disease-disease-drug,contraindication,"['gallbladder disease', 'cholecystolithiasis', 'Pitavastatin']",0.0012958969299778317
 16085,39880,Potassium chloride,ventricular fibrillation (disease),disease-protein-drug,contraindication,"['ventricular fibrillation (disease)', 'EPO', 'Potassium chloride']",0.0012813295115320774
 14992,35669,Itraconazole,heart failure,disease-disease-drug,contraindication,"['heart failure', 'heart disease', 'Itraconazole']",0.0012733549737799078
+16085,39880,Potassium chloride,ventricular fibrillation (disease),disease-protein-drug,contraindication,"['ventricular fibrillation (disease)', 'PLAU', 'Potassium chloride']",0.001258107516998101
 14992,99860,Itraconazole,heart failure,disease-disease-drug,contraindication,"['heart failure', 'cardio-renal syndrome', 'Itraconazole']",0.0012503657302070205
 14992,37716,Itraconazole,heart failure,disease-disease-drug,contraindication,"['heart failure', 'symptomatic heart failure', 'Itraconazole']",0.0012503657302070205
 14992,84138,Itraconazole,heart failure,disease-disease-drug,contraindication,"['heart failure', 'high output heart failure', 'Itraconazole']",0.0012503657302070205
+16085,39880,Potassium chloride,ventricular fibrillation (disease),disease-protein-drug,contraindication,"['ventricular fibrillation (disease)', 'KCNJ8', 'Potassium chloride']",0.0012409388539424701
+16085,39880,Potassium chloride,ventricular fibrillation (disease),disease-protein-drug,contraindication,"['ventricular fibrillation (disease)', 'KCNH2', 'Potassium chloride']",0.0012409388539424701
+16085,39880,Potassium chloride,ventricular fibrillation (disease),disease-protein-drug,contraindication,"['ventricular fibrillation (disease)', 'SCN10A', 'Potassium chloride']",0.0012400747362591182
+16085,39880,Potassium chloride,ventricular fibrillation (disease),disease-protein-drug,contraindication,"['ventricular fibrillation (disease)', 'KCNE2', 'Potassium chloride']",0.0012358210754564677
 16085,38906,Potassium chloride,ventricular fibrillation (disease),disease-disease-drug,contraindication,"['ventricular fibrillation (disease)', 'paroxysmal familial ventricular fibrillation', 'Potassium chloride']",0.0012358210754564677
+16085,39880,Potassium chloride,ventricular fibrillation (disease),disease-protein-drug,contraindication,"['ventricular fibrillation (disease)', 'SLC4A3', 'Potassium chloride']",0.0012358210754564677
 20424,35432,Magnesium trisilicate,gastroesophageal reflux disease,disease-disease-drug,indication,"['gastroesophageal reflux disease', 'Mendelian disease', 'Magnesium trisilicate']",0.0012204611248134854
 15326,35601,Ofloxacin,yaws,disease-disease-drug,indication,"['yaws', 'syphilis', 'Ofloxacin']",0.0012031165606780103
 15326,95384,Ofloxacin,yaws,disease-disease-drug,indication,"['yaws', 'late yaws', 'Ofloxacin']",0.0012031165606780103
@@ -950,6 +1241,7 @@ drug_index,disease_index,drug_name,disease_name,path_type,original_relation,node
 14995,35586,Clarithromycin,anthrax infection,disease-disease-drug,off-label use,"['anthrax infection', 'primary bacterial infectious disease', 'Clarithromycin']",0.0009456498754164712
 16802,35690,Aurothioglucose,psoriatic arthritis,disease-disease-drug,off-label use,"['psoriatic arthritis', 'syndromic disease', 'Aurothioglucose']",0.0009388706740012322
 15003,37746,Cortisone acetate,proton-pump inhibitor-responsive esophageal eosinophilia,disease-disease-drug,contraindication,"['proton-pump inhibitor-responsive esophageal eosinophilia', 'eosinophilic gastrointestinal disease', 'Cortisone acetate']",0.0009361785276023776
+15003,84163,Cortisone acetate,proton-pump inhibitor-responsive esophageal eosinophilia,disease-protein-drug,contraindication,"['proton-pump inhibitor-responsive esophageal eosinophilia', 'PGA5', 'Cortisone acetate']",0.0009361785276023776
 16193,29235,Lindane,cirrhosis of liver,disease-disease-drug,contraindication,"['cirrhosis of liver', 'cirrhosis, familial', 'Lindane']",0.0009207982290627501
 16193,97072,Lindane,cirrhosis of liver,disease-disease-drug,contraindication,"['cirrhosis of liver', 'hepatitis C induced liver cirrhosis', 'Lindane']",0.0009207982290627501
 16193,35565,Lindane,cirrhosis of liver,disease-disease-drug,contraindication,"['cirrhosis of liver', 'liver disease', 'Lindane']",0.0009207982290627501
