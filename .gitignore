@@ -13,6 +13,7 @@
 /eval_results/log/*
 /finetune_model/data/*
 /split_data/results/*
+/split_data/path_data/*
 /split_data/gemini_select/all_correct/*
 /split_data/gemini_select/output/*
 /split_data/gemini_select/log/*
@@ -20,3 +21,11 @@
 /finetune_model/wandb/*
 /eval_results/results/*
 /eval_results/uncertainty_results/*
+/eval_cot/results/*
+/eval_cot/log/*
+/grpo_path/negative_path/*
+/grpo_path/path_data/*
+/grpo_startup/log/*
+/grpo_startup/model_weights/*
+/grpo_startup/wandb/*
+

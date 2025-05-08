@@ -24,7 +24,7 @@ from peft import (
 set_seed(42)
 
 user_token = os.getenv("HF_API_TOKEN")
-train_data = Path("data/train.jsonl")
+train_data = Path("data/train_modify.jsonl")
 
 def read_file(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
