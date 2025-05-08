@@ -44,7 +44,7 @@ for fn in path_files:
 
 scored = pd.DataFrame(records)
 
-top_k = 2
+top_k = 10
 top_paths = (
     scored
     .sort_values("score", ascending=False)
