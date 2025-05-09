@@ -14,11 +14,11 @@ NUM_ITERATIONS=8
 NUM_GENERATIONS=6
 LEARNING_RATE=1e-5
 GPU_IDS="4"
-BATCH_SIZE=2
-GRAD_ACCUM=4
+BATCH_SIZE=6
+GRAD_ACCUM=1
 
 # Parse command line arguments
-MODELS=('JesseLiu/llama32-1b-cold')
+MODELS=('meta-llama/Llama-3.2-1B')
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --models)
