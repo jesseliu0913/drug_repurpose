@@ -1,11 +1,31 @@
 import os
 import pandas as pd
+import re
 from datasets import Dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from trl import GRPOConfig, GRPOTrainer
 import sys
+import argparse
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils.env_loader import load_env_vars
+
+# Parse command line arguments
+parser = argparse.ArgumentParser(description='GRPO fine-tuning for Llama 3.2 models')
+parser.add_argument('--model_name', type=str, default="JesseLiu/llama32-3b-cold", 
+                    help='Model name or path')
+parser.add_argument('--output_dir', type=str, default="llama3.2-grpo-out", 
+                    help='Directory to save the model')
+parser.add_argument('--per_device_train_batch_size', type=int, default=2, 
+                    help='Batch size per device for training')
+parser.add_argument('--gradient_accumulation_steps', type=int, default=4, 
+                    help='Number of gradient accumulation steps')
+parser.add_argument('--num_iterations', type=int, default=5, 
+                    help='Number of GRPO iterations')
+parser.add_argument('--learning_rate', type=float, default=1e-5, 
+                    help='Learning rate')
+parser.add_argument('--num_generations', type=int, default=4, 
+                    help='Number of generations per prompt')
+args = parser.parse_args()
 
 # Load environment variables
 load_env_vars()
@@ -13,12 +33,23 @@ load_env_vars()
 user_token = os.getenv("HF_API_TOKEN")
 
 train_data = pd.read_csv("../grpo_path/train_grpo.csv")
-prompts = train_data["prefix"].tolist()
+
+# Extract just the question part from each prefix
+def extract_question(prefix):
+    match = re.search(r'Question:(.*?)Reasoning:', prefix, re.DOTALL)
+    if match:
+        return match.group(1).strip()
+    return prefix
+
+# Apply the extraction function to each prefix
+prompts = [extract_question(prefix) for prefix in train_data["prefix"].tolist()]
+print("Using questions-only for training")
+
 dataset = Dataset.from_dict({"prompt": prompts})
 splits = dataset.train_test_split(test_size=0.1, seed=42)
 train_ds, eval_ds = splits["train"], splits["test"]
 
-model_name = "JesseLiu/llama32-3b-cold"
+model_name = args.model_name
 tokenizer = AutoTokenizer.from_pretrained(model_name, token=user_token)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "right"
@@ -37,29 +68,33 @@ def reward_one_type_only(prompts, completions, **kwargs):
     return rewards
 
 training_args = GRPOConfig(
-    output_dir="llama3.2-grpo-out",
-    num_iterations=5,
-    num_generations=4,
-    per_device_train_batch_size=2,
-    gradient_accumulation_steps=4,  # Added gradient accumulation
-    learning_rate=1e-5,
-    max_prompt_length=512,
-    max_completion_length=64,
+    output_dir=args.output_dir,
+    num_iterations=args.num_iterations,
+    num_generations=args.num_generations,
+    per_device_train_batch_size=args.per_device_train_batch_size,
+    gradient_accumulation_steps=args.gradient_accumulation_steps,
+    learning_rate=args.learning_rate,
+    max_prompt_length=256,  # Reduced from 512 based on data
+    max_completion_length=128,  # Increased from 64 for full reasoning paths
     
     # Generation parameters
-    temperature=0.7,
+    temperature=0.8,  # Increased from 0.7 for more exploration
     top_k=50,
-    top_p=0.95,
+    top_p=0.92,
+    repetition_penalty=1.1,  # Added to prevent repetitive text
     
+    # Training settings
     logging_strategy="steps",
-    logging_steps=10,
+    logging_steps=20,
     evaluation_strategy="steps",
-    eval_steps=50,
+    eval_steps=100,
     save_strategy="steps",
-    save_steps=50,
+    save_steps=100,
     load_best_model_at_end=True,
     metric_for_best_model="eval_reward",
     greater_is_better=True,
+    lr_scheduler_type="cosine",
+    warmup_ratio=0.1,
 )
 
 trainer = GRPOTrainer(
@@ -74,6 +109,6 @@ trainer = GRPOTrainer(
 trainer.train()
 
 # Save the final model
-model_path = os.path.join(training_args.output_dir, "final_model")
+model_path = os.path.join(args.output_dir, "final_model")
 model.save_pretrained(model_path)
 tokenizer.save_pretrained(model_path)

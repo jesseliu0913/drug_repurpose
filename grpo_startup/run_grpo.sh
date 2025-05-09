@@ -1,43 +1,66 @@
-#!/bin/bash
 
-# Set the environment variable for HuggingFace token
-export HF_API_TOKEN="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"  # Replace with your actual token or set before running
+if [ -f "${BASE_DIR}/.env" ]; then
+  source "${BASE_DIR}/.env"
+fi
 
-# Create log directory if it doesn't exist
-mkdir -p /playpen/hongxuan/drug_repurpose/grpo_startup/logs
+# Base directories
+BASE_DIR="$(pwd)"
+LOGS_DIR="${BASE_DIR}/logs"
+MODELS_DIR="${BASE_DIR}/models"
+mkdir -p $LOGS_DIR $MODELS_DIR
 
-# === Push 1B model to HuggingFace Hub ===
-echo "Pushing 1B model checkpoint to HuggingFace Hub..."
-python /playpen/hongxuan/drug_repurpose/grpo_startup/push_model.py \
-  --repo_name "JesseLiu/llama32-1b-cold" \
-  --model_path "/playpen/hongxuan/drug_repurpose/grpo_startup/model_weights/llama32-1b-baseline-model/checkpoint-450" \
-  > /playpen/hongxuan/drug_repurpose/grpo_startup/logs/push_1b.log 2>&1
 
-# === GRPO training for 1B model ===
-echo "Starting GRPO training for 1B model..."
-CUDA_VISIBLE_DEVICES=0,1 python /playpen/hongxuan/drug_repurpose/grpo_startup/grpo_train.py \
-  --model_name "JesseLiu/llama32-1b-cold" \
-  --output_dir "/playpen/hongxuan/drug_repurpose/grpo_startup/model_weights/llama32-1b-grpo" \
-  --per_device_train_batch_size 4 \
-  --gradient_accumulation_steps 2 \
-  --num_iterations 5 \
-  > /playpen/hongxuan/drug_repurpose/grpo_startup/logs/grpo_1b.log 2>&1
+NUM_ITERATIONS=8
+NUM_GENERATIONS=6
+LEARNING_RATE=1e-5
+GPU_IDS="0,1,2,3"
+BATCH_SIZE=2
+GRAD_ACCUM=4
 
-# === Push 3B model to HuggingFace Hub ===
-echo "Pushing 3B model checkpoint to HuggingFace Hub..."
-python /playpen/hongxuan/drug_repurpose/grpo_startup/push_model.py \
-  --repo_name "JesseLiu/llama32-3b-cold" \
-  --model_path "/playpen/hongxuan/drug_repurpose/grpo_startup/model_weights/llama32-3b-baseline-model/checkpoint-450" \
-  > /playpen/hongxuan/drug_repurpose/grpo_startup/logs/push_3b.log 2>&1
+# Parse command line arguments
+MODELS=()
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --models)
+      shift
+      while [[ $# -gt 0 && ! $1 =~ ^-- ]]; do
+        MODELS+=("$1")
+        shift
+      done
+      ;;
+    --gpus) shift; GPU_IDS="$1"; shift ;;
+    --batch_size) shift; BATCH_SIZE=$1; shift ;;
+    --grad_accum) shift; GRAD_ACCUM=$1; shift ;;
+    --iterations) shift; NUM_ITERATIONS=$1; shift ;;
+    --generations) shift; NUM_GENERATIONS=$1; shift ;;
+    --lr) shift; LEARNING_RATE=$1; shift ;;
+    *) shift ;;
+  esac
+done
 
-# === GRPO training for 3B model ===
-echo "Starting GRPO training for 3B model..."
-CUDA_VISIBLE_DEVICES=2,3 python /playpen/hongxuan/drug_repurpose/grpo_startup/grpo_train.py \
-  --model_name "JesseLiu/llama32-3b-cold" \
-  --output_dir "/playpen/hongxuan/drug_repurpose/grpo_startup/model_weights/llama32-3b-grpo" \
-  --per_device_train_batch_size 2 \
-  --gradient_accumulation_steps 4 \
-  --num_iterations 5 \
-  > /playpen/hongxuan/drug_repurpose/grpo_startup/logs/grpo_3b.log 2>&1
-
-echo "GRPO training completed!"
+# Process each model
+for MODEL in "${MODELS[@]}"; do
+  # model name + grpo
+  MODEL_NAME=$(basename "$MODEL")
+  OUTPUT_NAME="${MODEL_NAME}-grpo"
+  OUTPUT_DIR="${MODELS_DIR}/${OUTPUT_NAME}"
+  mkdir -p $OUTPUT_DIR
+  
+  CUDA_VISIBLE_DEVICES=$GPU_IDS python ${BASE_DIR}/grpo_train.py \
+    --model_name $MODEL \
+    --output_dir $OUTPUT_DIR \
+    --per_device_train_batch_size $BATCH_SIZE \
+    --gradient_accumulation_steps $GRAD_ACCUM \
+    --num_iterations $NUM_ITERATIONS \
+    --num_generations $NUM_GENERATIONS \
+    --learning_rate $LEARNING_RATE \
+    > "${LOGS_DIR}/grpo_${OUTPUT_NAME}.log" 2>&1
+  
+  # Upload model if training was successful
+  if [ -d "${OUTPUT_DIR}/final_model" ]; then
+    python ${BASE_DIR}/push_model_grpo.py \
+      --repo_name "JesseLiu/${MODEL_NAME}-grpo" \
+      --model_path "${OUTPUT_DIR}/final_model" \
+      >> "${LOGS_DIR}/grpo_${OUTPUT_NAME}.log" 2>&1
+  fi
+done
