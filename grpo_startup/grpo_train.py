@@ -7,7 +7,6 @@ from trl import GRPOConfig, GRPOTrainer
 import sys
 import argparse
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.env_loader import load_env_vars
 
 # Parse command line arguments
 parser = argparse.ArgumentParser(description='GRPO fine-tuning for Llama 3.2 models')
@@ -27,11 +26,7 @@ parser.add_argument('--num_generations', type=int, default=4,
                     help='Number of generations per prompt')
 args = parser.parse_args()
 
-# Load environment variables
-load_env_vars()
-
-user_token = os.getenv("HF_API_TOKEN")
-
+user_token = os.environ.get("HF_API_TOKEN")
 train_data = pd.read_csv("../grpo_path/train_grpo.csv")
 
 # Extract just the question part from each prefix
