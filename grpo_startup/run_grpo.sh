@@ -1,4 +1,3 @@
-
 if [ -f "${BASE_DIR}/.env" ]; then
   source "${BASE_DIR}/.env"
 fi
@@ -16,6 +15,10 @@ LEARNING_RATE=1e-5
 GPU_IDS="4"
 BATCH_SIZE=6
 GRAD_ACCUM=1
+USE_LORA=false
+LORA_R=16
+LORA_ALPHA=32
+LORA_DROPOUT=0.05
 
 # Parse command line arguments
 MODELS=('meta-llama/Llama-3.2-1B')
@@ -34,6 +37,10 @@ while [[ $# -gt 0 ]]; do
     --iterations) shift; NUM_ITERATIONS=$1; shift ;;
     --generations) shift; NUM_GENERATIONS=$1; shift ;;
     --lr) shift; LEARNING_RATE=$1; shift ;;
+    --use_lora) USE_LORA=true; shift ;;
+    --lora_r) shift; LORA_R=$1; shift ;;
+    --lora_alpha) shift; LORA_ALPHA=$1; shift ;;
+    --lora_dropout) shift; LORA_DROPOUT=$1; shift ;;
     *) shift ;;
   esac
 done
@@ -43,23 +50,46 @@ for MODEL in "${MODELS[@]}"; do
   # model name + grpo
   MODEL_NAME=$(basename "$MODEL")
   OUTPUT_NAME="${MODEL_NAME}-grpo"
+  
+  # Add lora suffix if using LoRA
+  if $USE_LORA; then
+    OUTPUT_NAME="${OUTPUT_NAME}-lora"
+  fi
+  
   OUTPUT_DIR="${MODELS_DIR}/${OUTPUT_NAME}"
   mkdir -p $OUTPUT_DIR
   
-  CUDA_VISIBLE_DEVICES=$GPU_IDS python ${BASE_DIR}/grpo_train.py \
+  # Build command with conditional LoRA arguments
+  TRAIN_CMD="CUDA_VISIBLE_DEVICES=$GPU_IDS python ${BASE_DIR}/grpo_train.py \
     --model_name $MODEL \
     --output_dir $OUTPUT_DIR \
     --per_device_train_batch_size $BATCH_SIZE \
     --gradient_accumulation_steps $GRAD_ACCUM \
     --num_iterations $NUM_ITERATIONS \
     --num_generations $NUM_GENERATIONS \
-    --learning_rate $LEARNING_RATE \
-    > "${LOGS_DIR}/grpo_${OUTPUT_NAME}.log" 2>&1
+    --learning_rate $LEARNING_RATE"
+  
+  # Add LoRA arguments if enabled
+  if $USE_LORA; then
+    TRAIN_CMD="$TRAIN_CMD \
+    --use_lora \
+    --lora_r $LORA_R \
+    --lora_alpha $LORA_ALPHA \
+    --lora_dropout $LORA_DROPOUT"
+  fi
+  
+  # Run the training command
+  eval $TRAIN_CMD > "${LOGS_DIR}/grpo_${OUTPUT_NAME}.log" 2>&1
   
   # Upload model if training was successful
   if [ -d "${OUTPUT_DIR}/final_model" ]; then
+    REPO_NAME="JesseLiu/${MODEL_NAME}-grpo"
+    if $USE_LORA; then
+      REPO_NAME="${REPO_NAME}-lora"
+    fi
+    
     python ${BASE_DIR}/push_model_grpo.py \
-      --repo_name "JesseLiu/${MODEL_NAME}-grpo" \
+      --repo_name "$REPO_NAME" \
       --model_path "${OUTPUT_DIR}/final_model" \
       >> "${LOGS_DIR}/grpo_${OUTPUT_NAME}.log" 2>&1
   fi

@@ -6,10 +6,15 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from trl import GRPOConfig, GRPOTrainer
 import sys
 import argparse
+import torch
+from peft import PeftModel, LoraConfig, get_peft_model
+import json
+from huggingface_hub import hf_hub_download
+import os.path as osp
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Parse command line arguments
-parser = argparse.ArgumentParser(description='GRPO fine-tuning for Llama 3.2 models')
+parser = argparse.ArgumentParser(description='GRPO fine-tuning for language models')
 parser.add_argument('--model_name', type=str, default="JesseLiu/llama32-3b-cold", 
                     help='Model name or path')
 parser.add_argument('--output_dir', type=str, default="llama3.2-grpo-out", 
@@ -24,10 +29,33 @@ parser.add_argument('--learning_rate', type=float, default=1e-5,
                     help='Learning rate')
 parser.add_argument('--num_generations', type=int, default=4, 
                     help='Number of generations per prompt')
+parser.add_argument('--use_lora', action='store_true', 
+                    help='Use LoRA for fine-tuning')
+parser.add_argument('--lora_r', type=int, default=16, 
+                    help='LoRA r dimension')
+parser.add_argument('--lora_alpha', type=int, default=32, 
+                    help='LoRA alpha parameter')
+parser.add_argument('--lora_dropout', type=float, default=0.05, 
+                    help='LoRA dropout probability')
 args = parser.parse_args()
 
 user_token = os.environ.get("HF_API_TOKEN")
 train_data = pd.read_csv("../grpo_path/train_grpo.csv")
+
+# Function to check if model is already a LoRA model
+def is_lora_model(model_name):
+    try:
+        # Try to download adapter_config.json from the model repo
+        try:
+            config_path = hf_hub_download(model_name, "adapter_config.json", token=user_token)
+            return True
+        except:
+            # Check if the model has a local adapter_config.json
+            if osp.exists(osp.join(model_name, "adapter_config.json")):
+                return True
+            return False
+    except:
+        return False
 
 # Extract just the question part from each prefix
 def extract_question(prefix):
@@ -52,7 +80,55 @@ tokenizer.padding_side = "right"
 new_special_tokens = ['<degd>', '<ddd>', '<decgd>', '<demgd>', '<debgd>', '<dppd>', '<dpd>']
 tokenizer.add_special_tokens({"additional_special_tokens": new_special_tokens})
 
-model = AutoModelForCausalLM.from_pretrained(model_name, token=user_token)
+# Check if the model is already a LoRA model
+is_lora = is_lora_model(model_name)
+print(f"Detected model type: {'LoRA adapter' if is_lora else 'Original model'}")
+
+if is_lora:
+    # Load the LoRA model
+    print("Loading LoRA model for continued training...")
+    base_model = PeftModel.from_pretrained(
+        AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", token=user_token),
+        model_name,
+        token=user_token
+    )
+    
+    # For continued LoRA training, we'll merge the LoRA weights and continue training
+    print("Merging LoRA weights with base model for continued training...")
+    model = base_model.merge_and_unload()
+    
+    # If use_lora flag is set, we'll prepare a new LoRA configuration for further training
+    if args.use_lora:
+        print("Setting up new LoRA adapter for continued training...")
+        lora_config = LoraConfig(
+            r=args.lora_r,
+            lora_alpha=args.lora_alpha,
+            lora_dropout=args.lora_dropout,
+            bias="none",
+            task_type="CAUSAL_LM",
+            target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+        )
+        model = get_peft_model(model, lora_config)
+        print("New LoRA adapter configured successfully")
+else:
+    # Load original model
+    print("Loading original model...")
+    model = AutoModelForCausalLM.from_pretrained(model_name, token=user_token)
+    
+    # Apply LoRA if requested
+    if args.use_lora:
+        print("Setting up LoRA fine-tuning for original model...")
+        lora_config = LoraConfig(
+            r=args.lora_r,
+            lora_alpha=args.lora_alpha,
+            lora_dropout=args.lora_dropout,
+            bias="none",
+            task_type="CAUSAL_LM",
+            target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+        )
+        model = get_peft_model(model, lora_config)
+        print("LoRA adapter configured successfully")
+
 model.resize_token_embeddings(len(tokenizer))
 
 def reward_one_type_only(prompts, completions, **kwargs):
@@ -100,5 +176,26 @@ trainer.train()
 
 # Save the final model
 model_path = os.path.join(args.output_dir, "final_model")
-model.save_pretrained(model_path)
+if args.use_lora or is_lora:
+    if hasattr(model, "save_pretrained"):
+        model.save_pretrained(model_path)
+    else:
+        # For merged models
+        model.save_pretrained(model_path)
+else:
+    model.save_pretrained(model_path)
 tokenizer.save_pretrained(model_path)
+
+# Save training configuration
+with open(os.path.join(args.output_dir, "training_config.json"), "w") as f:
+    json.dump({
+        "model_name": model_name,
+        "is_lora_model": is_lora,
+        "used_lora_finetuning": args.use_lora,
+        "lora_r": args.lora_r if args.use_lora else None,
+        "lora_alpha": args.lora_alpha if args.use_lora else None,
+        "lora_dropout": args.lora_dropout if args.use_lora else None,
+        "learning_rate": args.learning_rate,
+        "num_iterations": args.num_iterations,
+        "num_generations": args.num_generations,
+    }, f, indent=2)
