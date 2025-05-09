@@ -4,7 +4,7 @@ if [ -f "${BASE_DIR}/.env" ]; then
 fi
 
 # Base directories
-BASE_DIR="$(pwd)"
+BASE_DIR="/playpen/hongxuan/drug_repurpose/grpo_startup"
 LOGS_DIR="${BASE_DIR}/logs"
 MODELS_DIR="${BASE_DIR}/models"
 mkdir -p $LOGS_DIR $MODELS_DIR
@@ -13,12 +13,12 @@ mkdir -p $LOGS_DIR $MODELS_DIR
 NUM_ITERATIONS=8
 NUM_GENERATIONS=6
 LEARNING_RATE=1e-5
-GPU_IDS="0,1,2,3"
+GPU_IDS="4"
 BATCH_SIZE=2
 GRAD_ACCUM=4
 
 # Parse command line arguments
-MODELS=()
+MODELS=('JesseLiu/llama32-1b-cold')
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --models)
