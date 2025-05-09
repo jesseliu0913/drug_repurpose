@@ -62,6 +62,7 @@ def reward_one_type_only(prompts, completions, **kwargs):
         rewards.append(1.0 if len(types_present) == 1 else 0.0)
     return rewards
 
+# Update GRPOConfig with supported parameters only
 training_args = GRPOConfig(
     output_dir=args.output_dir,
     num_iterations=args.num_iterations,
@@ -81,13 +82,7 @@ training_args = GRPOConfig(
     # Training settings
     logging_strategy="steps",
     logging_steps=20,
-    evaluation_strategy="steps",
-    eval_steps=100,
-    save_strategy="steps",
-    save_steps=100,
-    load_best_model_at_end=True,
-    metric_for_best_model="eval_reward",
-    greater_is_better=True,
+    
     lr_scheduler_type="cosine",
     warmup_ratio=0.1,
 )
