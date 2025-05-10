@@ -12,16 +12,16 @@ mkdir -p $LOGS_DIR $MODELS_DIR
 NUM_ITERATIONS=8
 NUM_GENERATIONS=6
 LEARNING_RATE=1e-5
-GPU_IDS="4"
-BATCH_SIZE=6
+GPU_IDS="1,2,4"
+BATCH_SIZE=32
 GRAD_ACCUM=1
-USE_LORA=false
+USE_LORA=true # whether to use LoRA for training orginal llama with original llama
 LORA_R=16
 LORA_ALPHA=32
 LORA_DROPOUT=0.05
+MODELS=('JesseLiu/llama32-1b-cold' 'meta-llama/Llama-3.2-1B' 'JesseLiu/llama32-3b-cold' 'meta-llama/Llama-3.2-3B')
 
-# Parse command line arguments
-MODELS=('meta-llama/Llama-3.2-1B')
+
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --models)
