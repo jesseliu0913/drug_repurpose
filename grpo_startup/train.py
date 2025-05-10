@@ -27,14 +27,14 @@ from peft import (
 set_seed(42)
 
 user_token = os.getenv("HF_API_TOKEN")
-train_data = pd.read_csv("../grpo_path/train_grpo.csv")
+train_data = pd.read_csv("../grpo_path/k_path/train_grpo.csv")
 print(train_data.head())
 
-prompts = train_data['prefix'].tolist()
+prompts = train_data['prefix'].tolist()[:2000]
 dataset = Dataset.from_dict({"text": prompts})
 dataset = dataset.train_test_split(test_size=0.1, seed=42)
 
-model_name = "meta-llama/Llama-3.2-3B-Instruct"  
+model_name = "meta-llama/Llama-3.2-1B-Instruct"  
 tokenizer = AutoTokenizer.from_pretrained(model_name, token=user_token)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "right"
@@ -138,7 +138,7 @@ early_stopping_callback = EarlyStoppingCallback(
 )
 
 training_args = TrainingArguments(
-    output_dir="./model_weights/llama32-3b-baseline-model",
+    output_dir="./model_weights/llama32-1b-kpath-model",
     evaluation_strategy="steps",
     eval_steps=25,
     logging_dir="./logs",
@@ -174,7 +174,7 @@ trainer = Trainer(
 
 trainer.train()
 
-model.save_pretrained("./model_weights/llama32-3b-baseline-final")
-tokenizer.save_pretrained("./model_weights/llama32-3b-baseline-final")
+model.save_pretrained("./model_weights/llama32-1b-kpath-final")
+tokenizer.save_pretrained("./model_weights/llama32-1b-kpath-final")
 
-# CUDA_VISIBLE_DEVICES=3 nohup python train.py > ./log/train_3b.log 2>&1 &
+# CUDA_VISIBLE_DEVICES=0 nohup python train.py > ./log/train_1b.log 2>&1 &
