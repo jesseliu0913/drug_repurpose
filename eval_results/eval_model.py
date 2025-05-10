@@ -39,23 +39,51 @@ ANSWER:$NO$
 
 model_name = args.model_name
 adapter_name = args.adapter_name
+user_token = os.getenv("HF_API_TOKEN")
 
 if adapter_name:
-    peft_cfg = PeftConfig.from_pretrained(adapter_name, use_auth_token=token)
-    base_name = peft_cfg.base_model_name_or_path or model_name
+    if "cold" in adapter_name or "kpath" in adapter_name:
+        peft_cfg = PeftConfig.from_pretrained(adapter_name, use_auth_token=user_token)
+        base_name = peft_cfg.base_model_name_or_path or model_name
 
-    tokenizer = AutoTokenizer.from_pretrained(base_name, use_auth_token=token)
-    base_model = AutoModelForCausalLM.from_pretrained(
-        base_name,
-        torch_dtype="auto",
-        device_map="auto",
-        use_auth_token=token,
-    )
-    model = PeftModel.from_pretrained(
-        base_model,
-        adapter_name,
-        torch_dtype="auto",
-    )
+        tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=user_token)
+        tokenizer.pad_token = tokenizer.eos_token
+        tokenizer.padding_side = "right"
+        new_special_tokens = ['<degd>', '<ddd>', '<decgd>',
+                            '<demgd>', '<debgd>', '<dppd>', '<dpd>']
+        tokenizer.add_special_tokens({'additional_special_tokens': new_special_tokens})
+
+        base_model = AutoModelForCausalLM.from_pretrained(
+            base_name,
+            torch_dtype="auto",
+            device_map="auto",
+            use_auth_token=user_token,
+        )
+
+        base_model.resize_token_embeddings(len(tokenizer))
+
+        model = PeftModel.from_pretrained(
+            base_model,
+            adapter_name,
+            torch_dtype="auto",
+        )
+
+    else:
+        peft_cfg = PeftConfig.from_pretrained(adapter_name, use_auth_token=token)
+        base_name = peft_cfg.base_model_name_or_path or model_name
+
+        tokenizer = AutoTokenizer.from_pretrained(base_name, use_auth_token=token)
+        base_model = AutoModelForCausalLM.from_pretrained(
+            base_name,
+            torch_dtype="auto",
+            device_map="auto",
+            use_auth_token=token,
+        )
+        model = PeftModel.from_pretrained(
+            base_model,
+            adapter_name,
+            torch_dtype="auto",
+        )
 else:
     tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=token)
     model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype="auto", device_map="auto", use_auth_token=token)

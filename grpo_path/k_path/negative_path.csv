@@ -1,0 +1,974 @@
+drug_index,disease_index,drug_name,disease_name,path_type,original_relation,nodes,score
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Arsenic', 'cholinesterase activity', 'CHKA', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Arsenic', 'cholinesterase activity', 'BCHE', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Arsenic', 'cholinesterase activity', 'ACHE', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Arsenic', 'transaminase activity', 'ETNPPL', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Arsenic', 'transaminase activity', 'PHYKPL', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Arsenic', 'transaminase activity', 'AGXT', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Arsenic', 'transaminase activity', 'AADAT', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Arsenic', 'transaminase activity', 'AMT', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Arsenic', 'alkaline phosphatase activity', 'ALPG', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Arsenic', 'alkaline phosphatase activity', 'ALPL', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Arsenic', 'alkaline phosphatase activity', 'ALPP', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Arsenic', 'alkaline phosphatase activity', 'ALPI', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'bisphenol A', 'alkaline phosphatase activity', 'ALPG', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'bisphenol A', 'alkaline phosphatase activity', 'ALPL', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'bisphenol A', 'alkaline phosphatase activity', 'ALPP', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'bisphenol A', 'alkaline phosphatase activity', 'ALPI', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Insecticides', 'cholinesterase activity', 'CHKA', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Insecticides', 'cholinesterase activity', 'BCHE', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Insecticides', 'cholinesterase activity', 'ACHE', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Lead', 'porphobilinogen synthase activity', 'ALAD', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Triazines', 'cholinesterase activity', 'CHKA', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Triazines', 'cholinesterase activity', 'BCHE', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Triazines', 'cholinesterase activity', 'ACHE', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'SAE1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'RAB3GAP2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DCP1B', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'RFC1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'GMFG', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'GTF3C4', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'ARL1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DBNL', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'XRCC5', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'APOA5', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'ALOX5AP', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'APOBEC1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'HSPB2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'F2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'NCAPG2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DPM3', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'FAM47E', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CLPS', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'EED', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'TAB1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CLPSL1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DAOA', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PITRM1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'LRCOL1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PRKRA', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DPM2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'SDHAF4', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MMP17', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MMP24', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CYB5B', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MMP16', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PSAP', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PRKCD', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DNMT3L', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'STRIT1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DDOST', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CXCL1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DAD1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'TRIM23', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'ERCC5', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'SUZ12', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MGST2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CTSA', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PRKCE', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CFLAR', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CASP9', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'LTC4S', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'SLX4', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CLPSL2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DTX3L', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DCP1A', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PPP1R12B', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'KRTCAP2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'RAMAC', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MMP15', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DBF4', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'WRNIP1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'GMFB', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX5B', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'NDUFA4L2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX6A1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'MT-CO1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX15', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX4I2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX4I1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'CYB5A', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'MT-CO2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'SURF1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'MT-CO3', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7B', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7A2L', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'MTCO2P12', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX6B1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7B2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX6A2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX5A', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX8A', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7A1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX10', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'C15orf48', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'NDUFA4', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'catalase activity', 'GPX7', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'catalase activity', 'CAT', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'catalase activity', 'CYGB', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTM3', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTA5', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'ALOX5AP', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTA2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTK1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTM4', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTO2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'PTGES', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTM2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTA3', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTT4', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTM1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTT2B', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'MGST1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTZ1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTP1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'MGST2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTA1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTA4', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTT1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTT2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'LTC4S', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'HPGDS', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTO1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'LANCL1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTM5', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione-disulfide reductase (NADPH) activity', 'GSR', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione-disulfide reductase (NADPH) activity', 'GLRX', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'superoxide dismutase activity', 'NQO1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'superoxide dismutase activity', 'SOD3', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'superoxide dismutase activity', 'SOD1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'superoxide dismutase activity', 'SOD2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cholinesterase activity', 'CHKA', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cholinesterase activity', 'BCHE', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'cholinesterase activity', 'ACHE', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX6', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'ALOX5AP', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX4', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GSTK1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'MGST3', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX3', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX7', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX5', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'PTGES', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GSTM2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'CLIC2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'MGST1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GSTZ1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GSTP1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX8', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'MGST2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GSTA1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GSTT1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX2', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'LTC4S', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'PRDX6', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KIF2A', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYH15', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYO18B', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYO6', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KIF1A', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYH7B', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KIF5A', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYL3', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYO16', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYO3B', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYO9A', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'PIN1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYH1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KIF3C', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'DNAI1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KLC1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KIF15', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYH11', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYL6', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYO1E', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYL6B', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'DYNC1I1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYH9', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KIF18B', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'DYNC2H1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'GPR88', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KIF1C', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'NQO1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'SOD3', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'SOD1', 'Ethosuximide']",1
+15449,27933,Ethosuximide,anxiety disorder,disease-exposure-molfunc-gene-drug,contraindication,"['anxiety disorder', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'SOD2', 'Ethosuximide']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'KIF2A', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'MYH15', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'MYO18B', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'MYO6', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'KIF1A', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'MYH7B', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'KIF5A', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'MYL3', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'MYO16', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'MYO3B', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'MYO9A', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'PIN1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'MYH1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'KIF3C', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'DNAI1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'KLC1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'KIF15', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'MYH11', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'MYL6', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'MYO1E', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'MYL6B', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'DYNC1I1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'MYH9', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'KIF18B', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'DYNC2H1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'GPR88', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Air Pollutants', 'motor activity', 'KIF1C', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Arsenic', 'cholinesterase activity', 'CHKA', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Arsenic', 'cholinesterase activity', 'BCHE', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Arsenic', 'cholinesterase activity', 'ACHE', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Arsenic', 'transaminase activity', 'ETNPPL', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Arsenic', 'transaminase activity', 'PHYKPL', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Arsenic', 'transaminase activity', 'AGXT', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Arsenic', 'transaminase activity', 'AADAT', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Arsenic', 'transaminase activity', 'AMT', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPG', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPL', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPP', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPI', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTM3', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA5', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'ALOX5AP', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA2', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTK1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTM4', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTO2', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'PTGES', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTM2', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA3', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTT4', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTM1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTT2B', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'MGST1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTZ1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTP1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'MGST2', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA4', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTT1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTT2', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'LTC4S', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'HPGDS', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTO1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'LANCL1', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTM5', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'bisphenol A', 'alkaline phosphatase activity', 'ALPG', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'bisphenol A', 'alkaline phosphatase activity', 'ALPL', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'bisphenol A', 'alkaline phosphatase activity', 'ALPP', 'Levothyroxine']",1
+14060,35669,Levothyroxine,heart disease,disease-exposure-molfunc-gene-drug,contraindication,"['heart disease', 'bisphenol A', 'alkaline phosphatase activity', 'ALPI', 'Levothyroxine']",1
+14602,35565,Voriconazole,liver disease,disease-exposure-molfunc-gene-drug,contraindication,"['liver disease', 'perfluorooctanoic acid', 'L-alanine:2-oxoglutarate aminotransferase activity', 'GPT2', 'Voriconazole']",1
+14602,35565,Voriconazole,liver disease,disease-exposure-molfunc-gene-drug,contraindication,"['liver disease', 'perfluorooctanoic acid', 'L-alanine:2-oxoglutarate aminotransferase activity', 'GPT', 'Voriconazole']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'KIF2A', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYH15', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYO18B', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYO6', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'KIF1A', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYH7B', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'KIF5A', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYL3', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYO16', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYO3B', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYO9A', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'PIN1', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYH1', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'KIF3C', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'DNAI1', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'KLC1', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'KIF15', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYH11', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYL6', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYO1E', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYL6B', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'DYNC1I1', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'MYH9', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'KIF18B', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'DYNC2H1', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'GPR88', 'Acenocoumarol']",1
+14341,33699,Acenocoumarol,pulmonary embolism (disease),disease-exposure-molfunc-gene-drug,indication,"['pulmonary embolism (disease)', 'Air Pollutants', 'motor activity', 'KIF1C', 'Acenocoumarol']",1
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'cholinesterase activity', 'CHKA', 'Dihydrotachysterol']",1
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'cholinesterase activity', 'BCHE', 'Dihydrotachysterol']",1
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'cholinesterase activity', 'ACHE', 'Dihydrotachysterol']",1
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'transaminase activity', 'ETNPPL', 'Dihydrotachysterol']",1
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'transaminase activity', 'PHYKPL', 'Dihydrotachysterol']",1
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'transaminase activity', 'AGXT', 'Dihydrotachysterol']",1
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'transaminase activity', 'AADAT', 'Dihydrotachysterol']",1
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'transaminase activity', 'AMT', 'Dihydrotachysterol']",1
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPG', 'Dihydrotachysterol']",1
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPL', 'Dihydrotachysterol']",1
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPP', 'Dihydrotachysterol']",1
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPI', 'Dihydrotachysterol']",1
+17739,35764,Dihydrotachysterol,kidney disease,disease-exposure-molfunc-gene-drug,contraindication,"['kidney disease', 'Lead', 'porphobilinogen synthase activity', 'ALAD', 'Dihydrotachysterol']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'glyphosate', 'cholinesterase activity', 'CHKA', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'glyphosate', 'cholinesterase activity', 'BCHE', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'glyphosate', 'cholinesterase activity', 'ACHE', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Insecticides', 'cholinesterase activity', 'CHKA', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Insecticides', 'cholinesterase activity', 'BCHE', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Insecticides', 'cholinesterase activity', 'ACHE', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hexachlorocyclohexane', 'acetylcholinesterase activity', 'BCHE', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hexachlorocyclohexane', 'acetylcholinesterase activity', 'ACHE', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'SAE1', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'RAB3GAP2', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DCP1B', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'RFC1', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'GMFG', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'GTF3C4', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'ARL1', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DBNL', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'XRCC5', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'APOA5', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'ALOX5AP', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'APOBEC1', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'HSPB2', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'F2', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'NCAPG2', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DPM3', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'FAM47E', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CLPS', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'EED', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'TAB1', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CLPSL1', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DAOA', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PITRM1', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'LRCOL1', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PRKRA', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DPM2', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'SDHAF4', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MMP17', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MMP24', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CYB5B', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MMP16', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PSAP', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PRKCD', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DNMT3L', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'STRIT1', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DDOST', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CXCL1', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DAD1', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'TRIM23', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'ERCC5', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'SUZ12', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MGST2', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CTSA', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PRKCE', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CFLAR', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CASP9', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'LTC4S', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'SLX4', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CLPSL2', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DTX3L', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DCP1A', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PPP1R12B', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'KRTCAP2', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'RAMAC', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MMP15', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DBF4', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'WRNIP1', 'Budesonide']",1
+14034,36469,Budesonide,hypothyroidism,disease-exposure-molfunc-gene-drug,contraindication,"['hypothyroidism', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'GMFB', 'Budesonide']",1
+14545,28158,Clindamycin,inflammatory bowel disease,disease-exposure-molfunc-gene-drug,contraindication,"['inflammatory bowel disease', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'NQO1', 'Clindamycin']",1
+14545,28158,Clindamycin,inflammatory bowel disease,disease-exposure-molfunc-gene-drug,contraindication,"['inflammatory bowel disease', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'SOD3', 'Clindamycin']",1
+14545,28158,Clindamycin,inflammatory bowel disease,disease-exposure-molfunc-gene-drug,contraindication,"['inflammatory bowel disease', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'SOD1', 'Clindamycin']",1
+14545,28158,Clindamycin,inflammatory bowel disease,disease-exposure-molfunc-gene-drug,contraindication,"['inflammatory bowel disease', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'SOD2', 'Clindamycin']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF2A', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH15', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO18B', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO6', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF1A', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH7B', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF5A', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYL3', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO16', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO3B', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO9A', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'PIN1', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH1', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF3C', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'DNAI1', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KLC1', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF15', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH11', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYL6', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO1E', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYL6B', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'DYNC1I1', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH9', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF18B', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'DYNC2H1', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'GPR88', 'Butorphanol']",1
+17149,36080,Butorphanol,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF1C', 'Butorphanol']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX5B', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'NDUFA4L2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX6A1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'MT-CO1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX15', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX4I2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX4I1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'CYB5A', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'MT-CO2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'SURF1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'MT-CO3', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7B', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7A2L', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'MTCO2P12', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX6B1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7B2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX6A2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX5A', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX8A', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7A1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX10', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'C15orf48', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'NDUFA4', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'catalase activity', 'GPX7', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'catalase activity', 'CAT', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'catalase activity', 'CYGB', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTM3', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTA5', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'ALOX5AP', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTA2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTK1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTM4', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTO2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'PTGES', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTM2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTA3', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTT4', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTM1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTT2B', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'MGST1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTZ1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTP1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'MGST2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTA1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTA4', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTT1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTT2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'LTC4S', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'HPGDS', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTO1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'LANCL1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTM5', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione-disulfide reductase (NADPH) activity', 'GSR', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione-disulfide reductase (NADPH) activity', 'GLRX', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'superoxide dismutase activity', 'NQO1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'superoxide dismutase activity', 'SOD3', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'superoxide dismutase activity', 'SOD1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'superoxide dismutase activity', 'SOD2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cholinesterase activity', 'CHKA', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cholinesterase activity', 'BCHE', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'cholinesterase activity', 'ACHE', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX6', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'ALOX5AP', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX4', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GSTK1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'MGST3', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX3', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX7', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX5', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'PTGES', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GSTM2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'CLIC2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'MGST1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GSTZ1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GSTP1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX8', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'MGST2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GSTA1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GSTT1', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX2', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'LTC4S', 'Hydrocortisone acetate']",1
+14042,33077,Hydrocortisone acetate,Hodgkins lymphoma,disease-exposure-molfunc-gene-drug,indication,"['Hodgkins lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'PRDX6', 'Hydrocortisone acetate']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'KIF2A', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYH15', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYO18B', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYO6', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'KIF1A', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYH7B', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'KIF5A', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYL3', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYO16', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYO3B', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYO9A', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'PIN1', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYH1', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'KIF3C', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'DNAI1', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'KLC1', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'KIF15', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYH11', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYL6', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYO1E', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYL6B', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'DYNC1I1', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'MYH9', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'KIF18B', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'DYNC2H1', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'GPR88', 'Itraconazole']",1
+14992,37659,Itraconazole,heart failure,disease-exposure-molfunc-gene-drug,contraindication,"['heart failure', 'Air Pollutants', 'motor activity', 'KIF1C', 'Itraconazole']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Arsenic', 'cholinesterase activity', 'CHKA', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Arsenic', 'cholinesterase activity', 'BCHE', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Arsenic', 'cholinesterase activity', 'ACHE', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Arsenic', 'transaminase activity', 'ETNPPL', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Arsenic', 'transaminase activity', 'PHYKPL', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Arsenic', 'transaminase activity', 'AGXT', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Arsenic', 'transaminase activity', 'AADAT', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Arsenic', 'transaminase activity', 'AMT', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Arsenic', 'alkaline phosphatase activity', 'ALPG', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Arsenic', 'alkaline phosphatase activity', 'ALPL', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Arsenic', 'alkaline phosphatase activity', 'ALPP', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Arsenic', 'alkaline phosphatase activity', 'ALPI', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'bisphenol A', 'alkaline phosphatase activity', 'ALPG', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'bisphenol A', 'alkaline phosphatase activity', 'ALPL', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'bisphenol A', 'alkaline phosphatase activity', 'ALPP', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'bisphenol A', 'alkaline phosphatase activity', 'ALPI', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Insecticides', 'cholinesterase activity', 'CHKA', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Insecticides', 'cholinesterase activity', 'BCHE', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Insecticides', 'cholinesterase activity', 'ACHE', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Lead', 'porphobilinogen synthase activity', 'ALAD', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Triazines', 'cholinesterase activity', 'CHKA', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Triazines', 'cholinesterase activity', 'BCHE', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Triazines', 'cholinesterase activity', 'ACHE', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'SAE1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'RAB3GAP2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DCP1B', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'RFC1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'GMFG', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'GTF3C4', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'ARL1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DBNL', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'XRCC5', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'APOA5', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'ALOX5AP', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'APOBEC1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'HSPB2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'F2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'NCAPG2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DPM3', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'FAM47E', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CLPS', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'EED', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'TAB1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CLPSL1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DAOA', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PITRM1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'LRCOL1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PRKRA', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DPM2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'SDHAF4', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MMP17', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MMP24', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CYB5B', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MMP16', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PSAP', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PRKCD', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DNMT3L', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'STRIT1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DDOST', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CXCL1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DAD1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'TRIM23', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'ERCC5', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'SUZ12', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MGST2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CTSA', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PRKCE', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CFLAR', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CASP9', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'LTC4S', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'SLX4', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'CLPSL2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DTX3L', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DCP1A', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'PPP1R12B', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'KRTCAP2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'RAMAC', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'MMP15', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'DBF4', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'WRNIP1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Hydrocarbons, Chlorinated', 'enzyme activator activity', 'GMFB', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX5B', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'NDUFA4L2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX6A1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'MT-CO1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX15', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX4I2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX4I1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'CYB5A', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'MT-CO2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'SURF1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'MT-CO3', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7B', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7A2L', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'MTCO2P12', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX6B1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7B2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX6A2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX5A', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX8A', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7A1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'COX10', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'C15orf48', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cytochrome-c oxidase activity', 'NDUFA4', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'catalase activity', 'GPX7', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'catalase activity', 'CAT', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'catalase activity', 'CYGB', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTM3', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTA5', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'ALOX5AP', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTA2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTK1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTM4', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTO2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'PTGES', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTM2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTA3', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTT4', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTM1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTT2B', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'MGST1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTZ1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTP1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'MGST2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTA1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTA4', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTT1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTT2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'LTC4S', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'HPGDS', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTO1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'LANCL1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione transferase activity', 'GSTM5', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione-disulfide reductase (NADPH) activity', 'GSR', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione-disulfide reductase (NADPH) activity', 'GLRX', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'superoxide dismutase activity', 'NQO1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'superoxide dismutase activity', 'SOD3', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'superoxide dismutase activity', 'SOD1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'superoxide dismutase activity', 'SOD2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cholinesterase activity', 'CHKA', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cholinesterase activity', 'BCHE', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'cholinesterase activity', 'ACHE', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX6', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'ALOX5AP', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX4', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GSTK1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'MGST3', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX3', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX7', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX5', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'PTGES', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GSTM2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'CLIC2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'MGST1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GSTZ1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GSTP1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX8', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'MGST2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GSTA1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GSTT1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'GPX2', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'LTC4S', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Pesticides', 'glutathione peroxidase activity', 'PRDX6', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KIF2A', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYH15', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYO18B', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYO6', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KIF1A', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYH7B', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KIF5A', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYL3', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYO16', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYO3B', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYO9A', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'PIN1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYH1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KIF3C', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'DNAI1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KLC1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KIF15', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYH11', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYL6', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYO1E', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYL6B', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'DYNC1I1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'MYH9', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KIF18B', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'DYNC2H1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'GPR88', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Polychlorinated Biphenyls', 'motor activity', 'KIF1C', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'NQO1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'SOD3', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'SOD1', 'Desipramine']",1
+14543,27933,Desipramine,anxiety disorder,disease-exposure-molfunc-gene-drug,indication,"['anxiety disorder', 'Tobacco Smoke Pollution', 'superoxide dismutase activity', 'SOD2', 'Desipramine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF2A', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH15', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO18B', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO6', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF1A', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH7B', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF5A', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYL3', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO16', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO3B', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO9A', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'PIN1', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH1', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF3C', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'DNAI1', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KLC1', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF15', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH11', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYL6', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYO1E', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYL6B', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'DYNC1I1', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'MYH9', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF18B', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'DYNC2H1', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'GPR88', 'Adenosine']",1
+14918,36080,Adenosine,respiratory failure,disease-exposure-molfunc-gene-drug,contraindication,"['respiratory failure', 'Air Pollutants', 'motor activity', 'KIF1C', 'Adenosine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'KIF2A', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'MYH15', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'MYO18B', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'MYO6', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'KIF1A', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'MYH7B', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'KIF5A', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'MYL3', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'MYO16', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'MYO3B', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'MYO9A', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'PIN1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'MYH1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'KIF3C', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'DNAI1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'KLC1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'KIF15', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'MYH11', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'MYL6', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'MYO1E', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'MYL6B', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'DYNC1I1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'MYH9', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'KIF18B', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'DYNC2H1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'GPR88', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Air Pollutants', 'motor activity', 'KIF1C', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Arsenic', 'cholinesterase activity', 'CHKA', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Arsenic', 'cholinesterase activity', 'BCHE', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Arsenic', 'cholinesterase activity', 'ACHE', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Arsenic', 'transaminase activity', 'ETNPPL', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Arsenic', 'transaminase activity', 'PHYKPL', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Arsenic', 'transaminase activity', 'AGXT', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Arsenic', 'transaminase activity', 'AADAT', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Arsenic', 'transaminase activity', 'AMT', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPG', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPL', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPP', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Arsenic', 'alkaline phosphatase activity', 'ALPI', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTM3', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA5', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'ALOX5AP', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA2', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTK1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTM4', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTO2', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'PTGES', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTM2', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA3', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTT4', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTM1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTT2B', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'MGST1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTZ1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTP1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'MGST2', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA4', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTT1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTT2', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'LTC4S', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'HPGDS', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTO1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'LANCL1', 'Phenyltoloxamine']",1
+20294,37617,Phenyltoloxamine,chronic obstructive pulmonary disease,disease-exposure-molfunc-gene-drug,contraindication,"['chronic obstructive pulmonary disease', 'Metals, Heavy', 'glutathione transferase activity', 'GSTM5', 'Phenyltoloxamine']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX5B', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'NDUFA4L2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX6A1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'MT-CO1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX15', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX4I2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX4I1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'CYB5A', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'MT-CO2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'SURF1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'MT-CO3', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7B', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7A2L', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'MTCO2P12', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX6B1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7B2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX6A2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX5A', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX8A', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX7A1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'COX10', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'C15orf48', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cytochrome-c oxidase activity', 'NDUFA4', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'catalase activity', 'GPX7', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'catalase activity', 'CAT', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'catalase activity', 'CYGB', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTM3', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTA5', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'ALOX5AP', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTA2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTK1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTM4', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTO2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'PTGES', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTM2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTA3', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTT4', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTM1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTT2B', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'MGST1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTZ1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'MGST2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTA1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTA4', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTT2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'LTC4S', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'HPGDS', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTO1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'LANCL1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione transferase activity', 'GSTM5', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione-disulfide reductase (NADPH) activity', 'GSR', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione-disulfide reductase (NADPH) activity', 'GLRX', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'superoxide dismutase activity', 'NQO1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'superoxide dismutase activity', 'SOD3', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'superoxide dismutase activity', 'SOD1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'superoxide dismutase activity', 'SOD2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cholinesterase activity', 'CHKA', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cholinesterase activity', 'BCHE', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'cholinesterase activity', 'ACHE', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX6', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'ALOX5AP', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX4', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GSTK1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'MGST3', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX3', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX7', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX5', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'PTGES', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GSTM2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'CLIC2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'MGST1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GSTZ1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX8', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'MGST2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GSTA1', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'GPX2', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'LTC4S', 'Etoposide']",1
+14604,30075,Etoposide,Burkitt lymphoma,disease-exposure-molfunc-gene-drug,off-label use,"['Burkitt lymphoma', 'Pesticides', 'glutathione peroxidase activity', 'PRDX6', 'Etoposide']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'perfluorooctanoic acid', 'L-alanine:2-oxoglutarate aminotransferase activity', 'GPT2', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'perfluorooctanoic acid', 'L-alanine:2-oxoglutarate aminotransferase activity', 'GPT', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'KIF2A', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'MYH15', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'MYO18B', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'MYO6', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'KIF1A', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'MYH7B', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'KIF5A', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'MYL3', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'MYO16', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'MYO3B', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'MYO9A', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'PIN1', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'MYH1', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'KIF3C', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'DNAI1', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'KLC1', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'KIF15', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'MYH11', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'MYL6', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'MYO1E', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'MYL6B', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'DYNC1I1', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'MYH9', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'KIF18B', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'DYNC2H1', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'GPR88', 'Isocarboxazid']",1
+19222,35909,Isocarboxazid,cerebrovascular disorder,disease-exposure-molfunc-gene-drug,contraindication,"['cerebrovascular disorder', 'Air Pollutants', 'motor activity', 'KIF1C', 'Isocarboxazid']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'perfluorooctanoic acid', 'L-alanine:2-oxoglutarate aminotransferase activity', 'GPT2', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'perfluorooctanoic acid', 'L-alanine:2-oxoglutarate aminotransferase activity', 'GPT', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'KIF2A', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'MYH15', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'MYO18B', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'MYO6', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'KIF1A', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'MYH7B', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'KIF5A', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'MYL3', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'MYO16', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'MYO3B', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'MYO9A', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'PIN1', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'MYH1', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'KIF3C', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'DNAI1', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'KLC1', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'KIF15', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'MYH11', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'MYL6', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'MYO1E', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'MYL6B', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'DYNC1I1', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'MYH9', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'KIF18B', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'DYNC2H1', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'GPR88', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Air Pollutants', 'motor activity', 'KIF1C', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Arsenic', 'cholinesterase activity', 'CHKA', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Arsenic', 'cholinesterase activity', 'BCHE', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Arsenic', 'cholinesterase activity', 'ACHE', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Arsenic', 'transaminase activity', 'ETNPPL', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Arsenic', 'transaminase activity', 'PHYKPL', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Arsenic', 'transaminase activity', 'AGXT', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Arsenic', 'transaminase activity', 'AADAT', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Arsenic', 'transaminase activity', 'AMT', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Arsenic', 'alkaline phosphatase activity', 'ALPG', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Arsenic', 'alkaline phosphatase activity', 'ALPL', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Arsenic', 'alkaline phosphatase activity', 'ALPP', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Arsenic', 'alkaline phosphatase activity', 'ALPI', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTM3', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA5', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'ALOX5AP', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA2', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTK1', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTM4', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTO2', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'PTGES', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTM2', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA3', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTT4', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTM1', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTT2B', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'MGST1', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTZ1', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTP1', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'MGST2', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA1', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTA4', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTT1', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTT2', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'LTC4S', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'HPGDS', 'Tolmetin']",1
+14183,33577,Tolmetin,hypertensive disorder,disease-exposure-molfunc-gene-drug,contraindication,"['hypertensive disorder', 'Metals, Heavy', 'glutathione transferase activity', 'GSTO1', 'Tolmetin']",1
