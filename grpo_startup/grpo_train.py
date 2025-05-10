@@ -11,7 +11,7 @@ HF_TOKEN = os.getenv("HF_API_TOKEN")
 # ── CLI ────────────────────────────────────────────────────────────────────────
 p = argparse.ArgumentParser()
 p.add_argument("--model_name", default="JesseLiu/llama32-3b-cold")
-p.add_argument("--train_csv", default="../grpo_path/train_grpo.csv")
+p.add_argument("--train_csv", default="/playpen/hongxuan/drug_repurpose/grpo_path/page_rank/train_grpo.csv")
 p.add_argument("--output_dir", default="grpo-out")
 p.add_argument("--per_device_train_batch_size", type=int, default=2)
 p.add_argument("--gradient_accumulation_steps", type=int, default=4)
@@ -46,7 +46,7 @@ def load_base_and_merge(adapter_repo: str, tokenizer):
     return merged
 
 # ── data ──────────────────────────────────────────────────────────────────────
-df = pd.read_csv(args.train_csv)
+df = pd.read_csv(args.train_csv).iloc[:2000, :]
 prompts = [extract_question(t) for t in df["prefix"]]
 train_ds, eval_ds = Dataset.from_dict({"prompt": prompts}).train_test_split(0.1, seed=42).values()
 

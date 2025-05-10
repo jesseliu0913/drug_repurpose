@@ -4,17 +4,25 @@ fi
 
 # Base directories
 BASE_DIR="/playpen/hongxuan/drug_repurpose/grpo_startup"
-LOGS_DIR="${BASE_DIR}/logs"
-MODELS_DIR="${BASE_DIR}/models"
-mkdir -p $LOGS_DIR $MODELS_DIR
+# LOGS_DIR="${BASE_DIR}/results/logs"
+# MODELS_DIR="${BASE_DIR}/results/models"
+# mkdir -p $LOGS_DIR $MODELS_DIR
+RUN_TIME=$(date +"%Y%m%d_%H%M")
+RESULTS_DIR="${BASE_DIR}/results/${RUN_TIME}"
 
 
-NUM_ITERATIONS=8
+LOGS_DIR="${RESULTS_DIR}/logs"
+MODELS_DIR="${RESULTS_DIR}/models"
+mkdir -p "$LOGS_DIR" "$MODELS_DIR"
+
+NUM_ITERATIONS=16
 NUM_GENERATIONS=6
+BATCH_SIZE=24
+GRAD_ACCUM=1
+
+
 LEARNING_RATE=1e-5
 GPU_IDS="1,2,4"
-BATCH_SIZE=32
-GRAD_ACCUM=1
 USE_LORA=true # whether to use LoRA for training orginal llama with original llama
 LORA_R=16
 LORA_ALPHA=32
