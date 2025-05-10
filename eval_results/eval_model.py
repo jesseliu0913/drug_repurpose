@@ -46,7 +46,7 @@ if adapter_name:
         peft_cfg = PeftConfig.from_pretrained(adapter_name, use_auth_token=user_token)
         base_name = peft_cfg.base_model_name_or_path or model_name
 
-        tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=user_token)
+        tokenizer = AutoTokenizer.from_pretrained(adapter_name, use_auth_token=user_token)
         tokenizer.pad_token = tokenizer.eos_token
         tokenizer.padding_side = "right"
         new_special_tokens = ['<degd>', '<ddd>', '<decgd>',
