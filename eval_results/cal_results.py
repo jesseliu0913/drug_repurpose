@@ -10,12 +10,17 @@ import nltk
 from nltk.tokenize import word_tokenize
 
 def extract_yes_no(answer):
+    answer = answer.upper()
     if "$YES$" in answer:
         return "YES"
     elif "$NO$" in answer:
         return "NO"
     
-    answer = answer.upper()
+    if "YES" in answer:
+        return "YES"
+    elif "NO" in answer:
+        return "NO"
+    
     if re.search(r'\bYES\b', answer):
         return "YES"
     elif re.search(r'\bNO\b', answer):
@@ -47,10 +52,10 @@ def calculate_metrics(jsonl_file, ground_truth_file, prompt_type):
             drug = obj.get('drug_name')
             disease = obj.get('disease_name')
             answer = obj.get('answer', '')
+            all_answers.append(answer)
             label = obj.get('label')
             if prompt_type != "fcot":
                 answer = answer.split("\n")[0]
-            all_answers.append(answer)
             prediction_text = extract_yes_no(answer)
             
             prediction = 1 if prediction_text == "YES" else 0

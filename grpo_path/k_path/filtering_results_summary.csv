@@ -1,0 +1,8 @@
+file_name,original_rows,filtered_rows,formatted_rows,output_file,error
+disease_protein_drug_paths.csv,2000.0,1899.0,1899.0,./negative_path.csv,
+disease_exposure_cellcomp_gene_drug_paths.csv,2000.0,1945.0,1945.0,./negative_path.csv,
+disease_exposure_bioprocess_gene_drug_paths.csv,2000.0,2000.0,2000.0,./negative_path.csv,
+disease_disease_drug_paths.csv,,,,,'disease_index'
+disease_exposure_gene_drug_paths.csv,2000.0,2000.0,2000.0,./negative_path.csv,
+disease_phenotype_protein_drug_paths.csv,2000.0,1330.0,1330.0,./negative_path.csv,
+disease_exposure_molfunc_gene_drug_paths.csv,2000.0,2000.0,2000.0,./negative_path.csv,

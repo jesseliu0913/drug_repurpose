@@ -164,13 +164,14 @@ def add_pos(positive_sample):
 negative_sample = add_neg(negative_sample)
 positive_sample = add_pos(positive_sample)
 
-# negative_sample_1000 = negative_sample.sample(n=1000, random_state=42)
-# positive_sample_1000 = positive_sample.sample(n=1000, random_state=42)
+neg_1000 = negative_sample.sample(n=1000, random_state=42)
+pos_1000 = positive_sample.sample(n=1000, random_state=42)
 
-combined_sample = pd.concat([positive_sample, negative_sample], ignore_index=True)
-unique_pairs = combined_sample[['drug_index', 'disease_index']].drop_duplicates()
-sampled_pairs = unique_pairs.sample(n=500, random_state=42)
-final_sample = combined_sample.merge(sampled_pairs, on=['drug_index', 'disease_index'])
-final_sample = final_sample.reset_index(drop=True)
+# combined_sample = pd.concat([positive_sample, negative_sample], ignore_index=True)
+# unique_pairs = combined_sample[['drug_index', 'disease_index']].drop_duplicates()
+# sampled_pairs = unique_pairs.sample(n=500, random_state=42)
+# final_sample = combined_sample.merge(sampled_pairs, on=['drug_index', 'disease_index'])
+# final_sample = final_sample.reset_index(drop=True)
 
+final_sample = pd.concat([pos_1000, neg_1000], ignore_index=True).sample(frac=1, random_state=42)
 final_sample.to_csv("train_grpo.csv", index=False)

@@ -149,6 +149,15 @@ def add_pos(positive_sample):
 negative_sample = add_neg(negative_sample)
 positive_sample = add_pos(positive_sample)
 
+neg_1000 = negative_sample.sample(n=1000, random_state=42)
+pos_1000 = positive_sample.sample(n=1000, random_state=42)
+
+final = pd.concat([pos_1000, neg_1000], ignore_index=True).sample(frac=1, random_state=42)
+final.to_csv("train_grpo.csv", index=False)
+"""
+negative_sample = add_neg(negative_sample)
+positive_sample = add_pos(positive_sample)
+
 # negative_sample_1000 = negative_sample.sample(n=1000, random_state=42)
 # positive_sample_1000 = positive_sample.sample(n=1000, random_state=42)
 
@@ -159,3 +168,4 @@ final_sample = combined_sample.merge(sampled_pairs, on=['drug_index', 'disease_i
 final_sample = final_sample.reset_index(drop=True)
 
 final_sample.to_csv("train_grpo.csv", index=False)
+"""
