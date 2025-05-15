@@ -2,6 +2,7 @@ import os
 import json
 import random
 import torch
+import argparse
 import numpy as np
 import pandas as pd
 import wandb
@@ -26,15 +27,27 @@ from peft import (
 
 set_seed(42)
 
-user_token = os.getenv("HF_API_TOKEN")
-train_data = pd.read_csv("../grpo_path/k_path/train_grpo.csv")
-print(train_data.head())
+parser = argparse.ArgumentParser(description="Casual Tuning based on case report")
+parser.add_argument("--model", type=str, default=None, help="Set model weights")
+parser.add_argument("--task", type=str, default=None, help="Set Task Name")
+parser.add_argument("--batch_size", type=int, default=8, help="Set Batch Size")
+parser.add_argument("--training_data", type=str, default=None, help="Set Training Data")
 
-prompts = train_data['prefix'].tolist()[:2000]
+args = parser.parse_args()
+
+
+user_token = os.getenv("HF_API_TOKEN")
+if args.training_data == 'kpath':
+    train_data = pd.read_csv("../grpo_path/k_path/train_grpo.csv")
+elif args.training_data == 'pagerank':
+    train_data = pd.read_csv("../grpo_path/page_rank/train_grpo.csv")
+
+
+prompts = train_data['prefix'].tolist()
 dataset = Dataset.from_dict({"text": prompts})
 dataset = dataset.train_test_split(test_size=0.1, seed=42)
 
-model_name = "meta-llama/Llama-3.2-1B-Instruct"  
+model_name = args.model
 tokenizer = AutoTokenizer.from_pretrained(model_name, token=user_token)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "right"
@@ -42,7 +55,6 @@ tokenizer.padding_side = "right"
 new_special_tokens = ['<degd>', '<ddd>', '<decgd>', '<demgd>', '<debgd>', '<dppd>','<dpd>']
 special_tokens_dict = {'additional_special_tokens': new_special_tokens}
 num_added_tokens = tokenizer.add_special_tokens(special_tokens_dict)
-
 
 
 class GenerationCallback(TrainerCallback):
@@ -138,8 +150,8 @@ early_stopping_callback = EarlyStoppingCallback(
 )
 
 training_args = TrainingArguments(
-    output_dir="./model_weights/llama32-1b-kpath-model",
-    evaluation_strategy="steps",
+    output_dir=f"./model_weights/{args.task}-{args.training_data}-model",
+    eval_strategy="steps",
     eval_steps=25,
     logging_dir="./logs",
     logging_steps=5,
@@ -149,8 +161,8 @@ training_args = TrainingArguments(
     weight_decay=0.01,
     fp16=False,
     bf16=False,
-    per_device_train_batch_size=8,
-    per_device_eval_batch_size=8,
+    per_device_train_batch_size=args.batch_size,
+    per_device_eval_batch_size=args.batch_size,
     num_train_epochs=5,
     warmup_ratio=0.05,
     load_best_model_at_end=True,
@@ -174,7 +186,7 @@ trainer = Trainer(
 
 trainer.train()
 
-model.save_pretrained("./model_weights/llama32-1b-kpath-final")
-tokenizer.save_pretrained("./model_weights/llama32-1b-kpath-final")
+model.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-final")
+tokenizer.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-final")
 
 # CUDA_VISIBLE_DEVICES=0 nohup python train.py > ./log/train_1b.log 2>&1 &
