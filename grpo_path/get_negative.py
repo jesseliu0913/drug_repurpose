@@ -10,7 +10,7 @@ df_edges = pd.read_csv(EDGE_FILE)
 
 node_type_map = dict(zip(df_node['node_index'], df_node['node_type']))
 node_name_map = dict(zip(df_node['node_index'], df_node['node_name']))
-max_paths = 1000
+max_paths = 2000
 disease_nodes = set(df_node[df_node['node_type'] == 'disease']['node_index'])
 drug_nodes = set(df_node[df_node['node_type'] == 'drug']['node_index'])
 gene_protein_nodes = set(df_node[df_node['node_type'] == 'gene/protein']['node_index'])
