@@ -1,0 +1,17 @@
+nohup: ignoring input
+[2025-05-07 21:46:45,805] [INFO] [real_accelerator.py:239:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.00s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.47it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.37it/s]
+Traceback (most recent call last):
+  File "/playpen/jesse/drug_repurpose/grpo_startup/grpo_train.py", line 33, in <module>
+    model = PeftModel.from_pretrained(
+  File "/home/jesseliu/miniconda3/envs/dynh/lib/python3.10/site-packages/peft/peft_model.py", line 541, in from_pretrained
+    load_result = model.load_adapter(
+  File "/home/jesseliu/miniconda3/envs/dynh/lib/python3.10/site-packages/peft/peft_model.py", line 1276, in load_adapter
+    load_result = set_peft_model_state_dict(
+  File "/home/jesseliu/miniconda3/envs/dynh/lib/python3.10/site-packages/peft/utils/save_and_load.py", line 448, in set_peft_model_state_dict
+    load_result = model.load_state_dict(peft_model_state_dict, strict=False)
+  File "/home/jesseliu/miniconda3/envs/dynh/lib/python3.10/site-packages/torch/nn/modules/module.py", line 2584, in load_state_dict
+    raise RuntimeError(
+RuntimeError: Error(s) in loading state_dict for PeftModelForCausalLM:
+	size mismatch for base_model.model.model.embed_tokens.weight: copying a param with shape torch.Size([128263, 3072]) from checkpoint, the shape in current model is torch.Size([128256, 3072]).
+	size mismatch for base_model.model.lm_head.weight: copying a param with shape torch.Size([128263, 3072]) from checkpoint, the shape in current model is torch.Size([128256, 3072]).
