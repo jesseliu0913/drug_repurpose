@@ -22,12 +22,14 @@ GRAD_ACCUM=1
 
 
 LEARNING_RATE=1e-5
-GPU_IDS="1,2,4"
+GPU_IDS="4,5,6"
 USE_LORA=true # whether to use LoRA for training orginal llama with original llama
 LORA_R=16
 LORA_ALPHA=32
 LORA_DROPOUT=0.05
 MODELS=('JesseLiu/llama32-1b-cold' 'meta-llama/Llama-3.2-1B' 'JesseLiu/llama32-3b-cold' 'meta-llama/Llama-3.2-3B')
+# MODELS=('JesseLiu/qwen25-7b-pagerank' 'Qwen/Qwen2.5-7B-Instruct')
+
 
 
 while [[ $# -gt 0 ]]; do
