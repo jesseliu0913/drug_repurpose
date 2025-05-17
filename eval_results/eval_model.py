@@ -106,9 +106,9 @@ if os.path.exists(file_path):
         for line in f_read:
             existing_pairs.add((line["drug_name"], line["disease_name"]))
 
+print(test_data.head(5))
 with jsonlines.open(file_path, "a") as f_write:
-    for index, row in test_data.iterrows():
-        print(row)
+    for index, row in test_data.iterrows(): 
         drug_name = row.drug_name
         disease_name = row.disease_name
         disease_index = row.disease_index
