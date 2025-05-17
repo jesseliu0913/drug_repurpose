@@ -3,7 +3,7 @@ if [ -f "${BASE_DIR}/.env" ]; then
 fi
 
 # Base directories
-BASE_DIR="/playpen/hongxuan/drug_repurpose/grpo_startup"
+BASE_DIR="/playpen/hongxuan/Drug/drug_repurpose/grpo_startup"
 # LOGS_DIR="${BASE_DIR}/results/logs"
 # MODELS_DIR="${BASE_DIR}/results/models"
 # mkdir -p $LOGS_DIR $MODELS_DIR
