@@ -31,22 +31,16 @@ parser = argparse.ArgumentParser(description="Casual Tuning based on case report
 parser.add_argument("--model", type=str, default=None, help="Set model weights")
 parser.add_argument("--task", type=str, default=None, help="Set Task Name")
 parser.add_argument("--batch_size", type=int, default=8, help="Set Batch Size")
-parser.add_argument("--train_setting", type=str, default="all", help="Set Training Setting")
 parser.add_argument("--training_data", type=str, default=None, help="Set Training Data")
 
 args = parser.parse_args()
 
 
 user_token = os.getenv("HF_API_TOKEN")
-if args.train_setting == "all":
-    data_path = "../grpo_path"
-elif args.train_setting == "partial":
-    data_path = "../grpo_part_path"
-
 if args.training_data == 'kpath':
-    train_data = pd.read_csv(f"{data_path}/k_path/train_grpo.csv")
+    train_data = pd.read_csv("../grpo_path/k_path/train_grpo.csv")
 elif args.training_data == 'pagerank':
-    train_data = pd.read_csv(f"{data_path}/page_rank/train_grpo.csv")
+    train_data = pd.read_csv("../grpo_path/page_rank/train_grpo.csv")
 
 
 prompts = train_data['prefix'].tolist()
@@ -156,7 +150,7 @@ early_stopping_callback = EarlyStoppingCallback(
 )
 
 training_args = TrainingArguments(
-    output_dir=f"./model_weights/{args.task}-{args.training_data}-{args.train_setting}-model",
+    output_dir=f"./model_weights/{args.task}-{args.training_data}-model",
     eval_strategy="steps",
     eval_steps=25,
     logging_dir="./logs",
@@ -192,7 +186,7 @@ trainer = Trainer(
 
 trainer.train()
 
-model.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-{args.train_setting}-final")
-tokenizer.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-{args.train_setting}-final")
+model.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-final")
+tokenizer.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-final")
 
 # CUDA_VISIBLE_DEVICES=0 nohup python train.py > ./log/train_1b.log 2>&1 &
