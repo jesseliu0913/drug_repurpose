@@ -20,14 +20,14 @@ def add_neg(negative_sample):
             phenotype = nodes[1]
             gene = nodes[2]
             drug = nodes[3]
-            prompt = f"<dppd>The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is not targeted by the drug {drug}. These connections suggest that {drug} may not be effective in treating {disease}.<dppd>"
+            prompt = f"<phenotype>The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is not targeted by the drug {drug}. These connections suggest that {drug} may not be effective in treating {disease}.<phenotype>"
             prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
         
         elif row['path_type'] == "disease-protein-drug":
             disease = nodes[0]
             gene = nodes[1]
             drug = nodes[2]
-            prompt = f"<dpd>The disease {disease} is associated with the gene {gene}, which is not targeted by the drug {drug}. These connections suggest that {drug} may not be effective in treating {disease}.<dpd>"
+            prompt = f"<gene>The disease {disease} is associated with the gene {gene}, which is not targeted by the drug {drug}. These connections suggest that {drug} may not be effective in treating {disease}.<gene>"
             prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
         
         else:
@@ -52,14 +52,14 @@ def add_pos(positive_sample):
             phenotype = nodes[1]
             gene = nodes[2]
             drug = nodes[3]
-            prompt = f"<dppd>The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<dppd>"
+            prompt = f"<phenotype>The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<phenotype>"
             prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
         
         elif row['path_type'] == "disease-protein-drug":
             disease = nodes[0]
             gene = nodes[1]
             drug = nodes[2]
-            prompt = f"<dpd>The disease {disease} is associated with the gene {gene}, which is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<dpd>"
+            prompt = f"<gene>The disease {disease} is associated with the gene {gene}, which is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<gene>"
             prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
         else:
             prefix = "NONE"
