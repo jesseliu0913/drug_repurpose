@@ -29,3 +29,4 @@
 /grpo_startup/model_weights/*
 /grpo_startup/wandb/*
 
+/eval_results/results_v1/*

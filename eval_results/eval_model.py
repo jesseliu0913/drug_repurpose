@@ -42,7 +42,7 @@ adapter_name = args.adapter_name
 user_token = os.getenv("HF_API_TOKEN")
 
 if adapter_name:
-    if "cold" in adapter_name or "kpath" in adapter_name:
+    if "cold" in adapter_name or "kpath" in adapter_name or "pagerank" in adapter_name:
         peft_cfg = PeftConfig.from_pretrained(adapter_name, use_auth_token=user_token)
         base_name = peft_cfg.base_model_name_or_path or model_name
 
@@ -172,7 +172,7 @@ with jsonlines.open(file_path, "a") as f_write:
             answer_lst = []
             for _ in range(args.shuffle_num):
                 output = model.generate(**inputs, max_new_tokens=1000, do_sample=True, temperature=0.2, top_k=50, top_p=0.9)
-                answer = tokenizer.decode(output[0], skip_special_tokens=True)
+                answer = tokenizer.decode(output[0], skip_special_tokens=False)
                 answer = answer.replace(input_text, "").strip()
                 answer_lst.append(answer)
                 
