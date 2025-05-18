@@ -79,7 +79,7 @@ class GenerationCallback(TrainerCallback):
                     do_sample=True,
                     temperature=0.7
                 )
-            generated_text = self.tokenizer.decode(output[0], skip_special_tokens=True)
+            generated_text = self.tokenizer.decode(output[0], skip_special_tokens=False)
             print(f"\nStep {state.global_step} generation test:")
             print(f"Prompt: {self.test_prompt}")
             print(f"Output: {generated_text}\n")
@@ -139,6 +139,7 @@ for name, param in model.named_parameters():
     if "lora" in name:
         param.requires_grad = True
 
+model.get_input_embeddings().weight.requires_grad = True
 model.config.pad_token_id = tokenizer.pad_token_id
 trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
 total_params = sum(p.numel() for p in model.parameters())
@@ -169,7 +170,7 @@ training_args = TrainingArguments(
     bf16=False,
     per_device_train_batch_size=args.batch_size,
     per_device_eval_batch_size=args.batch_size,
-    num_train_epochs=5,
+    num_train_epochs=2,
     warmup_ratio=0.05,
     load_best_model_at_end=True,
     gradient_accumulation_steps=2,
