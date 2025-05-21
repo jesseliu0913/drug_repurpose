@@ -49,8 +49,9 @@ if adapter_name:
         tokenizer = AutoTokenizer.from_pretrained(adapter_name, use_auth_token=user_token)
         tokenizer.pad_token = tokenizer.eos_token
         tokenizer.padding_side = "right"
-        new_special_tokens = ['<degd>', '<ddd>', '<decgd>',
-                            '<demgd>', '<debgd>', '<dppd>', '<dpd>']
+        # new_special_tokens = ['<degd>', '<ddd>', '<decgd>',
+        #                     '<demgd>', '<debgd>', '<dppd>', '<dpd>']
+        new_special_tokens = ['<phenotype>', '<gene>']
         tokenizer.add_special_tokens({'additional_special_tokens': new_special_tokens})
 
         base_model = AutoModelForCausalLM.from_pretrained(

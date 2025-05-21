@@ -30,3 +30,4 @@
 /grpo_startup/wandb/*
 
 /eval_results/results_v1/*
+eval_results/results_v2/*
