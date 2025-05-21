@@ -20,14 +20,16 @@ def add_neg(negative_sample):
             phenotype = nodes[1]
             gene = nodes[2]
             drug = nodes[3]
-            prompt = f"<phenotype>The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is not targeted by the drug {drug}. These connections suggest that {drug} may not be effective in treating {disease}.<phenotype>"
+            # prompt = f"<phenotype>The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is not targeted by the drug {drug}. These connections suggest that {drug} may not be effective in treating {disease}.<phenotype>"
+            prompt = f"The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is not targeted by the drug {drug}. These connections suggest that {drug} may not be effective in treating {disease}."
             prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
         
         elif row['path_type'] == "disease-protein-drug":
             disease = nodes[0]
             gene = nodes[1]
             drug = nodes[2]
-            prompt = f"<gene>The disease {disease} is associated with the gene {gene}, which is not targeted by the drug {drug}. These connections suggest that {drug} may not be effective in treating {disease}.<gene>"
+            # prompt = f"<gene>The disease {disease} is associated with the gene {gene}, which is not targeted by the drug {drug}. These connections suggest that {drug} may not be effective in treating {disease}.<gene>"
+            prompt = f"The disease {disease} is associated with the gene {gene}, which is not targeted by the drug {drug}. These connections suggest that {drug} may not be effective in treating {disease}."
             prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
         
         else:
@@ -52,14 +54,16 @@ def add_pos(positive_sample):
             phenotype = nodes[1]
             gene = nodes[2]
             drug = nodes[3]
-            prompt = f"<phenotype>The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<phenotype>"
+            # prompt = f"<phenotype>The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<phenotype>"
+            prompt = f"The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}."
             prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
         
         elif row['path_type'] == "disease-protein-drug":
             disease = nodes[0]
             gene = nodes[1]
             drug = nodes[2]
-            prompt = f"<gene>The disease {disease} is associated with the gene {gene}, which is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<gene>"
+            # prompt = f"<gene>The disease {disease} is associated with the gene {gene}, which is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<gene>"
+            prompt = f"The disease {disease} is associated with the gene {gene}, which is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}."
             prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
         
         else:
@@ -86,4 +90,4 @@ pos_1000 = positive_sample.sample(n=1000, random_state=42)
 # final_sample = final_sample.reset_index(drop=True)
 
 final_sample = pd.concat([pos_1000, neg_1000], ignore_index=True).sample(frac=1, random_state=42)
-final_sample.to_csv("train_grpo.csv", index=False)
+final_sample.to_csv("train_grpo_baseline.csv", index=False)
