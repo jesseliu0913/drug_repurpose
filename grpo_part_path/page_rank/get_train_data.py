@@ -22,7 +22,8 @@ def add_neg(negative_sample):
             drug = nodes[3]
             # prompt = f"<phenotype>The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is not targeted by the drug {drug}. These connections suggest that {drug} may not be effective in treating {disease}.<phenotype>"
             prompt = f"The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is not targeted by the drug {drug}. These connections suggest that {drug} may not be effective in treating {disease}."
-            prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
+            # prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
+            prefix = f"Question: {question}\nAnswer: {answer}"
         
         elif row['path_type'] == "disease-protein-drug":
             disease = nodes[0]
@@ -30,7 +31,8 @@ def add_neg(negative_sample):
             drug = nodes[2]
             # prompt = f"<gene>The disease {disease} is associated with the gene {gene}, which is not targeted by the drug {drug}. These connections suggest that {drug} may not be effective in treating {disease}.<gene>"
             prompt = f"The disease {disease} is associated with the gene {gene}, which is not targeted by the drug {drug}. These connections suggest that {drug} may not be effective in treating {disease}."
-            prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
+            # prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
+            prefix = f"Question: {question}\nAnswer: {answer}"
         
         else:
             prefix = "NONE"
@@ -56,7 +58,8 @@ def add_pos(positive_sample):
             drug = nodes[3]
             # prompt = f"<phenotype>The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<phenotype>"
             prompt = f"The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}."
-            prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
+            # prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
+            prefix = f"Question: {question}\nAnswer: {answer}"
         
         elif row['path_type'] == "disease-protein-drug":
             disease = nodes[0]
@@ -64,7 +67,8 @@ def add_pos(positive_sample):
             drug = nodes[2]
             # prompt = f"<gene>The disease {disease} is associated with the gene {gene}, which is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<gene>"
             prompt = f"The disease {disease} is associated with the gene {gene}, which is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}."
-            prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
+            # prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
+            prefix = f"Question: {question}\nAnswer: {answer}"
         else:
             prefix = "NONE"
         
@@ -82,4 +86,4 @@ neg_1000 = negative_sample.sample(n=1000, random_state=42)
 pos_1000 = positive_sample.sample(n=1000, random_state=42)
 
 final = pd.concat([pos_1000, neg_1000], ignore_index=True).sample(frac=1, random_state=42)
-final.to_csv("train_grpo_basline.csv", index=False)
+final.to_csv("train_grpo_naive.csv", index=False)
