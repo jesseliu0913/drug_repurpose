@@ -42,7 +42,7 @@ adapter_name = args.adapter_name
 user_token = os.getenv("HF_API_TOKEN")
 
 if adapter_name:
-    if "cold" in adapter_name or "kpath" in adapter_name or "pagerank" in adapter_name:
+    if "cold" in adapter_name or "kpath" in adapter_name or "pagerank" in adapter_name and "baseline" not in adapter_name:
         peft_cfg = PeftConfig.from_pretrained(adapter_name, use_auth_token=user_token)
         base_name = peft_cfg.base_model_name_or_path or model_name
 
@@ -98,8 +98,8 @@ os.makedirs(args.output_path, exist_ok=True)
 prompt_type = args.prompt_type
 file_path = f"{args.output_path}/{prompt_type}.jsonl"
 
-test_data = pd.read_csv("/playpen/jesse/drug_repurpose/split_data/data_analysis/test_data_new.csv")
-node_data = pd.read_csv("/playpen/jesse/drug_repurpose/PrimeKG/nodes.csv")
+test_data = pd.read_csv("../split_data/data_analysis/test_data_new.csv")
+node_data = pd.read_csv("../PrimeKG/nodes.csv")
 
 existing_pairs = set()
 if os.path.exists(file_path):
