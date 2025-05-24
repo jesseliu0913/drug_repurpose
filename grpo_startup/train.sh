@@ -6,8 +6,13 @@ CUDA_VISIBLE_DEVICES=1 nohup python train.py --model "meta-llama/Llama-3.2-3B-In
 CUDA_VISIBLE_DEVICES=4 nohup python train.py --model "meta-llama/Llama-3.2-1B-Instruct" --task 'llama32-1b' --training_data 'kpath' --train_setting 'partial' > ./log/llama321b_kpath.log 2>&1 &
 CUDA_VISIBLE_DEVICES=5 nohup python train.py --model "meta-llama/Llama-3.2-1B-Instruct" --task 'llama32-1b' --training_data 'pagerank' --train_setting 'partial' > ./log/llama321b_pagerank.log 2>&1 &
 
-CUDA_VISIBLE_DEVICES=0 nohup python train_baseline.py --model "meta-llama/Llama-3.2-3B-Instruct" --task 'llama32-3b' --training_data 'kpath' > ./log/llama323b_kpath.log 2>&1 &
-CUDA_VISIBLE_DEVICES=1 nohup python train_baseline.py --model "meta-llama/Llama-3.2-3B-Instruct" --task 'llama32-3b' --training_data 'pagerank'  > ./log/llama323b_pagerank.log 2>&1 &
-CUDA_VISIBLE_DEVICES=2 nohup python train_baseline.py --model "meta-llama/Llama-3.2-1B-Instruct" --task 'llama32-1b' --training_data 'kpath' > ./log/llama321b_kpath.log 2>&1 &
-CUDA_VISIBLE_DEVICES=3 nohup python train_baseline.py --model "meta-llama/Llama-3.2-1B-Instruct" --task 'llama32-1b' --training_data 'pagerank' > ./log/llama321b_pagerank.log 2>&1 &
+CUDA_VISIBLE_DEVICES=0 nohup python train_baseline.py --model "meta-llama/Llama-3.2-3B-Instruct" --task 'llama32-3b' --training_data 'kpath' --tunning_type 'baseline' > ./log/llama323b_kpath_baseline.log 2>&1 &
+CUDA_VISIBLE_DEVICES=1 nohup python train_baseline.py --model "meta-llama/Llama-3.2-3B-Instruct" --task 'llama32-3b' --training_data 'pagerank' --tunning_type 'baseline' > ./log/llama323b_pagerank_baseline.log 2>&1 &
+CUDA_VISIBLE_DEVICES=2 nohup python train_baseline.py --model "meta-llama/Llama-3.2-1B-Instruct" --task 'llama32-1b' --training_data 'kpath' --tunning_type 'baseline' > ./log/llama321b_kpath_baseline.log 2>&1 &
+CUDA_VISIBLE_DEVICES=3 nohup python train_baseline.py --model "meta-llama/Llama-3.2-1B-Instruct" --task 'llama32-1b' --training_data 'pagerank' --tunning_type 'baseline' > ./log/llama321b_pagerank_baseline.log 2>&1 &
+CUDA_VISIBLE_DEVICES=4 nohup python train_baseline.py --model "meta-llama/Llama-3.2-3B-Instruct" --task 'llama32-3b' --training_data 'kpath' --tunning_type 'naive' > ./log/llama323b_kpath_naive.log 2>&1 &
+CUDA_VISIBLE_DEVICES=5 nohup python train_baseline.py --model "meta-llama/Llama-3.2-3B-Instruct" --task 'llama32-3b' --training_data 'pagerank' --tunning_type 'naive' > ./log/llama323b_pagerank_naive.log 2>&1 &
+CUDA_VISIBLE_DEVICES=6 nohup python train_baseline.py --model "meta-llama/Llama-3.2-1B-Instruct" --task 'llama32-1b' --training_data 'kpath' --tunning_type 'naive' > ./log/llama321b_kpath_naive.log 2>&1 &
+CUDA_VISIBLE_DEVICES=7 nohup python train_baseline.py --model "meta-llama/Llama-3.2-1B-Instruct" --task 'llama32-1b' --training_data 'pagerank' --tunning_type 'naive' > ./log/llama321b_pagerank_naive.log 2>&1 &
+
 

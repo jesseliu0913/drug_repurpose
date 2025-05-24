@@ -32,15 +32,25 @@ parser.add_argument("--model", type=str, default=None, help="Set model weights")
 parser.add_argument("--task", type=str, default=None, help="Set Task Name")
 parser.add_argument("--batch_size", type=int, default=8, help="Set Batch Size")
 parser.add_argument("--training_data", type=str, default=None, help="Set Training Data")
+parser.add_argument("--tunning_type", type=str, default=None, help="Set Tunning Type")
 
 args = parser.parse_args()
 
 
 user_token = os.getenv("HF_API_TOKEN")
-if args.training_data == 'kpath':
-    train_data = pd.read_csv("../grpo_part_path/k_path/train_grpo_baseline.csv")
-elif args.training_data == 'pagerank':
-    train_data = pd.read_csv("../grpo_part_path/page_rank/train_grpo_basline.csv")
+if args.tunning_type == "baseline":
+    if args.training_data == 'kpath':
+        train_data = pd.read_csv("../grpo_part_path/k_path/train_grpo_baseline.csv")
+    elif args.training_data == 'pagerank':
+        train_data = pd.read_csv("../grpo_part_path/page_rank/train_grpo_baseline.csv")
+elif args.tunning_type == "naive":
+    if args.training_data == 'kpath':
+        train_data = pd.read_csv("../grpo_part_path/k_path/train_grpo_naive.csv")
+    elif args.training_data == 'pagerank':
+        train_data = pd.read_csv("../grpo_part_path/page_rank/train_grpo_naive.csv")
+else:
+    print("Tuning Type Wrong")
+
 
 
 prompts = train_data['prefix'].tolist()
@@ -147,7 +157,7 @@ early_stopping_callback = EarlyStoppingCallback(
 )
 
 training_args = TrainingArguments(
-    output_dir=f"./model_weights/{args.task}-{args.training_data}-baseline",
+    output_dir=f"./model_weights/{args.task}-{args.training_data}-{args.tunning_type}",
     eval_strategy="steps",
     eval_steps=25,
     logging_dir="./logs",
@@ -183,7 +193,7 @@ trainer = Trainer(
 
 trainer.train()
 
-model.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-finalbaseline")
-tokenizer.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-finalbaseline")
+model.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-final{args.tunning_type}")
+tokenizer.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-final{args.tunning_type}")
 
 # CUDA_VISIBLE_DEVICES=0 nohup python train.py > ./log/train_1b.log 2>&1 &
