@@ -32,15 +32,22 @@ parser.add_argument("--model", type=str, default=None, help="Set model weights")
 parser.add_argument("--task", type=str, default=None, help="Set Task Name")
 parser.add_argument("--batch_size", type=int, default=8, help="Set Batch Size")
 parser.add_argument("--training_data", type=str, default=None, help="Set Training Data")
+parser.add_argument("--train_setting", type=str, default=None, help="Set Training Setting")
+parser.add_argument("--train_type", type=str, default=None, help="Set Training Type")
 
 args = parser.parse_args()
 
 
 user_token = os.getenv("HF_API_TOKEN")
+if args.train_setting == "partial":
+    folder_path = "../grpo_part_path"
+else:
+    folder_path = "../grpo_path"
+
 if args.training_data == 'kpath':
-    train_data = pd.read_csv("../grpo_path/k_path/train_grpo.csv")
+    train_data = pd.read_csv(f"{folder_path}/k_path/train_grpo.csv")
 elif args.training_data == 'pagerank':
-    train_data = pd.read_csv("../grpo_path/page_rank/train_grpo.csv")
+    train_data = pd.read_csv(f"{folder_path}/page_rank/train_grpo.csv")
 
 
 prompts = train_data['prefix'].tolist()
@@ -52,7 +59,8 @@ tokenizer = AutoTokenizer.from_pretrained(model_name, token=user_token)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "right"
 
-new_special_tokens = ['<degd>', '<ddd>', '<decgd>', '<demgd>', '<debgd>', '<dppd>','<dpd>']
+# new_special_tokens = ['<degd>', '<ddd>', '<decgd>', '<demgd>', '<debgd>', '<dppd>','<dpd>']
+new_special_tokens = ['<phenotype>', '<gene>']
 special_tokens_dict = {'additional_special_tokens': new_special_tokens}
 num_added_tokens = tokenizer.add_special_tokens(special_tokens_dict)
 
@@ -151,7 +159,7 @@ early_stopping_callback = EarlyStoppingCallback(
 )
 
 training_args = TrainingArguments(
-    output_dir=f"./model_weights/{args.task}-{args.training_data}-model",
+    output_dir=f"./model_weights/{args.task}-{args.training_data}-{args.train_setting}-fullname-model",
     eval_strategy="steps",
     eval_steps=25,
     logging_dir="./logs",
@@ -187,7 +195,7 @@ trainer = Trainer(
 
 trainer.train()
 
-model.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-final")
-tokenizer.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-final")
+model.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-{args.train_setting}-fullname-final")
+tokenizer.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-{args.train_setting}-fullname-final")
 
 # CUDA_VISIBLE_DEVICES=0 nohup python train.py > ./log/train_1b.log 2>&1 &
