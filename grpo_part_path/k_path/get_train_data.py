@@ -57,7 +57,8 @@ def add_pos(combined_sample):
             phenotype = nodes[1]
             gene = nodes[2]
             drug = nodes[3]
-            prompt = f"<phenotype>The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<phenotype>"
+            # prompt = f"<phenotype>The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<phenotype>"
+            prompt = f"<dpgd>The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<dpgd>"
             # prompt = f"The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}."
             prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
             # prefix = f"Question: {question}\nAnswer: {answer}"
@@ -66,7 +67,8 @@ def add_pos(combined_sample):
             disease = nodes[0]
             gene = nodes[1]
             drug = nodes[2]
-            prompt = f"<gene>The disease {disease} is associated with the gene {gene}, which is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<gene>"
+            # prompt = f"<gene>The disease {disease} is associated with the gene {gene}, which is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<gene>"
+            prompt = f"<dgd>The disease {disease} is associated with the gene {gene}, which is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<dgd>"
             # prompt = f"The disease {disease} is associated with the gene {gene}, which is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}."
             prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
             # prefix = f"Question: {question}\nAnswer: {answer}"
@@ -101,4 +103,4 @@ no_samples = combined_sample[combined_sample['original_relation'] == 'contraindi
 final_sample = pd.concat([yes_samples, no_samples], ignore_index=True).sample(frac=1, random_state=42)
 
 # Save to CSV
-final_sample.to_csv("train_grpo.csv", index=False)
+final_sample.to_csv("train_grpo_abbr.csv", index=False)
