@@ -59,8 +59,8 @@ def add_pos(combined_sample):
             drug = nodes[3]
             # prompt = f"<phenotype>The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<phenotype>"
             prompt = f"The disease {disease} is associated with the phenotype {phenotype}, which in turn affects the gene {gene}. This gene is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}."
-            # prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
-            prefix = f"Question: {question}\nAnswer: {answer}"
+            prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
+            # prefix = f"Question: {question}\nAnswer: {answer}"
         
         elif row['path_type'] == "disease-protein-drug":
             disease = nodes[0]
@@ -68,8 +68,8 @@ def add_pos(combined_sample):
             drug = nodes[2]
             # prompt = f"<gene>The disease {disease} is associated with the gene {gene}, which is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}.<gene>"
             prompt = f"The disease {disease} is associated with the gene {gene}, which is targeted by the drug {drug}. These connections suggest that {drug} may be effective in treating {disease}."
-            # prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
-            prefix = f"Question: {question}\nAnswer: {answer}"
+            prefix = f"Question: {question}\nReasoning: {prompt}\nAnswer: {answer}"
+            # prefix = f"Question: {question}\nAnswer: {answer}"
         else:
             prefix = "NONE"
         
@@ -87,9 +87,18 @@ combined_sample = combined_sample[combined_sample['prefix'] != "NONE"].copy()
 
 # neg_1000 = negative_sample.sample(n=1000, random_state=42)
 # pos_1000 = positive_sample.sample(n=1000, random_state=42)
-combined_sample = combined_sample.sample(n=2000, random_state=42)
+# combined_sample = combined_sample.sample(n=2000, random_state=42)
 
-# pos_1000.to_csv("train_grpo_pos_naive.csv", index=False)
-# neg_1000.to_csv("train_grpo_neg_naive.csv", index=False)
-# final = pd.concat([pos_1000, neg_1000], ignore_index=True).sample(frac=1, random_state=42)
-combined_sample.to_csv("train_grpo_naive.csv", index=False)
+# # pos_1000.to_csv("train_grpo_pos_naive.csv", index=False)
+# # neg_1000.to_csv("train_grpo_neg_naive.csv", index=False)
+# # final = pd.concat([pos_1000, neg_1000], ignore_index=True).sample(frac=1, random_state=42)
+# combined_sample.to_csv("train_grpo_naive.csv", index=False)
+
+yes_samples = combined_sample[combined_sample['original_relation'] == 'indication'].sample(n=1000, random_state=42)
+no_samples = combined_sample[combined_sample['original_relation'] == 'contraindication'].sample(n=1000, random_state=42)
+
+# Combine and shuffle
+final_sample = pd.concat([yes_samples, no_samples], ignore_index=True).sample(frac=1, random_state=42)
+
+# Save to CSV
+final_sample.to_csv("train_grpo_baseline.csv", index=False)
