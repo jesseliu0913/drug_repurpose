@@ -7,8 +7,8 @@ import numpy as np
 test = pd.read_csv("/playpen/jesse/drug_repurpose/split_data/data_analysis/test_data_new.csv")
 test_pairs = set(zip(test.drug_index, test.disease_index))
 
-# path_files = [f for f in glob.glob("/playpen/jesse/drug_repurpose/grpo_path/negative_path/*.csv") if f.endswith("_paths.csv")]
-path_files = [f for f in glob.glob("/playpen/jesse/drug_repurpose/grpo_path/path_data/*.csv") if f.endswith("_paths.csv")]
+path_files = [f for f in glob.glob("/playpen/jesse/drug_repurpose/grpo_path/negative_path/*.csv") if f.endswith("_paths.csv")]
+# path_files = [f for f in glob.glob("/playpen/jesse/drug_repurpose/grpo_path/path_data/*.csv") if f.endswith("_paths.csv")]
 
 G = nx.DiGraph()
 for fn in path_files:
@@ -66,9 +66,9 @@ sampled_paths = (
     .reset_index(drop=True)
 )
 
-# top_paths.to_csv("train_paths_topk_negative.csv", index=False)
-# sampled_paths.to_csv("train_paths_sampled_negative.csv", index=False)
-top_paths.to_csv("train_paths_topk.csv", index=False)
-sampled_paths.to_csv("train_paths_sampled.csv", index=False)
+top_paths.to_csv("train_paths_topk_negative.csv", index=False)
+sampled_paths.to_csv("train_paths_sampled_negative.csv", index=False)
+# top_paths.to_csv("train_paths_topk.csv", index=False)
+# sampled_paths.to_csv("train_paths_sampled.csv", index=False)
 
 

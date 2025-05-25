@@ -28,7 +28,7 @@ def find_established_disease_drug_pairs():
     disease_drug_edges = df_edges[
         ((df_edges['x_index'].isin(disease_nodes)) & 
          (df_edges['y_index'].isin(drug_nodes)) & 
-         (df_edges['relation'].isin(['indication', 'contraindication', 'off-label use'])))
+         (df_edges['relation'].isin(['contraindication'])))
     ]
     
     for _, row in disease_drug_edges.iterrows():
@@ -37,7 +37,7 @@ def find_established_disease_drug_pairs():
     drug_disease_edges = df_edges[
         ((df_edges['x_index'].isin(drug_nodes)) & 
          (df_edges['y_index'].isin(disease_nodes)) & 
-         (df_edges['relation'].isin(['indication', 'contraindication', 'off-label use'])))
+         (df_edges['relation'].isin(['contraindication'])))
     ]
     
     for _, row in drug_disease_edges.iterrows():

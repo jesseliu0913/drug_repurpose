@@ -44,10 +44,17 @@ if args.train_setting == "partial":
 else:
     folder_path = "../grpo_path"
 
-if args.training_data == 'kpath':
-    train_data = pd.read_csv(f"{folder_path}/k_path/train_grpo.csv")
-elif args.training_data == 'pagerank':
-    train_data = pd.read_csv(f"{folder_path}/page_rank/train_grpo.csv")
+if args.train_type == "abbr":
+    if args.training_data == 'kpath':
+        train_data = pd.read_csv(f"{folder_path}/k_path/train_grpo_abbr.csv")
+    elif args.training_data == 'pagerank':
+        train_data = pd.read_csv(f"{folder_path}/page_rank/train_grpo_abbr.csv")
+else:
+    if args.training_data == 'kpath':
+        train_data = pd.read_csv(f"{folder_path}/k_path/train_grpo.csv")
+    elif args.training_data == 'pagerank':
+        train_data = pd.read_csv(f"{folder_path}/page_rank/train_grpo.csv")
+
 
 
 prompts = train_data['prefix'].tolist()
@@ -159,7 +166,7 @@ early_stopping_callback = EarlyStoppingCallback(
 )
 
 training_args = TrainingArguments(
-    output_dir=f"./model_weights/{args.task}-{args.training_data}-{args.train_setting}-fullname-model",
+    output_dir=f"./model_weights/{args.task}-{args.training_data}-{args.train_setting}-{args.train_type}-model",
     eval_strategy="steps",
     eval_steps=25,
     logging_dir="./logs",
@@ -195,7 +202,7 @@ trainer = Trainer(
 
 trainer.train()
 
-model.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-{args.train_setting}-fullname-final")
-tokenizer.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-{args.train_setting}-fullname-final")
+model.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-{args.train_setting}-{args.train_type}-final")
+tokenizer.save_pretrained(f"./model_weights/{args.task}-{args.training_data}-{args.train_setting}-{args.train_type}-final")
 
 # CUDA_VISIBLE_DEVICES=0 nohup python train.py > ./log/train_1b.log 2>&1 &
