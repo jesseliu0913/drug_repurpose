@@ -8,7 +8,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel, LoraConfig, get_peft_model
 from trl import GRPOConfig, GRPOTrainer
 from dotenv import load_dotenv
-
+import os
+os.environ["WANDB_DISABLED"] = "true"
 # ─────────────────────────────────────────────────────────────────────────────
 # constants & env
 # ─────────────────────────────────────────────────────────────────────────────
@@ -221,7 +222,7 @@ trainer = GRPOTrainer(
     args=cfg,
     train_dataset=train_ds,
     eval_dataset=eval_ds,
-    reward_funcs=[format_reward, task_reward],
+    reward_funcs=[task_reward],
 )
 
 trainer.train()

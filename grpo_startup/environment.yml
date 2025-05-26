@@ -1,4 +1,4 @@
-name: voro
+name: grpo
 channels:
   - conda-forge
   - defaults
@@ -140,4 +140,4 @@ dependencies:
       - wandb==0.19.11
       - xxhash==3.5.0
       - yarl==1.20.0
-prefix: /home/swyun/miniconda3/envs/voro
+prefix: /home/swyun/miniconda3/envs/grpo

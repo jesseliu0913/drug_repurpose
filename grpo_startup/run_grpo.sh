@@ -1,6 +1,9 @@
+#!/usr/bin/env bash
+
 BASE_DIR="/playpen/hongxuan/Drug/drug_repurpose/grpo_startup"
 
-cd BASE_DIR
+# cd BASE_DIR
+
 
 
 DATA_ROOT="/playpen/hongxuan/Drug/drug_repurpose"
@@ -36,12 +39,7 @@ LORA_R=16
 LORA_ALPHA=32
 LORA_DROPOUT=0.05
 
-MODELS=(
-  'JesseLiu/llama32-1b-kpath-partial'
-  'JesseLiu/llama32-1b-pagerank-partial'
-  'JesseLiu/llama32-3b-pagerank-partial'
-  'JesseLiu/llama32-3b-kpath-partial'
-)
+MODELS=('JesseLiu/llama32-3b-kpath-naive' 'JesseLiu/llama32-3b-pagerank-naive')
 
 # ------------------------------------------------------------------
 # CLI
@@ -72,17 +70,29 @@ for MODEL in "${MODELS[@]}"; do
   $USE_LORA && OUTPUT_NAME="${OUTPUT_NAME}-lora"
 
   # ------ choose CSV file ----------------------------------------------------
+  # 第1层：选择目录
   if [[ "$MODEL_NAME" == *partial* ]]; then
-      CSV_DIR="${DATA_ROOT}/grpo_part_path"
-  else
       CSV_DIR="${DATA_ROOT}/grpo_path"
+  else
+      CSV_DIR="${DATA_ROOT}/grpo_part_path"
   fi
 
+  # 第2层：选择前缀（但不直接拼 CSV）
   if [[ "$MODEL_NAME" == *kpath* ]]; then
-      CSV_FILE="${CSV_DIR}/k_path/train_grpo.csv"
+      CSV_PREFIX="k_path"
   else
-      CSV_FILE="${CSV_DIR}/page_rank/train_grpo.csv"
+      CSV_PREFIX="page_rank"
   fi
+
+  # 第3层：拼接最终文件名
+  if [[ "$MODEL_NAME" == *naive* ]]; then
+      CSV_FILE="${CSV_DIR}/${CSV_PREFIX}/train_grpo_naive.csv"
+  else
+      CSV_FILE="${CSV_DIR}/${CSV_PREFIX}/train_grpo_baseline.csv"
+  fi
+
+
+
   # --------------------------------------------------------------------------
   echo "==> Training ${MODEL_NAME} with CSV file: ${CSV_FILE}"
 
