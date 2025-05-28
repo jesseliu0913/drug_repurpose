@@ -1,5 +1,5 @@
 nohup: ignoring input
 ==> [GPU 1] Training llama32-1b-kpath-partial-baseline with /playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_baseline.csv
-==> [GPU 2] Training llama32-1b-kpath-partial-naive with /playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_naive.csv
 ==> [GPU 0] Training llama32-1b-pagerank-partial-baseline with /playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_baseline.csv
+==> [GPU 2] Training llama32-1b-kpath-partial-naive with /playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_naive.csv
 ==> [GPU 3] Training llama32-1b-pagerank-partial-naive with /playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_naive.csv

@@ -20,7 +20,7 @@ mkdir -p "$LOGS_DIR" "$MODELS_DIR"
 # ────────────────────────────────────────────────────────────────
 NUM_ITERATIONS=225
 NUM_GENERATIONS=4
-BATCH_SIZE=8
+BATCH_SIZE=24
 GRAD_ACCUM=2
 LEARNING_RATE=1e-5
 
