@@ -26,6 +26,7 @@
 /grpo_path/negative_path/*
 /grpo_path/path_data/*
 /grpo_startup/log/*
+/grpo_startup/results/*
 /grpo_startup/model_weights/*
 /grpo_startup/wandb/*
 
