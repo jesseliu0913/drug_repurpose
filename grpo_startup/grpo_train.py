@@ -9,7 +9,11 @@ from peft import PeftModel, LoraConfig, get_peft_model
 from trl import GRPOConfig, GRPOTrainer
 from dotenv import load_dotenv
 import os
-os.environ["WANDB_DISABLED"] = "true"
+import sys, wandb, pathlib
+print("python:", sys.executable)
+print("wandb version:", wandb.__version__)
+print("wandb location:", pathlib.Path(wandb.__file__).parent)
+
 # ─────────────────────────────────────────────────────────────────────────────
 # constants & env
 # ─────────────────────────────────────────────────────────────────────────────
