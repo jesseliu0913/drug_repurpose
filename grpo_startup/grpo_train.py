@@ -141,7 +141,7 @@ train_ds, eval_ds = Dataset.from_dict(
 tok_raw = AutoTokenizer.from_pretrained(args.model_name, token=HF_TOKEN)
 tok_raw.pad_token = tok_raw.eos_token
 tok_raw.padding_side = "left"
-tok_raw.add_special_tokens({"additional_special_tokens": SPECIAL_TOKENS})
+# tok_raw.add_special_tokens({"additional_special_tokens": SPECIAL_TOKENS})
 
 model_name = get_model_name(args.model_name)
 tok = TokenDecoderWrapper(tok_raw, model_name)
@@ -199,6 +199,7 @@ def task_reward(prompts, completions, answer, **kw):
 # ─────────────────────────────────────────────────────────────────────────────
 cfg = GRPOConfig(
     output_dir=args.output_dir,
+    save_strategy="no",
     num_iterations=args.num_iterations,
     num_generations=args.num_generations,
     per_device_train_batch_size=args.per_device_train_batch_size,
@@ -214,6 +215,8 @@ cfg = GRPOConfig(
     logging_strategy="steps",
     logging_steps=20,
     lr_scheduler_type="cosine",
+    report_to=["wandb"],               
+    run_name=f"grpo-drug-repurpose-{args.model_name}",
 )
 
 trainer = GRPOTrainer(

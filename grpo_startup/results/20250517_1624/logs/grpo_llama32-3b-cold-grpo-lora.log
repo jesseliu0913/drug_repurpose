@@ -1,4 +1,0 @@
-  File "/playpen/hongxuan/Drug/drug_repurpose/grpo_startup/grpo_train.py", line 229
-    json.dump(vars(args), open(osp
-                              ^
-SyntaxError: '(' was never closed
