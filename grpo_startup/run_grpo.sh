@@ -20,7 +20,7 @@ mkdir -p "$LOGS_DIR" "$MODELS_DIR"
 # ────────────────────────────────────────────────────────────────
 NUM_ITERATIONS=225
 NUM_GENERATIONS=4
-BATCH_SIZE=24
+BATCH_SIZE=12
 GRAD_ACCUM=2
 LEARNING_RATE=1e-5
 
@@ -30,18 +30,18 @@ LORA_ALPHA=32
 LORA_DROPOUT=0.05
 
 # Models stay in a fixed order so we can map them to GPU 0‑7
-# MODELS=(
-#   'JesseLiu/llama32-3b-pagerank-partial-baseline'
-#   'JesseLiu/llama32-3b-kpath-partial-baseline'
-#   'JesseLiu/llama32-3b-kpath-partial-naive'
-#   'JesseLiu/llama32-3b-pagerank-partial-naive'
-# )
 MODELS=(
-  'JesseLiu/llama32-1b-pagerank-partial-baseline'
-  'JesseLiu/llama32-1b-kpath-partial-baseline'
-  'JesseLiu/llama32-1b-kpath-partial-naive'
-  'JesseLiu/llama32-1b-pagerank-partial-naive'
+  'JesseLiu/llama32-3b-pagerank-partial-baseline'
+  'JesseLiu/llama32-3b-kpath-partial-baseline'
+  'JesseLiu/llama32-3b-kpath-partial-naive'
+  'JesseLiu/llama32-3b-pagerank-partial-naive'
 )
+# MODELS=(
+#   'JesseLiu/llama32-1b-pagerank-partial-baseline'
+#   'JesseLiu/llama32-1b-kpath-partial-baseline'
+#   'JesseLiu/llama32-1b-kpath-partial-naive'
+#   'JesseLiu/llama32-1b-pagerank-partial-naive'
+# )
 
 # ────────────────────────────────────────────────────────────────
 # 3)  Helper that launches ONE model on the requested GPU
@@ -112,8 +112,8 @@ export BASE_DIR DATA_ROOT RESULTS_DIR LOGS_DIR MODELS_DIR            \
 # ────────────────────────────────────────────────────────────────
 # 4)  Fire off all eight jobs in the background, each on one GPU
 # ────────────────────────────────────────────────────────────────
-# GPU_IDS=(4 5 6 7)   
-GPU_IDS=(0 1 2 3)   
+GPU_IDS=(4 5 6 7)   
+# GPU_IDS=(0 1 2 3)   
 pids=()
 for idx in "${!MODELS[@]}"; do
   train_one "${MODELS[$idx]}" "${GPU_IDS[$idx]}" &         # idx ∈ 0‑7 doubles as GPU id
