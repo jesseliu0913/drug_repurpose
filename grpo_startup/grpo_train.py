@@ -1,6 +1,7 @@
 from __future__ import annotations
 import argparse, json, os, os.path as osp, re
 import pandas as pd
+import time
 from typing import List, Optional
 from datasets import Dataset
 from huggingface_hub import hf_hub_download
@@ -139,6 +140,9 @@ train_ds, eval_ds = Dataset.from_dict(
     {"prompt": prompts, "answer": answers_gt}
 ).train_test_split(0.1, seed=42).values()
 
+train_ds = train_ds.shuffle(seed=42)
+eval_ds  = eval_ds.shuffle(seed=42)
+
 # ─────────────────────────────────────────────────────────────────────────────
 # tokenizer
 # ─────────────────────────────────────────────────────────────────────────────
@@ -220,7 +224,7 @@ cfg = GRPOConfig(
     logging_steps=20,
     lr_scheduler_type="cosine",
     report_to=["wandb"],               
-    run_name=f"grpo-drug-repurpose-{args.model_name}",
+    run_name=f"grpo-drug-repurpose-{args.model_name}-{time.strftime('%Y%m%d-%H%M%S')}",
 )
 
 trainer = GRPOTrainer(

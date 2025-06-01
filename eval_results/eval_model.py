@@ -17,6 +17,7 @@ parser = argparse.ArgumentParser(description="Baseline Experiments")
 parser.add_argument("--model_name", type=str, help="Model Name")
 parser.add_argument("--adapter_name", type=str, default="", help="Adapter Name")
 parser.add_argument("--output_path", type=str, help="Input output path")
+parser.add_argument("--input_file", type=str, default="../split_data/data_analysis/test_data_new.csv", help="Input file path")
 parser.add_argument("--prompt_type", type=str, help="Input the Prompt Type (raw, cot, phenotype, gene...)")
 parser.add_argument("--shuffle_num", type=int, help="For one question, shufflue x times")
 args = parser.parse_args()
@@ -91,9 +92,9 @@ os.makedirs(args.output_path, exist_ok=True)
 prompt_type = args.prompt_type
 file_path = f"{args.output_path}/{prompt_type}.jsonl"
 
-test_data = pd.read_csv("../split_data/data_analysis/test_data_new.csv")
+test_data = pd.read_csv(args.input_file)
 node_data = pd.read_csv("../PrimeKG/nodes.csv")
-
+print(f"Test file:{args.input_file}")
 existing_pairs = set()
 if os.path.exists(file_path):
     with jsonlines.open(file_path, "r") as f_read:
@@ -105,25 +106,30 @@ with jsonlines.open(file_path, "a") as f_write:
         drug_name = row.drug_name
         disease_name = row.disease_name
         disease_index = row.disease_index
-        relation = row.relation
+        relation = row.relation if "relation" in row else row.original_relation
+        gene = []
+        phenotype = []
+
         if (drug_name, disease_name) in existing_pairs:
             print(f"Skipping {drug_name} - {disease_name}, already processed.")
             continue
-        related_phenotypes = ast.literal_eval(row.related_phenotypes)
-        related_proteins = ast.literal_eval(row.related_proteins)
-        phenotype = []
-        for pheno_index in related_phenotypes:
-            node_name = node_data.loc[pheno_index, 'node_name']
-            phenotype.append(node_name)
+        if "related_phenotypes" in row:  
+            related_phenotypes = ast.literal_eval(row.related_phenotypes)
+            for pheno_index in related_phenotypes:
+                node_name = node_data.loc[pheno_index, 'node_name']
+                phenotype.append(node_name)
 
-        gene = []
-        for gene_index in related_proteins:
-            node_name = node_data.loc[gene_index, 'node_name']
-            gene.append(node_name)
+            phenotype = phenotype[:] if len(phenotype) < 10 else phenotype[:10]
+
+        if "related_proteins" in row:  
+            related_proteins = ast.literal_eval(row.related_proteins)
+            for gene_index in related_proteins:
+                node_name = node_data.loc[gene_index, 'node_name']
+                gene.append(node_name)
+
+            gene = gene[:] if len(gene) < 10 else gene[:10]
         
-        phenotype = phenotype[:] if len(phenotype) < 10 else phenotype[:10]
-        gene = gene[:] if len(gene) < 10 else gene[:10]
-
+        
         if prompt_type == "phenotype":
             prefix = f"{disease_name} have several phenotypes like: {phenotype}"
             question = f"{prefix}\nIs {disease_name} an indication for {drug_name}?"
@@ -160,7 +166,7 @@ with jsonlines.open(file_path, "a") as f_write:
             answer = tokenizer.decode(output[0], skip_special_tokens=True)
             answer = answer.replace(input_text, "").strip()
 
-            line_dict = {"drug_name": drug_name, "disease_name": disease_name, "answer": answer, "prompt": input_text, "label": row.relation}
+            line_dict = {"drug_name": drug_name, "disease_name": disease_name, "answer": answer, "prompt": input_text, "label": relation}
             f_write.write(line_dict)
         else:
             answer_lst = []
@@ -170,5 +176,5 @@ with jsonlines.open(file_path, "a") as f_write:
                 answer = answer.replace(input_text, "").strip()
                 answer_lst.append(answer)
                 
-            line_dict = {"drug_name": drug_name, "disease_name": disease_name, "answer": answer_lst, "prompt": input_text, "label": row.relation}
+            line_dict = {"drug_name": drug_name, "disease_name": disease_name, "answer": answer_lst, "prompt": input_text, "label": relation}
             f_write.write(line_dict)
