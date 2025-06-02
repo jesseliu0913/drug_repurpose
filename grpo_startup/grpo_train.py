@@ -140,8 +140,7 @@ train_ds, eval_ds = Dataset.from_dict(
     {"prompt": prompts, "answer": answers_gt}
 ).train_test_split(0.1, seed=42).values()
 
-train_ds = train_ds.shuffle(seed=42)
-eval_ds  = eval_ds.shuffle(seed=42)
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # tokenizer
