@@ -17,6 +17,7 @@ parser = argparse.ArgumentParser(description="Baseline Experiments")
 parser.add_argument("--model_name", type=str, help="Model Name")
 parser.add_argument("--adapter_name", type=str, default="", help="Adapter Name")
 parser.add_argument("--output_path", type=str, help="Input output path")
+parser.add_argument("--eval_type", type=str, help="Input Eval Type")
 parser.add_argument("--input_file", type=str, default="../split_data/data_analysis/test_data_new.csv", help="Input file path")
 parser.add_argument("--prompt_type", type=str, help="Input the Prompt Type (raw, cot, phenotype, gene...)")
 parser.add_argument("--shuffle_num", type=int, help="For one question, shufflue x times")
@@ -92,7 +93,14 @@ os.makedirs(args.output_path, exist_ok=True)
 prompt_type = args.prompt_type
 file_path = f"{args.output_path}/{prompt_type}.jsonl"
 
-test_data = pd.read_csv(args.input_file)
+if args.eval_type == "test":
+    test_file = "../split_data/data_analysis/test_data_new.csv"
+elif args.eval_type == "train":
+    test_file = args.input_file
+else:
+    raise ValueError("Invalid eval_type. Choose 'test' or 'train'.")
+
+test_data = pd.read_csv(test_file)
 node_data = pd.read_csv("../PrimeKG/nodes.csv")
 print(f"Test file:{args.input_file}")
 existing_pairs = set()

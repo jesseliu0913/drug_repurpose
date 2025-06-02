@@ -67,6 +67,7 @@ for PARENT in "${PARENTS[@]}"; do
       --model_name "$BASE_MODEL" \
       --adapter_name "$ADAPTER" \
       --output_path "$OUTDIR" \
+      --eval_type "test"\
       --input_file "$INPUT_FILE" \
       --prompt_type "raw" \
       --shuffle_num 1 \
