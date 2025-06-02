@@ -176,4 +176,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# python cal_results.py  --input_dir ./results_v4 --ground_truth ./data_analysis/test_data_new.csv
+# python cal_results.py  --input_dir ./results_train --ground_truth ./data_analysis/test_data_new.csv

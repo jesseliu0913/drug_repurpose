@@ -3,7 +3,7 @@
 
 BASE_RESULTS="/playpen/jesse/drug_repurpose/grpo_startup/results"
 # PARENTS=(20250530_1704 20250530_1705)
-PARENTS = (20250601_0133)
+PARENTS=(20250601_0133)
 GPUS=(0 1 4 5)
 OUTPUT_ROOT="/playpen/jesse/drug_repurpose/eval_results/results_train"
 LOG_ROOT="/playpen/jesse/drug_repurpose/eval_results/log"
