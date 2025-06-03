@@ -11,9 +11,11 @@ from trl import GRPOConfig, GRPOTrainer
 from dotenv import load_dotenv
 import os
 import sys, wandb, pathlib
+from dataclasses import dataclass, field
 print("python:", sys.executable)
 print("wandb version:", wandb.__version__)
 print("wandb location:", pathlib.Path(wandb.__file__).parent)
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # constants & env
@@ -44,6 +46,7 @@ parser.add_argument("--use_lora", action="store_true")
 parser.add_argument("--lora_r", type=int, default=16)
 parser.add_argument("--lora_alpha", type=int, default=32)
 parser.add_argument("--lora_dropout", type=float, default=0.05)
+parser.add_argument("--clip_eps", type=float, default=0.2, help="ε_c for reward / ratio clipping in GRPO")
 args = parser.parse_args()
 os.makedirs(args.output_dir, exist_ok=True)
 
@@ -150,18 +153,21 @@ tok_raw.pad_token = tok_raw.eos_token
 tok_raw.padding_side = "left"
 # tok_raw.add_special_tokens({"additional_special_tokens": SPECIAL_TOKENS})
 
-model_name = get_model_name(args.model_name)
-tok = TokenDecoderWrapper(tok_raw, model_name)
+model_family = get_model_name(args.model_name)
+tok = TokenDecoderWrapper(tok_raw, model_family)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # model
 # ─────────────────────────────────────────────────────────────────────────────
 if is_lora_repo(args.model_name):
     model = load_base_and_merge(args.model_name, tok_raw)
+    adapter_name = args.model_name 
 else:
     model = AutoModelForCausalLM.from_pretrained(
         args.model_name, device_map="auto", token=HF_TOKEN)
     model.resize_token_embeddings(len(tok_raw))
+    adapter_name = None
+
 
 if args.use_lora:
     lora_cfg = LoraConfig(
@@ -170,6 +176,10 @@ if args.use_lora:
         target_modules=get_lora_targets(args.model_name)
     )
     model = get_peft_model(model, lora_cfg)
+
+import copy
+ref_model = copy.deepcopy(model)
+ref_model.eval()
 
 # ─────────────────────────────────────────────────────────────────────────────
 # reward helpers
@@ -201,6 +211,125 @@ def task_reward(prompts, completions, answer, **kw):
             out.append(1.0 if gt == pred else 0.0)
     return out
 
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Build a descriptive run_name including hyperparameters, model, adapter, etc.
+# ─────────────────────────────────────────────────────────────────────────────
+timestamp = time.strftime("%Y%m%d-%H%M%S", time.localtime())
+lora_flag = "lora" if args.use_lora else "nolora"
+adapter_flag = adapter_name.replace("/", "_") if adapter_name else "no_adapter"
+
+run_name = (
+    f"grpo-drug-repurpose"
+    f"-model_{args.model_name.replace('/', '_')}"
+    f"-{lora_flag}"
+    f"-adapter_{adapter_flag}"
+    f"-bs{args.per_device_train_batch_size}"
+    f"-acc{args.gradient_accumulation_steps}"
+    f"-iters{args.num_iterations}"
+    f"-gen{args.num_generations}"
+    f"-lr{args.learning_rate}"
+    f"-r{args.lora_r}"
+    f"-alpha{args.lora_alpha}"
+    f"-dr{args.lora_dropout}"
+    f"-{timestamp}"
+)
+
+# Initialize W&B run
+wandb.init(
+    project="drug_repurposing",  
+    name=run_name,
+    config={
+        "model_name": args.model_name,
+        "use_lora": args.use_lora,
+        "adapter_name": adapter_name,
+        "per_device_train_batch_size": args.per_device_train_batch_size,
+        "gradient_accumulation_steps": args.gradient_accumulation_steps,
+        "num_iterations": args.num_iterations,
+        "learning_rate": args.learning_rate,
+        "num_generations": args.num_generations,
+        "lora_r": args.lora_r,
+        "lora_alpha": args.lora_alpha,
+        "lora_dropout": args.lora_dropout,
+    },
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Clipped‑surrogate extension
+# ─────────────────────────────────────────────────────────────────────────────
+from dataclasses import dataclass, field
+import torch
+import torch.nn.functional as F
+
+@dataclass
+class GRPOClippedConfig(GRPOConfig):
+    clip_eps: float = field(
+        default=0.2,
+        metadata={"help": "Clip range for r_t in the E‑GRPO objective"}
+    )
+
+class GRPOClippedTrainer(GRPOTrainer):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.clip_eps: float = self.args.clip_eps
+
+    def _compute_policy_loss(
+        self,
+        logprobs: torch.Tensor,            # (B, T)
+        logprobs_old: torch.Tensor,        # (B, T)
+        advantages: torch.Tensor,          # (B, T)
+    ) -> torch.Tensor:
+        ratio = (logprobs - logprobs_old).exp()          # r_t
+        ratio_clipped = torch.clamp(ratio,
+                                    1.0 - self.clip_eps,
+                                    1.0 + self.clip_eps)
+        surrogate = torch.minimum(ratio * advantages,
+                                  ratio_clipped * advantages)
+        return -surrogate.mean()   
+    
+import torch
+import torch.nn.functional as F
+from contextlib import contextmanager
+
+@contextmanager
+def eval_mode(module):
+    was_training = module.training
+    module.eval()
+    try:
+        yield
+    finally:
+        module.train(was_training)
+
+def build_kl_reward(model, ref_model, tokenizer, beta=0.05):
+    def kl_reward(prompts, completions, answer, **kw):
+        rewards = []
+        for gt, comp, prompt in zip(answer, completions, prompts):
+            pred = extract_pred(comp)
+            if gt is None or pred is None:
+                rewards.append(None)         
+                continue
+
+            r = 1.0 if gt == pred else 0.0
+
+            inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+
+            with eval_mode(model), torch.no_grad():
+                logits_model = model(**inputs).logits
+            with torch.no_grad():
+                logits_ref = ref_model(**inputs).logits
+
+            logp_m = F.log_softmax(logits_model[:, -1], dim=-1)
+            prob_r = F.softmax(logits_ref[:, -1], dim=-1)
+            kl = F.kl_div(logp_m, prob_r, reduction="batchmean").item()
+
+            rewards.append(r - beta * kl)
+        return rewards
+
+    kl_reward.__name__ = f"kl_reward_beta_{beta}"
+    return kl_reward
+
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # GRPO trainer
 # ─────────────────────────────────────────────────────────────────────────────
@@ -213,6 +342,7 @@ cfg = GRPOConfig(
     gradient_accumulation_steps=args.gradient_accumulation_steps,
     learning_rate=args.learning_rate,
     max_prompt_length=256,
+    clip_eps=args.clip_eps,
     max_completion_length=128,
     temperature=0.8,
     top_k=50,
@@ -223,16 +353,20 @@ cfg = GRPOConfig(
     logging_steps=20,
     lr_scheduler_type="cosine",
     report_to=["wandb"],               
-    run_name=f"grpo-drug-repurpose-{args.model_name}-{time.strftime('%Y%m%d-%H%M%S')}",
+    run_name=run_name,
 )
+from functools import partial
 
-trainer = GRPOTrainer(
+kl_reward_fn = build_kl_reward(model, ref_model, tok_raw, beta=0.05)
+
+trainer = GRPOClippedTrainer(
     model=model,
     processing_class=tok,
     args=cfg,
     train_dataset=train_ds,
     eval_dataset=eval_ds,
-    reward_funcs=[task_reward],
+    # reward_funcs=[task_reward],
+    reward_funcs=[kl_reward_fn],
 )
 
 trainer.train()
@@ -245,3 +379,5 @@ model.save_pretrained(model_path)
 tok_raw.save_pretrained(model_path)
 json.dump(vars(args), open(osp.join(args.output_dir, "training_config.json"), "w"), indent=2)
 print(f"Done. Saved to {model_path}")
+
+wandb.finish()
