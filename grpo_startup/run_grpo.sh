@@ -18,11 +18,11 @@ mkdir -p "$LOGS_DIR" "$MODELS_DIR"
 # ────────────────────────────────────────────────────────────────
 # 2)  Hyper‑parameters (same for every job)
 # ────────────────────────────────────────────────────────────────
-NUM_ITERATIONS=10
+NUM_ITERATIONS=40
 NUM_GENERATIONS=4
 BATCH_SIZE=12
 GRAD_ACCUM=4
-LEARNING_RATE=1e-4
+LEARNING_RATE=3e-5
 
 USE_LORA=true
 LORA_R=16

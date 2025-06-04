@@ -50,6 +50,58 @@ parser.add_argument("--clip_eps", type=float, default=0.2, help="ε_c for reward
 args = parser.parse_args()
 os.makedirs(args.output_dir, exist_ok=True)
 
+
+FILTERING_PATH = "/playpen/jesse/drug_repurpose/eval_results/results_v4"
+if "kpath" in args.model_name and "1b" in args.model_name:
+    correct_folder = "llama32_1b_kpath_partial_baseline/raw.jsonl" 
+elif "pagerank" in args.model_name and "1b" in args.model_name:
+    correct_folder = "llama32_1b_pagerank_partial_baseline/raw.jsonl" 
+elif "kpath" in args.model_name and "3b" in args.model_name:
+    correct_folder = "llama32_3b_kpath_partial_baseline/raw.jsonl" 
+elif "pagerank" in args.model_name and "3b" in args.model_name:
+    correct_folder = "llama32_3b_pagerank_partial_baseline/raw.jsonl" 
+
+filter_file = osp.join(FILTERING_PATH, correct_folder) 
+
+
+def read_filtering_results(filter_file):
+    """Read the filtering results from the specified folder."""
+    with open(filter_file, "r") as f:
+        lines = f.readlines()
+    results = [json.loads(line) for line in lines]
+    return results
+
+def extract_answer(answer):
+    if "YES" in answer.upper():
+        return "indication"
+    elif "NO" in answer.upper():
+        return "contraindication"
+    else:
+        return None
+
+
+prompts = []
+answers_gt = []
+def filter_results(filter_file):
+    results = read_filtering_results(filter_file)
+    for line in results:
+        disease_name = line.get("disease_name")
+        drug_name = line.get("drug_name")
+        answer = extract_answer(line.get("answer"))
+        label = line.get("label")
+        gt = "YES" if label == "indication" else "NO"
+
+        if answer == label:
+            line_prompt = f"Is {disease_name} an indication for {drug_name}?"
+            prompts.append(line_prompt)
+            answers_gt.append(gt)
+ 
+    return prompts, answers_gt
+
+prompts, answers_gt = filter_results(filter_file)
+
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # helpers
 # ─────────────────────────────────────────────────────────────────────────────
@@ -129,15 +181,15 @@ def get_lora_targets(model_name: str) -> List[str]:
 # ─────────────────────────────────────────────────────────────────────────────
 # data  — prompt + ground-truth answer
 # ─────────────────────────────────────────────────────────────────────────────
-df = pd.read_csv(args.train_csv).iloc[:2000]
+# df = pd.read_csv(args.train_csv).iloc[:2000]
 
-raw_prefixes = df["prefix"].tolist()
-prompts      = [extract_question(t) for t in raw_prefixes]
+# raw_prefixes = df["prefix"].tolist()
+# prompts      = [extract_question(t) for t in raw_prefixes]
 
-answers_gt = [
-    (m.group(1).upper() if (m := ANS_TAG_RE.search(t)) else None)
-    for t in raw_prefixes
-]
+# answers_gt = [
+#     (m.group(1).upper() if (m := ANS_TAG_RE.search(t)) else None)
+#     for t in raw_prefixes
+# ]
 
 train_ds, eval_ds = Dataset.from_dict(
     {"prompt": prompts, "answer": answers_gt}
@@ -333,7 +385,7 @@ def build_kl_reward(model, ref_model, tokenizer, beta=0.05):
 # ─────────────────────────────────────────────────────────────────────────────
 # GRPO trainer
 # ─────────────────────────────────────────────────────────────────────────────
-cfg = GRPOConfig(
+cfg = GRPOClippedConfig(
     output_dir=args.output_dir,
     save_strategy="no",
     num_iterations=args.num_iterations,
