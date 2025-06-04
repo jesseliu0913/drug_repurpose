@@ -3,9 +3,9 @@
 
 BASE_RESULTS="/playpen/jesse/drug_repurpose/grpo_startup/results"
 # PARENTS=(20250530_1704 20250530_1705)
-PARENTS=(20250602_1652)
+PARENTS=(20250603_0146)
 GPUS=(4 5 0 1)
-OUTPUT_ROOT="/playpen/jesse/drug_repurpose/eval_results/results_train"
+OUTPUT_ROOT="/playpen/jesse/drug_repurpose/eval_results/results"
 LOG_ROOT="/playpen/jesse/drug_repurpose/eval_results/log"
 
 mkdir -p "$OUTPUT_ROOT" "$LOG_ROOT"
