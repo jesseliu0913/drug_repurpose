@@ -43,11 +43,15 @@ if args.tunning_type == "baseline":
         train_data = pd.read_csv("../grpo_part_path/k_path/train_grpo_baseline.csv")
     elif args.training_data == 'pagerank':
         train_data = pd.read_csv("../grpo_part_path/page_rank/train_grpo_baseline.csv")
+    elif args.training_data == 'balance_path':
+        train_data = pd.read_csv("../grpo_part_path/path_filter/train_grpo_baseline.csv")
 elif args.tunning_type == "naive":
     if args.training_data == 'kpath':
         train_data = pd.read_csv("../grpo_part_path/k_path/train_grpo_naive.csv")
     elif args.training_data == 'pagerank':
         train_data = pd.read_csv("../grpo_part_path/page_rank/train_grpo_naive.csv")
+    elif args.training_data == 'balance_path':
+        train_data = pd.read_csv("../grpo_part_path/path_filter/train_grpo_naive.csv")
 else:
     print("Tuning Type Wrong")
 
