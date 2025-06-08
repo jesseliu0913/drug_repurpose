@@ -17,7 +17,7 @@ parser = argparse.ArgumentParser(description="Baseline Experiments")
 parser.add_argument("--model_name", type=str, help="Model Name")
 parser.add_argument("--adapter_name", type=str, default="", help="Adapter Name")
 parser.add_argument("--output_path", type=str, help="Input output path")
-parser.add_argument("--eval_type", type=str, help="Input Eval Type")
+parser.add_argument("--eval_type", type=str, default="test", help="Input Eval Type")
 parser.add_argument("--input_file", type=str, default="../split_data/data_analysis/test_data_new.csv", help="Input file path")
 parser.add_argument("--prompt_type", type=str, help="Input the Prompt Type (raw, cot, phenotype, gene...)")
 parser.add_argument("--shuffle_num", type=int, help="For one question, shufflue x times")
@@ -76,13 +76,13 @@ if adapter_name:
     base_name = peft_cfg.base_model_name_or_path or model_name
     tokenizer = AutoTokenizer.from_pretrained(adapter_name, use_auth_token=token)
 
-    base_model = AutoModelForCausalLM.from_pretrained(base_name, device_map="auto", torch_dtype="auto", use_auth_token=token)
+    base_model = AutoModelForCausalLM.from_pretrained(base_name, torch_dtype="auto", use_auth_token=token)
     base_model.resize_token_embeddings(len(tokenizer))
 
     model = PeftModel.from_pretrained(base_model, adapter_name, torch_dtype="auto")
 else:
     tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=token)
-    model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype="auto", device_map="auto", use_auth_token=token)
+    model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype="auto", use_auth_token=token)
 
 if tokenizer.pad_token_id is None:
     tokenizer.pad_token_id = tokenizer.eos_token_id
