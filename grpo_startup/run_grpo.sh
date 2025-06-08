@@ -18,11 +18,11 @@ mkdir -p "$LOGS_DIR" "$MODELS_DIR"
 # ────────────────────────────────────────────────────────────────
 # 2)  Hyper‑parameters (same for every job)
 # ────────────────────────────────────────────────────────────────
-NUM_ITERATIONS=40
-NUM_GENERATIONS=4
+NUM_ITERATIONS=1
+NUM_GENERATIONS=8
 BATCH_SIZE=12
 GRAD_ACCUM=4
-LEARNING_RATE=3e-5
+LEARNING_RATE=1e-4
 
 USE_LORA=true
 LORA_R=16
@@ -113,7 +113,7 @@ export BASE_DIR DATA_ROOT RESULTS_DIR LOGS_DIR MODELS_DIR            \
 # 4)  Fire off all eight jobs in the background, each on one GPU
 # ────────────────────────────────────────────────────────────────
 # GPU_IDS=(4 5 6 7)   
-GPU_IDS=(0 1 4 5)   
+GPU_IDS=(2 3 6 7)   
 pids=()
 for idx in "${!MODELS[@]}"; do
   train_one "${MODELS[$idx]}" "${GPU_IDS[$idx]}" &         # idx ∈ 0‑7 doubles as GPU id
