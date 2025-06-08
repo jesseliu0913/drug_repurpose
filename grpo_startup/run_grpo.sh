@@ -18,11 +18,11 @@ mkdir -p "$LOGS_DIR" "$MODELS_DIR"
 # ────────────────────────────────────────────────────────────────
 # 2)  Hyper‑parameters (same for every job)
 # ────────────────────────────────────────────────────────────────
-NUM_ITERATIONS=1
-NUM_GENERATIONS=8
+NUM_ITERATIONS=40
+NUM_GENERATIONS=4
 BATCH_SIZE=12
 GRAD_ACCUM=4
-LEARNING_RATE=1e-4
+LEARNING_RATE=1e-5
 
 USE_LORA=true
 LORA_R=16
@@ -31,11 +31,20 @@ LORA_DROPOUT=0.05
 
 # Models stay in a fixed order so we can map them to GPU 0‑7
 MODELS=(
-  'JesseLiu/llama32-3b-pagerank-partial-baseline'
-  'JesseLiu/llama32-3b-kpath-partial-baseline'
-  'JesseLiu/llama32-1b-pagerank-partial-baseline'
-  'JesseLiu/llama32-1b-kpath-partial-baseline'
+  # 'JesseLiu/llama32-1b-base-pagerank-partial-naive',
+  # 'JesseLiu/llama32-3b-base-pagerank-partial-naive',
+  'JesseLiu/llama32-3b-base-kpath-partial-baseline',
+  'JesseLiu/llama32-3b-base-pagerank-partial-baseline',
+  'JesseLiu/llama32-1b-base-kpath-partial-baseline',
+  'JesseLiu/llama32-1b-base-pagerank-partial-baseline',
+
 )
+# MODELS=(
+#   'JesseLiu/llama32-3b-balancepath-partial-baseline'
+#   'JesseLiu/llama32-3b-balancepath-partial-naive'
+#   'JesseLiu/llama32-1b-balancepath-partial-baseline'
+#   'JesseLiu/llama32-1b-balancepath-partial-naive'
+# )
 # MODELS=(
 #   'JesseLiu/llama32-1b-pagerank-partial-baseline'
 #   'JesseLiu/llama32-1b-kpath-partial-baseline'
@@ -63,7 +72,9 @@ train_one () {
   fi
 
   if [[ "$model_name" == *kpath* ]]; then
-      csv_prefix="k_path"
+    csv_prefix="k_path"
+  elif [[ "$model_name" == *balancepath* ]]; then
+      csv_prefix="balance_path"
   else
       csv_prefix="page_rank"
   fi
@@ -112,8 +123,8 @@ export BASE_DIR DATA_ROOT RESULTS_DIR LOGS_DIR MODELS_DIR            \
 # ────────────────────────────────────────────────────────────────
 # 4)  Fire off all eight jobs in the background, each on one GPU
 # ────────────────────────────────────────────────────────────────
-# GPU_IDS=(4 5 6 7)   
-GPU_IDS=(2 3 6 7)   
+GPU_IDS=(4 5 6 7)   
+# GPU_IDS=(1 4 6)   
 pids=()
 for idx in "${!MODELS[@]}"; do
   train_one "${MODELS[$idx]}" "${GPU_IDS[$idx]}" &         # idx ∈ 0‑7 doubles as GPU id
