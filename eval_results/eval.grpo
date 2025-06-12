@@ -1,0 +1,20 @@
+nohup: ignoring input
+
+===== DEBUG: Listing '*-lora' under /playpen/jesse/drug_repurpose/grpo_startup/results/20250611_2308/models =====
+/playpen/jesse/drug_repurpose/grpo_startup/results/20250611_2308/models/qwen25-3b-pagerank-naive-grpo-lora
+=====================================================
+
+---------------------------------------------
+Dispatching job #1
+  LoRA folder:   /playpen/jesse/drug_repurpose/grpo_startup/results/20250611_2308/models/qwen25-3b-pagerank-naive-grpo-lora
+  Final model:   /playpen/jesse/drug_repurpose/grpo_startup/results/20250611_2308/models/qwen25-3b-pagerank-naive-grpo-lora/checkpoint-10
+  Base model:    meta-llama/Llama-3.2-3B-Instruct
+  Output dir:    /playpen/jesse/drug_repurpose/eval_results/results/20250611_2308_qwen25-3b-pagerank-naive-grpo-lora
+  Log file:      /playpen/jesse/drug_repurpose/eval_results/log/20250611_2308_qwen25-3b-pagerank-naive-grpo-lora.log
+  Using GPU:     5
+---------------------------------------------
+
+
+Dispatched 1 jobs across GPUs: 5
+Logs → /playpen/jesse/drug_repurpose/eval_results/log/
+Outputs → /playpen/jesse/drug_repurpose/eval_results/results/

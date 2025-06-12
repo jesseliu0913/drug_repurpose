@@ -29,6 +29,12 @@ COMPLETION_RE  = re.compile(r"\b(YES|NO)\b", re.I)
 load_dotenv()
 HF_TOKEN = os.getenv("HF_API_TOKEN")
 
+FIRST_YES_NO_RE = re.compile(r"\b(YES|NO)\b", re.IGNORECASE)
+
+def extract_pred(completion: str) -> Optional[str]:
+    match = FIRST_YES_NO_RE.search(completion)
+    return match.group(1).upper() if match else None
+
 # ─────────────────────────────────────────────────────────────────────────────
 # CLI
 # ─────────────────────────────────────────────────────────────────────────────
@@ -51,15 +57,15 @@ args = parser.parse_args()
 os.makedirs(args.output_dir, exist_ok=True)
 
 
-FILTERING_PATH = "/playpen/jesse/drug_repurpose/eval_results/results_v4"
-if "kpath" in args.model_name and "1b" in args.model_name:
-    correct_folder = "llama32_1b_kpath_partial_baseline/raw.jsonl" 
-elif "pagerank" in args.model_name and "1b" in args.model_name:
-    correct_folder = "llama32_1b_pagerank_partial_baseline/raw.jsonl" 
-elif "kpath" in args.model_name and "3b" in args.model_name:
-    correct_folder = "llama32_3b_kpath_partial_baseline/raw.jsonl" 
-elif "pagerank" in args.model_name and "3b" in args.model_name:
-    correct_folder = "llama32_3b_pagerank_partial_baseline/raw.jsonl" 
+FILTERING_PATH = "/playpen/jesse/drug_repurpose/eval_results/results/"
+if "kpath" in args.model_name and "baseline" in args.model_name:
+    correct_folder = "qwen25_3b_kpath_baseline/raw.jsonl" 
+elif "pagerank" in args.model_name and "baseline" in args.model_name:
+    correct_folder = "qwen25_3b_pagerank_baseline/raw.jsonl" 
+elif "kpath" in args.model_name and "naive" in args.model_name:
+    correct_folder = "qwen25_3b_kpath_naive/raw.jsonl" 
+elif "pagerank" in args.model_name and "naive" in args.model_name:
+    correct_folder = "qwen25_3b_pagerank_naive/raw.jsonl" 
 
 filter_file = osp.join(FILTERING_PATH, correct_folder) 
 
@@ -72,12 +78,7 @@ def read_filtering_results(filter_file):
     return results
 
 def extract_answer(answer):
-    if "YES" in answer.upper():
-        return "indication"
-    elif "NO" in answer.upper():
-        return "contraindication"
-    else:
-        return None
+    return extract_pred(answer) if answer else None
 
 
 prompts = []
@@ -181,15 +182,15 @@ def get_lora_targets(model_name: str) -> List[str]:
 # ─────────────────────────────────────────────────────────────────────────────
 # data  — prompt + ground-truth answer
 # ─────────────────────────────────────────────────────────────────────────────
-# df = pd.read_csv(args.train_csv).iloc[:2000]
+df = pd.read_csv(args.train_csv).iloc[:2000]
 
-# raw_prefixes = df["prefix"].tolist()
-# prompts      = [extract_question(t) for t in raw_prefixes]
+raw_prefixes = df["prefix"].tolist()
+prompts      = [extract_question(t) for t in raw_prefixes]
 
-# answers_gt = [
-#     (m.group(1).upper() if (m := ANS_TAG_RE.search(t)) else None)
-#     for t in raw_prefixes
-# ]
+answers_gt = [
+    (m.group(1).upper() if (m := ANS_TAG_RE.search(t)) else None)
+    for t in raw_prefixes
+]
 
 train_ds, eval_ds = Dataset.from_dict(
     {"prompt": prompts, "answer": answers_gt}
@@ -236,16 +237,18 @@ ref_model.eval()
 # ─────────────────────────────────────────────────────────────────────────────
 # reward helpers
 # ─────────────────────────────────────────────────────────────────────────────
-def _extract(text: str, regexes) -> Optional[str]:
-    for rgx in regexes:
-        if (m := rgx.search(text)):
-            return m.group(1).upper()
-    return None
+# def _extract(text: str, regexes) -> Optional[str]:
+#     for rgx in regexes:
+#         if (m := rgx.search(text)):
+#             return m.group(1).upper()
+#     return None
 
 
-def extract_pred(completion: str) -> Optional[str]:
-    """YES/NO prediction from completion."""
-    return _extract(completion, [ANS_TAG_RE, COMPLETION_RE])
+# def extract_pred(completion: str) -> Optional[str]:
+#     """YES/NO prediction from completion."""
+#     return _extract(completion, [ANS_TAG_RE, COMPLETION_RE])
+
+
 
 # ---------------- rewards ----------------
 def format_reward(prompts, completions, **kw):
@@ -362,8 +365,8 @@ def build_kl_reward(model, ref_model, tokenizer, beta=0.05):
                 continue
 
             r = 1.0 if gt == pred else 0.0
-
-            inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+            full_text = f"{prompt} {comp}"
+            inputs = tokenizer(full_text, return_tensors="pt").to(model.device)
 
             with eval_mode(model), torch.no_grad():
                 logits_model = model(**inputs).logits
@@ -387,7 +390,8 @@ def build_kl_reward(model, ref_model, tokenizer, beta=0.05):
 # ─────────────────────────────────────────────────────────────────────────────
 cfg = GRPOClippedConfig(
     output_dir=args.output_dir,
-    save_strategy="no",
+    save_strategy="steps",
+    save_steps=10,
     num_iterations=args.num_iterations,
     num_generations=args.num_generations,
     per_device_train_batch_size=args.per_device_train_batch_size,

@@ -170,7 +170,7 @@ with jsonlines.open(file_path, "a") as f_write:
             inputs = tokenizer(input_text, return_tensors="pt").to(device)
         
         if args.shuffle_num == 1:
-            output = model.generate(**inputs, max_new_tokens=1000, do_sample=True, temperature=0.2)
+            output = model.generate(**inputs, max_new_tokens=10, do_sample=True, temperature=0.2)
             answer = tokenizer.decode(output[0], skip_special_tokens=True)
             answer = answer.replace(input_text, "").strip()
 
