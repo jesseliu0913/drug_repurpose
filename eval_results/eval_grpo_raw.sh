@@ -2,9 +2,9 @@
 
 
 BASE_RESULTS="/playpen/jesse/drug_repurpose/grpo_startup/results"
-# PARENTS=(20250530_1704 20250530_1705)
-PARENTS=(20250606_2253)
-GPUS=(2 3 0 1)
+
+PARENTS=(20250611_2308)
+GPUS=(5)
 OUTPUT_ROOT="/playpen/jesse/drug_repurpose/eval_results/results"
 LOG_ROOT="/playpen/jesse/drug_repurpose/eval_results/log"
 
@@ -32,7 +32,7 @@ for PARENT in "${PARENTS[@]}"; do
     fi
 
     LORA_NAME=$(basename "$LORA_BASE")
-    LORA_FINAL="$LORA_BASE/final_model"
+    LORA_FINAL="$LORA_BASE/checkpoint-10"
 
     if [[ "$LORA_NAME" == *"1b"* ]]; then
       BASE_MODEL="meta-llama/Llama-3.2-1B-Instruct"

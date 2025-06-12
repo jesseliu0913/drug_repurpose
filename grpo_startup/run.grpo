@@ -1,6 +1,3 @@
 nohup: ignoring input
-==> [GPU 6] Training llama32-1b-pagerank-partial-baseline with /playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_baseline.csv
-==> [GPU 7] Training llama32-1b-kpath-partial-baseline with /playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_baseline.csv
-==> [GPU 2] Training llama32-3b-pagerank-partial-baseline with /playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_baseline.csv
-==> [GPU 3] Training llama32-3b-kpath-partial-baseline with /playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_baseline.csv
+==> [GPU 4] Training qwen25-3b-pagerank-naive with /playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_naive.csv
 ✅  All eight trainings finished.
