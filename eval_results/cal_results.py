@@ -10,7 +10,7 @@ import nltk
 from nltk.tokenize import word_tokenize
 
 def extract_yes_no(answer):
-    # answer = answer.split(" ")[0]
+    answer = answer.split("\n")[0]
     answer = answer.upper()
     if "$YES$" in answer:
         return "YES"

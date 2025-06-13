@@ -3,8 +3,8 @@
 
 BASE_RESULTS="/playpen/jesse/drug_repurpose/grpo_startup/results"
 
-PARENTS=(20250611_2308)
-GPUS=(5)
+PARENTS=(20250610_1214)
+GPUS=(0 1 2 3)
 OUTPUT_ROOT="/playpen/jesse/drug_repurpose/eval_results/results"
 LOG_ROOT="/playpen/jesse/drug_repurpose/eval_results/log"
 
@@ -32,12 +32,17 @@ for PARENT in "${PARENTS[@]}"; do
     fi
 
     LORA_NAME=$(basename "$LORA_BASE")
-    LORA_FINAL="$LORA_BASE/checkpoint-10"
+    LORA_FINAL="$LORA_BASE/final_model"
 
-    if [[ "$LORA_NAME" == *"1b"* ]]; then
-      BASE_MODEL="meta-llama/Llama-3.2-1B-Instruct"
+    # if [[ "$LORA_NAME" == *"1b"* ]]; then
+    #   BASE_MODEL="meta-llama/Llama-3.2-1B-Instruct"
+    # else
+    #   BASE_MODEL="meta-llama/Llama-3.2-3B-Instruct"
+    # fi
+    if [[ "$LORA_NAME" == *"3b"* ]]; then
+      BASE_MODEL="Qwen/Qwen2.5-3B-Instruct"
     else
-      BASE_MODEL="meta-llama/Llama-3.2-3B-Instruct"
+      BASE_MODEL="Qwen/Qwen2.5-3B-Instruct"
     fi
 
     if [[ "$LORA_NAME" == *"kpath"* ]]; then
