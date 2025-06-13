@@ -28,6 +28,7 @@
 /grpo_startup/log/*
 /grpo_startup/results/*
 /grpo_startup/model_weights/*
+/grpo_startup/model_weights_v0/*
 /grpo_startup/wandb/*
 
 /eval_results/results_v1/*

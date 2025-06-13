@@ -18,11 +18,11 @@ mkdir -p "$LOGS_DIR" "$MODELS_DIR"
 # ────────────────────────────────────────────────────────────────
 # 2)  Hyper‑parameters (same for every job)
 # ────────────────────────────────────────────────────────────────
-NUM_ITERATIONS=10
-NUM_GENERATIONS=4
+NUM_ITERATIONS=2
+NUM_GENERATIONS=16
 BATCH_SIZE=12
 GRAD_ACCUM=4
-LEARNING_RATE=1e-5
+LEARNING_RATE=2e-5
 
 USE_LORA=true
 LORA_R=16
@@ -32,9 +32,9 @@ LORA_DROPOUT=0.05
 # Models stay in a fixed order so we can map them to GPU 0‑7
 MODELS=(
   'JesseLiu/qwen25-3b-base-pagerank-naive'
-  # 'JesseLiu/qwen25-3b-base-pagerank-baseline'
-  # 'JesseLiu/qwen25-3b-base-kpath-naive'
-  # 'JesseLiu/qwen25-3b-base-kpath-baseline'
+  'JesseLiu/qwen25-3b-base-pagerank-baseline'
+  'JesseLiu/qwen25-3b-base-kpath-naive'
+  'JesseLiu/qwen25-3b-base-kpath-baseline'
 )
 # MODELS=(
 #   'JesseLiu/llama32-3b-balancepath-partial-baseline'
@@ -120,7 +120,7 @@ export BASE_DIR DATA_ROOT RESULTS_DIR LOGS_DIR MODELS_DIR            \
 # ────────────────────────────────────────────────────────────────
 # 4)  Fire off all eight jobs in the background, each on one GPU
 # ────────────────────────────────────────────────────────────────
-GPU_IDS=(4)   
+GPU_IDS=(4 5 6 7)   
 # GPU_IDS=(1 4 6)   
 pids=()
 for idx in "${!MODELS[@]}"; do

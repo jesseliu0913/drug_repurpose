@@ -1,4 +1,4 @@
 from huggingface_hub import create_repo, upload_folder
 
-create_repo("JesseLiu/qwen25-3b-base-kpath-naive", exist_ok=True)
-upload_folder(folder_path="/playpen/jesse/drug_repurpose/grpo_startup/model_weights/qwen25-3b-base-kpath-finalnaive", path_in_repo="", repo_id="JesseLiu/qwen25-3b-base-kpath-naive")
+# create_repo("JesseLiu/qwen25-3b-base-kpath-naive", exist_ok=True)
+upload_folder(folder_path="/playpen/jesse/drug_repurpose/grpo_startup/model_weights/qwen25-3b-kpath-finalbaseline", path_in_repo="", repo_id="JesseLiu/qwen25-3b-kpath-baseline")

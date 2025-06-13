@@ -1,2 +1,5 @@
 nohup: ignoring input
 ==> [GPU 4] Training qwen25-3b-base-pagerank-naive with /playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_naive.csv
+==> [GPU 6] Training qwen25-3b-base-kpath-naive with /playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_naive.csv
+==> [GPU 5] Training qwen25-3b-base-pagerank-baseline with /playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_baseline.csv
+==> [GPU 7] Training qwen25-3b-base-kpath-baseline with /playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_baseline.csv
