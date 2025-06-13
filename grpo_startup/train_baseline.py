@@ -124,15 +124,21 @@ lora_config = LoraConfig(
         "down_proj"
     ],
 )
-
-model = AutoModelForCausalLM.from_pretrained(
-    model_name,
-    torch_dtype=torch.bfloat16,
-    token=user_token,
-    device_map="auto",
-    rope_scaling={"type": "dynamic", "factor": 32.0}
-)
-model.resize_token_embeddings(len(tokenizer))
+if args.model == "Qwen/Qwen2.5-3B":
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        torch_dtype=torch.bfloat16,
+        token=user_token,
+        device_map="auto",
+    )
+else:
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        torch_dtype=torch.bfloat16,
+        token=user_token,
+        device_map="auto",
+        rope_scaling={"type": "dynamic", "factor": 32.0}
+    )
 
 for param in model.parameters():
     param.requires_grad = False
@@ -143,7 +149,6 @@ for name, param in model.named_parameters():
     if "lora" in name:
         param.requires_grad = True
 
-model.get_input_embeddings().weight.requires_grad = True
 model.config.pad_token_id = tokenizer.pad_token_id
 trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
 total_params = sum(p.numel() for p in model.parameters())
@@ -167,7 +172,7 @@ training_args = TrainingArguments(
     logging_dir="./logs",
     logging_steps=5,
     save_strategy="steps",
-    save_steps=50,
+    save_steps=200,
     learning_rate=2e-4,
     weight_decay=0.01,
     fp16=False,

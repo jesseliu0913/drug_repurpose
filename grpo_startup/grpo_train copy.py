@@ -20,11 +20,20 @@ print("wandb location:", pathlib.Path(wandb.__file__).parent)
 # ─────────────────────────────────────────────────────────────────────────────
 # constants & env
 # ─────────────────────────────────────────────────────────────────────────────
+SPECIAL_TOKENS = [
+    "<degd>", "<ddd>", "<decgd>", "<demgd>", "<debgd>", "<dppd>", "<dpd>"
+]
 ANS_TAG_RE     = re.compile(r"Answer\s*:?\s*(YES|NO)", re.I)
 COMPLETION_RE  = re.compile(r"\b(YES|NO)\b", re.I)
 
 load_dotenv()
 HF_TOKEN = os.getenv("HF_API_TOKEN")
+
+FIRST_YES_NO_RE = re.compile(r"\b(YES|NO)\b", re.IGNORECASE)
+
+def extract_pred(completion: str) -> Optional[str]:
+    match = FIRST_YES_NO_RE.search(completion)
+    return match.group(1).upper() if match else None
 
 # ─────────────────────────────────────────────────────────────────────────────
 # CLI
@@ -46,6 +55,52 @@ parser.add_argument("--lora_dropout", type=float, default=0.05)
 parser.add_argument("--clip_eps", type=float, default=0.2, help="ε_c for reward / ratio clipping in GRPO")
 args = parser.parse_args()
 os.makedirs(args.output_dir, exist_ok=True)
+
+
+FILTERING_PATH = "/playpen/jesse/drug_repurpose/eval_results/results/"
+if "kpath" in args.model_name and "baseline" in args.model_name:
+    correct_folder = "qwen25_3b_kpath_baseline/raw.jsonl" 
+elif "pagerank" in args.model_name and "baseline" in args.model_name:
+    correct_folder = "qwen25_3b_pagerank_baseline/raw.jsonl" 
+elif "kpath" in args.model_name and "naive" in args.model_name:
+    correct_folder = "qwen25_3b_kpath_naive/raw.jsonl" 
+elif "pagerank" in args.model_name and "naive" in args.model_name:
+    correct_folder = "qwen25_3b_pagerank_naive/raw.jsonl" 
+
+filter_file = osp.join(FILTERING_PATH, correct_folder) 
+
+
+def read_filtering_results(filter_file):
+    """Read the filtering results from the specified folder."""
+    with open(filter_file, "r") as f:
+        lines = f.readlines()
+    results = [json.loads(line) for line in lines]
+    return results
+
+def extract_answer(answer):
+    return extract_pred(answer) if answer else None
+
+
+prompts = []
+answers_gt = []
+def filter_results(filter_file):
+    results = read_filtering_results(filter_file)
+    for line in results:
+        disease_name = line.get("disease_name")
+        drug_name = line.get("drug_name")
+        answer = extract_answer(line.get("answer"))
+        label = line.get("label")
+        gt = "YES" if label == "indication" else "NO"
+
+        if answer == label:
+            line_prompt = f"Is {disease_name} an indication for {drug_name}?"
+            prompts.append(line_prompt)
+            answers_gt.append(gt)
+ 
+    return prompts, answers_gt
+
+prompts, answers_gt = filter_results(filter_file)
+
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -88,6 +143,33 @@ def get_model_name(model_name: str) -> str:
     return "other"
 
 
+class TokenDecoderWrapper:
+    """Keep special tokens; handle Qwen extra kwarg."""
+    def __init__(self, tokenizer, model_name: str):
+        self.tok, self.model_name = tokenizer, model_name
+
+    def batch_decode(self, seqs, **kw):
+        kw.pop("skip_special_tokens", None)
+        kw.setdefault("skip_special_tokens", False)
+        kw.setdefault("clean_up_tokenization_spaces", False)
+        if self.model_name == "qwen":
+            kw.setdefault("spaces_between_special_tokens", False)
+        return self.tok.batch_decode(seqs, **kw)
+
+    def decode(self, seq, **kw):
+        kw.setdefault("skip_special_tokens", False)
+        kw.setdefault("clean_up_tokenization_spaces", False)
+        if self.model_name == "qwen":
+            kw.setdefault("spaces_between_special_tokens", False)
+        return self.tok.decode(seq, **kw)
+
+    def __call__(self, *a, **kw):
+        return self.tok(*a, **kw)
+
+    def __getattr__(self, name):
+        return getattr(self.tok, name)
+
+
 def get_lora_targets(model_name: str) -> List[str]:
     fam = get_model_name(model_name)
     if fam == "qwen":
@@ -100,73 +182,15 @@ def get_lora_targets(model_name: str) -> List[str]:
 # ─────────────────────────────────────────────────────────────────────────────
 # data  — prompt + ground-truth answer
 # ─────────────────────────────────────────────────────────────────────────────
+df = pd.read_csv(args.train_csv).iloc[:2000]
 
-FILTERING_PATH = "/playpen/jesse/drug_repurpose/eval_results/results/"
-if args.model_name=="JesseLiu/qwen25-3b-pagerank-naive":
-    correct_folder = "qwen25_3b_pagerank_naive/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-pagerank-baseline":
-    correct_folder = "qwen25_3b_pagerank_baseline/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-kpath-naive":
-    correct_folder = "qwen25_3b_kpath_naive/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-kpath-baseline":
-    correct_folder = "qwen25_3b_kpath_baseline/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-base-pagerank-naive":
-    correct_folder = "qwen25_3b_base_pagerank_naive/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-base-pagerank-baseline":
-    correct_folder = "qwen25_3b_base_pagerank_baseline/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-base-kpath-naive":
-    correct_folder = "qwen25_3b_base_kpath_naive/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-base-kpath-baseline":
-    correct_folder = "qwen25_3b_base_kpath_baseline/raw.jsonl" 
+raw_prefixes = df["prefix"].tolist()
+prompts      = [extract_question(t) for t in raw_prefixes]
 
-filter_file = os.path.join(FILTERING_PATH, correct_folder) 
-print(filter_file)
-
-def read_filtering_results(filter_file):
-    """Read the filtering results from the specified folder."""
-    with open(filter_file, "r") as f:
-        lines = f.readlines()
-    results = [json.loads(line) for line in lines]
-    return results
-
-COMPLETION_RE = re.compile(r'\b(YES|NO)\b', re.I)
-
-def extract_answer(text: str) -> Optional[str]:
-    """Extract YES/NO answer from text, handling various formats."""
-    if not text:
-        return None
-        
-    # First try to find a standalone YES/NO
-    text = text.strip().upper()
-    if text in ["YES", "NO"]:
-        return text
-        
-    # Then try to find YES/NO in the text
-    m = COMPLETION_RE.search(text)
-    if m:
-        return m.group(1)
-        
-    return None
-
-prompts = []
-answers_gt = []
-def filter_results(filter_file):
-    results = read_filtering_results(filter_file)
-    for line in results:
-        disease_name = line.get("disease_name")
-        drug_name = line.get("drug_name")
-        answer = extract_answer(line.get("answer"))
-        label = line.get("label")
-        gt = "YES" if label == "indication" else "NO"
-        if answer == gt and answer != None:
-            line_prompt = f"Is {disease_name} an indication for {drug_name}?\nAnswer:"
-            prompts.append(line_prompt)
-            answers_gt.append(gt)
- 
-    return prompts, answers_gt
-
-prompts, answers_gt = filter_results(filter_file)
-print(f"#examples kept: {len(prompts)}")
+answers_gt = [
+    (m.group(1).upper() if (m := ANS_TAG_RE.search(t)) else None)
+    for t in raw_prefixes
+]
 
 train_ds, eval_ds = Dataset.from_dict(
     {"prompt": prompts, "answer": answers_gt}
@@ -180,36 +204,10 @@ train_ds, eval_ds = Dataset.from_dict(
 tok = AutoTokenizer.from_pretrained(args.model_name, token=HF_TOKEN)
 tok.pad_token = tok.eos_token
 tok.padding_side = "left"
+# tok_raw.add_special_tokens({"additional_special_tokens": SPECIAL_TOKENS})
 
-def tokenize_batch(batch):
-    prompt_enc = tok(
-        batch["prompt"],
-        padding="max_length",
-        truncation=True,
-        max_length=256,
-    )
-    answer_enc = tok(
-        batch["answer"],
-        padding="max_length",
-        truncation=True,
-        max_length=8,
-    )
-    batch.update({
-        "input_ids": prompt_enc["input_ids"],
-        "attention_mask": prompt_enc["attention_mask"],
-        "labels": answer_enc["input_ids"],
-    })
-    return batch
-
-# Map *without* dropping prompt/answer columns ------------------------------
-train_ds = train_ds.map(tokenize_batch, batched=True)
-train_ds.set_format(type="torch",
-                    columns=["input_ids", "attention_mask", "labels", "prompt", "answer"])
-
-eval_ds = eval_ds.map(tokenize_batch, batched=True)
-eval_ds.set_format(type="torch",
-                   columns=["input_ids", "attention_mask", "labels", "prompt", "answer"])
-
+# model_family = get_model_name(args.model_name)
+# tok = TokenDecoderWrapper(tok_raw, model_family)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # model
@@ -236,12 +234,32 @@ import copy
 ref_model = copy.deepcopy(model)
 ref_model.eval()
 
+# ─────────────────────────────────────────────────────────────────────────────
+# reward helpers
+# ─────────────────────────────────────────────────────────────────────────────
+# def _extract(text: str, regexes) -> Optional[str]:
+#     for rgx in regexes:
+#         if (m := rgx.search(text)):
+#             return m.group(1).upper()
+#     return None
+
+
+# def extract_pred(completion: str) -> Optional[str]:
+#     """YES/NO prediction from completion."""
+#     return _extract(completion, [ANS_TAG_RE, COMPLETION_RE])
+
+
+
 # ---------------- rewards ----------------
+def format_reward(prompts, completions, **kw):
+    return [1.0 if sum(t in c for t in SPECIAL_TOKENS) == 1 else 0.0
+            for c in completions]
+
 
 def task_reward(prompts, completions, answer, **kw):
     out = []
     for gt, comp in zip(answer, completions):
-        pred = extract_answer(comp)
+        pred = extract_pred(comp)
         if gt is None or pred is None:
             out.append(None)                # ignored by GRPO
         else:
@@ -338,30 +356,30 @@ def eval_mode(module):
         module.train(was_training)
 
 def build_kl_reward(model, ref_model, tokenizer, beta=0.05):
-    @torch.no_grad()
     def kl_reward(prompts, completions, answer, **kw):
         rewards = []
-        for prompt, comp_ids, gt in zip(prompts, completions, answer):
-            comp_text = comp_ids if isinstance(comp_ids, str) else tokenizer.decode(comp_ids, skip_special_tokens=True)
-            pred = extract_answer(comp_text)
-            if pred is None:
-                rewards.append(None)
+        for gt, comp, prompt in zip(answer, completions, prompts):
+            pred = extract_pred(comp)
+            if gt is None or pred is None:
+                rewards.append(None)         
                 continue
-            correctness = 1.0 if pred == gt else 0.0
 
-            full_text = prompt + " " + comp_text
-            ids_full = tokenizer(full_text, return_tensors="pt").to(model.device)
-            ids_prompt = tokenizer(prompt, return_tensors="pt").to(model.device)
-            prompt_len = ids_prompt.input_ids.shape[1]
+            r = 1.0 if gt == pred else 0.0
+            full_text = f"{prompt} {comp}"
+            inputs = tokenizer(full_text, return_tensors="pt").to(model.device)
 
-            logits_model = model(**ids_full).logits[:, prompt_len:-1]
-            logits_ref   = ref_model(**ids_full).logits[:, prompt_len:-1]
+            with eval_mode(model), torch.no_grad():
+                logits_model = model(**inputs).logits
+            with torch.no_grad():
+                logits_ref = ref_model(**inputs).logits
 
-            logp = torch.log_softmax(logits_model, dim=-1)
-            pref = torch.softmax(logits_ref, dim=-1)
-            kl = torch.nn.functional.kl_div(logp, pref, reduction="batchmean")
-            rewards.append(correctness - beta * kl.item())
+            logp_m = F.log_softmax(logits_model[:, -1], dim=-1)
+            prob_r = F.softmax(logits_ref[:, -1], dim=-1)
+            kl = F.kl_div(logp_m, prob_r, reduction="batchmean").item()
+
+            rewards.append(r - beta * kl)
         return rewards
+
     kl_reward.__name__ = f"kl_reward_beta_{beta}"
     return kl_reward
 
@@ -379,7 +397,6 @@ cfg = GRPOClippedConfig(
     per_device_train_batch_size=args.per_device_train_batch_size,
     gradient_accumulation_steps=args.gradient_accumulation_steps,
     learning_rate=args.learning_rate,
-    num_train_epochs=1,
     max_prompt_length=256,
     clip_eps=args.clip_eps,
     max_completion_length=128,
@@ -404,6 +421,7 @@ trainer = GRPOClippedTrainer(
     args=cfg,
     train_dataset=train_ds,
     eval_dataset=eval_ds,
+    # reward_funcs=[task_reward],
     reward_funcs=[kl_reward_fn],
 )
 
@@ -414,7 +432,7 @@ trainer.train()
 # ─────────────────────────────────────────────────────────────────────────────
 model_path = osp.join(args.output_dir, "final_model")
 model.save_pretrained(model_path)
-tok.save_pretrained(model_path)
+tok_raw.save_pretrained(model_path)
 json.dump(vars(args), open(osp.join(args.output_dir, "training_config.json"), "w"), indent=2)
 print(f"Done. Saved to {model_path}")
 

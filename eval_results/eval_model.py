@@ -45,45 +45,13 @@ user_token = os.getenv("HF_API_TOKEN")
 print(f"Model Name: {model_name}")
 print(f"Adapter Name: {adapter_name}")
 
-# tokenizer = AutoTokenizer.from_pretrained(adapter_name, use_auth_token=token)
-# model = AutoModelForCausalLM.from_pretrained(adapter_name, torch_dtype="auto", use_auth_token=token)
 
-if adapter_name:
-    # if "cold" in adapter_name or "kpath" in adapter_name or "pagerank" in adapter_name and "baseline" not in adapter_name and "naive" not in adapter_name:
-    #     peft_cfg = PeftConfig.from_pretrained(adapter_name, use_auth_token=user_token)
-    #     base_name = peft_cfg.base_model_name_or_path or model_name
-
-    #     tokenizer = AutoTokenizer.from_pretrained(adapter_name, use_auth_token=user_token)
-    #     tokenizer.pad_token = tokenizer.eos_token
-    #     tokenizer.padding_side = "right"
-    #     # new_special_tokens = ['<degd>', '<ddd>', '<decgd>',
-    #     #                     '<demgd>', '<debgd>', '<dppd>', '<dpd>']
-    #     new_special_tokens = ['<phenotype>', '<gene>']
-    #     tokenizer.add_special_tokens({'additional_special_tokens': new_special_tokens})
-
-    #     base_model = AutoModelForCausalLM.from_pretrained(
-    #         base_name,
-    #         torch_dtype="auto",
-    #         device_map="auto",
-    #         use_auth_token=user_token,
-    #     )
-
-    #     base_model.resize_token_embeddings(len(tokenizer))
-
-    #     model = PeftModel.from_pretrained(
-    #         base_model,
-    #         adapter_name,
-    #         torch_dtype="auto",
-    #     )
-
-    # else:
+if adapter_name and "grpo" not in adapter_name:
     peft_cfg = PeftConfig.from_pretrained(adapter_name, use_auth_token=token)
     base_name = peft_cfg.base_model_name_or_path or model_name
     tokenizer = AutoTokenizer.from_pretrained(adapter_name, use_auth_token=token)
 
     base_model = AutoModelForCausalLM.from_pretrained(base_name, torch_dtype="auto", use_auth_token=token)
-    base_model.resize_token_embeddings(len(tokenizer))
-
     model = PeftModel.from_pretrained(base_model, adapter_name, torch_dtype="auto")
 else:
     tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=token)
@@ -175,7 +143,7 @@ with jsonlines.open(file_path, "a") as f_write:
             inputs = tokenizer(input_text, return_tensors="pt").to(device)
         
         if args.shuffle_num == 1:
-            output = model.generate(**inputs, max_new_tokens=10, do_sample=True, temperature=0.2)
+            output = model.generate(**inputs, max_new_tokens=100, do_sample=True, temperature=0.2)
             answer = tokenizer.decode(output[0], skip_special_tokens=True)
             answer = answer.replace(input_text, "").strip()
 
