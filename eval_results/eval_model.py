@@ -42,6 +42,11 @@ ANSWER:$NO$
 model_name = args.model_name
 adapter_name = args.adapter_name
 user_token = os.getenv("HF_API_TOKEN")
+print(f"Model Name: {model_name}")
+print(f"Adapter Name: {adapter_name}")
+
+# tokenizer = AutoTokenizer.from_pretrained(adapter_name, use_auth_token=token)
+# model = AutoModelForCausalLM.from_pretrained(adapter_name, torch_dtype="auto", use_auth_token=token)
 
 if adapter_name:
     # if "cold" in adapter_name or "kpath" in adapter_name or "pagerank" in adapter_name and "baseline" not in adapter_name and "naive" not in adapter_name:

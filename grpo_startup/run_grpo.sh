@@ -31,10 +31,10 @@ LORA_DROPOUT=0.05
 
 # Models stay in a fixed order so we can map them to GPU 0‑7
 MODELS=(
-  'JesseLiu/qwen25-3b-pagerank-naive'
-  # 'JesseLiu/qwen25-3b-pagerank-baseline'
-  # 'JesseLiu/qwen25-3b-kpath-naive'
-  # 'JesseLiu/qwen25-3b-kpath-baseline'
+  'JesseLiu/qwen25-3b-base-pagerank-naive'
+  # 'JesseLiu/qwen25-3b-base-pagerank-baseline'
+  # 'JesseLiu/qwen25-3b-base-kpath-naive'
+  # 'JesseLiu/qwen25-3b-base-kpath-baseline'
 )
 # MODELS=(
 #   'JesseLiu/llama32-3b-balancepath-partial-baseline'

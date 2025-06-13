@@ -125,7 +125,7 @@ def load_base_and_merge(adapter_repo: str, tokenizer):
                                          token=HF_TOKEN)))
     base = AutoModelForCausalLM.from_pretrained(
         cfg["base_model_name_or_path"], device_map="auto", token=HF_TOKEN)
-    base.resize_token_embeddings(len(tokenizer))
+    # base.resize_token_embeddings(len(tokenizer))
     merged = PeftModel.from_pretrained(
         base, adapter_repo, token=HF_TOKEN,
         is_trainable=True).merge_and_unload()
@@ -201,24 +201,24 @@ train_ds, eval_ds = Dataset.from_dict(
 # ─────────────────────────────────────────────────────────────────────────────
 # tokenizer
 # ─────────────────────────────────────────────────────────────────────────────
-tok_raw = AutoTokenizer.from_pretrained(args.model_name, token=HF_TOKEN)
-tok_raw.pad_token = tok_raw.eos_token
-tok_raw.padding_side = "left"
+tok = AutoTokenizer.from_pretrained(args.model_name, token=HF_TOKEN)
+tok.pad_token = tok.eos_token
+tok.padding_side = "left"
 # tok_raw.add_special_tokens({"additional_special_tokens": SPECIAL_TOKENS})
 
-model_family = get_model_name(args.model_name)
-tok = TokenDecoderWrapper(tok_raw, model_family)
+# model_family = get_model_name(args.model_name)
+# tok = TokenDecoderWrapper(tok_raw, model_family)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # model
 # ─────────────────────────────────────────────────────────────────────────────
 if is_lora_repo(args.model_name):
-    model = load_base_and_merge(args.model_name, tok_raw)
+    model = load_base_and_merge(args.model_name, tok)
     adapter_name = args.model_name 
 else:
     model = AutoModelForCausalLM.from_pretrained(
         args.model_name, device_map="auto", token=HF_TOKEN)
-    model.resize_token_embeddings(len(tok_raw))
+    # model.resize_token_embeddings(len(tok_raw))
     adapter_name = None
 
 
@@ -413,7 +413,7 @@ cfg = GRPOClippedConfig(
 )
 from functools import partial
 
-kl_reward_fn = build_kl_reward(model, ref_model, tok_raw, beta=0.05)
+kl_reward_fn = build_kl_reward(model, ref_model, tok, beta=0.05)
 
 trainer = GRPOClippedTrainer(
     model=model,
