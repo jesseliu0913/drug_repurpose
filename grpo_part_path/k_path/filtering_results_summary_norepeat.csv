@@ -1,1 +1,3 @@
-
+file_name,original_rows,filtered_out,emitted_rows
+disease_protein_drug_paths.csv,2000,0,2000
+disease_phenotype_protein_drug_paths.csv,2000,1832,168
