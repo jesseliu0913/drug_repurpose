@@ -1,20 +1,53 @@
 nohup: ignoring input
 
-===== DEBUG: Listing '*-lora' under /playpen/jesse/drug_repurpose/grpo_startup/results/20250611_2308/models =====
-/playpen/jesse/drug_repurpose/grpo_startup/results/20250611_2308/models/qwen25-3b-pagerank-naive-grpo-lora
+===== DEBUG: Listing '*-lora' under /playpen/jesse/drug_repurpose/grpo_startup/results/20250614_0031/models =====
+/playpen/jesse/drug_repurpose/grpo_startup/results/20250614_0031/models/qwen25-3b-base-kpath-baseline-grpo-lora
+/playpen/jesse/drug_repurpose/grpo_startup/results/20250614_0031/models/qwen25-3b-base-kpath-naive-grpo-lora
+/playpen/jesse/drug_repurpose/grpo_startup/results/20250614_0031/models/qwen25-3b-base-pagerank-baseline-grpo-lora
+/playpen/jesse/drug_repurpose/grpo_startup/results/20250614_0031/models/qwen25-3b-base-pagerank-naive-grpo-lora
 =====================================================
 
 ---------------------------------------------
 Dispatching job #1
-  LoRA folder:   /playpen/jesse/drug_repurpose/grpo_startup/results/20250611_2308/models/qwen25-3b-pagerank-naive-grpo-lora
-  Final model:   /playpen/jesse/drug_repurpose/grpo_startup/results/20250611_2308/models/qwen25-3b-pagerank-naive-grpo-lora/checkpoint-10
-  Base model:    meta-llama/Llama-3.2-3B-Instruct
-  Output dir:    /playpen/jesse/drug_repurpose/eval_results/results/20250611_2308_qwen25-3b-pagerank-naive-grpo-lora
-  Log file:      /playpen/jesse/drug_repurpose/eval_results/log/20250611_2308_qwen25-3b-pagerank-naive-grpo-lora.log
-  Using GPU:     5
+  LoRA folder:   /playpen/jesse/drug_repurpose/grpo_startup/results/20250614_0031/models/qwen25-3b-base-kpath-baseline-grpo-lora
+  Final model:   /playpen/jesse/drug_repurpose/grpo_startup/results/20250614_0031/models/qwen25-3b-base-kpath-baseline-grpo-lora/final_model
+  Base model:    Qwen/Qwen2.5-3B
+  Output dir:    /playpen/jesse/drug_repurpose/eval_results/results/20250614_0031_qwen25-3b-base-kpath-baseline-grpo-lora_final_model
+  Log file:      /playpen/jesse/drug_repurpose/eval_results/log/20250614_0031_qwen25-3b-base-kpath-baseline-grpo-lora_final_model.log
+  Using GPU:     0
+---------------------------------------------
+
+---------------------------------------------
+Dispatching job #2
+  LoRA folder:   /playpen/jesse/drug_repurpose/grpo_startup/results/20250614_0031/models/qwen25-3b-base-kpath-naive-grpo-lora
+  Final model:   /playpen/jesse/drug_repurpose/grpo_startup/results/20250614_0031/models/qwen25-3b-base-kpath-naive-grpo-lora/final_model
+  Base model:    Qwen/Qwen2.5-3B
+  Output dir:    /playpen/jesse/drug_repurpose/eval_results/results/20250614_0031_qwen25-3b-base-kpath-naive-grpo-lora_final_model
+  Log file:      /playpen/jesse/drug_repurpose/eval_results/log/20250614_0031_qwen25-3b-base-kpath-naive-grpo-lora_final_model.log
+  Using GPU:     1
+---------------------------------------------
+
+---------------------------------------------
+Dispatching job #3
+  LoRA folder:   /playpen/jesse/drug_repurpose/grpo_startup/results/20250614_0031/models/qwen25-3b-base-pagerank-baseline-grpo-lora
+  Final model:   /playpen/jesse/drug_repurpose/grpo_startup/results/20250614_0031/models/qwen25-3b-base-pagerank-baseline-grpo-lora/final_model
+  Base model:    Qwen/Qwen2.5-3B
+  Output dir:    /playpen/jesse/drug_repurpose/eval_results/results/20250614_0031_qwen25-3b-base-pagerank-baseline-grpo-lora_final_model
+  Log file:      /playpen/jesse/drug_repurpose/eval_results/log/20250614_0031_qwen25-3b-base-pagerank-baseline-grpo-lora_final_model.log
+  Using GPU:     2
+---------------------------------------------
+
+---------------------------------------------
+Dispatching job #4
+  LoRA folder:   /playpen/jesse/drug_repurpose/grpo_startup/results/20250614_0031/models/qwen25-3b-base-pagerank-naive-grpo-lora
+  Final model:   /playpen/jesse/drug_repurpose/grpo_startup/results/20250614_0031/models/qwen25-3b-base-pagerank-naive-grpo-lora/final_model
+  Base model:    Qwen/Qwen2.5-3B
+  Output dir:    /playpen/jesse/drug_repurpose/eval_results/results/20250614_0031_qwen25-3b-base-pagerank-naive-grpo-lora_final_model
+  Log file:      /playpen/jesse/drug_repurpose/eval_results/log/20250614_0031_qwen25-3b-base-pagerank-naive-grpo-lora_final_model.log
+  Using GPU:     3
 ---------------------------------------------
 
 
-Dispatched 1 jobs across GPUs: 5
+Dispatched 4 jobs across GPUs: 0 1 2 3
 Logs → /playpen/jesse/drug_repurpose/eval_results/log/
 Outputs → /playpen/jesse/drug_repurpose/eval_results/results/

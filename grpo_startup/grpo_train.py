@@ -136,12 +136,10 @@ def extract_answer(text: str) -> Optional[str]:
     if not text:
         return None
         
-    # First try to find a standalone YES/NO
     text = text.strip().upper()
     if text in ["YES", "NO"]:
         return text
         
-    # Then try to find YES/NO in the text
     m = COMPLETION_RE.search(text)
     if m:
         return m.group(1)
@@ -158,10 +156,10 @@ def filter_results(filter_file):
         answer = extract_answer(line.get("answer"))
         label = line.get("label")
         gt = "YES" if label == "indication" else "NO"
-        if answer == gt and answer != None:
-            line_prompt = f"Is {disease_name} an indication for {drug_name}?\nAnswer:"
-            prompts.append(line_prompt)
-            answers_gt.append(gt)
+        # if answer == gt and answer != None:
+        line_prompt = f"Is {disease_name} an indication for {drug_name}?\nAnswer:"
+        prompts.append(line_prompt)
+        answers_gt.append(gt)
  
     return prompts, answers_gt
 

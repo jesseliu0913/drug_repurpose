@@ -1,0 +1,1527 @@
+drug_index,disease_index,drug_name,disease_name,path_type,original_relation,nodes,score,prefix
+14176,29494,Fluoxetine,autosomal recessive severe congenital neutropenia due to G6PC3 deficiency,disease-phenotype-protein-drug,contraindication,"['autosomal recessive severe congenital neutropenia due to G6PC3 deficiency', 'Hepatomegaly', 'AHR', 'Fluoxetine']",0.0114749101861167,"Question: Is autosomal recessive severe congenital neutropenia due to G6PC3 deficiency an indication for Fluoxetine?
+Answer: NO"
+18695,83812,Eptifibatide,acute coronary syndrome,disease-protein-drug,indication,"['acute coronary syndrome', 'ITGB3', 'Eptifibatide']",0.0005163334891428,"Question: Is acute coronary syndrome an indication for Eptifibatide?
+Answer: YES"
+15001,33679,Paliperidone,potassium deficiency disease,disease-protein-drug,contraindication,"['potassium deficiency disease', 'AGT', 'Paliperidone']",0.0010468917293835,"Question: Is potassium deficiency disease an indication for Paliperidone?
+Answer: NO"
+14962,27933,Trazodone,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'HTR1A', 'Trazodone']",0.0010794001698012,"Question: Is anxiety disorder an indication for Trazodone?
+Answer: YES"
+16793,32629,Chlorothiazide,familial intrahepatic cholestasis,disease-phenotype-protein-drug,contraindication,"['familial intrahepatic cholestasis', 'Hepatomegaly', 'A1BG', 'Chlorothiazide']",0.0084360142646393,"Question: Is familial intrahepatic cholestasis an indication for Chlorothiazide?
+Answer: NO"
+15778,27219,Tolazamide,hypogonadotropic hypogonadism with or without anosmia,disease-phenotype-protein-drug,contraindication,"['hypogonadotropic hypogonadism with or without anosmia', 'Seizure', 'IL1B', 'Tolazamide']",0.0138777846295496,"Question: Is hypogonadotropic hypogonadism with or without anosmia an indication for Tolazamide?
+Answer: NO"
+15193,28547,Rotigotine,Parkinson disease,disease-protein-drug,indication,"['Parkinson disease', 'DRD1', 'Rotigotine']",0.0006437851231621,"Question: Is Parkinson disease an indication for Rotigotine?
+Answer: YES"
+14794,35958,Dasatinib,hemoglobinopathy,disease-protein-drug,contraindication,"['hemoglobinopathy', 'MIR125B2', 'Dasatinib']",0.0079446781900721,"Question: Is hemoglobinopathy an indication for Dasatinib?
+Answer: NO"
+14194,30075,Methotrexate,Burkitt lymphoma,disease-protein-drug,indication,"['Burkitt lymphoma', 'FPGS', 'Methotrexate']",0.0017391329769402,"Question: Is Burkitt lymphoma an indication for Methotrexate?
+Answer: YES"
+20302,32384,Potassium Iodide,adrenal insufficiency,disease-phenotype-protein-drug,contraindication,"['adrenal insufficiency', 'Hyponatremia', 'IFNG', 'Potassium Iodide']",0.0089443707941402,"Question: Is adrenal insufficiency an indication for Potassium Iodide?
+Answer: NO"
+15074,28651,Amphetamine,monogenic obesity,disease-protein-drug,indication,"['monogenic obesity', 'ADRB2', 'Amphetamine']",0.0009192137558984,"Question: Is monogenic obesity an indication for Amphetamine?
+Answer: YES"
+14999,30318,Quetiapine,autosomal recessive severe congenital neutropenia due to JAGN1 deficiency,disease-phenotype-protein-drug,contraindication,"['autosomal recessive severe congenital neutropenia due to JAGN1 deficiency', 'Recurrent bacterial infections', 'TCF3', 'Quetiapine']",0.0012283749981815,"Question: Is autosomal recessive severe congenital neutropenia due to JAGN1 deficiency an indication for Quetiapine?
+Answer: NO"
+14452,32759,Istradefylline,hemiparkinsonism-hemiatrophy syndrome,disease-phenotype-protein-drug,indication,"['hemiparkinsonism-hemiatrophy syndrome', 'Tremor', 'CYP2D6', 'Istradefylline']",0.0021573202078344,"Question: Is hemiparkinsonism-hemiatrophy syndrome an indication for Istradefylline?
+Answer: YES"
+15035,38957,Vortioxetine,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'HTR7', 'Vortioxetine']",0.0005154339116471,"Question: Is major depressive disorder an indication for Vortioxetine?
+Answer: YES"
+15119,27933,Tranylcypromine,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'CYP2C19', 'Tranylcypromine']",0.0007088848219223,"Question: Is anxiety disorder an indication for Tranylcypromine?
+Answer: YES"
+14452,32974,Istradefylline,atypical juvenile parkinsonism,disease-protein-drug,indication,"['atypical juvenile parkinsonism', 'ABCB1', 'Istradefylline']",0.0012740652015181,"Question: Is atypical juvenile parkinsonism an indication for Istradefylline?
+Answer: YES"
+15082,83840,Citalopram,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'CYP2C19', 'Citalopram']",0.0005263693436615,"Question: Is unipolar depression an indication for Citalopram?
+Answer: YES"
+14174,36544,Acitretin,drug-induced liver injury,disease-protein-drug,contraindication,"['drug-induced liver injury', 'SPP1', 'Acitretin']",0.0222547785806921,"Question: Is drug-induced liver injury an indication for Acitretin?
+Answer: NO"
+15767,31072,Homatropine,pseudotumor cerebri,disease-phenotype-protein-drug,contraindication,"['pseudotumor cerebri', 'Allergy', 'HLA-DQA1', 'Homatropine']",0.0035379154234925,"Question: Is pseudotumor cerebri an indication for Homatropine?
+Answer: NO"
+16842,32974,Pramipexole,atypical juvenile parkinsonism,disease-protein-drug,indication,"['atypical juvenile parkinsonism', 'DRD2', 'Pramipexole']",0.0009189535909181,"Question: Is atypical juvenile parkinsonism an indication for Pramipexole?
+Answer: YES"
+14590,36432,Ozanimod,congestive heart failure,disease-protein-drug,contraindication,"['congestive heart failure', 'NPR1', 'Ozanimod']",0.0052962528934927,"Question: Is congestive heart failure an indication for Ozanimod?
+Answer: NO"
+14544,83841,Bupropion,endogenous depression,disease-protein-drug,indication,"['endogenous depression', 'HTR3A', 'Bupropion']",0.0006731531024056,"Question: Is endogenous depression an indication for Bupropion?
+Answer: YES"
+15006,36104,Iloperidone,neutropenia,disease-protein-drug,contraindication,"['neutropenia', 'CSF3', 'Iloperidone']",0.0012614602174497,"Question: Is neutropenia an indication for Iloperidone?
+Answer: NO"
+14153,83763,Valproic acid,manic bipolar affective disorder,disease-protein-drug,indication,"['manic bipolar affective disorder', 'SCN2A', 'Valproic acid']",0.0011509031735352,"Question: Is manic bipolar affective disorder an indication for Valproic acid?
+Answer: YES"
+14540,83760,Amoxapine,dysthymic disorder,disease-protein-drug,indication,"['dysthymic disorder', 'SLC6A3', 'Amoxapine']",0.000734204149909,"Question: Is dysthymic disorder an indication for Amoxapine?
+Answer: YES"
+14737,37152,Carboplatin,familial ovarian cancer,disease-protein-drug,indication,"['familial ovarian cancer', 'ATP7B', 'Carboplatin']",0.0013270107838062,"Question: Is familial ovarian cancer an indication for Carboplatin?
+Answer: YES"
+16014,28313,Chlorprothixene,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'HTR3E', 'Chlorprothixene']",0.0006284747367693,"Question: Is schizophrenia an indication for Chlorprothixene?
+Answer: YES"
+14310,37703,Doxepin,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'CYP2C19', 'Doxepin']",0.0006462938813103,"Question: Is neurotic disorder an indication for Doxepin?
+Answer: YES"
+14656,28005,Cannabidiol,developmental and epileptic encephalopathy,disease-phenotype-protein-drug,indication,"['developmental and epileptic encephalopathy', 'Hepatomegaly', 'CYP1A2', 'Cannabidiol']",0.0032477331685247,"Question: Is developmental and epileptic encephalopathy an indication for Cannabidiol?
+Answer: YES"
+14173,83760,Imipramine,dysthymic disorder,disease-protein-drug,indication,"['dysthymic disorder', 'ALB', 'Imipramine']",0.0021551629198652,"Question: Is dysthymic disorder an indication for Imipramine?
+Answer: YES"
+16344,37785,Ferrous gluconate,ulcerative colitis (disease),disease-protein-drug,contraindication,"['ulcerative colitis (disease)', 'STAT3', 'Ferrous gluconate']",0.0026621421735174,"Question: Is ulcerative colitis (disease) an indication for Ferrous gluconate?
+Answer: NO"
+15018,28520,Midostaurin,myeloid leukemia,disease-protein-drug,indication,"['myeloid leukemia', 'FLT3', 'Midostaurin']",0.0014048572722602,"Question: Is myeloid leukemia an indication for Midostaurin?
+Answer: YES"
+14831,28974,Droxidopa,early-onset parkinsonism-intellectual disability syndrome,disease-phenotype-protein-drug,indication,"['early-onset parkinsonism-intellectual disability syndrome', 'Seizure', 'SLC6A2', 'Droxidopa']",0.0028069991574553,"Question: Is early-onset parkinsonism-intellectual disability syndrome an indication for Droxidopa?
+Answer: YES"
+14904,28547,Safinamide,Parkinson disease,disease-protein-drug,indication,"['Parkinson disease', 'CYP2E1', 'Safinamide']",0.0006692191929392,"Question: Is Parkinson disease an indication for Safinamide?
+Answer: YES"
+20332,30094,Adomiparin,antithrombin III deficiency,disease-phenotype-protein-drug,contraindication,"['antithrombin III deficiency', 'Spontaneous abortion', 'TIMP3', 'Adomiparin']",0.0074750767085069,"Question: Is antithrombin III deficiency an indication for Adomiparin?
+Answer: NO"
+15126,38575,Donepezil,cerebellar degeneration,disease-protein-drug,indication,"['cerebellar degeneration', 'BCHE', 'Donepezil']",0.0037839651950424,"Question: Is cerebellar degeneration an indication for Donepezil?
+Answer: YES"
+14400,28714,Ivacaftor,cystic fibrosis,disease-phenotype-protein-drug,indication,"['cystic fibrosis', 'Male infertility', 'CFTR', 'Ivacaftor']",0.000752531537406,"Question: Is cystic fibrosis an indication for Ivacaftor?
+Answer: YES"
+14955,33188,Vincristine,neuroblastoma,disease-protein-drug,indication,"['neuroblastoma', 'ABCB1', 'Vincristine']",0.0017835488554696,"Question: Is neuroblastoma an indication for Vincristine?
+Answer: YES"
+15413,83816,Gemcitabine,ovarian carcinosarcoma,disease-protein-drug,indication,"['ovarian carcinosarcoma', 'TYMS', 'Gemcitabine']",0.0016130266366911,"Question: Is ovarian carcinosarcoma an indication for Gemcitabine?
+Answer: YES"
+15113,83960,Galantamine,Alzheimer disease without neurofibrillary tangles,disease-protein-drug,indication,"['Alzheimer disease without neurofibrillary tangles', 'BCHE', 'Galantamine']",0.003309621525831,"Question: Is Alzheimer disease without neurofibrillary tangles an indication for Galantamine?
+Answer: YES"
+14478,27219,Testosterone undecanoate,hypogonadotropic hypogonadism with or without anosmia,disease-phenotype-protein-drug,indication,"['hypogonadotropic hypogonadism with or without anosmia', 'Seizure', 'CYP11A1', 'Testosterone undecanoate']",0.0030420881170616,"Question: Is hypogonadotropic hypogonadism with or without anosmia an indication for Testosterone undecanoate?
+Answer: YES"
+14152,39728,Chlorthalidone,parapsoriasis,disease-protein-drug,contraindication,"['parapsoriasis', 'SERPINB8', 'Chlorthalidone']",0.0045667352272539,"Question: Is parapsoriasis an indication for Chlorthalidone?
+Answer: NO"
+16066,38784,Brompheniramine,Graves disease,disease-protein-drug,contraindication,"['Graves disease', 'SOD1', 'Brompheniramine']",0.0013767735748164,"Question: Is Graves disease an indication for Brompheniramine?
+Answer: NO"
+15781,83824,Acetylsalicylic acid,myocardial infarction,disease-protein-drug,indication,"['myocardial infarction', 'CASP3', 'Acetylsalicylic acid']",0.0020791985128661,"Question: Is myocardial infarction an indication for Acetylsalicylic acid?
+Answer: YES"
+14792,33688,Paclitaxel,non-small cell lung carcinoma (disease),disease-protein-drug,indication,"['non-small cell lung carcinoma (disease)', 'ABCB1', 'Paclitaxel']",0.0019199013555743,"Question: Is non-small cell lung carcinoma (disease) an indication for Paclitaxel?
+Answer: YES"
+14956,35641,Carbamazepine,epilepsy,disease-protein-drug,indication,"['epilepsy', 'SCN1A', 'Carbamazepine']",0.0009513011671725,"Question: Is epilepsy an indication for Carbamazepine?
+Answer: YES"
+20394,27286,Sulfabenzamide,galactosemia,disease-phenotype-protein-drug,contraindication,"['galactosemia', 'Hepatomegaly', 'NR1I2', 'Sulfabenzamide']",0.013314135506132,"Question: Is galactosemia an indication for Sulfabenzamide?
+Answer: NO"
+15113,28780,Galantamine,Alzheimer disease,disease-phenotype-protein-drug,indication,"['Alzheimer disease', 'Seizure', 'ACHE', 'Galantamine']",0.0032651829970489,"Question: Is Alzheimer disease an indication for Galantamine?
+Answer: YES"
+16056,28801,Procyclidine,juvenile onset Parkinson disease 19A,disease-phenotype-protein-drug,indication,"['juvenile onset Parkinson disease 19A', 'Tremor', 'CHRM4', 'Procyclidine']",0.0008575743799754,"Question: Is juvenile onset Parkinson disease 19A an indication for Procyclidine?
+Answer: YES"
+15324,29078,Leflunomide,rheumatoid arthritis,disease-protein-drug,indication,"['rheumatoid arthritis', 'ABCG2', 'Leflunomide']",0.0009976171360136,"Question: Is rheumatoid arthritis an indication for Leflunomide?
+Answer: YES"
+14111,33452,Alitretinoin,granulomatous slack skin disease,disease-phenotype-protein-drug,contraindication,"['granulomatous slack skin disease', 'Erythema', 'OXT', 'Alitretinoin']",0.0013349253018194,"Question: Is granulomatous slack skin disease an indication for Alitretinoin?
+Answer: NO"
+14156,83764,Amitriptyline,hyperglycemia,disease-protein-drug,contraindication,"['hyperglycemia', 'INSR', 'Amitriptyline']",0.0016089850015417,"Question: Is hyperglycemia an indication for Amitriptyline?
+Answer: NO"
+17584,83770,Adalimumab,Crohn's colitis,disease-protein-drug,indication,"[""Crohn's colitis"", 'TNF', 'Adalimumab']",0.0021157531408835,"Question: Is Crohn's colitis an indication for Adalimumab?
+Answer: YES"
+14559,38682,Calcitriol,nephrocalcinosis,disease-protein-drug,indication,"['nephrocalcinosis', 'CYP24A1', 'Calcitriol']",0.0010932251668321,"Question: Is nephrocalcinosis an indication for Calcitriol?
+Answer: YES"
+14159,83791,Ipratropium,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'ALB', 'Ipratropium']",0.0018111217479914,"Question: Is vasomotor rhinitis an indication for Ipratropium?
+Answer: YES"
+16347,33589,Ferrous fumarate,hypochromic anemia,disease-protein-drug,indication,"['hypochromic anemia', 'TFRC', 'Ferrous fumarate']",0.0013853163924978,"Question: Is hypochromic anemia an indication for Ferrous fumarate?
+Answer: YES"
+14955,84157,Vincristine,diffuse large B-cell lymphoma of the central nervous system,disease-protein-drug,indication,"['diffuse large B-cell lymphoma of the central nervous system', 'ABCG2', 'Vincristine']",0.0011555705081125,"Question: Is diffuse large B-cell lymphoma of the central nervous system an indication for Vincristine?
+Answer: YES"
+14945,36999,Sorafenib,adenocarcinoma of liver and intrahepatic biliary tract,disease-protein-drug,indication,"['adenocarcinoma of liver and intrahepatic biliary tract', 'CYP2C8', 'Sorafenib']",0.0012374706349069,"Question: Is adenocarcinoma of liver and intrahepatic biliary tract an indication for Sorafenib?
+Answer: YES"
+14204,29078,Sulindac,rheumatoid arthritis,disease-protein-drug,indication,"['rheumatoid arthritis', 'PTGS1', 'Sulindac']",0.0012004190882397,"Question: Is rheumatoid arthritis an indication for Sulindac?
+Answer: YES"
+15250,27610,Fedratinib,primary myelofibrosis,disease-protein-drug,indication,"['primary myelofibrosis', 'JAK2', 'Fedratinib']",0.0008748720127292,"Question: Is primary myelofibrosis an indication for Fedratinib?
+Answer: YES"
+14176,83760,Fluoxetine,dysthymic disorder,disease-protein-drug,indication,"['dysthymic disorder', 'CYP2D6', 'Fluoxetine']",0.0019732526766636,"Question: Is dysthymic disorder an indication for Fluoxetine?
+Answer: YES"
+16011,28249,Loxapine,major affective disorder,disease-protein-drug,indication,"['major affective disorder', 'ADRA2C', 'Loxapine']",0.000621284374384,"Question: Is major affective disorder an indication for Loxapine?
+Answer: YES"
+14144,29865,Topiramate,Lennox-Gastaut syndrome,disease-protein-drug,indication,"['Lennox-Gastaut syndrome', 'SCN1A', 'Topiramate']",0.0011993727808637,"Question: Is Lennox-Gastaut syndrome an indication for Topiramate?
+Answer: YES"
+14980,83790,Metronidazole,gout,disease-protein-drug,contraindication,"['gout', 'IL1B', 'Metronidazole']",0.0008688299586561,"Question: Is gout an indication for Metronidazole?
+Answer: NO"
+15599,37115,Regorafenib,squamous cell carcinoma of liver and intrahepatic biliary tract,disease-protein-drug,indication,"['squamous cell carcinoma of liver and intrahepatic biliary tract', 'BRAF', 'Regorafenib']",0.0012647668980931,"Question: Is squamous cell carcinoma of liver and intrahepatic biliary tract an indication for Regorafenib?
+Answer: YES"
+14275,33158,Doxorubicin,kidney Wilms tumor,disease-phenotype-protein-drug,indication,"['kidney Wilms tumor', 'Fever', 'NOS1', 'Doxorubicin']",0.0034077025004943,"Question: Is kidney Wilms tumor an indication for Doxorubicin?
+Answer: YES"
+14704,33626,Calcifediol,rickets (disease),disease-protein-drug,indication,"['rickets (disease)', 'VDR', 'Calcifediol']",0.0008371700482629,"Question: Is rickets (disease) an indication for Calcifediol?
+Answer: YES"
+14793,30826,Docetaxel,familial prostate carcinoma,disease-protein-drug,indication,"['familial prostate carcinoma', 'CYP3A5', 'Docetaxel']",0.0008349399486246,"Question: Is familial prostate carcinoma an indication for Docetaxel?
+Answer: YES"
+17950,33575,Dulaglutide,diabetes mellitus (disease),disease-protein-drug,indication,"['diabetes mellitus (disease)', 'GLP1R', 'Dulaglutide']",0.0004701077343489,"Question: Is diabetes mellitus (disease) an indication for Dulaglutide?
+Answer: YES"
+14266,37888,Fexofenadine,allergic rhinitis,disease-phenotype-protein-drug,indication,"['allergic rhinitis', 'Allergy', 'ALB', 'Fexofenadine']",0.0019214001102371,"Question: Is allergic rhinitis an indication for Fexofenadine?
+Answer: YES"
+15233,38957,Dosulepin,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'CYP2C19', 'Dosulepin']",0.0005458788861704,"Question: Is major depressive disorder an indication for Dosulepin?
+Answer: YES"
+15599,32621,Regorafenib,pediatric hepatocellular carcinoma,disease-protein-drug,indication,"['pediatric hepatocellular carcinoma', 'CYP2B6', 'Regorafenib']",0.0012532545192159,"Question: Is pediatric hepatocellular carcinoma an indication for Regorafenib?
+Answer: YES"
+14208,27219,Testosterone,hypogonadotropic hypogonadism with or without anosmia,disease-phenotype-protein-drug,indication,"['hypogonadotropic hypogonadism with or without anosmia', 'Seizure', 'CYP11A1', 'Testosterone']",0.0035216584522885,"Question: Is hypogonadotropic hypogonadism with or without anosmia an indication for Testosterone?
+Answer: YES"
+14269,29854,Methylprednisolone,hereditary angioedema,disease-phenotype-protein-drug,indication,"['hereditary angioedema', 'Vomiting', 'ABCB1', 'Methylprednisolone']",0.0026880035435503,"Question: Is hereditary angioedema an indication for Methylprednisolone?
+Answer: YES"
+14269,27452,Methylprednisolone,Diamond-Blackfan anemia,disease-phenotype-protein-drug,indication,"['Diamond-Blackfan anemia', 'Thrombocytopenia', 'ALB', 'Methylprednisolone']",0.0035142729066645,"Question: Is Diamond-Blackfan anemia an indication for Methylprednisolone?
+Answer: YES"
+14220,28801,Apomorphine,juvenile onset Parkinson disease 19A,disease-phenotype-protein-drug,indication,"['juvenile onset Parkinson disease 19A', 'Seizure', 'DRD3', 'Apomorphine']",0.0033351630102974,"Question: Is juvenile onset Parkinson disease 19A an indication for Apomorphine?
+Answer: YES"
+15590,28313,Lurasidone,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'DRD2', 'Lurasidone']",0.000903228907123,"Question: Is schizophrenia an indication for Lurasidone?
+Answer: YES"
+14640,36104,Propylthiouracil,neutropenia,disease-protein-drug,contraindication,"['neutropenia', 'IFNA2', 'Propylthiouracil']",0.0012371966994133,"Question: Is neutropenia an indication for Propylthiouracil?
+Answer: NO"
+14945,29646,Sorafenib,hepatocellular carcinoma,disease-protein-drug,indication,"['hepatocellular carcinoma', 'CYP1A2', 'Sorafenib']",0.0017760521886174,"Question: Is hepatocellular carcinoma an indication for Sorafenib?
+Answer: YES"
+15291,28801,Ropinirole,juvenile onset Parkinson disease 19A,disease-phenotype-protein-drug,indication,"['juvenile onset Parkinson disease 19A', 'Seizure', 'DRD3', 'Ropinirole']",0.0029949128146804,"Question: Is juvenile onset Parkinson disease 19A an indication for Ropinirole?
+Answer: YES"
+16842,32759,Pramipexole,hemiparkinsonism-hemiatrophy syndrome,disease-phenotype-protein-drug,indication,"['hemiparkinsonism-hemiatrophy syndrome', 'Tremor', 'HTR1A', 'Pramipexole']",0.0012303834594622,"Question: Is hemiparkinsonism-hemiatrophy syndrome an indication for Pramipexole?
+Answer: YES"
+14706,29820,Cyanocobalamin,pernicious anemia,disease-protein-drug,indication,"['pernicious anemia', 'CBLIF', 'Cyanocobalamin']",0.0008493168399132,"Question: Is pernicious anemia an indication for Cyanocobalamin?
+Answer: YES"
+16062,37564,Homatropine methylbromide,gastric ulcer (disease),disease-protein-drug,contraindication,"['gastric ulcer (disease)', 'CAT', 'Homatropine methylbromide']",0.0009974106712835,"Question: Is gastric ulcer (disease) an indication for Homatropine methylbromide?
+Answer: NO"
+15196,28313,Sertindole,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'KCNH2', 'Sertindole']",0.0006140106435392,"Question: Is schizophrenia an indication for Sertindole?
+Answer: YES"
+14287,33609,Ibuprofen,osteoarthritis,disease-protein-drug,indication,"['osteoarthritis', 'PPARG', 'Ibuprofen']",0.0013967799284531,"Question: Is osteoarthritis an indication for Ibuprofen?
+Answer: YES"
+14299,83760,Sertraline,dysthymic disorder,disease-protein-drug,indication,"['dysthymic disorder', 'ABCB1', 'Sertraline']",0.0012008546692156,"Question: Is dysthymic disorder an indication for Sertraline?
+Answer: YES"
+14542,83760,Maprotiline,dysthymic disorder,disease-protein-drug,indication,"['dysthymic disorder', 'ADRA2A', 'Maprotiline']",0.0005137522911651,"Question: Is dysthymic disorder an indication for Maprotiline?
+Answer: YES"
+20320,36035,Cobalamin,hypertension,disease-protein-drug,contraindication,"['hypertension', 'AVP', 'Cobalamin']",0.0017004528657534,"Question: Is hypertension an indication for Cobalamin?
+Answer: NO"
+14320,28830,Dexamethasone,"leukemia, lymphocytic, susceptibility to",disease-protein-drug,indication,"['leukemia, lymphocytic, susceptibility to', 'CYP2E1', 'Dexamethasone']",0.0021796893536922,"Question: Is leukemia, lymphocytic, susceptibility to an indication for Dexamethasone?
+Answer: YES"
+17224,39773,Ibudilast,allergic asthma,disease-protein-drug,indication,"['allergic asthma', 'PDE4D', 'Ibudilast']",0.0004079356533812,"Question: Is allergic asthma an indication for Ibudilast?
+Answer: YES"
+17063,32033,Talbutal,insomnia (disease),disease-protein-drug,indication,"['insomnia (disease)', 'GABRB3', 'Talbutal']",0.0004335507739558,"Question: Is insomnia (disease) an indication for Talbutal?
+Answer: YES"
+14806,28974,Entacapone,early-onset parkinsonism-intellectual disability syndrome,disease-phenotype-protein-drug,indication,"['early-onset parkinsonism-intellectual disability syndrome', 'Rigidity', 'CYP2D6', 'Entacapone']",0.0020017129371408,"Question: Is early-onset parkinsonism-intellectual disability syndrome an indication for Entacapone?
+Answer: YES"
+14275,37047,Doxorubicin,immature ovarian teratoma,disease-protein-drug,indication,"['immature ovarian teratoma', 'CYP1B1', 'Doxorubicin']",0.0023107840693662,"Question: Is immature ovarian teratoma an indication for Doxorubicin?
+Answer: YES"
+14176,37703,Fluoxetine,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'HTR2C', 'Fluoxetine']",0.0007168075898548,"Question: Is neurotic disorder an indication for Fluoxetine?
+Answer: YES"
+14321,32974,Levodopa,atypical juvenile parkinsonism,disease-phenotype-protein-drug,indication,"['atypical juvenile parkinsonism', 'Seizure', 'DRD2', 'Levodopa']",0.0034112381145765,"Question: Is atypical juvenile parkinsonism an indication for Levodopa?
+Answer: YES"
+15193,30093,Rotigotine,parkinsonian-pyramidal syndrome,disease-phenotype-protein-drug,indication,"['parkinsonian-pyramidal syndrome', 'Rigidity', 'CYP2D6', 'Rotigotine']",0.0020152482093811,"Question: Is parkinsonian-pyramidal syndrome an indication for Rotigotine?
+Answer: YES"
+15038,37743,Daclatasvir,hepatitis C virus infection,disease-protein-drug,indication,"['hepatitis C virus infection', 'CYP3A4', 'Daclatasvir']",0.0004459727757857,"Question: Is hepatitis C virus infection an indication for Daclatasvir?
+Answer: YES"
+15124,28801,Biperiden,juvenile onset Parkinson disease 19A,disease-phenotype-protein-drug,indication,"['juvenile onset Parkinson disease 19A', 'Seizure', 'CHRM1', 'Biperiden']",0.0029311836534633,"Question: Is juvenile onset Parkinson disease 19A an indication for Biperiden?
+Answer: YES"
+15492,35966,Estramustine,prostate cancer,disease-protein-drug,indication,"['prostate cancer', 'ESR2', 'Estramustine']",0.0006381256076637,"Question: Is prostate cancer an indication for Estramustine?
+Answer: YES"
+14543,83760,Desipramine,dysthymic disorder,disease-protein-drug,indication,"['dysthymic disorder', 'SLC6A2', 'Desipramine']",0.0005892429441569,"Question: Is dysthymic disorder an indication for Desipramine?
+Answer: YES"
+15222,83841,Levomilnacipran,endogenous depression,disease-protein-drug,indication,"['endogenous depression', 'SLC6A4', 'Levomilnacipran']",0.0007325429826621,"Question: Is endogenous depression an indication for Levomilnacipran?
+Answer: YES"
+14476,84094,Testosterone cypionate,premature menopause,disease-protein-drug,indication,"['premature menopause', 'CYP2C19', 'Testosterone cypionate']",0.0008606549570453,"Question: Is premature menopause an indication for Testosterone cypionate?
+Answer: YES"
+14306,36330,Pioglitazone,hepatic porphyria,disease-protein-drug,contraindication,"['hepatic porphyria', 'ALAD', 'Pioglitazone']",0.0008108370565868,"Question: Is hepatic porphyria an indication for Pioglitazone?
+Answer: NO"
+15116,83841,Paroxetine,endogenous depression,disease-protein-drug,indication,"['endogenous depression', 'DRD5', 'Paroxetine']",0.0009382574622538,"Question: Is endogenous depression an indication for Paroxetine?
+Answer: YES"
+14375,37743,Telaprevir,hepatitis C virus infection,disease-protein-drug,indication,"['hepatitis C virus infection', 'CYP3A4', 'Telaprevir']",0.0004534790018636,"Question: Is hepatitis C virus infection an indication for Telaprevir?
+Answer: YES"
+15117,83760,Trimipramine,dysthymic disorder,disease-protein-drug,indication,"['dysthymic disorder', 'CYP2C19', 'Trimipramine']",0.0006251347496488,"Question: Is dysthymic disorder an indication for Trimipramine?
+Answer: YES"
+14275,33077,Doxorubicin,Hodgkins lymphoma,disease-phenotype-protein-drug,indication,"['Hodgkins lymphoma', 'Hepatomegaly', 'ALB', 'Doxorubicin']",0.0048592463543031,"Question: Is Hodgkins lymphoma an indication for Doxorubicin?
+Answer: YES"
+14540,27933,Amoxapine,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'CYP2D6', 'Amoxapine']",0.0020797252935744,"Question: Is anxiety disorder an indication for Amoxapine?
+Answer: YES"
+14904,32759,Safinamide,hemiparkinsonism-hemiatrophy syndrome,disease-protein-drug,indication,"['hemiparkinsonism-hemiatrophy syndrome', 'MAOB', 'Safinamide']",0.0005576181765001,"Question: Is hemiparkinsonism-hemiatrophy syndrome an indication for Safinamide?
+Answer: YES"
+14338,27468,Colchicine,X-linked severe congenital neutropenia,disease-protein-drug,contraindication,"['X-linked severe congenital neutropenia', 'NQO2', 'Colchicine']",0.0006923302369523,"Question: Is X-linked severe congenital neutropenia an indication for Colchicine?
+Answer: NO"
+15094,83841,Mirtazapine,endogenous depression,disease-protein-drug,indication,"['endogenous depression', 'HTR2C', 'Mirtazapine']",0.0004708783200254,"Question: Is endogenous depression an indication for Mirtazapine?
+Answer: YES"
+14633,28313,Lumateperone,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'DRD2', 'Lumateperone']",0.0009320749042784,"Question: Is schizophrenia an indication for Lumateperone?
+Answer: YES"
+14194,35970,Methotrexate,lymphoma,disease-protein-drug,indication,"['lymphoma', 'FPGS', 'Methotrexate']",0.0017432609395925,"Question: Is lymphoma an indication for Methotrexate?
+Answer: YES"
+14176,38957,Fluoxetine,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'HTR2C', 'Fluoxetine']",0.0007067093868384,"Question: Is major depressive disorder an indication for Fluoxetine?
+Answer: YES"
+15138,27933,Selegiline,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'CYP2C19', 'Selegiline']",0.0007148866458625,"Question: Is anxiety disorder an indication for Selegiline?
+Answer: YES"
+15036,32617,Olaparib,hereditary breast ovarian cancer syndrome,disease-protein-drug,indication,"['hereditary breast ovarian cancer syndrome', 'CYP3A4', 'Olaparib']",0.0009042322684859,"Question: Is hereditary breast ovarian cancer syndrome an indication for Olaparib?
+Answer: YES"
+15148,27933,Escitalopram,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'CYP2D6', 'Escitalopram']",0.0019465200369197,"Question: Is anxiety disorder an indication for Escitalopram?
+Answer: YES"
+15116,38957,Paroxetine,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'HTR3A', 'Paroxetine']",0.0006883636910278,"Question: Is major depressive disorder an indication for Paroxetine?
+Answer: YES"
+16180,29854,Conestat alfa,hereditary angioedema,disease-protein-drug,indication,"['hereditary angioedema', 'F12', 'Conestat alfa']",0.000552310529367,"Question: Is hereditary angioedema an indication for Conestat alfa?
+Answer: YES"
+17174,83911,Rivastigmine,Reye syndrome,disease-protein-drug,indication,"['Reye syndrome', 'BCHE', 'Rivastigmine']",0.0032939511251875,"Question: Is Reye syndrome an indication for Rivastigmine?
+Answer: YES"
+14792,37047,Paclitaxel,immature ovarian teratoma,disease-protein-drug,indication,"['immature ovarian teratoma', 'CYP1B1', 'Paclitaxel']",0.0014376120267978,"Question: Is immature ovarian teratoma an indication for Paclitaxel?
+Answer: YES"
+15493,28974,Bromocriptine,early-onset parkinsonism-intellectual disability syndrome,disease-phenotype-protein-drug,indication,"['early-onset parkinsonism-intellectual disability syndrome', 'Seizure', 'ADRA1B', 'Bromocriptine']",0.0029742760404374,"Question: Is early-onset parkinsonism-intellectual disability syndrome an indication for Bromocriptine?
+Answer: YES"
+15311,35641,Primidone,epilepsy,disease-protein-drug,indication,"['epilepsy', 'CHRNA4', 'Primidone']",0.001036504528887,"Question: Is epilepsy an indication for Primidone?
+Answer: YES"
+15126,28473,Donepezil,Pick disease,disease-protein-drug,indication,"['Pick disease', 'BCHE', 'Donepezil']",0.0037839651950424,"Question: Is Pick disease an indication for Donepezil?
+Answer: YES"
+14223,38242,Risperidone,bipolar disorder,disease-protein-drug,indication,"['bipolar disorder', 'ADRA1A', 'Risperidone']",0.0005275533040963,"Question: Is bipolar disorder an indication for Risperidone?
+Answer: YES"
+15338,83909,Deferasirox,autosomal recessive severe congenital neutropenia due to CXCR2 deficiency,disease-protein-drug,contraindication,"['autosomal recessive severe congenital neutropenia due to CXCR2 deficiency', 'CSF3', 'Deferasirox']",0.0015077920965726,"Question: Is autosomal recessive severe congenital neutropenia due to CXCR2 deficiency an indication for Deferasirox?
+Answer: NO"
+14269,33534,Methylprednisolone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,indication,"['pediatric systemic lupus erythematosus', 'Thrombocytopenia', 'ALB', 'Methylprednisolone']",0.0035083550297104,"Question: Is pediatric systemic lupus erythematosus an indication for Methylprednisolone?
+Answer: YES"
+14999,28249,Quetiapine,major affective disorder,disease-protein-drug,indication,"['major affective disorder', 'DRD2', 'Quetiapine']",0.0010298959603961,"Question: Is major affective disorder an indication for Quetiapine?
+Answer: YES"
+15363,33294,Bendamustine,follicular lymphoma,disease-phenotype-protein-drug,indication,"['follicular lymphoma', 'Splenomegaly', 'CYP1A2', 'Bendamustine']",0.0019395478205594,"Question: Is follicular lymphoma an indication for Bendamustine?
+Answer: YES"
+14062,29078,Diflunisal,rheumatoid arthritis,disease-protein-drug,indication,"['rheumatoid arthritis', 'PTGS1', 'Diflunisal']",0.0010305411157864,"Question: Is rheumatoid arthritis an indication for Diflunisal?
+Answer: YES"
+14152,29113,Chlorthalidone,diabetic ketoacidosis,disease-phenotype-protein-drug,contraindication,"['diabetic ketoacidosis', 'Insulin resistance', 'PIK3R1', 'Chlorthalidone']",0.0047045580901181,"Question: Is diabetic ketoacidosis an indication for Chlorthalidone?
+Answer: NO"
+14275,33621,Doxorubicin,acute lymphoblastic leukemia (disease),disease-protein-drug,indication,"['acute lymphoblastic leukemia (disease)', 'NQO1', 'Doxorubicin']",0.002405863101046,"Question: Is acute lymphoblastic leukemia (disease) an indication for Doxorubicin?
+Answer: YES"
+14789,30654,Daunorubicin,acute lymphoblastic/lymphocytic leukemia,disease-protein-drug,indication,"['acute lymphoblastic/lymphocytic leukemia', 'ABCG2', 'Daunorubicin']",0.0009550900682264,"Question: Is acute lymphoblastic/lymphocytic leukemia an indication for Daunorubicin?
+Answer: YES"
+17232,37888,Triprolidine,allergic rhinitis,disease-protein-drug,indication,"['allergic rhinitis', 'HRH1', 'Triprolidine']",0.000543806091956,"Question: Is allergic rhinitis an indication for Triprolidine?
+Answer: YES"
+15782,28005,Vigabatrin,developmental and epileptic encephalopathy,disease-phenotype-protein-drug,indication,"['developmental and epileptic encephalopathy', 'Focal-onset seizure', 'ABAT', 'Vigabatrin']",0.000899841255519,"Question: Is developmental and epileptic encephalopathy an indication for Vigabatrin?
+Answer: YES"
+14194,35651,Methotrexate,B-cell neoplasm,disease-protein-drug,indication,"['B-cell neoplasm', 'TYMS', 'Methotrexate']",0.002458119216777,"Question: Is B-cell neoplasm an indication for Methotrexate?
+Answer: YES"
+14323,37717,Aripiprazole,autism spectrum disorder,disease-protein-drug,indication,"['autism spectrum disorder', 'ADRB2', 'Aripiprazole']",0.0010255569149469,"Question: Is autism spectrum disorder an indication for Aripiprazole?
+Answer: YES"
+15231,28005,Stiripentol,developmental and epileptic encephalopathy,disease-phenotype-protein-drug,indication,"['developmental and epileptic encephalopathy', 'Limb ataxia', 'GABRA4', 'Stiripentol']",0.0006448490570235,"Question: Is developmental and epileptic encephalopathy an indication for Stiripentol?
+Answer: YES"
+15413,39603,Gemcitabine,malignant sex cord stromal tumor of ovary,disease-protein-drug,indication,"['malignant sex cord stromal tumor of ovary', 'TYMS', 'Gemcitabine']",0.0016183927598987,"Question: Is malignant sex cord stromal tumor of ovary an indication for Gemcitabine?
+Answer: YES"
+14320,84155,Dexamethasone,Epstein-Barr virus-positive diffuse large B-cell lymphoma of the elderly,disease-protein-drug,indication,"['Epstein-Barr virus-positive diffuse large B-cell lymphoma of the elderly', 'ABCG2', 'Dexamethasone']",0.0020887885869514,"Question: Is Epstein-Barr virus-positive diffuse large B-cell lymphoma of the elderly an indication for Dexamethasone?
+Answer: YES"
+15517,32033,Prazepam,insomnia (disease),disease-protein-drug,indication,"['insomnia (disease)', 'GABRB3', 'Prazepam']",0.0005203455582574,"Question: Is insomnia (disease) an indication for Prazepam?
+Answer: YES"
+15116,36105,Paroxetine,phobic disorder,disease-protein-drug,indication,"['phobic disorder', 'DRD2', 'Paroxetine']",0.001170010895192,"Question: Is phobic disorder an indication for Paroxetine?
+Answer: YES"
+14483,36043,Estradiol valerate,primary ovarian failure,disease-protein-drug,indication,"['primary ovarian failure', 'CYP2C19', 'Estradiol valerate']",0.0011199818971977,"Question: Is primary ovarian failure an indication for Estradiol valerate?
+Answer: YES"
+15146,83841,Nefazodone,endogenous depression,disease-protein-drug,indication,"['endogenous depression', 'SLC6A2', 'Nefazodone']",0.0004590101490114,"Question: Is endogenous depression an indication for Nefazodone?
+Answer: YES"
+15098,35915,Promazine,mental disorder,disease-protein-drug,indication,"['mental disorder', 'HTR2A', 'Promazine']",0.0007059854525257,"Question: Is mental disorder an indication for Promazine?
+Answer: YES"
+14019,83777,Betamethasone,occupational dermatitis,disease-protein-drug,indication,"['occupational dermatitis', 'CYP1B1', 'Betamethasone']",0.0018275488903025,"Question: Is occupational dermatitis an indication for Betamethasone?
+Answer: YES"
+14024,35884,Prednisone,diffuse large B-cell lymphoma,disease-protein-drug,indication,"['diffuse large B-cell lymphoma', 'ABCB1', 'Prednisone']",0.0019721744567365,"Question: Is diffuse large B-cell lymphoma an indication for Prednisone?
+Answer: YES"
+14380,28313,Asenapine,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'ADRA1A', 'Asenapine']",0.0005865824231938,"Question: Is schizophrenia an indication for Asenapine?
+Answer: YES"
+16056,32974,Procyclidine,atypical juvenile parkinsonism,disease-phenotype-protein-drug,indication,"['atypical juvenile parkinsonism', 'Resting tremor', 'CHRM4', 'Procyclidine']",0.0007011885991384,"Question: Is atypical juvenile parkinsonism an indication for Procyclidine?
+Answer: YES"
+20133,37703,Ethyl loflazepate,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'GABRA6', 'Ethyl loflazepate']",0.0004285101335072,"Question: Is neurotic disorder an indication for Ethyl loflazepate?
+Answer: YES"
+16314,37785,Dicyclomine,ulcerative colitis (disease),disease-protein-drug,contraindication,"['ulcerative colitis (disease)', 'CCNY', 'Dicyclomine']",0.0034252055556633,"Question: Is ulcerative colitis (disease) an indication for Dicyclomine?
+Answer: NO"
+14794,84261,Dasatinib,"blast phase chronic myelogenous leukemia, BCR-ABL1 positive",disease-protein-drug,indication,"['blast phase chronic myelogenous leukemia, BCR-ABL1 positive', 'BCR', 'Dasatinib']",0.0021835409058533,"Question: Is blast phase chronic myelogenous leukemia, BCR-ABL1 positive an indication for Dasatinib?
+Answer: YES"
+14875,32617,Tretamine,hereditary breast ovarian cancer syndrome,disease-protein-drug,indication,"['hereditary breast ovarian cancer syndrome', 'BCHE', 'Tretamine']",0.0033589004828132,"Question: Is hereditary breast ovarian cancer syndrome an indication for Tretamine?
+Answer: YES"
+16011,28313,Loxapine,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'HTR2A', 'Loxapine']",0.0008106988396849,"Question: Is schizophrenia an indication for Loxapine?
+Answer: YES"
+15146,27933,Nefazodone,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'ADRA1A', 'Nefazodone']",0.0006058516448483,"Question: Is anxiety disorder an indication for Nefazodone?
+Answer: YES"
+15956,33675,Dyphylline,asthma,disease-protein-drug,indication,"['asthma', 'PDE4B', 'Dyphylline']",0.0005901553270995,"Question: Is asthma an indication for Dyphylline?
+Answer: YES"
+15146,38957,Nefazodone,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'HTR1A', 'Nefazodone']",0.0009337089845486,"Question: Is major depressive disorder an indication for Nefazodone?
+Answer: YES"
+15269,29078,Upadacitinib,rheumatoid arthritis,disease-protein-drug,indication,"['rheumatoid arthritis', 'ABCB1', 'Upadacitinib']",0.0012293103907041,"Question: Is rheumatoid arthritis an indication for Upadacitinib?
+Answer: YES"
+14217,36432,Furosemide,congestive heart failure,disease-protein-drug,indication,"['congestive heart failure', 'ALB', 'Furosemide']",0.0018332316199764,"Question: Is congestive heart failure an indication for Furosemide?
+Answer: YES"
+15914,33297,Minocycline,listeriosis,disease-phenotype-protein-drug,indication,"['listeriosis', 'Fever', 'IL1B', 'Minocycline']",0.0039783872095783,"Question: Is listeriosis an indication for Minocycline?
+Answer: YES"
+14275,32617,Doxorubicin,hereditary breast ovarian cancer syndrome,disease-protein-drug,indication,"['hereditary breast ovarian cancer syndrome', 'ABCC1', 'Doxorubicin']",0.0021643700936788,"Question: Is hereditary breast ovarian cancer syndrome an indication for Doxorubicin?
+Answer: YES"
+17256,83791,Chlorcyclizine,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'HRH1', 'Chlorcyclizine']",0.0005487439785922,"Question: Is vasomotor rhinitis an indication for Chlorcyclizine?
+Answer: YES"
+14221,29061,Norethisterone,endometriosis of uterus,disease-protein-drug,indication,"['endometriosis of uterus', 'SRD5A1', 'Norethisterone']",0.0008511879584449,"Question: Is endometriosis of uterus an indication for Norethisterone?
+Answer: YES"
+14656,29865,Cannabidiol,Lennox-Gastaut syndrome,disease-phenotype-protein-drug,indication,"['Lennox-Gastaut syndrome', 'Behavioral abnormality', 'TRPV4', 'Cannabidiol']",0.0016058156226822,"Question: Is Lennox-Gastaut syndrome an indication for Cannabidiol?
+Answer: YES"
+15671,30654,Duvelisib,acute lymphoblastic/lymphocytic leukemia,disease-protein-drug,indication,"['acute lymphoblastic/lymphocytic leukemia', 'ABCG2', 'Duvelisib']",0.0006305273756462,"Question: Is acute lymphoblastic/lymphocytic leukemia an indication for Duvelisib?
+Answer: YES"
+14159,37888,Ipratropium,allergic rhinitis,disease-protein-drug,indication,"['allergic rhinitis', 'ALB', 'Ipratropium']",0.0018158482701347,"Question: Is allergic rhinitis an indication for Ipratropium?
+Answer: YES"
+15613,33688,Ceritinib,non-small cell lung carcinoma (disease),disease-protein-drug,indication,"['non-small cell lung carcinoma (disease)', 'ALK', 'Ceritinib']",0.0003780341153567,"Question: Is non-small cell lung carcinoma (disease) an indication for Ceritinib?
+Answer: YES"
+15877,83791,Cyproheptadine,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'HRH1', 'Cyproheptadine']",0.0005219772632499,"Question: Is vasomotor rhinitis an indication for Cyproheptadine?
+Answer: YES"
+15116,83840,Paroxetine,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'HTR1A', 'Paroxetine']",0.0011679809154675,"Question: Is unipolar depression an indication for Paroxetine?
+Answer: YES"
+14282,33577,Irbesartan,hypertensive disorder,disease-protein-drug,indication,"['hypertensive disorder', 'AGTR1', 'Irbesartan']",0.000527274639329,"Question: Is hypertensive disorder an indication for Irbesartan?
+Answer: YES"
+15138,83841,Selegiline,endogenous depression,disease-protein-drug,indication,"['endogenous depression', 'CYP2C9', 'Selegiline']",0.00055878157907,"Question: Is endogenous depression an indication for Selegiline?
+Answer: YES"
+15295,33592,Triamterene,acidosis disorder,disease-phenotype-protein-drug,contraindication,"['acidosis disorder', 'Lactic acidosis', 'DNM1L', 'Triamterene']",0.0015452165559154,"Question: Is acidosis disorder an indication for Triamterene?
+Answer: NO"
+14275,39531,Doxorubicin,liver failure,disease-protein-drug,contraindication,"['liver failure', 'AKR1D1', 'Doxorubicin']",0.0006087150773431,"Question: Is liver failure an indication for Doxorubicin?
+Answer: NO"
+14680,31502,Zinc acetate,Wilson disease,disease-protein-drug,indication,"['Wilson disease', 'APOE', 'Zinc acetate']",0.0069091366245592,"Question: Is Wilson disease an indication for Zinc acetate?
+Answer: YES"
+15027,33688,Crizotinib,non-small cell lung carcinoma (disease),disease-protein-drug,indication,"['non-small cell lung carcinoma (disease)', 'ALK', 'Crizotinib']",0.0004194148329113,"Question: Is non-small cell lung carcinoma (disease) an indication for Crizotinib?
+Answer: YES"
+14596,28017,Eletriptan,"migraine with or without aura, susceptibility to",disease-phenotype-protein-drug,indication,"['migraine with or without aura, susceptibility to', 'Nausea', 'ABCB1', 'Eletriptan']",0.0018152825452735,"Question: Is migraine with or without aura, susceptibility to an indication for Eletriptan?
+Answer: YES"
+14323,31912,Aripiprazole,autism susceptibility 1,disease-protein-drug,indication,"['autism susceptibility 1', 'HTR1B', 'Aripiprazole']",0.0009352382288671,"Question: Is autism susceptibility 1 an indication for Aripiprazole?
+Answer: YES"
+14807,33605,Epinephrine,hypotensive disorder,disease-protein-drug,indication,"['hypotensive disorder', 'TNF', 'Epinephrine']",0.0021618700320962,"Question: Is hypotensive disorder an indication for Epinephrine?
+Answer: YES"
+15185,33341,Tetrabenazine,juvenile Huntington disease,disease-phenotype-protein-drug,indication,"['juvenile Huntington disease', 'Seizure', 'DRD2', 'Tetrabenazine']",0.0033401911640129,"Question: Is juvenile Huntington disease an indication for Tetrabenazine?
+Answer: YES"
+14275,28830,Doxorubicin,"leukemia, lymphocytic, susceptibility to",disease-protein-drug,indication,"['leukemia, lymphocytic, susceptibility to', 'NQO1', 'Doxorubicin']",0.0023575064671374,"Question: Is leukemia, lymphocytic, susceptibility to an indication for Doxorubicin?
+Answer: YES"
+14320,30990,Dexamethasone,mycosis fungoides and variants,disease-phenotype-protein-drug,indication,"['mycosis fungoides and variants', 'Hepatomegaly', 'CYP1A1', 'Dexamethasone']",0.0038047777974744,"Question: Is mycosis fungoides and variants an indication for Dexamethasone?
+Answer: YES"
+15124,28974,Biperiden,early-onset parkinsonism-intellectual disability syndrome,disease-phenotype-protein-drug,indication,"['early-onset parkinsonism-intellectual disability syndrome', 'Resting tremor', 'CYP2D6', 'Biperiden']",0.0019101002089736,"Question: Is early-onset parkinsonism-intellectual disability syndrome an indication for Biperiden?
+Answer: YES"
+14544,38957,Bupropion,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'CYP2C9', 'Bupropion']",0.0007839506523333,"Question: Is major depressive disorder an indication for Bupropion?
+Answer: YES"
+14220,31408,Apomorphine,X-linked parkinsonism-spasticity syndrome,disease-phenotype-protein-drug,indication,"['X-linked parkinsonism-spasticity syndrome', 'Resting tremor', 'HTR1A', 'Apomorphine']",0.0013946284147384,"Question: Is X-linked parkinsonism-spasticity syndrome an indication for Apomorphine?
+Answer: YES"
+15599,83870,Regorafenib,undifferentiated carcinoma of liver and intrahepatic biliary tract,disease-protein-drug,indication,"['undifferentiated carcinoma of liver and intrahepatic biliary tract', 'CYP2B6', 'Regorafenib']",0.0012504253783417,"Question: Is undifferentiated carcinoma of liver and intrahepatic biliary tract an indication for Regorafenib?
+Answer: YES"
+15197,27933,Mianserin,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'CYP2D6', 'Mianserin']",0.0019969513184914,"Question: Is anxiety disorder an indication for Mianserin?
+Answer: YES"
+15110,28313,Fluphenazine,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'CYP2E1', 'Fluphenazine']",0.0007316136116293,"Question: Is schizophrenia an indication for Fluphenazine?
+Answer: YES"
+14024,31511,Prednisone,autoimmune thrombocytopenic,disease-phenotype-protein-drug,indication,"['autoimmune thrombocytopenic', 'Thrombocytopenia', 'ALB', 'Prednisone']",0.0036033145486506,"Question: Is autoimmune thrombocytopenic an indication for Prednisone?
+Answer: YES"
+15233,27933,Dosulepin,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'CHRM2', 'Dosulepin']",0.0008284300106811,"Question: Is anxiety disorder an indication for Dosulepin?
+Answer: YES"
+15822,29955,Ursodeoxycholic acid,Reynolds syndrome,disease-phenotype-protein-drug,indication,"['Reynolds syndrome', 'Pruritus', 'ABCB11', 'Ursodeoxycholic acid']",0.0012708424162107,"Question: Is Reynolds syndrome an indication for Ursodeoxycholic acid?
+Answer: YES"
+14176,83840,Fluoxetine,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'ABCB1', 'Fluoxetine']",0.0013860832621787,"Question: Is unipolar depression an indication for Fluoxetine?
+Answer: YES"
+16214,36035,Azilsartan medoxomil,hypertension,disease-protein-drug,indication,"['hypertension', 'AGTR1', 'Azilsartan medoxomil']",0.0005856776178912,"Question: Is hypertension an indication for Azilsartan medoxomil?
+Answer: YES"
+15138,83840,Selegiline,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'MAOA', 'Selegiline']",0.000527586221485,"Question: Is unipolar depression an indication for Selegiline?
+Answer: YES"
+15424,39081,Cabergoline,hyperprolactinemia (disease),disease-protein-drug,indication,"['hyperprolactinemia (disease)', 'DRD2', 'Cabergoline']",0.0010262019379778,"Question: Is hyperprolactinemia (disease) an indication for Cabergoline?
+Answer: YES"
+15138,33241,Selegiline,hereditary late onset Parkinson disease,disease-protein-drug,indication,"['hereditary late onset Parkinson disease', 'MAOA', 'Selegiline']",0.000529205971389,"Question: Is hereditary late onset Parkinson disease an indication for Selegiline?
+Answer: YES"
+14024,83777,Prednisone,occupational dermatitis,disease-protein-drug,indication,"['occupational dermatitis', 'CYP1B1', 'Prednisone']",0.0014244299008634,"Question: Is occupational dermatitis an indication for Prednisone?
+Answer: YES"
+14320,27648,Dexamethasone,familial glucocorticoid deficiency,disease-phenotype-protein-drug,indication,"['familial glucocorticoid deficiency', 'Hyperkalemia', 'CYP17A1', 'Dexamethasone']",0.0027298797290768,"Question: Is familial glucocorticoid deficiency an indication for Dexamethasone?
+Answer: YES"
+17241,83791,Diphenylpyraline,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'HRH1', 'Diphenylpyraline']",0.0005157212641173,"Question: Is vasomotor rhinitis an indication for Diphenylpyraline?
+Answer: YES"
+14191,29078,Piroxicam,rheumatoid arthritis,disease-phenotype-protein-drug,indication,"['rheumatoid arthritis', 'Fever', 'PTGS2', 'Piroxicam']",0.0025339825851612,"Question: Is rheumatoid arthritis an indication for Piroxicam?
+Answer: YES"
+14332,32393,Cefazolin,staphylococcal pneumonia,disease-phenotype-protein-drug,indication,"['staphylococcal pneumonia', 'Fever', 'IL2', 'Cefazolin']",0.0023343438519511,"Question: Is staphylococcal pneumonia an indication for Cefazolin?
+Answer: YES"
+15263,83856,Enasidenib,acute myeloid leukemia with CEBPA somatic mutations,disease-protein-drug,indication,"['acute myeloid leukemia with CEBPA somatic mutations', 'IDH2', 'Enasidenib']",0.0007686759093033,"Question: Is acute myeloid leukemia with CEBPA somatic mutations an indication for Enasidenib?
+Answer: YES"
+14168,39275,Spironolactone,primary aldosteronism,disease-protein-drug,indication,"['primary aldosteronism', 'CYP11B2', 'Spironolactone']",0.0010844817443093,"Question: Is primary aldosteronism an indication for Spironolactone?
+Answer: YES"
+14641,33605,Dopamine,hypotensive disorder,disease-protein-drug,indication,"['hypotensive disorder', 'DRD1', 'Dopamine']",0.0007503279678453,"Question: Is hypotensive disorder an indication for Dopamine?
+Answer: YES"
+14269,37888,Methylprednisolone,allergic rhinitis,disease-protein-drug,indication,"['allergic rhinitis', 'ALB', 'Methylprednisolone']",0.0024798926606394,"Question: Is allergic rhinitis an indication for Methylprednisolone?
+Answer: YES"
+17252,83791,Antazoline,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'HRH1', 'Antazoline']",0.0005343099900457,"Question: Is vasomotor rhinitis an indication for Antazoline?
+Answer: YES"
+14323,28313,Aripiprazole,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'CHRM2', 'Aripiprazole']",0.0010515853453314,"Question: Is schizophrenia an indication for Aripiprazole?
+Answer: YES"
+14223,28313,Risperidone,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'HTR7', 'Risperidone']",0.0006121111894473,"Question: Is schizophrenia an indication for Risperidone?
+Answer: YES"
+14023,37608,Triamcinolone,ciliary body disease,disease-protein-drug,indication,"['ciliary body disease', 'ALB', 'Triamcinolone']",0.002810065781004,"Question: Is ciliary body disease an indication for Triamcinolone?
+Answer: YES"
+15311,29865,Primidone,Lennox-Gastaut syndrome,disease-phenotype-protein-drug,indication,"['Lennox-Gastaut syndrome', 'Focal-onset seizure', 'GABRA5', 'Primidone']",0.0010482684336694,"Question: Is Lennox-Gastaut syndrome an indication for Primidone?
+Answer: YES"
+14196,36035,Propranolol,hypertension,disease-protein-drug,indication,"['hypertension', 'CYP3A5', 'Propranolol']",0.0010545970761195,"Question: Is hypertension an indication for Propranolol?
+Answer: YES"
+14190,28849,Fluorouracil,colorectal cancer,disease-protein-drug,indication,"['colorectal cancer', 'MTHFR', 'Fluorouracil']",0.0015911688656372,"Question: Is colorectal cancer an indication for Fluorouracil?
+Answer: YES"
+14140,38242,Ziprasidone,bipolar disorder,disease-protein-drug,indication,"['bipolar disorder', 'HTR2A', 'Ziprasidone']",0.0008835048086932,"Question: Is bipolar disorder an indication for Ziprasidone?
+Answer: YES"
+15430,35641,Pentobarbital,epilepsy,disease-protein-drug,indication,"['epilepsy', 'GABRB3', 'Pentobarbital']",0.0006790224759348,"Question: Is epilepsy an indication for Pentobarbital?
+Answer: YES"
+14028,32815,Hydrocortisone,Trichinellosis,disease-phenotype-protein-drug,indication,"['Trichinellosis', 'Nausea', 'ABCB1', 'Hydrocortisone']",0.0027861248572696,"Question: Is Trichinellosis an indication for Hydrocortisone?
+Answer: YES"
+14463,83855,Gilteritinib,acute myeloid leukemia with t(8;21)(q22;q22) translocation,disease-protein-drug,indication,"['acute myeloid leukemia with t(8;21)(q22;q22) translocation', 'FLT3', 'Gilteritinib']",0.0012109465618023,"Question: Is acute myeloid leukemia with t(8;21)(q22;q22) translocation an indication for Gilteritinib?
+Answer: YES"
+16054,28801,Trihexyphenidyl,juvenile onset Parkinson disease 19A,disease-phenotype-protein-drug,indication,"['juvenile onset Parkinson disease 19A', 'Seizure', 'CHRM1', 'Trihexyphenidyl']",0.0029438068823719,"Question: Is juvenile onset Parkinson disease 19A an indication for Trihexyphenidyl?
+Answer: YES"
+14737,83817,Carboplatin,hereditary site-specific ovarian cancer syndrome,disease-protein-drug,indication,"['hereditary site-specific ovarian cancer syndrome', 'ATP7B', 'Carboplatin']",0.0013228137575346,"Question: Is hereditary site-specific ovarian cancer syndrome an indication for Carboplatin?
+Answer: YES"
+14737,37423,Carboplatin,ovarian clear cell adenocarcinoma,disease-protein-drug,indication,"['ovarian clear cell adenocarcinoma', 'SOD1', 'Carboplatin']",0.0021966896702171,"Question: Is ovarian clear cell adenocarcinoma an indication for Carboplatin?
+Answer: YES"
+14275,84157,Doxorubicin,diffuse large B-cell lymphoma of the central nervous system,disease-protein-drug,indication,"['diffuse large B-cell lymphoma of the central nervous system', 'ABCG2', 'Doxorubicin']",0.0022261986514447,"Question: Is diffuse large B-cell lymphoma of the central nervous system an indication for Doxorubicin?
+Answer: YES"
+14042,30813,Hydrocortisone acetate,Addison disease,disease-phenotype-protein-drug,indication,"['Addison disease', 'Vomiting', 'ABCB1', 'Hydrocortisone acetate']",0.0026275978318876,"Question: Is Addison disease an indication for Hydrocortisone acetate?
+Answer: YES"
+14186,31477,Cisplatin,ovarian cancer,disease-protein-drug,indication,"['ovarian cancer', 'SOD1', 'Cisplatin']",0.0018821001784079,"Question: Is ovarian cancer an indication for Cisplatin?
+Answer: YES"
+14019,30813,Betamethasone,Addison disease,disease-phenotype-protein-drug,indication,"['Addison disease', 'Vomiting', 'ABCB1', 'Betamethasone']",0.0031666130370683,"Question: Is Addison disease an indication for Betamethasone?
+Answer: YES"
+14141,39531,Phenytoin,liver failure,disease-protein-drug,contraindication,"['liver failure', 'AKR1D1', 'Phenytoin']",0.0011429247735896,"Question: Is liver failure an indication for Phenytoin?
+Answer: NO"
+14830,32974,Amantadine,atypical juvenile parkinsonism,disease-protein-drug,indication,"['atypical juvenile parkinsonism', 'DDC', 'Amantadine']",0.0007590495612123,"Question: Is atypical juvenile parkinsonism an indication for Amantadine?
+Answer: YES"
+15338,28813,Deferasirox,myelodysplastic syndrome,disease-protein-drug,contraindication,"['myelodysplastic syndrome', 'MECOM', 'Deferasirox']",0.0013612971266946,"Question: Is myelodysplastic syndrome an indication for Deferasirox?
+Answer: NO"
+14220,28547,Apomorphine,Parkinson disease,disease-phenotype-protein-drug,indication,"['Parkinson disease', 'Tremor', 'HTR1A', 'Apomorphine']",0.001568107569637,"Question: Is Parkinson disease an indication for Apomorphine?
+Answer: YES"
+14163,33577,Diltiazem,hypertensive disorder,disease-protein-drug,indication,"['hypertensive disorder', 'CYP3A5', 'Diltiazem']",0.0004813915762999,"Question: Is hypertensive disorder an indication for Diltiazem?
+Answer: YES"
+14955,84155,Vincristine,Epstein-Barr virus-positive diffuse large B-cell lymphoma of the elderly,disease-protein-drug,indication,"['Epstein-Barr virus-positive diffuse large B-cell lymphoma of the elderly', 'ABCB1', 'Vincristine']",0.0017286154736302,"Question: Is Epstein-Barr virus-positive diffuse large B-cell lymphoma of the elderly an indication for Vincristine?
+Answer: YES"
+14052,84142,Vitamin A,vitamin A deficiency (disease),disease-protein-drug,indication,"['vitamin A deficiency (disease)', 'RBP4', 'Vitamin A']",0.0022778830315664,"Question: Is vitamin A deficiency (disease) an indication for Vitamin A?
+Answer: YES"
+14196,32222,Propranolol,congenital hemangioma,disease-phenotype-protein-drug,indication,"['congenital hemangioma', 'Thrombocytopenia', 'ALB', 'Propranolol']",0.0033679095719927,"Question: Is congenital hemangioma an indication for Propranolol?
+Answer: YES"
+15001,83779,Paliperidone,schizoaffective disorder,disease-protein-drug,indication,"['schizoaffective disorder', 'HTR2A', 'Paliperidone']",0.0007777474563312,"Question: Is schizoaffective disorder an indication for Paliperidone?
+Answer: YES"
+17601,29078,Golimumab,rheumatoid arthritis,disease-phenotype-protein-drug,indication,"['rheumatoid arthritis', 'Fever', 'TNF', 'Golimumab']",0.0031612922200794,"Question: Is rheumatoid arthritis an indication for Golimumab?
+Answer: YES"
+14186,39615,Cisplatin,borderline epithelial tumor of ovary,disease-protein-drug,indication,"['borderline epithelial tumor of ovary', 'ATP7B', 'Cisplatin']",0.0010300555406356,"Question: Is borderline epithelial tumor of ovary an indication for Cisplatin?
+Answer: YES"
+14140,28313,Ziprasidone,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'HTR3D', 'Ziprasidone']",0.0006326328782432,"Question: Is schizophrenia an indication for Ziprasidone?
+Answer: YES"
+15148,83840,Escitalopram,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'MAOB', 'Escitalopram']",0.0006176630643382,"Question: Is unipolar depression an indication for Escitalopram?
+Answer: YES"
+14030,30813,Prednisolone,Addison disease,disease-phenotype-protein-drug,indication,"['Addison disease', 'Vomiting', 'ABCB1', 'Prednisolone']",0.0031701391437926,"Question: Is Addison disease an indication for Prednisolone?
+Answer: YES"
+15148,83841,Escitalopram,endogenous depression,disease-protein-drug,indication,"['endogenous depression', 'HTR2C', 'Escitalopram']",0.0005097337889677,"Question: Is endogenous depression an indication for Escitalopram?
+Answer: YES"
+14792,36794,Paclitaxel,ovarian adenocarcinoma,disease-protein-drug,indication,"['ovarian adenocarcinoma', 'CYP1B1', 'Paclitaxel']",0.0014411892775128,"Question: Is ovarian adenocarcinoma an indication for Paclitaxel?
+Answer: YES"
+14238,27366,Naproxen,"spondyloarthropathy, susceptibility to",disease-phenotype-protein-drug,indication,"['spondyloarthropathy, susceptibility to', 'Arrhythmia', 'PTGS2', 'Naproxen']",0.002127978822486,"Question: Is spondyloarthropathy, susceptibility to an indication for Naproxen?
+Answer: YES"
+15110,83778,Fluphenazine,schizophreniform disorder,disease-protein-drug,indication,"['schizophreniform disorder', 'HTR2A', 'Fluphenazine']",0.0007140740761563,"Question: Is schizophreniform disorder an indication for Fluphenazine?
+Answer: YES"
+14320,29715,Dexamethasone,chondrocalcinosis,disease-phenotype-protein-drug,indication,"['chondrocalcinosis', 'Seizure', 'ABCC2', 'Dexamethasone']",0.0044650788832996,"Question: Is chondrocalcinosis an indication for Dexamethasone?
+Answer: YES"
+15082,37703,Citalopram,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'CYP2D6', 'Citalopram']",0.001742497082746,"Question: Is neurotic disorder an indication for Citalopram?
+Answer: YES"
+14223,37717,Risperidone,autism spectrum disorder,disease-protein-drug,indication,"['autism spectrum disorder', 'HTR2A', 'Risperidone']",0.0007580603320773,"Question: Is autism spectrum disorder an indication for Risperidone?
+Answer: YES"
+14186,37423,Cisplatin,ovarian clear cell adenocarcinoma,disease-protein-drug,indication,"['ovarian clear cell adenocarcinoma', 'ATP7B', 'Cisplatin']",0.0009745491057259,"Question: Is ovarian clear cell adenocarcinoma an indication for Cisplatin?
+Answer: YES"
+15018,38274,Midostaurin,inherited acute myeloid leukemia,disease-protein-drug,indication,"['inherited acute myeloid leukemia', 'FLT3', 'Midostaurin']",0.0013682326726179,"Question: Is inherited acute myeloid leukemia an indication for Midostaurin?
+Answer: YES"
+15197,83841,Mianserin,endogenous depression,disease-protein-drug,indication,"['endogenous depression', 'HTR7', 'Mianserin']",0.0006024809858765,"Question: Is endogenous depression an indication for Mianserin?
+Answer: YES"
+14806,28547,Entacapone,Parkinson disease,disease-phenotype-protein-drug,indication,"['Parkinson disease', 'Postural tremor', 'CYP2D6', 'Entacapone']",0.0019661363996364,"Question: Is Parkinson disease an indication for Entacapone?
+Answer: YES"
+14139,32468,Benzatropine,postencephalitic Parkinson disease,disease-phenotype-protein-drug,indication,"['postencephalitic Parkinson disease', 'Seizure', 'SLC6A2', 'Benzatropine']",0.0028461653989911,"Question: Is postencephalitic Parkinson disease an indication for Benzatropine?
+Answer: YES"
+15493,32468,Bromocriptine,postencephalitic Parkinson disease,disease-phenotype-protein-drug,indication,"['postencephalitic Parkinson disease', 'Resting tremor', 'HTR1A', 'Bromocriptine']",0.0012307132203232,"Question: Is postencephalitic Parkinson disease an indication for Bromocriptine?
+Answer: YES"
+15001,28313,Paliperidone,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'ADRA2A', 'Paliperidone']",0.0006010772805851,"Question: Is schizophrenia an indication for Paliperidone?
+Answer: YES"
+14193,83791,Hydroxyzine,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'ALB', 'Hydroxyzine']",0.0017968596844433,"Question: Is vasomotor rhinitis an indication for Hydroxyzine?
+Answer: YES"
+15446,33225,Bosentan,systemic sclerosis,disease-phenotype-protein-drug,indication,"['systemic sclerosis', 'Pruritus', 'ABCB11', 'Bosentan']",0.0014120828457118,"Question: Is systemic sclerosis an indication for Bosentan?
+Answer: YES"
+14136,31181,Enflurane,muscular dystrophy,disease-phenotype-protein-drug,contraindication,"['muscular dystrophy', 'Generalized hypotonia', 'LNPK', 'Enflurane']",0.0040746579870734,"Question: Is muscular dystrophy an indication for Enflurane?
+Answer: NO"
+14161,38957,Olanzapine,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'CYP2C9', 'Olanzapine']",0.0008774997241578,"Question: Is major depressive disorder an indication for Olanzapine?
+Answer: YES"
+14024,28158,Prednisone,inflammatory bowel disease,disease-protein-drug,indication,"['inflammatory bowel disease', 'ABCB1', 'Prednisone']",0.0020378911903597,"Question: Is inflammatory bowel disease an indication for Prednisone?
+Answer: YES"
+17233,39491,Carbinoxamine,neuromuscular junction disease,disease-protein-drug,contraindication,"['neuromuscular junction disease', 'HLA-DPB1', 'Carbinoxamine']",0.0011653672575126,"Question: Is neuromuscular junction disease an indication for Carbinoxamine?
+Answer: NO"
+14156,37703,Amitriptyline,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'ALB', 'Amitriptyline']",0.0024299709536595,"Question: Is neurotic disorder an indication for Amitriptyline?
+Answer: YES"
+15424,29637,Cabergoline,prolactin producing pituitary gland tumor,disease-protein-drug,indication,"['prolactin producing pituitary gland tumor', 'DRD2', 'Cabergoline']",0.0009936647206736,"Question: Is prolactin producing pituitary gland tumor an indication for Cabergoline?
+Answer: YES"
+14310,27933,Doxepin,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'ABCB1', 'Doxepin']",0.0014203739181228,"Question: Is anxiety disorder an indication for Doxepin?
+Answer: YES"
+14189,83760,Nortriptyline,dysthymic disorder,disease-protein-drug,indication,"['dysthymic disorder', 'DRD2', 'Nortriptyline']",0.0009857744157565,"Question: Is dysthymic disorder an indication for Nortriptyline?
+Answer: YES"
+15117,37703,Trimipramine,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'SLC6A3', 'Trimipramine']",0.0006651632006231,"Question: Is neurotic disorder an indication for Trimipramine?
+Answer: YES"
+18416,32202,Canakinumab,familial Mediterranean fever,disease-phenotype-protein-drug,indication,"['familial Mediterranean fever', 'Fever', 'IL1B', 'Canakinumab']",0.0025280918177058,"Question: Is familial Mediterranean fever an indication for Canakinumab?
+Answer: YES"
+14830,28801,Amantadine,juvenile onset Parkinson disease 19A,disease-protein-drug,indication,"['juvenile onset Parkinson disease 19A', 'DRD2', 'Amantadine']",0.001055139663066,"Question: Is juvenile onset Parkinson disease 19A an indication for Amantadine?
+Answer: YES"
+14023,32746,Triamcinolone,Stevens-Johnson syndrome,disease-phenotype-protein-drug,indication,"['Stevens-Johnson syndrome', 'Thrombocytopenia', 'ALB', 'Triamcinolone']",0.0038604487028882,"Question: Is Stevens-Johnson syndrome an indication for Triamcinolone?
+Answer: YES"
+14542,37703,Maprotiline,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'SLC6A2', 'Maprotiline']",0.0004921122609471,"Question: Is neurotic disorder an indication for Maprotiline?
+Answer: YES"
+15211,27933,Desvenlafaxine,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'SLC6A2', 'Desvenlafaxine']",0.0006155916804645,"Question: Is anxiety disorder an indication for Desvenlafaxine?
+Answer: YES"
+15493,32974,Bromocriptine,atypical juvenile parkinsonism,disease-phenotype-protein-drug,indication,"['atypical juvenile parkinsonism', 'Seizure', 'DRD3', 'Bromocriptine']",0.0031691026732253,"Question: Is atypical juvenile parkinsonism an indication for Bromocriptine?
+Answer: YES"
+16056,31408,Procyclidine,X-linked parkinsonism-spasticity syndrome,disease-phenotype-protein-drug,indication,"['X-linked parkinsonism-spasticity syndrome', 'Seizure', 'CHRM1', 'Procyclidine']",0.0028974122911813,"Question: Is X-linked parkinsonism-spasticity syndrome an indication for Procyclidine?
+Answer: YES"
+14178,83763,Chlorpromazine,manic bipolar affective disorder,disease-protein-drug,indication,"['manic bipolar affective disorder', 'DRD5', 'Chlorpromazine']",0.0009556506179708,"Question: Is manic bipolar affective disorder an indication for Chlorpromazine?
+Answer: YES"
+14319,37805,Saquinavir,HIV infectious disease,disease-protein-drug,indication,"['HIV infectious disease', 'ALB', 'Saquinavir']",0.0017983172228952,"Question: Is HIV infectious disease an indication for Saquinavir?
+Answer: YES"
+14190,37144,Fluorouracil,squamous cell carcinoma of colon,disease-protein-drug,indication,"['squamous cell carcinoma of colon', 'DPYD', 'Fluorouracil']",0.0013410130326203,"Question: Is squamous cell carcinoma of colon an indication for Fluorouracil?
+Answer: YES"
+14190,31380,Fluorouracil,diffuse gastric adenocarcinoma,disease-protein-drug,indication,"['diffuse gastric adenocarcinoma', 'DPYD', 'Fluorouracil']",0.0013474091535269,"Question: Is diffuse gastric adenocarcinoma an indication for Fluorouracil?
+Answer: YES"
+14880,84229,Nicotine,nicotine dependence,disease-protein-drug,indication,"['nicotine dependence', 'CHRNA5', 'Nicotine']",0.0010738008807763,"Question: Is nicotine dependence an indication for Nicotine?
+Answer: YES"
+15180,32626,Fusidic acid,cholera,disease-phenotype-protein-drug,indication,"['cholera', 'Seizure', 'ABCC2', 'Fusidic acid']",0.004105134212049,"Question: Is cholera an indication for Fusidic acid?
+Answer: YES"
+15211,83840,Desvenlafaxine,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'SLC6A2', 'Desvenlafaxine']",0.0004461698249093,"Question: Is unipolar depression an indication for Desvenlafaxine?
+Answer: YES"
+14959,33577,Nicardipine,hypertensive disorder,disease-protein-drug,indication,"['hypertensive disorder', 'CYP3A5', 'Nicardipine']",0.0005655049652411,"Question: Is hypertensive disorder an indication for Nicardipine?
+Answer: YES"
+16317,28313,Molindone,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'CHRM1', 'Molindone']",0.000551039910973,"Question: Is schizophrenia an indication for Molindone?
+Answer: YES"
+15413,37152,Gemcitabine,familial ovarian cancer,disease-protein-drug,indication,"['familial ovarian cancer', 'TYMS', 'Gemcitabine']",0.0016190124187929,"Question: Is familial ovarian cancer an indication for Gemcitabine?
+Answer: YES"
+14737,83820,Carboplatin,maligant granulosa cell tumor of ovary,disease-protein-drug,indication,"['maligant granulosa cell tumor of ovary', 'SOD1', 'Carboplatin']",0.0021966896702171,"Question: Is maligant granulosa cell tumor of ovary an indication for Carboplatin?
+Answer: YES"
+15124,28547,Biperiden,Parkinson disease,disease-phenotype-protein-drug,indication,"['Parkinson disease', 'Limb dystonia', 'CYP2D6', 'Biperiden']",0.0019240190915453,"Question: Is Parkinson disease an indication for Biperiden?
+Answer: YES"
+14383,27452,Oxymetholone,Diamond-Blackfan anemia,disease-phenotype-protein-drug,indication,"['Diamond-Blackfan anemia', 'Respiratory distress', 'NPPB', 'Oxymetholone']",0.0008806109457994,"Question: Is Diamond-Blackfan anemia an indication for Oxymetholone?
+Answer: YES"
+15113,83911,Galantamine,Reye syndrome,disease-protein-drug,indication,"['Reye syndrome', 'ACHE', 'Galantamine']",0.0008935615799657,"Question: Is Reye syndrome an indication for Galantamine?
+Answer: YES"
+15858,31384,Migalastat,Fabry disease,disease-protein-drug,indication,"['Fabry disease', 'GLA', 'Migalastat']",0.0008957308523932,"Question: Is Fabry disease an indication for Migalastat?
+Answer: YES"
+15146,83840,Nefazodone,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'HTR2A', 'Nefazodone']",0.0006682396605635,"Question: Is unipolar depression an indication for Nefazodone?
+Answer: YES"
+14320,84159,Dexamethasone,ALK-positive large B-cell lymphoma,disease-protein-drug,indication,"['ALK-positive large B-cell lymphoma', 'ABCB1', 'Dexamethasone']",0.0026618335524691,"Question: Is ALK-positive large B-cell lymphoma an indication for Dexamethasone?
+Answer: YES"
+14380,38242,Asenapine,bipolar disorder,disease-protein-drug,indication,"['bipolar disorder', 'DRD3', 'Asenapine']",0.0008113583173848,"Question: Is bipolar disorder an indication for Asenapine?
+Answer: YES"
+14161,83841,Olanzapine,endogenous depression,disease-protein-drug,indication,"['endogenous depression', 'DRD2', 'Olanzapine']",0.0012330269906118,"Question: Is endogenous depression an indication for Olanzapine?
+Answer: YES"
+17829,28249,Lithium citrate,major affective disorder,disease-protein-drug,indication,"['major affective disorder', 'GSK3B', 'Lithium citrate']",0.0006284343744459,"Question: Is major affective disorder an indication for Lithium citrate?
+Answer: YES"
+15197,38957,Mianserin,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'HTR1A', 'Mianserin']",0.0010093823325956,"Question: Is major depressive disorder an indication for Mianserin?
+Answer: YES"
+14904,32974,Safinamide,atypical juvenile parkinsonism,disease-protein-drug,indication,"['atypical juvenile parkinsonism', 'MAOA', 'Safinamide']",0.0004981491045017,"Question: Is atypical juvenile parkinsonism an indication for Safinamide?
+Answer: YES"
+14269,33621,Methylprednisolone,acute lymphoblastic leukemia (disease),disease-protein-drug,indication,"['acute lymphoblastic leukemia (disease)', 'ABCB1', 'Methylprednisolone']",0.0018738381502083,"Question: Is acute lymphoblastic leukemia (disease) an indication for Methylprednisolone?
+Answer: YES"
+14314,37753,Naloxone,opiate dependence,disease-protein-drug,indication,"['opiate dependence', 'CREB1', 'Naloxone']",0.0008445820249286,"Question: Is opiate dependence an indication for Naloxone?
+Answer: YES"
+14230,32932,Tetracycline,brucellosis,disease-phenotype-protein-drug,indication,"['brucellosis', 'Thrombocytopenia', 'ALB', 'Tetracycline']",0.0031235982733936,"Question: Is brucellosis an indication for Tetracycline?
+Answer: YES"
+14190,36000,Fluorouracil,gastric neoplasm,disease-protein-drug,indication,"['gastric neoplasm', 'CYP2A6', 'Fluorouracil']",0.001239719617062,"Question: Is gastric neoplasm an indication for Fluorouracil?
+Answer: YES"
+15781,36209,Acetylsalicylic acid,arthropathy,disease-protein-drug,indication,"['arthropathy', 'AKR1C1', 'Acetylsalicylic acid']",0.001954591590775,"Question: Is arthropathy an indication for Acetylsalicylic acid?
+Answer: YES"
+14196,83802,Propranolol,obsolete hyperuricemia (disease),disease-protein-drug,contraindication,"['obsolete hyperuricemia (disease)', 'APLN', 'Propranolol']",0.0011646936047818,"Question: Is obsolete hyperuricemia (disease) an indication for Propranolol?
+Answer: NO"
+15892,36315,Ferric maltol,deficiency anemia,disease-protein-drug,indication,"['deficiency anemia', 'SLC11A2', 'Ferric maltol']",0.0006006485466911,"Question: Is deficiency anemia an indication for Ferric maltol?
+Answer: YES"
+14656,32456,Cannabidiol,cutis verticis gyrata,disease-phenotype-protein-drug,indication,"['cutis verticis gyrata', 'Seizure', 'PTGS2', 'Cannabidiol']",0.004409384422493,"Question: Is cutis verticis gyrata an indication for Cannabidiol?
+Answer: YES"
+14962,38957,Trazodone,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'HTR1A', 'Trazodone']",0.0009120301829007,"Question: Is major depressive disorder an indication for Trazodone?
+Answer: YES"
+14262,31176,Salicylic acid,palmoplantar keratoderma,disease-phenotype-protein-drug,indication,"['palmoplantar keratoderma', 'Erythema', 'PTGS1', 'Salicylic acid']",0.0015658588104309,"Question: Is palmoplantar keratoderma an indication for Salicylic acid?
+Answer: YES"
+14607,83791,Diphenhydramine,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'HRH1', 'Diphenhydramine']",0.0005134451667663,"Question: Is vasomotor rhinitis an indication for Diphenhydramine?
+Answer: YES"
+14238,29078,Naproxen,rheumatoid arthritis,disease-phenotype-protein-drug,indication,"['rheumatoid arthritis', 'Fever', 'PTGS2', 'Naproxen']",0.0025743819033536,"Question: Is rheumatoid arthritis an indication for Naproxen?
+Answer: YES"
+14540,37703,Amoxapine,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'HTR1B', 'Amoxapine']",0.0007184848778434,"Question: Is neurotic disorder an indication for Amoxapine?
+Answer: YES"
+14940,83996,Lidocaine,premature ejaculation (disease),disease-protein-drug,indication,"['premature ejaculation (disease)', 'CYP2D6', 'Lidocaine']",0.0022014070879051,"Question: Is premature ejaculation (disease) an indication for Lidocaine?
+Answer: YES"
+14793,35771,Docetaxel,breast neoplasm,disease-protein-drug,indication,"['breast neoplasm', 'BCL2', 'Docetaxel']",0.001500980829541,"Question: Is breast neoplasm an indication for Docetaxel?
+Answer: YES"
+14913,28313,Trifluoperazine,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'DRD2', 'Trifluoperazine']",0.0009777078414224,"Question: Is schizophrenia an indication for Trifluoperazine?
+Answer: YES"
+14792,83821,Paclitaxel,malignant Sertoli-Leydig cell tumor of ovary,disease-protein-drug,indication,"['malignant Sertoli-Leydig cell tumor of ovary', 'CYP1B1', 'Paclitaxel']",0.0014376031485676,"Question: Is malignant Sertoli-Leydig cell tumor of ovary an indication for Paclitaxel?
+Answer: YES"
+15493,31408,Bromocriptine,X-linked parkinsonism-spasticity syndrome,disease-phenotype-protein-drug,indication,"['X-linked parkinsonism-spasticity syndrome', 'Seizure', 'DRD3', 'Bromocriptine']",0.0031661506260144,"Question: Is X-linked parkinsonism-spasticity syndrome an indication for Bromocriptine?
+Answer: YES"
+15282,29113,Insulin lispro,diabetic ketoacidosis,disease-phenotype-protein-drug,indication,"['diabetic ketoacidosis', 'Insulin resistance', 'INSR', 'Insulin lispro']",0.0007105760942502,"Question: Is diabetic ketoacidosis an indication for Insulin lispro?
+Answer: YES"
+14938,33577,Reserpine,hypertensive disorder,disease-protein-drug,indication,"['hypertensive disorder', 'CYP3A5', 'Reserpine']",0.0006208012338321,"Question: Is hypertensive disorder an indication for Reserpine?
+Answer: YES"
+15218,32132,Phenylbutyric acid,citrullinemia,disease-phenotype-protein-drug,indication,"['citrullinemia', 'Coma', 'CYP2D6', 'Phenylbutyric acid']",0.0026660316208064,"Question: Is citrullinemia an indication for Phenylbutyric acid?
+Answer: YES"
+17437,36860,Metyrosine,adrenal gland cancer,disease-protein-drug,indication,"['adrenal gland cancer', 'TH', 'Metyrosine']",0.0008427983499124,"Question: Is adrenal gland cancer an indication for Metyrosine?
+Answer: YES"
+14544,83840,Bupropion,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'SLC6A2', 'Bupropion']",0.0006797136964514,"Question: Is unipolar depression an indication for Bupropion?
+Answer: YES"
+14028,30990,Hydrocortisone,mycosis fungoides and variants,disease-phenotype-protein-drug,indication,"['mycosis fungoides and variants', 'Hepatomegaly', 'CYP1B1', 'Hydrocortisone']",0.0031206092280819,"Question: Is mycosis fungoides and variants an indication for Hydrocortisone?
+Answer: YES"
+15590,38242,Lurasidone,bipolar disorder,disease-protein-drug,indication,"['bipolar disorder', 'HTR1A', 'Lurasidone']",0.000923162380938,"Question: Is bipolar disorder an indication for Lurasidone?
+Answer: YES"
+14024,27648,Prednisone,familial glucocorticoid deficiency,disease-phenotype-protein-drug,indication,"['familial glucocorticoid deficiency', 'Vomiting', 'ABCB1', 'Prednisone']",0.0027626838514211,"Question: Is familial glucocorticoid deficiency an indication for Prednisone?
+Answer: YES"
+14981,31524,Buprenorphine,postural orthostatic tachycardia syndrome,disease-protein-drug,contraindication,"['postural orthostatic tachycardia syndrome', 'SLC6A2', 'Buprenorphine']",0.0006105738130291,"Question: Is postural orthostatic tachycardia syndrome an indication for Buprenorphine?
+Answer: NO"
+15176,36937,Everolimus,clear cell renal carcinoma,disease-protein-drug,indication,"['clear cell renal carcinoma', 'MTOR', 'Everolimus']",0.000757005146423,"Question: Is clear cell renal carcinoma an indication for Everolimus?
+Answer: YES"
+15263,83862,Enasidenib,acute myeloblastic leukemia with maturation,disease-protein-drug,indication,"['acute myeloblastic leukemia with maturation', 'IDH2', 'Enasidenib']",0.0007741885829842,"Question: Is acute myeloblastic leukemia with maturation an indication for Enasidenib?
+Answer: YES"
+14141,35641,Phenytoin,epilepsy,disease-protein-drug,indication,"['epilepsy', 'CACNB4', 'Phenytoin']",0.0012174073582228,"Question: Is epilepsy an indication for Phenytoin?
+Answer: YES"
+14320,39540,Dexamethasone,angioedema,disease-protein-drug,indication,"['angioedema', 'ALB', 'Dexamethasone']",0.0033161099229175,"Question: Is angioedema an indication for Dexamethasone?
+Answer: YES"
+14737,36794,Carboplatin,ovarian adenocarcinoma,disease-protein-drug,indication,"['ovarian adenocarcinoma', 'ATP7B', 'Carboplatin']",0.001326391124912,"Question: Is ovarian adenocarcinoma an indication for Carboplatin?
+Answer: YES"
+14212,33577,Verapamil,hypertensive disorder,disease-protein-drug,indication,"['hypertensive disorder', 'CYP3A5', 'Verapamil']",0.0007271302771148,"Question: Is hypertensive disorder an indication for Verapamil?
+Answer: YES"
+14144,36743,Topiramate,partial epilepsy,disease-protein-drug,indication,"['partial epilepsy', 'SCN3A', 'Topiramate']",0.0011556580461473,"Question: Is partial epilepsy an indication for Topiramate?
+Answer: YES"
+14950,37888,Loratadine,allergic rhinitis,disease-protein-drug,indication,"['allergic rhinitis', 'HRH1', 'Loratadine']",0.0006027749029287,"Question: Is allergic rhinitis an indication for Loratadine?
+Answer: YES"
+15979,27361,Coagulation Factor IX Human,hemophilia,disease-protein-drug,indication,"['hemophilia', 'F8', 'Coagulation Factor IX Human']",0.0005087758389,"Question: Is hemophilia an indication for Coagulation Factor IX Human?
+Answer: YES"
+15291,31408,Ropinirole,X-linked parkinsonism-spasticity syndrome,disease-phenotype-protein-drug,indication,"['X-linked parkinsonism-spasticity syndrome', 'Seizure', 'DRD2', 'Ropinirole']",0.0032505076760651,"Question: Is X-linked parkinsonism-spasticity syndrome an indication for Ropinirole?
+Answer: YES"
+14476,32518,Testosterone cypionate,trisomy 13,disease-phenotype-protein-drug,indication,"['trisomy 13', 'Seizure', 'CYP11A1', 'Testosterone cypionate']",0.0033203312995795,"Question: Is trisomy 13 an indication for Testosterone cypionate?
+Answer: YES"
+14999,28313,Quetiapine,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'ADRA2A', 'Quetiapine']",0.0006048166458422,"Question: Is schizophrenia an indication for Quetiapine?
+Answer: YES"
+15539,35771,Ixabepilone,breast neoplasm,disease-protein-drug,indication,"['breast neoplasm', 'TUBB3', 'Ixabepilone']",0.0004978268112845,"Question: Is breast neoplasm an indication for Ixabepilone?
+Answer: YES"
+17023,33591,Tafamidis,amyloidosis (disease),disease-protein-drug,indication,"['amyloidosis (disease)', 'TTR', 'Tafamidis']",0.0007060076520435,"Question: Is amyloidosis (disease) an indication for Tafamidis?
+Answer: YES"
+14979,33594,Zonisamide,diarrheal disease,disease-protein-drug,contraindication,"['diarrheal disease', 'IFNA2', 'Zonisamide']",0.002899547067904,"Question: Is diarrheal disease an indication for Zonisamide?
+Answer: NO"
+14176,27933,Fluoxetine,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'HTR2C', 'Fluoxetine']",0.0008740793737389,"Question: Is anxiety disorder an indication for Fluoxetine?
+Answer: YES"
+14042,29854,Hydrocortisone acetate,hereditary angioedema,disease-phenotype-protein-drug,indication,"['hereditary angioedema', 'Vomiting', 'ABCB1', 'Hydrocortisone acetate']",0.002634818684265,"Question: Is hereditary angioedema an indication for Hydrocortisone acetate?
+Answer: YES"
+15006,28313,Iloperidone,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'HTR2A', 'Iloperidone']",0.0006963041534918,"Question: Is schizophrenia an indication for Iloperidone?
+Answer: YES"
+14156,83760,Amitriptyline,dysthymic disorder,disease-protein-drug,indication,"['dysthymic disorder', 'HTR1A', 'Amitriptyline']",0.0015333583257076,"Question: Is dysthymic disorder an indication for Amitriptyline?
+Answer: YES"
+14218,37805,Lamivudine,HIV infectious disease,disease-protein-drug,indication,"['HIV infectious disease', 'ALB', 'Lamivudine']",0.0018797560855607,"Question: Is HIV infectious disease an indication for Lamivudine?
+Answer: YES"
+14023,30990,Triamcinolone,mycosis fungoides and variants,disease-phenotype-protein-drug,indication,"['mycosis fungoides and variants', 'Edema', 'PTGS2', 'Triamcinolone']",0.0025036527098246,"Question: Is mycosis fungoides and variants an indication for Triamcinolone?
+Answer: YES"
+14190,37273,Fluorouracil,gastric carcinoma,disease-protein-drug,indication,"['gastric carcinoma', 'TYMS', 'Fluorouracil']",0.0019238000219207,"Question: Is gastric carcinoma an indication for Fluorouracil?
+Answer: YES"
+14831,32974,Droxidopa,atypical juvenile parkinsonism,disease-phenotype-protein-drug,indication,"['atypical juvenile parkinsonism', 'Seizure', 'SLC6A2', 'Droxidopa']",0.0028099512046663,"Question: Is atypical juvenile parkinsonism an indication for Droxidopa?
+Answer: YES"
+14387,31630,Methyltestosterone,androgen insensitivity syndrome,disease-phenotype-protein-drug,indication,"['androgen insensitivity syndrome', 'Male infertility', 'AR', 'Methyltestosterone']",0.0015431384745839,"Question: Is androgen insensitivity syndrome an indication for Methyltestosterone?
+Answer: YES"
+14737,37047,Carboplatin,immature ovarian teratoma,disease-protein-drug,indication,"['immature ovarian teratoma', 'ATP7B', 'Carboplatin']",0.0013228138741969,"Question: Is immature ovarian teratoma an indication for Carboplatin?
+Answer: YES"
+14030,29078,Prednisolone,rheumatoid arthritis,disease-protein-drug,indication,"['rheumatoid arthritis', 'ABCB1', 'Prednisolone']",0.0023981315793913,"Question: Is rheumatoid arthritis an indication for Prednisolone?
+Answer: YES"
+14314,30035,Naloxone,substance abuse/dependence,disease-protein-drug,indication,"['substance abuse/dependence', 'OPRD1', 'Naloxone']",0.0008148013993212,"Question: Is substance abuse/dependence an indication for Naloxone?
+Answer: YES"
+15002,29194,Sunitinib,gastrointestinal stromal tumor,disease-protein-drug,indication,"['gastrointestinal stromal tumor', 'KIT', 'Sunitinib']",0.0016550884328785,"Question: Is gastrointestinal stromal tumor an indication for Sunitinib?
+Answer: YES"
+14793,35966,Docetaxel,prostate cancer,disease-protein-drug,indication,"['prostate cancer', 'BCL2', 'Docetaxel']",0.0014827142235188,"Question: Is prostate cancer an indication for Docetaxel?
+Answer: YES"
+14215,36286,Losartan,diabetic nephropathy,disease-protein-drug,indication,"['diabetic nephropathy', 'ALB', 'Losartan']",0.0018588702464449,"Question: Is diabetic nephropathy an indication for Losartan?
+Answer: YES"
+14323,38242,Aripiprazole,bipolar disorder,disease-protein-drug,indication,"['bipolar disorder', 'GRIN2B', 'Aripiprazole']",0.0008777905335835,"Question: Is bipolar disorder an indication for Aripiprazole?
+Answer: YES"
+14275,84161,Doxorubicin,intravascular large B-cell lymphoma,disease-protein-drug,indication,"['intravascular large B-cell lymphoma', 'ABCB1', 'Doxorubicin']",0.0027992436169625,"Question: Is intravascular large B-cell lymphoma an indication for Doxorubicin?
+Answer: YES"
+14990,37888,Chlorpheniramine,allergic rhinitis,disease-protein-drug,indication,"['allergic rhinitis', 'HRH1', 'Chlorpheniramine']",0.0007096437591006,"Question: Is allergic rhinitis an indication for Chlorpheniramine?
+Answer: YES"
+14981,84242,Buprenorphine,morphine dependence,disease-protein-drug,indication,"['morphine dependence', 'OPRL1', 'Buprenorphine']",0.0008157141541141,"Question: Is morphine dependence an indication for Buprenorphine?
+Answer: YES"
+14542,27933,Maprotiline,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'SLC6A2', 'Maprotiline']",0.0006493840448312,"Question: Is anxiety disorder an indication for Maprotiline?
+Answer: YES"
+14245,35641,Diazepam,epilepsy,disease-protein-drug,indication,"['epilepsy', 'ALB', 'Diazepam']",0.0019146636525554,"Question: Is epilepsy an indication for Diazepam?
+Answer: YES"
+14477,31630,Testosterone enanthate,androgen insensitivity syndrome,disease-protein-drug,indication,"['androgen insensitivity syndrome', 'AR', 'Testosterone enanthate']",0.0014389548697675,"Question: Is androgen insensitivity syndrome an indication for Testosterone enanthate?
+Answer: YES"
+14719,35771,Epirubicin,breast neoplasm,disease-protein-drug,indication,"['breast neoplasm', 'PLA2G4A', 'Epirubicin']",0.0006175147936452,"Question: Is breast neoplasm an indication for Epirubicin?
+Answer: YES"
+14019,33534,Betamethasone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,indication,"['pediatric systemic lupus erythematosus', 'Proteinuria', 'ALB', 'Betamethasone']",0.0033833136057316,"Question: Is pediatric systemic lupus erythematosus an indication for Betamethasone?
+Answer: YES"
+14170,37144,Trifluridine,squamous cell carcinoma of colon,disease-protein-drug,indication,"['squamous cell carcinoma of colon', 'TYMS', 'Trifluridine']",0.0013282827484279,"Question: Is squamous cell carcinoma of colon an indication for Trifluridine?
+Answer: YES"
+14161,83840,Olanzapine,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'ADRA1A', 'Olanzapine']",0.0007519131746406,"Question: Is unipolar depression an indication for Olanzapine?
+Answer: YES"
+14186,37082,Cisplatin,malignant germ cell tumor of ovary,disease-protein-drug,indication,"['malignant germ cell tumor of ovary', 'SOD1', 'Cisplatin']",0.0018502313630713,"Question: Is malignant germ cell tumor of ovary an indication for Cisplatin?
+Answer: YES"
+15250,83871,Fedratinib,myelofibrosis,disease-protein-drug,indication,"['myelofibrosis', 'JAK2', 'Fedratinib']",0.0008160153535071,"Question: Is myelofibrosis an indication for Fedratinib?
+Answer: YES"
+15193,28974,Rotigotine,early-onset parkinsonism-intellectual disability syndrome,disease-phenotype-protein-drug,indication,"['early-onset parkinsonism-intellectual disability syndrome', 'Resting tremor', 'CYP2D6', 'Rotigotine']",0.0019029522901506,"Question: Is early-onset parkinsonism-intellectual disability syndrome an indication for Rotigotine?
+Answer: YES"
+14320,33534,Dexamethasone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,indication,"['pediatric systemic lupus erythematosus', 'Thrombocytopenia', 'ALB', 'Dexamethasone']",0.0043414703714709,"Question: Is pediatric systemic lupus erythematosus an indication for Dexamethasone?
+Answer: YES"
+14152,36432,Chlorthalidone,congestive heart failure,disease-protein-drug,indication,"['congestive heart failure', 'ALB', 'Chlorthalidone']",0.0018770075137579,"Question: Is congestive heart failure an indication for Chlorthalidone?
+Answer: YES"
+14023,33077,Triamcinolone,Hodgkins lymphoma,disease-phenotype-protein-drug,indication,"['Hodgkins lymphoma', 'Fever', 'PTGS2', 'Triamcinolone']",0.0034079932443225,"Question: Is Hodgkins lymphoma an indication for Triamcinolone?
+Answer: YES"
+14972,30035,Disulfiram,substance abuse/dependence,disease-protein-drug,indication,"['substance abuse/dependence', 'ALDH2', 'Disulfiram']",0.0004592816245257,"Question: Is substance abuse/dependence an indication for Disulfiram?
+Answer: YES"
+20157,38666,Guaifenesin,adrenocortical insufficiency,disease-protein-drug,contraindication,"['adrenocortical insufficiency', 'NR5A1', 'Guaifenesin']",0.0006448359082034,"Question: Is adrenocortical insufficiency an indication for Guaifenesin?
+Answer: NO"
+15018,28542,Midostaurin,mastocytosis,disease-protein-drug,indication,"['mastocytosis', 'KIT', 'Midostaurin']",0.0015919452827566,"Question: Is mastocytosis an indication for Midostaurin?
+Answer: YES"
+14262,29078,Salicylic acid,rheumatoid arthritis,disease-protein-drug,indication,"['rheumatoid arthritis', 'PTGS1', 'Salicylic acid']",0.0010788594274475,"Question: Is rheumatoid arthritis an indication for Salicylic acid?
+Answer: YES"
+14924,30471,Diazoxide,"hyperinsulinemic hypoglycemia, familial",disease-protein-drug,indication,"['hyperinsulinemic hypoglycemia, familial', 'KCNJ11', 'Diazoxide']",0.0010467954205232,"Question: Is hyperinsulinemic hypoglycemia, familial an indication for Diazoxide?
+Answer: YES"
+14955,84158,Vincristine,T-cell/histiocyte rich large B cell lymphoma,disease-protein-drug,indication,"['T-cell/histiocyte rich large B cell lymphoma', 'ABCG2', 'Vincristine']",0.0011555705081125,"Question: Is T-cell/histiocyte rich large B cell lymphoma an indication for Vincristine?
+Answer: YES"
+14208,27249,Testosterone,isolated growth hormone deficiency,disease-protein-drug,indication,"['isolated growth hormone deficiency', 'CYP19A1', 'Testosterone']",0.0015041747167535,"Question: Is isolated growth hormone deficiency an indication for Testosterone?
+Answer: YES"
+15193,32974,Rotigotine,atypical juvenile parkinsonism,disease-phenotype-protein-drug,indication,"['atypical juvenile parkinsonism', 'Seizure', 'HTR1A', 'Rotigotine']",0.0032971790720225,"Question: Is atypical juvenile parkinsonism an indication for Rotigotine?
+Answer: YES"
+14178,28313,Chlorpromazine,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'CYP3A4', 'Chlorpromazine']",0.0007669214133083,"Question: Is schizophrenia an indication for Chlorpromazine?
+Answer: YES"
+14956,36743,Carbamazepine,partial epilepsy,disease-protein-drug,indication,"['partial epilepsy', 'SCN3A', 'Carbamazepine']",0.0008788382344392,"Question: Is partial epilepsy an indication for Carbamazepine?
+Answer: YES"
+14463,38274,Gilteritinib,inherited acute myeloid leukemia,disease-protein-drug,indication,"['inherited acute myeloid leukemia', 'FLT3', 'Gilteritinib']",0.0012109465618023,"Question: Is inherited acute myeloid leukemia an indication for Gilteritinib?
+Answer: YES"
+14993,35641,Phenobarbital,epilepsy,disease-protein-drug,indication,"['epilepsy', 'ABCC2', 'Phenobarbital']",0.0011418411592233,"Question: Is epilepsy an indication for Phenobarbital?
+Answer: YES"
+15413,36527,Gemcitabine,yolk sac tumor,disease-protein-drug,indication,"['yolk sac tumor', 'TYMS', 'Gemcitabine']",0.0016130266366911,"Question: Is yolk sac tumor an indication for Gemcitabine?
+Answer: YES"
+15210,37888,Mepyramine,allergic rhinitis,disease-protein-drug,indication,"['allergic rhinitis', 'HRH1', 'Mepyramine']",0.0006147304212173,"Question: Is allergic rhinitis an indication for Mepyramine?
+Answer: YES"
+14275,36527,Doxorubicin,yolk sac tumor,disease-protein-drug,indication,"['yolk sac tumor', 'CYP1B1', 'Doxorubicin']",0.0023089951968736,"Question: Is yolk sac tumor an indication for Doxorubicin?
+Answer: YES"
+14793,31116,Docetaxel,lung cancer,disease-protein-drug,indication,"['lung cancer', 'CYP1B1', 'Docetaxel']",0.0010717106308543,"Question: Is lung cancer an indication for Docetaxel?
+Answer: YES"
+14177,83841,Duloxetine,endogenous depression,disease-protein-drug,indication,"['endogenous depression', 'SLC6A2', 'Duloxetine']",0.0004482321714273,"Question: Is endogenous depression an indication for Duloxetine?
+Answer: YES"
+14023,29182,Triamcinolone,systemic lupus erythematosus (disease),disease-phenotype-protein-drug,indication,"['systemic lupus erythematosus (disease)', 'Seizure', 'BCHE', 'Triamcinolone']",0.0065749327300775,"Question: Is systemic lupus erythematosus (disease) an indication for Triamcinolone?
+Answer: YES"
+17270,31408,Pimavanserin,X-linked parkinsonism-spasticity syndrome,disease-phenotype-protein-drug,indication,"['X-linked parkinsonism-spasticity syndrome', 'Seizure', 'DRD2', 'Pimavanserin']",0.0032227100973312,"Question: Is X-linked parkinsonism-spasticity syndrome an indication for Pimavanserin?
+Answer: YES"
+14960,83791,Astemizole,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'HRH1', 'Astemizole']",0.0005979287517391,"Question: Is vasomotor rhinitis an indication for Astemizole?
+Answer: YES"
+14729,28542,Cimetidine,mastocytosis,disease-phenotype-protein-drug,indication,"['mastocytosis', 'Arrhythmia', 'SLC22A5', 'Cimetidine']",0.0014468454057948,"Question: Is mastocytosis an indication for Cimetidine?
+Answer: YES"
+15209,83841,Vilazodone,endogenous depression,disease-protein-drug,indication,"['endogenous depression', 'CYP2C19', 'Vilazodone']",0.0005095918066556,"Question: Is endogenous depression an indication for Vilazodone?
+Answer: YES"
+15413,37967,Gemcitabine,ovarian endometrioid adenocarcinoma,disease-protein-drug,indication,"['ovarian endometrioid adenocarcinoma', 'TYMS', 'Gemcitabine']",0.0016148066309535,"Question: Is ovarian endometrioid adenocarcinoma an indication for Gemcitabine?
+Answer: YES"
+15667,27933,Esketamine,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'NTRK2', 'Esketamine']",0.0009667552776687,"Question: Is anxiety disorder an indication for Esketamine?
+Answer: YES"
+14419,32325,Dexibuprofen,juvenile idiopathic arthritis,disease-phenotype-protein-drug,indication,"['juvenile idiopathic arthritis', 'Fever', 'PTGS2', 'Dexibuprofen']",0.0024135101084717,"Question: Is juvenile idiopathic arthritis an indication for Dexibuprofen?
+Answer: YES"
+15035,83840,Vortioxetine,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'CYP2C19', 'Vortioxetine']",0.0005356836187218,"Question: Is unipolar depression an indication for Vortioxetine?
+Answer: YES"
+15836,33577,Telmisartan,hypertensive disorder,disease-protein-drug,indication,"['hypertensive disorder', 'AGTR1', 'Telmisartan']",0.0004951884299867,"Question: Is hypertensive disorder an indication for Telmisartan?
+Answer: YES"
+15116,37703,Paroxetine,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'DRD5', 'Paroxetine']",0.0009491767678419,"Question: Is neurotic disorder an indication for Paroxetine?
+Answer: YES"
+15094,83840,Mirtazapine,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'SLC6A4', 'Mirtazapine']",0.000748264159486,"Question: Is unipolar depression an indication for Mirtazapine?
+Answer: YES"
+14173,37703,Imipramine,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'ALB', 'Imipramine']",0.0021673129915364,"Question: Is neurotic disorder an indication for Imipramine?
+Answer: YES"
+17561,39773,Bitolterol,allergic asthma,disease-protein-drug,indication,"['allergic asthma', 'ADRB2', 'Bitolterol']",0.0005927836549431,"Question: Is allergic asthma an indication for Bitolterol?
+Answer: YES"
+15223,28313,Perospirone,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'ADRA1A', 'Perospirone']",0.0004076545962492,"Question: Is schizophrenia an indication for Perospirone?
+Answer: YES"
+15975,27361,Coagulation Factor IX (Recombinant),hemophilia,disease-phenotype-protein-drug,indication,"['hemophilia', 'Thromboembolism', 'F7', 'Coagulation Factor IX (Recombinant)']",0.0007766455852725,"Question: Is hemophilia an indication for Coagulation Factor IX (Recombinant)?
+Answer: YES"
+15460,83791,Azatadine,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'HRH1', 'Azatadine']",0.0005178840412787,"Question: Is vasomotor rhinitis an indication for Azatadine?
+Answer: YES"
+20153,28547,Metixene,Parkinson disease,disease-phenotype-protein-drug,indication,"['Parkinson disease', 'Tremor', 'CHRM4', 'Metixene']",0.0008346512108103,"Question: Is Parkinson disease an indication for Metixene?
+Answer: YES"
+14320,39245,Dexamethasone,panuveitis (disease),disease-protein-drug,indication,"['panuveitis (disease)', 'ALB', 'Dexamethasone']",0.0033453518023729,"Question: Is panuveitis (disease) an indication for Dexamethasone?
+Answer: YES"
+14320,33410,Dexamethasone,dermatitis herpetiformis,disease-phenotype-protein-drug,indication,"['dermatitis herpetiformis', 'Pruritus', 'ABCB11', 'Dexamethasone']",0.0027485499742211,"Question: Is dermatitis herpetiformis an indication for Dexamethasone?
+Answer: YES"
+15101,27366,Celecoxib,"spondyloarthropathy, susceptibility to",disease-phenotype-protein-drug,indication,"['spondyloarthropathy, susceptibility to', 'Arrhythmia', 'PTGS2', 'Celecoxib']",0.0021720978276065,"Question: Is spondyloarthropathy, susceptibility to an indication for Celecoxib?
+Answer: YES"
+14962,83840,Trazodone,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'SLC6A4', 'Trazodone']",0.0007401987603051,"Question: Is unipolar depression an indication for Trazodone?
+Answer: YES"
+15360,83840,Agomelatine,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'CYP2C9', 'Agomelatine']",0.0005357478179106,"Question: Is unipolar depression an indication for Agomelatine?
+Answer: YES"
+14238,32325,Naproxen,juvenile idiopathic arthritis,disease-phenotype-protein-drug,indication,"['juvenile idiopathic arthritis', 'Hepatomegaly', 'CYP1A2', 'Naproxen']",0.0024847367972227,"Question: Is juvenile idiopathic arthritis an indication for Naproxen?
+Answer: YES"
+18756,30035,Acamprosate,substance abuse/dependence,disease-protein-drug,indication,"['substance abuse/dependence', 'GABRB1', 'Acamprosate']",0.0005474083532224,"Question: Is substance abuse/dependence an indication for Acamprosate?
+Answer: YES"
+14161,28313,Olanzapine,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'CYP3A5', 'Olanzapine']",0.0007612282410893,"Question: Is schizophrenia an indication for Olanzapine?
+Answer: YES"
+14560,29614,Ergocalciferol,osteoporosis,disease-protein-drug,indication,"['osteoporosis', 'VDR', 'Ergocalciferol']",0.0013265688907404,"Question: Is osteoporosis an indication for Ergocalciferol?
+Answer: YES"
+14707,36315,Ferrous sulfate anhydrous,deficiency anemia,disease-protein-drug,indication,"['deficiency anemia', 'TFRC', 'Ferrous sulfate anhydrous']",0.0011152668288043,"Question: Is deficiency anemia an indication for Ferrous sulfate anhydrous?
+Answer: YES"
+14413,33688,Nintedanib,non-small cell lung carcinoma (disease),disease-protein-drug,indication,"['non-small cell lung carcinoma (disease)', 'ABCB1', 'Nintedanib']",0.0014186647701324,"Question: Is non-small cell lung carcinoma (disease) an indication for Nintedanib?
+Answer: YES"
+14320,32384,Dexamethasone,adrenal insufficiency,disease-phenotype-protein-drug,indication,"['adrenal insufficiency', 'Seizure', 'NOS2', 'Dexamethasone']",0.0048112218702594,"Question: Is adrenal insufficiency an indication for Dexamethasone?
+Answer: YES"
+14262,83791,Salicylic acid,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'ALB', 'Salicylic acid']",0.0018520193984278,"Question: Is vasomotor rhinitis an indication for Salicylic acid?
+Answer: YES"
+15222,27933,Levomilnacipran,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'SLC6A4', 'Levomilnacipran']",0.0009007340721342,"Question: Is anxiety disorder an indication for Levomilnacipran?
+Answer: YES"
+14196,33577,Propranolol,hypertensive disorder,disease-protein-drug,indication,"['hypertensive disorder', 'CYP3A5', 'Propranolol']",0.0009149004010226,"Question: Is hypertensive disorder an indication for Propranolol?
+Answer: YES"
+14685,33680,Progesterone,endometriosis (disease),disease-protein-drug,indication,"['endometriosis (disease)', 'NR3C1', 'Progesterone']",0.000882886239685,"Question: Is endometriosis (disease) an indication for Progesterone?
+Answer: YES"
+14543,37703,Desipramine,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'CYP2D6', 'Desipramine']",0.001895469747789,"Question: Is neurotic disorder an indication for Desipramine?
+Answer: YES"
+16014,28780,Chlorprothixene,Alzheimer disease,disease-phenotype-protein-drug,contraindication,"['Alzheimer disease', 'Memory impairment', 'ACHE', 'Chlorprothixene']",0.0137701187561285,"Question: Is Alzheimer disease an indication for Chlorprothixene?
+Answer: NO"
+14408,30826,Enzalutamide,familial prostate carcinoma,disease-protein-drug,indication,"['familial prostate carcinoma', 'CYP3A5', 'Enzalutamide']",0.0004142994929469,"Question: Is familial prostate carcinoma an indication for Enzalutamide?
+Answer: YES"
+16510,36691,Bevacizumab,breast cancer,disease-protein-drug,indication,"['breast cancer', 'C1QB', 'Bevacizumab']",0.001288224833854,"Question: Is breast cancer an indication for Bevacizumab?
+Answer: YES"
+15413,37150,Gemcitabine,malignant non-dysgerminomatous germ cell tumor of ovary,disease-protein-drug,indication,"['malignant non-dysgerminomatous germ cell tumor of ovary', 'TYMS', 'Gemcitabine']",0.0016148155091837,"Question: Is malignant non-dysgerminomatous germ cell tumor of ovary an indication for Gemcitabine?
+Answer: YES"
+14249,36091,Pseudoephedrine,atopic conjunctivitis,disease-phenotype-protein-drug,indication,"['atopic conjunctivitis', 'Allergy', 'TNF', 'Pseudoephedrine']",0.0037147410474334,"Question: Is atopic conjunctivitis an indication for Pseudoephedrine?
+Answer: YES"
+14139,32974,Benzatropine,atypical juvenile parkinsonism,disease-phenotype-protein-drug,indication,"['atypical juvenile parkinsonism', 'Seizure', 'SLC6A2', 'Benzatropine']",0.002848121747749,"Question: Is atypical juvenile parkinsonism an indication for Benzatropine?
+Answer: YES"
+15086,83791,Clemastine,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'HRH1', 'Clemastine']",0.0005079783609357,"Question: Is vasomotor rhinitis an indication for Clemastine?
+Answer: YES"
+14175,29078,Nabumetone,rheumatoid arthritis,disease-protein-drug,indication,"['rheumatoid arthritis', 'HSD11B1', 'Nabumetone']",0.0009727199729117,"Question: Is rheumatoid arthritis an indication for Nabumetone?
+Answer: YES"
+15598,33575,Linagliptin,diabetes mellitus (disease),disease-protein-drug,indication,"['diabetes mellitus (disease)', 'SLC22A3', 'Linagliptin']",0.0004729659222865,"Question: Is diabetes mellitus (disease) an indication for Linagliptin?
+Answer: YES"
+15209,38957,Vilazodone,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'HTR1A', 'Vilazodone']",0.0008941915776452,"Question: Is major depressive disorder an indication for Vilazodone?
+Answer: YES"
+16842,30093,Pramipexole,parkinsonian-pyramidal syndrome,disease-phenotype-protein-drug,indication,"['parkinsonian-pyramidal syndrome', 'Tremor', 'HTR1A', 'Pramipexole']",0.0012313791579152,"Question: Is parkinsonian-pyramidal syndrome an indication for Pramipexole?
+Answer: YES"
+14194,32325,Methotrexate,juvenile idiopathic arthritis,disease-phenotype-protein-drug,indication,"['juvenile idiopathic arthritis', 'Hepatomegaly', 'ABCC3', 'Methotrexate']",0.0031477830743579,"Question: Is juvenile idiopathic arthritis an indication for Methotrexate?
+Answer: YES"
+14023,37722,Triamcinolone,multiple sclerosis,disease-protein-drug,indication,"['multiple sclerosis', 'BCHE', 'Triamcinolone']",0.0042128104697905,"Question: Is multiple sclerosis an indication for Triamcinolone?
+Answer: YES"
+14054,38059,Vitamin E,cholestasis,disease-protein-drug,indication,"['cholestasis', 'NQO1', 'Vitamin E']",0.0012713308842228,"Question: Is cholestasis an indication for Vitamin E?
+Answer: YES"
+14293,28208,Glipizide,type 2 diabetes mellitus,disease-phenotype-protein-drug,indication,"['type 2 diabetes mellitus', 'Insulin resistance', 'PPARG', 'Glipizide']",0.0011117585852994,"Question: Is type 2 diabetes mellitus an indication for Glipizide?
+Answer: YES"
+14054,31033,Vitamin E,benign recurrent intrahepatic cholestasis,disease-phenotype-protein-drug,indication,"['benign recurrent intrahepatic cholestasis', 'Hearing impairment', 'SOD1', 'Vitamin E']",0.0020312931832165,"Question: Is benign recurrent intrahepatic cholestasis an indication for Vitamin E?
+Answer: YES"
+20166,39728,Risankizumab,parapsoriasis,disease-protein-drug,indication,"['parapsoriasis', 'IL23A', 'Risankizumab']",0.0004623247072352,"Question: Is parapsoriasis an indication for Risankizumab?
+Answer: YES"
+15055,31245,Deutetrabenazine,Huntington disease,disease-phenotype-protein-drug,indication,"['Huntington disease', 'Rigidity', 'CYP2D6', 'Deutetrabenazine']",0.0020377232984981,"Question: Is Huntington disease an indication for Deutetrabenazine?
+Answer: YES"
+15667,83760,Esketamine,dysthymic disorder,disease-protein-drug,indication,"['dysthymic disorder', 'BDNF', 'Esketamine']",0.0007189875731727,"Question: Is dysthymic disorder an indication for Esketamine?
+Answer: YES"
+15124,32759,Biperiden,hemiparkinsonism-hemiatrophy syndrome,disease-phenotype-protein-drug,indication,"['hemiparkinsonism-hemiatrophy syndrome', 'Tremor', 'CYP2D6', 'Biperiden']",0.0020653365456066,"Question: Is hemiparkinsonism-hemiatrophy syndrome an indication for Biperiden?
+Answer: YES"
+15322,33474,Norfloxacin,typhoid fever,disease-phenotype-protein-drug,indication,"['typhoid fever', 'Hepatomegaly', 'CYP1A2', 'Norfloxacin']",0.0029678715016921,"Question: Is typhoid fever an indication for Norfloxacin?
+Answer: YES"
+14206,33128,Chloroquine,malaria,disease-phenotype-protein-drug,indication,"['malaria', 'Fever', 'TNF', 'Chloroquine']",0.0040102016376423,"Question: Is malaria an indication for Chloroquine?
+Answer: YES"
+16066,37888,Brompheniramine,allergic rhinitis,disease-protein-drug,indication,"['allergic rhinitis', 'HRH1', 'Brompheniramine']",0.0005909501421736,"Question: Is allergic rhinitis an indication for Brompheniramine?
+Answer: YES"
+14297,83898,Atorvastatin,obsolete familial combined hyperlipidemia,disease-protein-drug,indication,"['obsolete familial combined hyperlipidemia', 'HMGCR', 'Atorvastatin']",0.00098911076904,"Question: Is obsolete familial combined hyperlipidemia an indication for Atorvastatin?
+Answer: YES"
+14904,28974,Safinamide,early-onset parkinsonism-intellectual disability syndrome,disease-protein-drug,indication,"['early-onset parkinsonism-intellectual disability syndrome', 'CYP2D6', 'Safinamide']",0.0017170532935264,"Question: Is early-onset parkinsonism-intellectual disability syndrome an indication for Safinamide?
+Answer: YES"
+16011,38242,Loxapine,bipolar disorder,disease-protein-drug,indication,"['bipolar disorder', 'DRD3', 'Loxapine']",0.0008036648626055,"Question: Is bipolar disorder an indication for Loxapine?
+Answer: YES"
+14680,36924,Zinc acetate,dermatitis,disease-protein-drug,indication,"['dermatitis', 'PARP1', 'Zinc acetate']",0.0073276748932944,"Question: Is dermatitis an indication for Zinc acetate?
+Answer: YES"
+14999,38242,Quetiapine,bipolar disorder,disease-protein-drug,indication,"['bipolar disorder', 'HTR2C', 'Quetiapine']",0.0006010973145364,"Question: Is bipolar disorder an indication for Quetiapine?
+Answer: YES"
+14793,35963,Docetaxel,prostate carcinoma,disease-protein-drug,indication,"['prostate carcinoma', 'CYP3A4', 'Docetaxel']",0.0009107445230817,"Question: Is prostate carcinoma an indication for Docetaxel?
+Answer: YES"
+15781,29273,Acetylsalicylic acid,osteoarthritis susceptibility,disease-protein-drug,indication,"['osteoarthritis susceptibility', 'AKR1C1', 'Acetylsalicylic acid']",0.0019208261303161,"Question: Is osteoarthritis susceptibility an indication for Acetylsalicylic acid?
+Answer: YES"
+14952,28313,Haloperidol,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'ADRA1A', 'Haloperidol']",0.0006178630294976,"Question: Is schizophrenia an indication for Haloperidol?
+Answer: YES"
+14275,84159,Doxorubicin,ALK-positive large B-cell lymphoma,disease-protein-drug,indication,"['ALK-positive large B-cell lymphoma', 'ABCB1', 'Doxorubicin']",0.0027992436169625,"Question: Is ALK-positive large B-cell lymphoma an indication for Doxorubicin?
+Answer: YES"
+14198,33577,Clonidine,hypertensive disorder,disease-protein-drug,indication,"['hypertensive disorder', 'CYP3A5', 'Clonidine']",0.000481414429053,"Question: Is hypertensive disorder an indication for Clonidine?
+Answer: YES"
+14368,33618,Dronedarone,atrial fibrillation (disease),disease-protein-drug,indication,"['atrial fibrillation (disease)', 'KCND3', 'Dronedarone']",0.0011966945984692,"Question: Is atrial fibrillation (disease) an indication for Dronedarone?
+Answer: YES"
+15126,28780,Donepezil,Alzheimer disease,disease-phenotype-protein-drug,indication,"['Alzheimer disease', 'Seizure', 'IL1B', 'Donepezil']",0.0040111228596509,"Question: Is Alzheimer disease an indication for Donepezil?
+Answer: YES"
+15784,33575,Gliquidone,diabetes mellitus (disease),disease-protein-drug,indication,"['diabetes mellitus (disease)', 'ABCC8', 'Gliquidone']",0.0004824313096345,"Question: Is diabetes mellitus (disease) an indication for Gliquidone?
+Answer: YES"
+14685,30827,Progesterone,endometrial cancer,disease-protein-drug,indication,"['endometrial cancer', 'ESR2', 'Progesterone']",0.0009244434332454,"Question: Is endometrial cancer an indication for Progesterone?
+Answer: YES"
+14269,29182,Methylprednisolone,systemic lupus erythematosus (disease),disease-phenotype-protein-drug,indication,"['systemic lupus erythematosus (disease)', 'Thrombocytopenia', 'ALB', 'Methylprednisolone']",0.0035141755195955,"Question: Is systemic lupus erythematosus (disease) an indication for Methylprednisolone?
+Answer: YES"
+15116,28899,Paroxetine,obsessive-compulsive disorder,disease-protein-drug,indication,"['obsessive-compulsive disorder', 'HTR2A', 'Paroxetine']",0.0009045634601372,"Question: Is obsessive-compulsive disorder an indication for Paroxetine?
+Answer: YES"
+14947,83898,Cerivastatin,obsolete familial combined hyperlipidemia,disease-protein-drug,indication,"['obsolete familial combined hyperlipidemia', 'HMGCR', 'Cerivastatin']",0.0007051037449737,"Question: Is obsolete familial combined hyperlipidemia an indication for Cerivastatin?
+Answer: YES"
+14240,36432,Indapamide,congestive heart failure,disease-protein-drug,indication,"['congestive heart failure', 'ALB', 'Indapamide']",0.0017795767143439,"Question: Is congestive heart failure an indication for Indapamide?
+Answer: YES"
+15481,32617,Topotecan,hereditary breast ovarian cancer syndrome,disease-protein-drug,indication,"['hereditary breast ovarian cancer syndrome', 'ABCG2', 'Topotecan']",0.000784225409474,"Question: Is hereditary breast ovarian cancer syndrome an indication for Topotecan?
+Answer: YES"
+15119,83841,Tranylcypromine,endogenous depression,disease-protein-drug,indication,"['endogenous depression', 'CYP2C9', 'Tranylcypromine']",0.0005527797551298,"Question: Is endogenous depression an indication for Tranylcypromine?
+Answer: YES"
+15594,83794,Brentuximab vedotin,"classic Hodgkin lymphoma, lymphocyte-rich type",disease-protein-drug,indication,"['classic Hodgkin lymphoma, lymphocyte-rich type', 'TNFRSF8', 'Brentuximab vedotin']",0.000546739946669,"Question: Is classic Hodgkin lymphoma, lymphocyte-rich type an indication for Brentuximab vedotin?
+Answer: YES"
+14318,33314,Ceftriaxone,leptospirosis,disease-phenotype-protein-drug,indication,"['leptospirosis', 'Hepatomegaly', 'ALB', 'Ceftriaxone']",0.0035624790908066,"Question: Is leptospirosis an indication for Ceftriaxone?
+Answer: YES"
+15119,38957,Tranylcypromine,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'MAOA', 'Tranylcypromine']",0.0005236362661996,"Question: Is major depressive disorder an indication for Tranylcypromine?
+Answer: YES"
+15138,38957,Selegiline,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'ABCB1', 'Selegiline']",0.0011643249118906,"Question: Is major depressive disorder an indication for Selegiline?
+Answer: YES"
+14452,33241,Istradefylline,hereditary late onset Parkinson disease,disease-protein-drug,indication,"['hereditary late onset Parkinson disease', 'CYP2D6', 'Istradefylline']",0.0018605789348843,"Question: Is hereditary late onset Parkinson disease an indication for Istradefylline?
+Answer: YES"
+14024,36425,Prednisone,primary central nervous system lymphoma,disease-protein-drug,indication,"['primary central nervous system lymphoma', 'ABCB1', 'Prednisone']",0.0019110074245965,"Question: Is primary central nervous system lymphoma an indication for Prednisone?
+Answer: YES"
+15263,83852,Enasidenib,acute myeloid leukemia with minimal differentiation,disease-protein-drug,indication,"['acute myeloid leukemia with minimal differentiation', 'IDH2', 'Enasidenib']",0.0007741885829842,"Question: Is acute myeloid leukemia with minimal differentiation an indication for Enasidenib?
+Answer: YES"
+15113,38575,Galantamine,cerebellar degeneration,disease-protein-drug,indication,"['cerebellar degeneration', 'CYP2D6', 'Galantamine']",0.0018288943670489,"Question: Is cerebellar degeneration an indication for Galantamine?
+Answer: YES"
+14273,29078,Azathioprine,rheumatoid arthritis,disease-protein-drug,indication,"['rheumatoid arthritis', 'ABCB1', 'Azathioprine']",0.0017227354164549,"Question: Is rheumatoid arthritis an indication for Azathioprine?
+Answer: YES"
+14028,33621,Hydrocortisone,acute lymphoblastic leukemia (disease),disease-protein-drug,indication,"['acute lymphoblastic leukemia (disease)', 'CYP2C8', 'Hydrocortisone']",0.0015766472738305,"Question: Is acute lymphoblastic leukemia (disease) an indication for Hydrocortisone?
+Answer: YES"
+14509,29078,Meclofenamic acid,rheumatoid arthritis,disease-protein-drug,indication,"['rheumatoid arthritis', 'PTGS1', 'Meclofenamic acid']",0.0010523853230773,"Question: Is rheumatoid arthritis an indication for Meclofenamic acid?
+Answer: YES"
+14269,30990,Methylprednisolone,mycosis fungoides and variants,disease-phenotype-protein-drug,indication,"['mycosis fungoides and variants', 'Hepatomegaly', 'CYP1B1', 'Methylprednisolone']",0.0027623642208925,"Question: Is mycosis fungoides and variants an indication for Methylprednisolone?
+Answer: YES"
+14336,37888,Ephedrine,allergic rhinitis,disease-phenotype-protein-drug,indication,"['allergic rhinitis', 'Allergy', 'ALB', 'Ephedrine']",0.0022160177182931,"Question: Is allergic rhinitis an indication for Ephedrine?
+Answer: YES"
+15440,32930,Nimodipine,acquired aneurysmal subarachnoid hemorrhage,disease-phenotype-protein-drug,indication,"['acquired aneurysmal subarachnoid hemorrhage', 'Syncope', 'CACNA1C', 'Nimodipine']",0.0013356631026321,"Question: Is acquired aneurysmal subarachnoid hemorrhage an indication for Nimodipine?
+Answer: YES"
+15177,28313,Zuclopenthixol,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'DRD5', 'Zuclopenthixol']",0.0006739822326696,"Question: Is schizophrenia an indication for Zuclopenthixol?
+Answer: YES"
+14314,84242,Naloxone,morphine dependence,disease-protein-drug,indication,"['morphine dependence', 'CES1', 'Naloxone']",0.0008642031728924,"Question: Is morphine dependence an indication for Naloxone?
+Answer: YES"
+14206,29078,Chloroquine,rheumatoid arthritis,disease-phenotype-protein-drug,indication,"['rheumatoid arthritis', 'Fever', 'TNF', 'Chloroquine']",0.0039312944595682,"Question: Is rheumatoid arthritis an indication for Chloroquine?
+Answer: YES"
+14975,29275,Sirolimus,lymphangioleiomyomatosis,disease-phenotype-protein-drug,indication,"['lymphangioleiomyomatosis', 'Seizure', 'FGF2', 'Sirolimus']",0.0034059455522339,"Question: Is lymphangioleiomyomatosis an indication for Sirolimus?
+Answer: YES"
+15119,83840,Tranylcypromine,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'MAOA', 'Tranylcypromine']",0.0005215843975448,"Question: Is unipolar depression an indication for Tranylcypromine?
+Answer: YES"
+14221,33680,Norethisterone,endometriosis (disease),disease-protein-drug,indication,"['endometriosis (disease)', 'NR3C1', 'Norethisterone']",0.0007471511654515,"Question: Is endometriosis (disease) an indication for Norethisterone?
+Answer: YES"
+14758,36000,Capecitabine,gastric neoplasm,disease-protein-drug,indication,"['gastric neoplasm', 'TYMS', 'Capecitabine']",0.0014464469524503,"Question: Is gastric neoplasm an indication for Capecitabine?
+Answer: YES"
+14183,32325,Tolmetin,juvenile idiopathic arthritis,disease-phenotype-protein-drug,indication,"['juvenile idiopathic arthritis', 'Hepatomegaly', 'ALB', 'Tolmetin']",0.00320731083052,"Question: Is juvenile idiopathic arthritis an indication for Tolmetin?
+Answer: YES"
+15124,31408,Biperiden,X-linked parkinsonism-spasticity syndrome,disease-phenotype-protein-drug,indication,"['X-linked parkinsonism-spasticity syndrome', 'Resting tremor', 'CYP2D6', 'Biperiden']",0.0019101002089736,"Question: Is X-linked parkinsonism-spasticity syndrome an indication for Biperiden?
+Answer: YES"
+14194,33621,Methotrexate,acute lymphoblastic leukemia (disease),disease-protein-drug,indication,"['acute lymphoblastic leukemia (disease)', 'MTHFR', 'Methotrexate']",0.0021393461776373,"Question: Is acute lymphoblastic leukemia (disease) an indication for Methotrexate?
+Answer: YES"
+17746,29614,Eldecalcitol,osteoporosis,disease-protein-drug,indication,"['osteoporosis', 'VDR', 'Eldecalcitol']",0.0006174032487117,"Question: Is osteoporosis an indication for Eldecalcitol?
+Answer: YES"
+14696,32503,Pentamidine,human African trypanosomiasis,disease-phenotype-protein-drug,indication,"['human African trypanosomiasis', 'Coma', 'CYP2D6', 'Pentamidine']",0.0024275216027453,"Question: Is human African trypanosomiasis an indication for Pentamidine?
+Answer: YES"
+16054,28547,Trihexyphenidyl,Parkinson disease,disease-phenotype-protein-drug,indication,"['Parkinson disease', 'Resting tremor', 'CHRM4', 'Trihexyphenidyl']",0.0007587724699689,"Question: Is Parkinson disease an indication for Trihexyphenidyl?
+Answer: YES"
+15914,33314,Minocycline,leptospirosis,disease-phenotype-protein-drug,indication,"['leptospirosis', 'Hepatomegaly', 'MAPK14', 'Minocycline']",0.0036982255524198,"Question: Is leptospirosis an indication for Minocycline?
+Answer: YES"
+15176,35771,Everolimus,breast neoplasm,disease-protein-drug,indication,"['breast neoplasm', 'CYP2D6', 'Everolimus']",0.0018729773238913,"Question: Is breast neoplasm an indication for Everolimus?
+Answer: YES"
+14194,35650,Methotrexate,non-Hodgkin lymphoma,disease-protein-drug,indication,"['non-Hodgkin lymphoma', 'TYMS', 'Methotrexate']",0.0024512712133234,"Question: Is non-Hodgkin lymphoma an indication for Methotrexate?
+Answer: YES"
+14478,36043,Testosterone undecanoate,primary ovarian failure,disease-protein-drug,indication,"['primary ovarian failure', 'CYP19A1', 'Testosterone undecanoate']",0.0010193475249473,"Question: Is primary ovarian failure an indication for Testosterone undecanoate?
+Answer: YES"
+14729,28426,Cimetidine,multiple endocrine neoplasia,disease-phenotype-protein-drug,indication,"['multiple endocrine neoplasia', 'Coma', 'CYP2D6', 'Cimetidine']",0.002363415633205,"Question: Is multiple endocrine neoplasia an indication for Cimetidine?
+Answer: YES"
+15282,33575,Insulin lispro,diabetes mellitus (disease),disease-protein-drug,indication,"['diabetes mellitus (disease)', 'CYP1A2', 'Insulin lispro']",0.00109658346979,"Question: Is diabetes mellitus (disease) an indication for Insulin lispro?
+Answer: YES"
+14831,28547,Droxidopa,Parkinson disease,disease-phenotype-protein-drug,indication,"['Parkinson disease', 'Postural tremor', 'ADRB2', 'Droxidopa']",0.0008472145250324,"Question: Is Parkinson disease an indication for Droxidopa?
+Answer: YES"
+14266,83791,Fexofenadine,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'HRH1', 'Fexofenadine']",0.0005405255116343,"Question: Is vasomotor rhinitis an indication for Fexofenadine?
+Answer: YES"
+15294,28780,Tacrine,Alzheimer disease,disease-protein-drug,indication,"['Alzheimer disease', 'BCHE', 'Tacrine']",0.0033160047182656,"Question: Is Alzheimer disease an indication for Tacrine?
+Answer: YES"
+14148,36645,Atomoxetine,hyperbilirubinemia,disease-protein-drug,contraindication,"['hyperbilirubinemia', 'CSF3', 'Atomoxetine']",0.0005986349834435,"Question: Is hyperbilirubinemia an indication for Atomoxetine?
+Answer: NO"
+14904,31408,Safinamide,X-linked parkinsonism-spasticity syndrome,disease-phenotype-protein-drug,indication,"['X-linked parkinsonism-spasticity syndrome', 'Cogwheel rigidity', 'CYP2D6', 'Safinamide']",0.0018527358450319,"Question: Is X-linked parkinsonism-spasticity syndrome an indication for Safinamide?
+Answer: YES"
+15816,29078,Loxoprofen,rheumatoid arthritis,disease-protein-drug,indication,"['rheumatoid arthritis', 'PTGS2', 'Loxoprofen']",0.0013093966720163,"Question: Is rheumatoid arthritis an indication for Loxoprofen?
+Answer: YES"
+15107,33077,Vinblastine,Hodgkins lymphoma,disease-phenotype-protein-drug,indication,"['Hodgkins lymphoma', 'Pruritus', 'ABCB11', 'Vinblastine']",0.0015940754348689,"Question: Is Hodgkins lymphoma an indication for Vinblastine?
+Answer: YES"
+14275,84155,Doxorubicin,Epstein-Barr virus-positive diffuse large B-cell lymphoma of the elderly,disease-protein-drug,indication,"['Epstein-Barr virus-positive diffuse large B-cell lymphoma of the elderly', 'ABCB1', 'Doxorubicin']",0.0027992436169625,"Question: Is Epstein-Barr virus-positive diffuse large B-cell lymphoma of the elderly an indication for Doxorubicin?
+Answer: YES"
+14256,37805,Didanosine,HIV infectious disease,disease-protein-drug,indication,"['HIV infectious disease', 'ALB', 'Didanosine']",0.0018887217722602,"Question: Is HIV infectious disease an indication for Didanosine?
+Answer: YES"
+14959,36035,Nicardipine,hypertension,disease-protein-drug,indication,"['hypertension', 'CYP3A5', 'Nicardipine']",0.0007052016403381,"Question: Is hypertension an indication for Nicardipine?
+Answer: YES"
+14897,28017,Zolmitriptan,"migraine with or without aura, susceptibility to",disease-phenotype-protein-drug,indication,"['migraine with or without aura, susceptibility to', 'Vomiting', 'ABCB1', 'Zolmitriptan']",0.0020110255116439,"Question: Is migraine with or without aura, susceptibility to an indication for Zolmitriptan?
+Answer: YES"
+14019,30990,Betamethasone,mycosis fungoides and variants,disease-phenotype-protein-drug,indication,"['mycosis fungoides and variants', 'Hepatomegaly', 'CYP1B1', 'Betamethasone']",0.0032481945667878,"Question: Is mycosis fungoides and variants an indication for Betamethasone?
+Answer: YES"
+14030,83791,Prednisolone,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'ALB', 'Prednisolone']",0.0029645225911158,"Question: Is vasomotor rhinitis an indication for Prednisolone?
+Answer: YES"
+14220,32759,Apomorphine,hemiparkinsonism-hemiatrophy syndrome,disease-protein-drug,indication,"['hemiparkinsonism-hemiatrophy syndrome', 'DRD2', 'Apomorphine']",0.0012354828356164,"Question: Is hemiparkinsonism-hemiatrophy syndrome an indication for Apomorphine?
+Answer: YES"
+15211,38957,Desvenlafaxine,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'CYP2D6', 'Desvenlafaxine']",0.0017422984255249,"Question: Is major depressive disorder an indication for Desvenlafaxine?
+Answer: YES"
+14719,37334,Epirubicin,breast carcinoma,disease-protein-drug,indication,"['breast carcinoma', 'ABCC1', 'Epirubicin']",0.0006563434908971,"Question: Is breast carcinoma an indication for Epirubicin?
+Answer: YES"
+14792,37082,Paclitaxel,malignant germ cell tumor of ovary,disease-protein-drug,indication,"['malignant germ cell tumor of ovary', 'CYP1B1', 'Paclitaxel']",0.0014394007316627,"Question: Is malignant germ cell tumor of ovary an indication for Paclitaxel?
+Answer: YES"
+14411,30654,Ibrutinib,acute lymphoblastic/lymphocytic leukemia,disease-protein-drug,indication,"['acute lymphoblastic/lymphocytic leukemia', 'BTK', 'Ibrutinib']",0.0005926356197501,"Question: Is acute lymphoblastic/lymphocytic leukemia an indication for Ibrutinib?
+Answer: YES"
+17258,37888,Acrivastine,allergic rhinitis,disease-protein-drug,indication,"['allergic rhinitis', 'HRH1', 'Acrivastine']",0.0005167258562323,"Question: Is allergic rhinitis an indication for Acrivastine?
+Answer: YES"
+15572,84261,Bosutinib,"blast phase chronic myelogenous leukemia, BCR-ABL1 positive",disease-protein-drug,indication,"['blast phase chronic myelogenous leukemia, BCR-ABL1 positive', 'BCR', 'Bosutinib']",0.0005048931532844,"Question: Is blast phase chronic myelogenous leukemia, BCR-ABL1 positive an indication for Bosutinib?
+Answer: YES"
+14612,32617,Trabectedin,hereditary breast ovarian cancer syndrome,disease-protein-drug,indication,"['hereditary breast ovarian cancer syndrome', 'CYP3A4', 'Trabectedin']",0.0005814254561642,"Question: Is hereditary breast ovarian cancer syndrome an indication for Trabectedin?
+Answer: YES"
+14600,29078,Rofecoxib,rheumatoid arthritis,disease-phenotype-protein-drug,indication,"['rheumatoid arthritis', 'Fever', 'PTGS2', 'Rofecoxib']",0.0025982579908249,"Question: Is rheumatoid arthritis an indication for Rofecoxib?
+Answer: YES"
+14212,36035,Verapamil,hypertension,disease-protein-drug,indication,"['hypertension', 'CYP3A5', 'Verapamil']",0.0008668269522117,"Question: Is hypertension an indication for Verapamil?
+Answer: YES"
+15291,28547,Ropinirole,Parkinson disease,disease-protein-drug,indication,"['Parkinson disease', 'DRD2', 'Ropinirole']",0.0009134754582649,"Question: Is Parkinson disease an indication for Ropinirole?
+Answer: YES"
+17030,33688,Alectinib,non-small cell lung carcinoma (disease),disease-protein-drug,indication,"['non-small cell lung carcinoma (disease)', 'ALK', 'Alectinib']",0.0003780341153567,"Question: Is non-small cell lung carcinoma (disease) an indication for Alectinib?
+Answer: YES"
+14830,31408,Amantadine,X-linked parkinsonism-spasticity syndrome,disease-phenotype-protein-drug,indication,"['X-linked parkinsonism-spasticity syndrome', 'Seizure', 'DRD2', 'Amantadine']",0.0034063132077169,"Question: Is X-linked parkinsonism-spasticity syndrome an indication for Amantadine?
+Answer: YES"
+15230,36935,Lenvatinib,renal cell adenocarcinoma,disease-protein-drug,indication,"['renal cell adenocarcinoma', 'FLT1', 'Lenvatinib']",0.0010357889405523,"Question: Is renal cell adenocarcinoma an indication for Lenvatinib?
+Answer: YES"
+15367,30494,Pomalidomide,plasma cell myeloma,disease-phenotype-protein-drug,indication,"['plasma cell myeloma', 'Splenomegaly', 'CYP1A2', 'Pomalidomide']",0.0019606953819328,"Question: Is plasma cell myeloma an indication for Pomalidomide?
+Answer: YES"
+14024,83789,Prednisone,serum sickness,disease-protein-drug,indication,"['serum sickness', 'ALB', 'Prednisone']",0.0025566923201154,"Question: Is serum sickness an indication for Prednisone?
+Answer: YES"
+16517,33064,Aflibercept,retinal artery occlusion,disease-protein-drug,indication,"['retinal artery occlusion', 'VEGFA', 'Aflibercept']",0.0008221911520722,"Question: Is retinal artery occlusion an indication for Aflibercept?
+Answer: YES"
+15493,30093,Bromocriptine,parkinsonian-pyramidal syndrome,disease-phenotype-protein-drug,indication,"['parkinsonian-pyramidal syndrome', 'Intention tremor', 'HTR1A', 'Bromocriptine']",0.0012042338239247,"Question: Is parkinsonian-pyramidal syndrome an indication for Bromocriptine?
+Answer: YES"
+17831,28249,Lithium carbonate,major affective disorder,disease-protein-drug,indication,"['major affective disorder', 'GSK3B', 'Lithium carbonate']",0.0007328149857911,"Question: Is major affective disorder an indication for Lithium carbonate?
+Answer: YES"
+15124,33241,Biperiden,hereditary late onset Parkinson disease,disease-protein-drug,indication,"['hereditary late onset Parkinson disease', 'CYP2D6', 'Biperiden']",0.0017685952726565,"Question: Is hereditary late onset Parkinson disease an indication for Biperiden?
+Answer: YES"
+14336,83791,Ephedrine,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'ALB', 'Ephedrine']",0.002085750754423,"Question: Is vasomotor rhinitis an indication for Ephedrine?
+Answer: YES"
+14186,83818,Cisplatin,primary non-gestational choriocarcinoma of ovary,disease-protein-drug,indication,"['primary non-gestational choriocarcinoma of ovary', 'SOD1', 'Cisplatin']",0.0018484381406244,"Question: Is primary non-gestational choriocarcinoma of ovary an indication for Cisplatin?
+Answer: YES"
+15173,30664,Dextroamphetamine,X-linked adrenoleukodystrophy,disease-phenotype-protein-drug,indication,"['X-linked adrenoleukodystrophy', 'Neurodegeneration', 'SLC6A3', 'Dextroamphetamine']",0.0007667374419156,"Question: Is X-linked adrenoleukodystrophy an indication for Dextroamphetamine?
+Answer: YES"
+14924,32272,Diazoxide,pancreatic insulin-producing neuroendocrine tumor,disease-phenotype-protein-drug,indication,"['pancreatic insulin-producing neuroendocrine tumor', 'Seizure', 'ATP1A1', 'Diazoxide']",0.003241047420705,"Question: Is pancreatic insulin-producing neuroendocrine tumor an indication for Diazoxide?
+Answer: YES"
+14945,37115,Sorafenib,squamous cell carcinoma of liver and intrahepatic biliary tract,disease-protein-drug,indication,"['squamous cell carcinoma of liver and intrahepatic biliary tract', 'BRAF', 'Sorafenib']",0.0012311352861992,"Question: Is squamous cell carcinoma of liver and intrahepatic biliary tract an indication for Sorafenib?
+Answer: YES"
+14792,35771,Paclitaxel,breast neoplasm,disease-protein-drug,indication,"['breast neoplasm', 'CYP3A4', 'Paclitaxel']",0.0012913964645782,"Question: Is breast neoplasm an indication for Paclitaxel?
+Answer: YES"
+15490,28547,Pergolide,Parkinson disease,disease-phenotype-protein-drug,indication,"['Parkinson disease', 'Resting tremor', 'HTR1A', 'Pergolide']",0.0011414273361265,"Question: Is Parkinson disease an indication for Pergolide?
+Answer: YES"
+15197,83840,Mianserin,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'SLC6A3', 'Mianserin']",0.000651430174826,"Question: Is unipolar depression an indication for Mianserin?
+Answer: YES"
+14168,27629,Spironolactone,Bartter disease,disease-protein-drug,indication,"['Bartter disease', 'CACNA1D', 'Spironolactone']",0.0010934792225836,"Question: Is Bartter disease an indication for Spironolactone?
+Answer: YES"
+17230,37888,Doxylamine,allergic rhinitis,disease-protein-drug,indication,"['allergic rhinitis', 'HRH1', 'Doxylamine']",0.0005407914909633,"Question: Is allergic rhinitis an indication for Doxylamine?
+Answer: YES"
+14030,33621,Prednisolone,acute lymphoblastic leukemia (disease),disease-protein-drug,indication,"['acute lymphoblastic leukemia (disease)', 'ABCB1', 'Prednisolone']",0.002363194602828,"Question: Is acute lymphoblastic leukemia (disease) an indication for Prednisolone?
+Answer: YES"
+15597,29118,Ruxolitinib,acquired polycythemia vera,disease-phenotype-protein-drug,indication,"['acquired polycythemia vera', 'Venous thrombosis', 'JAK2', 'Ruxolitinib']",0.0011075310391125,"Question: Is acquired polycythemia vera an indication for Ruxolitinib?
+Answer: YES"
+15193,31408,Rotigotine,X-linked parkinsonism-spasticity syndrome,disease-protein-drug,indication,"['X-linked parkinsonism-spasticity syndrome', 'DRD1', 'Rotigotine']",0.0006255423048966,"Question: Is X-linked parkinsonism-spasticity syndrome an indication for Rotigotine?
+Answer: YES"
+14884,37703,Phenelzine,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'CYP2D6', 'Phenelzine']",0.0019810309592703,"Question: Is neurotic disorder an indication for Phenelzine?
+Answer: YES"
+14189,37703,Nortriptyline,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'ADRB1', 'Nortriptyline']",0.0006223001903735,"Question: Is neurotic disorder an indication for Nortriptyline?
+Answer: YES"
+14190,29945,Fluorouracil,gastric cancer,disease-protein-drug,indication,"['gastric cancer', 'ALB', 'Fluorouracil']",0.0025541739328483,"Question: Is gastric cancer an indication for Fluorouracil?
+Answer: YES"
+14956,30449,Carbamazepine,trigeminal neuralgia,disease-phenotype-protein-drug,indication,"['trigeminal neuralgia', 'Allodynia', 'SCN11A', 'Carbamazepine']",0.0011617019281433,"Question: Is trigeminal neuralgia an indication for Carbamazepine?
+Answer: YES"
+14299,36105,Sertraline,phobic disorder,disease-protein-drug,indication,"['phobic disorder', 'SLC6A4', 'Sertraline']",0.0008154197872014,"Question: Is phobic disorder an indication for Sertraline?
+Answer: YES"
+14320,32967,Dexamethasone,sarcoidosis,disease-phenotype-protein-drug,indication,"['sarcoidosis', 'Hepatomegaly', 'NR1I2', 'Dexamethasone']",0.0035959308035623,"Question: Is sarcoidosis an indication for Dexamethasone?
+Answer: YES"
+14799,28208,Insulin human,type 2 diabetes mellitus,disease-protein-drug,indication,"['type 2 diabetes mellitus', 'INSR', 'Insulin human']",0.0009350357664175,"Question: Is type 2 diabetes mellitus an indication for Insulin human?
+Answer: YES"
+14295,83791,Promethazine,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'HRH1', 'Promethazine']",0.000604983664635,"Question: Is vasomotor rhinitis an indication for Promethazine?
+Answer: YES"
+17174,28780,Rivastigmine,Alzheimer disease,disease-phenotype-protein-drug,indication,"['Alzheimer disease', 'Seizure', 'BCHE', 'Rivastigmine']",0.0056655725422708,"Question: Is Alzheimer disease an indication for Rivastigmine?
+Answer: YES"
+15020,36937,Axitinib,clear cell renal carcinoma,disease-protein-drug,indication,"['clear cell renal carcinoma', 'KDR', 'Axitinib']",0.0005301058812985,"Question: Is clear cell renal carcinoma an indication for Axitinib?
+Answer: YES"
+16214,33577,Azilsartan medoxomil,hypertensive disorder,disease-protein-drug,indication,"['hypertensive disorder', 'AGTR1', 'Azilsartan medoxomil']",0.0004459809427942,"Question: Is hypertensive disorder an indication for Azilsartan medoxomil?
+Answer: YES"
+14342,84094,Testosterone propionate,premature menopause,disease-protein-drug,indication,"['premature menopause', 'AR', 'Testosterone propionate']",0.0012108636337813,"Question: Is premature menopause an indication for Testosterone propionate?
+Answer: YES"
+14707,33622,Ferrous sulfate anhydrous,microcytic anemia,disease-protein-drug,indication,"['microcytic anemia', 'TFRC', 'Ferrous sulfate anhydrous']",0.0011217019173305,"Question: Is microcytic anemia an indication for Ferrous sulfate anhydrous?
+Answer: YES"
+14320,83796,Dexamethasone,lymphosarcoma,disease-protein-drug,indication,"['lymphosarcoma', 'CYP2E1', 'Dexamethasone']",0.002179144358948,"Question: Is lymphosarcoma an indication for Dexamethasone?
+Answer: YES"
+14385,28208,Liraglutide,type 2 diabetes mellitus,disease-protein-drug,indication,"['type 2 diabetes mellitus', 'GLP1R', 'Liraglutide']",0.0006165678962428,"Question: Is type 2 diabetes mellitus an indication for Liraglutide?
+Answer: YES"
+14320,30447,Dexamethasone,"lymphoma, non-Hodgkin, familial",disease-protein-drug,indication,"['lymphoma, non-Hodgkin, familial', 'CYP2E1', 'Dexamethasone']",0.002179144358948,"Question: Is lymphoma, non-Hodgkin, familial an indication for Dexamethasone?
+Answer: YES"
+14463,83853,Gilteritinib,acute myeloblastic leukemia without maturation,disease-protein-drug,indication,"['acute myeloblastic leukemia without maturation', 'FLT3', 'Gilteritinib']",0.0012164592354832,"Question: Is acute myeloblastic leukemia without maturation an indication for Gilteritinib?
+Answer: YES"
+14019,32967,Betamethasone,sarcoidosis,disease-phenotype-protein-drug,indication,"['sarcoidosis', 'Hepatomegaly', 'CYP1B1', 'Betamethasone']",0.0032275701679507,"Question: Is sarcoidosis an indication for Betamethasone?
+Answer: YES"
+14042,28830,Hydrocortisone acetate,"leukemia, lymphocytic, susceptibility to",disease-protein-drug,indication,"['leukemia, lymphocytic, susceptibility to', 'ABCB1', 'Hydrocortisone acetate']",0.0017722966570143,"Question: Is leukemia, lymphocytic, susceptibility to an indication for Hydrocortisone acetate?
+Answer: YES"
+15209,27933,Vilazodone,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'SLC6A4', 'Vilazodone']",0.0008917820106049,"Question: Is anxiety disorder an indication for Vilazodone?
+Answer: YES"
+14170,36581,Trifluridine,colonic neoplasm,disease-protein-drug,indication,"['colonic neoplasm', 'TYMS', 'Trifluridine']",0.0013352823170897,"Question: Is colonic neoplasm an indication for Trifluridine?
+Answer: YES"
+17605,37144,Cetuximab,squamous cell carcinoma of colon,disease-protein-drug,indication,"['squamous cell carcinoma of colon', 'EGFR', 'Cetuximab']",0.0010441815031019,"Question: Is squamous cell carcinoma of colon an indication for Cetuximab?
+Answer: YES"
+15492,35963,Estramustine,prostate carcinoma,disease-protein-drug,indication,"['prostate carcinoma', 'ESR2', 'Estramustine']",0.0006432739899313,"Question: Is prostate carcinoma an indication for Estramustine?
+Answer: YES"
+14184,37805,Ritonavir,HIV infectious disease,disease-protein-drug,indication,"['HIV infectious disease', 'ALB', 'Ritonavir']",0.0018483028567038,"Question: Is HIV infectious disease an indication for Ritonavir?
+Answer: YES"
+15193,28801,Rotigotine,juvenile onset Parkinson disease 19A,disease-protein-drug,indication,"['juvenile onset Parkinson disease 19A', 'DRD1', 'Rotigotine']",0.0006296437963114,"Question: Is juvenile onset Parkinson disease 19A an indication for Rotigotine?
+Answer: YES"
+15087,83841,Venlafaxine,endogenous depression,disease-protein-drug,indication,"['endogenous depression', 'SLC6A2', 'Venlafaxine']",0.0004599355537518,"Question: Is endogenous depression an indication for Venlafaxine?
+Answer: YES"
+14178,27843,Chlorpromazine,acute intermittent porphyria,disease-phenotype-protein-drug,indication,"['acute intermittent porphyria', 'Seizure', 'BCHE', 'Chlorpromazine']",0.0058422692483753,"Question: Is acute intermittent porphyria an indication for Chlorpromazine?
+Answer: YES"
+16842,28547,Pramipexole,Parkinson disease,disease-phenotype-protein-drug,indication,"['Parkinson disease', 'Tremor', 'HTR1A', 'Pramipexole']",0.0012486262777277,"Question: Is Parkinson disease an indication for Pramipexole?
+Answer: YES"
+17305,27933,Protriptyline,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'SLC6A4', 'Protriptyline']",0.0008846753801329,"Question: Is anxiety disorder an indication for Protriptyline?
+Answer: YES"
+14830,28547,Amantadine,Parkinson disease,disease-protein-drug,indication,"['Parkinson disease', 'DDC', 'Amantadine']",0.000774340332267,"Question: Is Parkinson disease an indication for Amantadine?
+Answer: YES"
+14596,37786,Eletriptan,myocardial ischemia,disease-protein-drug,contraindication,"['myocardial ischemia', 'SLC8A1', 'Eletriptan']",0.0067986093533176,"Question: Is myocardial ischemia an indication for Eletriptan?
+Answer: NO"
+14186,37047,Cisplatin,immature ovarian teratoma,disease-protein-drug,indication,"['immature ovarian teratoma', 'SOD1', 'Cisplatin']",0.0018484426582064,"Question: Is immature ovarian teratoma an indication for Cisplatin?
+Answer: YES"
+14604,29173,Etoposide,small cell lung carcinoma,disease-protein-drug,indication,"['small cell lung carcinoma', 'UGT1A1', 'Etoposide']",0.0010248264734551,"Question: Is small cell lung carcinoma an indication for Etoposide?
+Answer: YES"
+14299,37703,Sertraline,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'SLC6A4', 'Sertraline']",0.0008101956024355,"Question: Is neurotic disorder an indication for Sertraline?
+Answer: YES"
+14230,32959,Tetracycline,Q fever,disease-phenotype-protein-drug,indication,"['Q fever', 'Hepatomegaly', 'ALB', 'Tetracycline']",0.0034935209731142,"Question: Is Q fever an indication for Tetracycline?
+Answer: YES"
+14298,33598,Rosuvastatin,stroke disorder,disease-protein-drug,indication,"['stroke disorder', 'ALB', 'Rosuvastatin']",0.0018770851639828,"Question: Is stroke disorder an indication for Rosuvastatin?
+Answer: YES"
+14830,32468,Amantadine,postencephalitic Parkinson disease,disease-phenotype-protein-drug,indication,"['postencephalitic Parkinson disease', 'Seizure', 'CHRNA7', 'Amantadine']",0.0032269021463178,"Question: Is postencephalitic Parkinson disease an indication for Amantadine?
+Answer: YES"
+14382,37743,Simeprevir,hepatitis C virus infection,disease-protein-drug,indication,"['hepatitis C virus infection', 'CYP3A4', 'Simeprevir']",0.0004459727757857,"Question: Is hepatitis C virus infection an indication for Simeprevir?
+Answer: YES"
+14168,39276,Spironolactone,hyperaldosteronism,disease-protein-drug,indication,"['hyperaldosteronism', 'CACNA1D', 'Spironolactone']",0.0010934792225836,"Question: Is hyperaldosteronism an indication for Spironolactone?
+Answer: YES"
+20290,33625,"Sodium phosphate, monobasic",hypophosphatemia (disease),disease-protein-drug,indication,"['hypophosphatemia (disease)', 'SLC34A1', 'Sodium phosphate, monobasic']",0.000979087590996,"Question: Is hypophosphatemia (disease) an indication for Sodium phosphate, monobasic?
+Answer: YES"
+14024,29078,Prednisone,rheumatoid arthritis,disease-protein-drug,indication,"['rheumatoid arthritis', 'HSD11B1', 'Prednisone']",0.001475593158696,"Question: Is rheumatoid arthritis an indication for Prednisone?
+Answer: YES"
+15668,35966,Apalutamide,prostate cancer,disease-protein-drug,indication,"['prostate cancer', 'CYP3A4', 'Apalutamide']",0.0005298916746639,"Question: Is prostate cancer an indication for Apalutamide?
+Answer: YES"
+15110,83779,Fluphenazine,schizoaffective disorder,disease-protein-drug,indication,"['schizoaffective disorder', 'HTR2A', 'Fluphenazine']",0.0007140740761563,"Question: Is schizoaffective disorder an indication for Fluphenazine?
+Answer: YES"
+18226,28772,Velaglucerase alfa,Gaucher disease,disease-protein-drug,indication,"['Gaucher disease', 'GBA', 'Velaglucerase alfa']",0.0005632379127359,"Question: Is Gaucher disease an indication for Velaglucerase alfa?
+Answer: YES"
+14295,33683,Promethazine,urticaria (disease),disease-protein-drug,indication,"['urticaria (disease)', 'ALB', 'Promethazine']",0.0018755868444594,"Question: Is urticaria (disease) an indication for Promethazine?
+Answer: YES"
+14194,31116,Methotrexate,lung cancer,disease-protein-drug,indication,"['lung cancer', 'SLC19A1', 'Methotrexate']",0.0016895912751327,"Question: Is lung cancer an indication for Methotrexate?
+Answer: YES"
+14220,32974,Apomorphine,atypical juvenile parkinsonism,disease-protein-drug,indication,"['atypical juvenile parkinsonism', 'SLC18A2', 'Apomorphine']",0.0007891759555733,"Question: Is atypical juvenile parkinsonism an indication for Apomorphine?
+Answer: YES"
+14830,37706,Amantadine,parkinsonian disorder,disease-protein-drug,indication,"['parkinsonian disorder', 'DDC', 'Amantadine']",0.0007605820919424,"Question: Is parkinsonian disorder an indication for Amantadine?
+Answer: YES"
+14269,32815,Methylprednisolone,Trichinellosis,disease-phenotype-protein-drug,indication,"['Trichinellosis', 'Nausea', 'ABCB1', 'Methylprednisolone']",0.0024278798500802,"Question: Is Trichinellosis an indication for Methylprednisolone?
+Answer: YES"
+14207,28542,Imatinib,mastocytosis,disease-phenotype-protein-drug,indication,"['mastocytosis', 'Splenomegaly', 'CYP1A2', 'Imatinib']",0.0026640639584336,"Question: Is mastocytosis an indication for Imatinib?
+Answer: YES"
+14294,33115,Clonazepam,absence epilepsy,disease-protein-drug,indication,"['absence epilepsy', 'GABRD', 'Clonazepam']",0.0004651808990674,"Question: Is absence epilepsy an indication for Clonazepam?
+Answer: YES"
+15914,32949,Minocycline,relapsing fever,disease-phenotype-protein-drug,indication,"['relapsing fever', 'Leukocytosis', 'IL1B', 'Minocycline']",0.0031555476493443,"Question: Is relapsing fever an indication for Minocycline?
+Answer: YES"
+16475,35641,Phenacemide,epilepsy,disease-protein-drug,indication,"['epilepsy', 'SCN1A', 'Phenacemide']",0.0004519835485247,"Question: Is epilepsy an indication for Phenacemide?
+Answer: YES"
+14187,31116,Erlotinib,lung cancer,disease-protein-drug,indication,"['lung cancer', 'ABCB1', 'Erlotinib']",0.0012919777504671,"Question: Is lung cancer an indication for Erlotinib?
+Answer: YES"
+15597,83871,Ruxolitinib,myelofibrosis,disease-protein-drug,indication,"['myelofibrosis', 'JAK2', 'Ruxolitinib']",0.000872722903179,"Question: Is myelofibrosis an indication for Ruxolitinib?
+Answer: YES"
+15027,31116,Crizotinib,lung cancer,disease-protein-drug,indication,"['lung cancer', 'MET', 'Crizotinib']",0.0004438507571342,"Question: Is lung cancer an indication for Crizotinib?
+Answer: YES"
+14787,35963,Flutamide,prostate carcinoma,disease-protein-drug,indication,"['prostate carcinoma', 'CYP1B1', 'Flutamide']",0.000743613495596,"Question: Is prostate carcinoma an indication for Flutamide?
+Answer: YES"
+15082,27933,Citalopram,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'CYP2C19', 'Citalopram']",0.0006957911992167,"Question: Is anxiety disorder an indication for Citalopram?
+Answer: YES"
+15113,28473,Galantamine,Pick disease,disease-protein-drug,indication,"['Pick disease', 'ACHE', 'Galantamine']",0.0008901482403306,"Question: Is Pick disease an indication for Galantamine?
+Answer: YES"
+14885,37703,Moclobemide,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'CYP2C19', 'Moclobemide']",0.0005123604203567,"Question: Is neurotic disorder an indication for Moclobemide?
+Answer: YES"
+17257,27933,Butriptyline,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'SLC6A4', 'Butriptyline']",0.0008749691222396,"Question: Is anxiety disorder an indication for Butriptyline?
+Answer: YES"
+14186,83819,Cisplatin,malignant dysgerminomatous germ cell tumor of ovary,disease-protein-drug,indication,"['malignant dysgerminomatous germ cell tumor of ovary', 'SOD1', 'Cisplatin']",0.0018484381406244,"Question: Is malignant dysgerminomatous germ cell tumor of ovary an indication for Cisplatin?
+Answer: YES"
+14623,33534,Prasterone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,indication,"['pediatric systemic lupus erythematosus', 'Proteinuria', 'PPARA', 'Prasterone']",0.0015074135696788,"Question: Is pediatric systemic lupus erythematosus an indication for Prasterone?
+Answer: YES"
+15020,33643,Axitinib,renal cell carcinoma (disease),disease-protein-drug,indication,"['renal cell carcinoma (disease)', 'FLT4', 'Axitinib']",0.0007765456572999,"Question: Is renal cell carcinoma (disease) an indication for Axitinib?
+Answer: YES"
+14952,83778,Haloperidol,schizophreniform disorder,disease-protein-drug,indication,"['schizophreniform disorder', 'HTR2A', 'Haloperidol']",0.000849672900768,"Question: Is schizophreniform disorder an indication for Haloperidol?
+Answer: YES"
+14323,83763,Aripiprazole,manic bipolar affective disorder,disease-protein-drug,indication,"['manic bipolar affective disorder', 'DRD5', 'Aripiprazole']",0.0010888880008444,"Question: Is manic bipolar affective disorder an indication for Aripiprazole?
+Answer: YES"
+14924,38889,Diazoxide,congenital isolated hyperinsulinism,disease-protein-drug,indication,"['congenital isolated hyperinsulinism', 'KCNJ11', 'Diazoxide']",0.0010508842743468,"Question: Is congenital isolated hyperinsulinism an indication for Diazoxide?
+Answer: YES"
+14424,39480,Methylene blue,methemoglobinemia,disease-protein-drug,indication,"['methemoglobinemia', 'CYP1A2', 'Methylene blue']",0.001028442052133,"Question: Is methemoglobinemia an indication for Methylene blue?
+Answer: YES"
+17724,84242,Methadyl acetate,morphine dependence,disease-protein-drug,indication,"['morphine dependence', 'OPRM1', 'Methadyl acetate']",0.0010455393287721,"Question: Is morphine dependence an indication for Methadyl acetate?
+Answer: YES"
+17545,83862,Gemtuzumab ozogamicin,acute myeloblastic leukemia with maturation,disease-protein-drug,indication,"['acute myeloblastic leukemia with maturation', 'CD33', 'Gemtuzumab ozogamicin']",0.0007523662878602,"Question: Is acute myeloblastic leukemia with maturation an indication for Gemtuzumab ozogamicin?
+Answer: YES"
+15098,83779,Promazine,schizoaffective disorder,disease-protein-drug,indication,"['schizoaffective disorder', 'HTR2A', 'Promazine']",0.0006905364820121,"Question: Is schizoaffective disorder an indication for Promazine?
+Answer: YES"
+14452,28547,Istradefylline,Parkinson disease,disease-phenotype-protein-drug,indication,"['Parkinson disease', 'Resting tremor', 'CYP2D6', 'Istradefylline']",0.0020203266894669,"Question: Is Parkinson disease an indication for Istradefylline?
+Answer: YES"
+14321,33594,Levodopa,diarrheal disease,disease-protein-drug,contraindication,"['diarrheal disease', 'IFNA2', 'Levodopa']",0.004240054301402,"Question: Is diarrheal disease an indication for Levodopa?
+Answer: NO"
+15112,32778,Dextropropoxyphene,familial visceral myopathy,disease-protein-drug,contraindication,"['familial visceral myopathy', 'ACTG2', 'Dextropropoxyphene']",0.001143174012633,"Question: Is familial visceral myopathy an indication for Dextropropoxyphene?
+Answer: NO"
+14320,33621,Dexamethasone,acute lymphoblastic leukemia (disease),disease-protein-drug,indication,"['acute lymphoblastic leukemia (disease)', 'CYP2C8', 'Dexamethasone']",0.0020515176084016,"Question: Is acute lymphoblastic leukemia (disease) an indication for Dexamethasone?
+Answer: YES"
+17545,83857,Gemtuzumab ozogamicin,acute myeloid leukemia with t(8;16)(p11;p13) translocation,disease-protein-drug,indication,"['acute myeloid leukemia with t(8;16)(p11;p13) translocation', 'CD33', 'Gemtuzumab ozogamicin']",0.0007468536141793,"Question: Is acute myeloid leukemia with t(8;16)(p11;p13) translocation an indication for Gemtuzumab ozogamicin?
+Answer: YES"
+14321,28974,Levodopa,early-onset parkinsonism-intellectual disability syndrome,disease-phenotype-protein-drug,indication,"['early-onset parkinsonism-intellectual disability syndrome', 'Seizure', 'DRD3', 'Levodopa']",0.0031485897145661,"Question: Is early-onset parkinsonism-intellectual disability syndrome an indication for Levodopa?
+Answer: YES"
+14336,36091,Ephedrine,atopic conjunctivitis,disease-phenotype-protein-drug,indication,"['atopic conjunctivitis', 'Allergy', 'ALB', 'Ephedrine']",0.0022198500855731,"Question: Is atopic conjunctivitis an indication for Ephedrine?
+Answer: YES"
+14023,32967,Triamcinolone,sarcoidosis,disease-phenotype-protein-drug,indication,"['sarcoidosis', 'Hepatomegaly', 'ALB', 'Triamcinolone']",0.00420399428303,"Question: Is sarcoidosis an indication for Triamcinolone?
+Answer: YES"
+14313,28502,Arsenic trioxide,myelomonocytic leukemia,disease-phenotype-protein-drug,indication,"['myelomonocytic leukemia', 'Thrombocytopenia', 'ALB', 'Arsenic trioxide']",0.0034937244317464,"Question: Is myelomonocytic leukemia an indication for Arsenic trioxide?
+Answer: YES"
+15413,31116,Gemcitabine,lung cancer,disease-protein-drug,indication,"['lung cancer', 'ABCB1', 'Gemcitabine']",0.0015902425740644,"Question: Is lung cancer an indication for Gemcitabine?
+Answer: YES"
+14019,83791,Betamethasone,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'ALB', 'Betamethasone']",0.0029609964843914,"Question: Is vasomotor rhinitis an indication for Betamethasone?
+Answer: YES"
+15018,32834,Midostaurin,aggressive systemic mastocytosis,disease-protein-drug,indication,"['aggressive systemic mastocytosis', 'KIT', 'Midostaurin']",0.0015919452827566,"Question: Is aggressive systemic mastocytosis an indication for Midostaurin?
+Answer: YES"
+16352,39773,Norepinephrine,allergic asthma,disease-protein-drug,indication,"['allergic asthma', 'ADRB2', 'Norepinephrine']",0.0007206515067788,"Question: Is allergic asthma an indication for Norepinephrine?
+Answer: YES"
+14419,33609,Dexibuprofen,osteoarthritis,disease-protein-drug,indication,"['osteoarthritis', 'PPARG', 'Dexibuprofen']",0.0008295230643452,"Question: Is osteoarthritis an indication for Dexibuprofen?
+Answer: YES"
+14731,36035,Mibefradil,hypertension,disease-protein-drug,indication,"['hypertension', 'CYP3A5', 'Mibefradil']",0.0006946091908467,"Question: Is hypertension an indication for Mibefradil?
+Answer: YES"
+14144,32456,Topiramate,cutis verticis gyrata,disease-phenotype-protein-drug,indication,"['cutis verticis gyrata', 'Seizure', 'GRIK1', 'Topiramate']",0.0035352651505631,"Question: Is cutis verticis gyrata an indication for Topiramate?
+Answer: YES"
+14192,32456,Lamotrigine,cutis verticis gyrata,disease-phenotype-protein-drug,indication,"['cutis verticis gyrata', 'Seizure', 'GABRA5', 'Lamotrigine']",0.0034725133278813,"Question: Is cutis verticis gyrata an indication for Lamotrigine?
+Answer: YES"
+15420,28426,Pantoprazole,multiple endocrine neoplasia,disease-phenotype-protein-drug,indication,"['multiple endocrine neoplasia', 'Vomiting', 'ABCB1', 'Pantoprazole']",0.0019782833217737,"Question: Is multiple endocrine neoplasia an indication for Pantoprazole?
+Answer: YES"
+14297,33598,Atorvastatin,stroke disorder,disease-protein-drug,indication,"['stroke disorder', 'ALB', 'Atorvastatin']",0.002095168539803,"Question: Is stroke disorder an indication for Atorvastatin?
+Answer: YES"
+15138,32974,Selegiline,atypical juvenile parkinsonism,disease-protein-drug,indication,"['atypical juvenile parkinsonism', 'MAOA', 'Selegiline']",0.0005298616525077,"Question: Is atypical juvenile parkinsonism an indication for Selegiline?
+Answer: YES"
+14135,83898,Lovastatin,obsolete familial combined hyperlipidemia,disease-protein-drug,indication,"['obsolete familial combined hyperlipidemia', 'HMGCR', 'Lovastatin']",0.0007789507913748,"Question: Is obsolete familial combined hyperlipidemia an indication for Lovastatin?
+Answer: YES"
+15294,83911,Tacrine,Reye syndrome,disease-protein-drug,indication,"['Reye syndrome', 'BCHE', 'Tacrine']",0.0032996583372481,"Question: Is Reye syndrome an indication for Tacrine?
+Answer: YES"
+14485,28313,Aripiprazole lauroxil,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'HTR2C', 'Aripiprazole lauroxil']",0.000536530031276,"Question: Is schizophrenia an indication for Aripiprazole lauroxil?
+Answer: YES"
+14904,33241,Safinamide,hereditary late onset Parkinson disease,disease-protein-drug,indication,"['hereditary late onset Parkinson disease', 'CYP2D6', 'Safinamide']",0.0017193496596186,"Question: Is hereditary late onset Parkinson disease an indication for Safinamide?
+Answer: YES"
+15083,38957,Reboxetine,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'ABCB1', 'Reboxetine']",0.0011112697890773,"Question: Is major depressive disorder an indication for Reboxetine?
+Answer: YES"
+15597,36825,Ruxolitinib,plasmacytoma,disease-protein-drug,indication,"['plasmacytoma', 'JAK1', 'Ruxolitinib']",0.0006466548863846,"Question: Is plasmacytoma an indication for Ruxolitinib?
+Answer: YES"
+14208,32899,Testosterone,pituitary deficiency due to Rathke's pouch cysts,disease-protein-drug,indication,"[""pituitary deficiency due to Rathke's pouch cysts"", 'CYP19A1', 'Testosterone']",0.0014989178601742,"Question: Is pituitary deficiency due to Rathke's pouch cysts an indication for Testosterone?
+Answer: YES"
+14854,31650,Ambenonium,myasthenia gravis,disease-phenotype-protein-drug,indication,"['myasthenia gravis', 'Seizure', 'ACHE', 'Ambenonium']",0.0032043473379965,"Question: Is myasthenia gravis an indication for Ambenonium?
+Answer: YES"
+14137,32033,Butabarbital,insomnia (disease),disease-protein-drug,indication,"['insomnia (disease)', 'GABRB3', 'Butabarbital']",0.001506258358139,"Question: Is insomnia (disease) an indication for Butabarbital?
+Answer: YES"
+14141,32456,Phenytoin,cutis verticis gyrata,disease-phenotype-protein-drug,indication,"['cutis verticis gyrata', 'Seizure', 'GABRA5', 'Phenytoin']",0.0036316116947634,"Question: Is cutis verticis gyrata an indication for Phenytoin?
+Answer: YES"
+14275,28520,Doxorubicin,myeloid leukemia,disease-protein-drug,indication,"['myeloid leukemia', 'NQO1', 'Doxorubicin']",0.0023911975423689,"Question: Is myeloid leukemia an indication for Doxorubicin?
+Answer: YES"
+14275,84156,Doxorubicin,plasmablastic lymphoma,disease-protein-drug,indication,"['plasmablastic lymphoma', 'ABCG2', 'Doxorubicin']",0.0022261986514447,"Question: Is plasmablastic lymphoma an indication for Doxorubicin?
+Answer: YES"
+14215,33577,Losartan,hypertensive disorder,disease-protein-drug,indication,"['hypertensive disorder', 'AGTR1', 'Losartan']",0.0005434563212823,"Question: Is hypertensive disorder an indication for Losartan?
+Answer: YES"
+15667,37703,Esketamine,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'CYP2C19', 'Esketamine']",0.0008462127567644,"Question: Is neurotic disorder an indication for Esketamine?
+Answer: YES"
+14188,33314,Ciprofloxacin,leptospirosis,disease-phenotype-protein-drug,indication,"['leptospirosis', 'Thrombocytopenia', 'ALB', 'Ciprofloxacin']",0.0031800022439876,"Question: Is leptospirosis an indication for Ciprofloxacin?
+Answer: YES"
+14248,27421,Cysteamine,nephropathic cystinosis,disease-phenotype-protein-drug,indication,"['nephropathic cystinosis', 'Hepatomegaly', 'ALB', 'Cysteamine']",0.0033890240880349,"Question: Is nephropathic cystinosis an indication for Cysteamine?
+Answer: YES"
+17023,84174,Tafamidis,AH amyloidosis,disease-protein-drug,indication,"['AH amyloidosis', 'TTR', 'Tafamidis']",0.0006869144799959,"Question: Is AH amyloidosis an indication for Tafamidis?
+Answer: YES"
+14023,33534,Triamcinolone,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,indication,"['pediatric systemic lupus erythematosus', 'Proteinuria', 'PTGS2', 'Triamcinolone']",0.0026784623308698,"Question: Is pediatric systemic lupus erythematosus an indication for Triamcinolone?
+Answer: YES"
+15180,32918,Fusidic acid,vernal keratoconjunctivitis,disease-phenotype-protein-drug,indication,"['vernal keratoconjunctivitis', 'Pruritus', 'ABCB11', 'Fusidic acid']",0.0023886053029705,"Question: Is vernal keratoconjunctivitis an indication for Fusidic acid?
+Answer: YES"
+15297,35641,Secobarbital,epilepsy,disease-protein-drug,indication,"['epilepsy', 'GRIN2A', 'Secobarbital']",0.0007118803155605,"Question: Is epilepsy an indication for Secobarbital?
+Answer: YES"
+15222,38957,Levomilnacipran,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'CYP2D6', 'Levomilnacipran']",0.0017233426381699,"Question: Is major depressive disorder an indication for Levomilnacipran?
+Answer: YES"
+14408,35966,Enzalutamide,prostate cancer,disease-protein-drug,indication,"['prostate cancer', 'AR', 'Enzalutamide']",0.0010950931562825,"Question: Is prostate cancer an indication for Enzalutamide?
+Answer: YES"
+16179,27361,Turoctocog alfa,hemophilia,disease-phenotype-protein-drug,indication,"['hemophilia', 'Thromboembolism', 'F2', 'Turoctocog alfa']",0.0007165993240279,"Question: Is hemophilia an indication for Turoctocog alfa?
+Answer: YES"
+14792,36035,Paclitaxel,hypertension,disease-protein-drug,indication,"['hypertension', 'CYP3A5', 'Paclitaxel']",0.001351928435814,"Question: Is hypertension an indication for Paclitaxel?
+Answer: YES"
+15781,33609,Acetylsalicylic acid,osteoarthritis,disease-protein-drug,indication,"['osteoarthritis', 'AKR1C1', 'Acetylsalicylic acid']",0.0019356790489078,"Question: Is osteoarthritis an indication for Acetylsalicylic acid?
+Answer: YES"
+14737,37082,Carboplatin,malignant germ cell tumor of ovary,disease-protein-drug,indication,"['malignant germ cell tumor of ovary', 'SOD1', 'Carboplatin']",0.0021984872533121,"Question: Is malignant germ cell tumor of ovary an indication for Carboplatin?
+Answer: YES"
+14829,28313,Flupentixol,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'CHRM1', 'Flupentixol']",0.0005113109915645,"Question: Is schizophrenia an indication for Flupentixol?
+Answer: YES"
+15188,28651,Lorcaserin,monogenic obesity,disease-protein-drug,indication,"['monogenic obesity', 'HTR2C', 'Lorcaserin']",0.0004303924751335,"Question: Is monogenic obesity an indication for Lorcaserin?
+Answer: YES"
+14310,83760,Doxepin,dysthymic disorder,disease-protein-drug,indication,"['dysthymic disorder', 'HTR2C', 'Doxepin']",0.0005695263185725,"Question: Is dysthymic disorder an indication for Doxepin?
+Answer: YES"
+14321,32759,Levodopa,hemiparkinsonism-hemiatrophy syndrome,disease-protein-drug,indication,"['hemiparkinsonism-hemiatrophy syndrome', 'DDC', 'Levodopa']",0.0007580703736501,"Question: Is hemiparkinsonism-hemiatrophy syndrome an indication for Levodopa?
+Answer: YES"
+15122,83791,Tripelennamine,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'HRH1', 'Tripelennamine']",0.0005135243449604,"Question: Is vasomotor rhinitis an indication for Tripelennamine?
+Answer: YES"
+14030,32325,Prednisolone,juvenile idiopathic arthritis,disease-phenotype-protein-drug,indication,"['juvenile idiopathic arthritis', 'Hepatomegaly', 'ALB', 'Prednisolone']",0.0043666074477145,"Question: Is juvenile idiopathic arthritis an indication for Prednisolone?
+Answer: YES"
+16056,28974,Procyclidine,early-onset parkinsonism-intellectual disability syndrome,disease-phenotype-protein-drug,indication,"['early-onset parkinsonism-intellectual disability syndrome', 'Seizure', 'CHRM1', 'Procyclidine']",0.0028974122911813,"Question: Is early-onset parkinsonism-intellectual disability syndrome an indication for Procyclidine?
+Answer: YES"
+14955,30654,Vincristine,acute lymphoblastic/lymphocytic leukemia,disease-protein-drug,indication,"['acute lymphoblastic/lymphocytic leukemia', 'ABCG2', 'Vincristine']",0.0012139968154904,"Question: Is acute lymphoblastic/lymphocytic leukemia an indication for Vincristine?
+Answer: YES"
+15018,83859,Midostaurin,acute myeloid leukemia with t(9;11)(p22;q23),disease-protein-drug,indication,"['acute myeloid leukemia with t(9;11)(p22;q23)', 'FLT3', 'Midostaurin']",0.0013682326726179,"Question: Is acute myeloid leukemia with t(9;11)(p22;q23) an indication for Midostaurin?
+Answer: YES"
+19207,32468,Carbidopa,postencephalitic Parkinson disease,disease-phenotype-protein-drug,indication,"['postencephalitic Parkinson disease', 'Oculogyric crisis', 'DDC', 'Carbidopa']",0.0007654103336522,"Question: Is postencephalitic Parkinson disease an indication for Carbidopa?
+Answer: YES"
+14737,31477,Carboplatin,ovarian cancer,disease-protein-drug,indication,"['ovarian cancer', 'ATP7B', 'Carboplatin']",0.0013564713943984,"Question: Is ovarian cancer an indication for Carboplatin?
+Answer: YES"
+14161,27933,Olanzapine,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'ABCB1', 'Olanzapine']",0.0016495919413071,"Question: Is anxiety disorder an indication for Olanzapine?
+Answer: YES"
+14192,36743,Lamotrigine,partial epilepsy,disease-protein-drug,indication,"['partial epilepsy', 'DRD1', 'Lamotrigine']",0.0012355442555361,"Question: Is partial epilepsy an indication for Lamotrigine?
+Answer: YES"
+14299,27933,Sertraline,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'MAOA', 'Sertraline']",0.0007355897030201,"Question: Is anxiety disorder an indication for Sertraline?
+Answer: YES"
+14024,84154,Prednisone,"primary cutaneous diffuse large B-cell lymphoma, Leg type",disease-protein-drug,indication,"['primary cutaneous diffuse large B-cell lymphoma, Leg type', 'ABCB1', 'Prednisone']",0.0019114295671649,"Question: Is primary cutaneous diffuse large B-cell lymphoma, Leg type an indication for Prednisone?
+Answer: YES"
+14792,31116,Paclitaxel,lung cancer,disease-protein-drug,indication,"['lung cancer', 'ABCB1', 'Paclitaxel']",0.0019233225498654,"Question: Is lung cancer an indication for Paclitaxel?
+Answer: YES"
+17583,29078,Etanercept,rheumatoid arthritis,disease-phenotype-protein-drug,indication,"['rheumatoid arthritis', 'Fever', 'TNF', 'Etanercept']",0.0035326947286491,"Question: Is rheumatoid arthritis an indication for Etanercept?
+Answer: YES"
+15472,36743,Tiagabine,partial epilepsy,disease-protein-drug,indication,"['partial epilepsy', 'SLC6A1', 'Tiagabine']",0.0004928176634528,"Question: Is partial epilepsy an indication for Tiagabine?
+Answer: YES"
+14233,36432,Hydroflumethiazide,congestive heart failure,disease-protein-drug,indication,"['congestive heart failure', 'ALB', 'Hydroflumethiazide']",0.0018071152999113,"Question: Is congestive heart failure an indication for Hydroflumethiazide?
+Answer: YES"
+15002,33643,Sunitinib,renal cell carcinoma (disease),disease-protein-drug,indication,"['renal cell carcinoma (disease)', 'FLT1', 'Sunitinib']",0.0009556189489459,"Question: Is renal cell carcinoma (disease) an indication for Sunitinib?
+Answer: YES"
+15148,38957,Escitalopram,major depressive disorder,disease-protein-drug,indication,"['major depressive disorder', 'ADRA1A', 'Escitalopram']",0.0004637237244231,"Question: Is major depressive disorder an indication for Escitalopram?
+Answer: YES"
+14544,28249,Bupropion,major affective disorder,disease-protein-drug,indication,"['major affective disorder', 'SLC6A2', 'Bupropion']",0.0006805480548738,"Question: Is major affective disorder an indication for Bupropion?
+Answer: YES"
+15326,33314,Ofloxacin,leptospirosis,disease-phenotype-protein-drug,indication,"['leptospirosis', 'Arrhythmia', 'SLC22A5', 'Ofloxacin']",0.0018342679757833,"Question: Is leptospirosis an indication for Ofloxacin?
+Answer: YES"
+14680,36214,Zinc acetate,iron metabolism disease,disease-protein-drug,indication,"['iron metabolism disease', 'A2M', 'Zinc acetate']",0.0066445638274564,"Question: Is iron metabolism disease an indication for Zinc acetate?
+Answer: YES"
+16495,83861,Quizartinib,acute myeloid leukemia with NPM1 somatic mutations,disease-protein-drug,indication,"['acute myeloid leukemia with NPM1 somatic mutations', 'FLT3', 'Quizartinib']",0.0010653573643722,"Question: Is acute myeloid leukemia with NPM1 somatic mutations an indication for Quizartinib?
+Answer: YES"
+14944,33577,Amlodipine,hypertensive disorder,disease-protein-drug,indication,"['hypertensive disorder', 'CYP3A5', 'Amlodipine']",0.0006162048423082,"Question: Is hypertensive disorder an indication for Amlodipine?
+Answer: YES"
+15094,27933,Mirtazapine,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'HTR2A', 'Mirtazapine']",0.0008240481136517,"Question: Is anxiety disorder an indication for Mirtazapine?
+Answer: YES"
+14831,31408,Droxidopa,X-linked parkinsonism-spasticity syndrome,disease-protein-drug,indication,"['X-linked parkinsonism-spasticity syndrome', 'DDC', 'Droxidopa']",0.0006153169199927,"Question: Is X-linked parkinsonism-spasticity syndrome an indication for Droxidopa?
+Answer: YES"
+14329,29113,Insulin detemir,diabetic ketoacidosis,disease-phenotype-protein-drug,indication,"['diabetic ketoacidosis', 'Insulin resistance', 'INSR', 'Insulin detemir']",0.0006536970293165,"Question: Is diabetic ketoacidosis an indication for Insulin detemir?
+Answer: YES"
+14868,32617,Thiotepa,hereditary breast ovarian cancer syndrome,disease-protein-drug,indication,"['hereditary breast ovarian cancer syndrome', 'CYP3A4', 'Thiotepa']",0.0006800366923083,"Question: Is hereditary breast ovarian cancer syndrome an indication for Thiotepa?
+Answer: YES"
+16495,83860,Quizartinib,acute myeloid leukemia with inv3(p21;q26.2) or t(3;3)(p21;q26.2),disease-protein-drug,indication,"['acute myeloid leukemia with inv3(p21;q26.2) or t(3;3)(p21;q26.2)', 'FLT3', 'Quizartinib']",0.0010653573643722,"Question: Is acute myeloid leukemia with inv3(p21;q26.2) or t(3;3)(p21;q26.2) an indication for Quizartinib?
+Answer: YES"
+15150,33618,Propafenone,atrial fibrillation (disease),disease-protein-drug,indication,"['atrial fibrillation (disease)', 'SCN5A', 'Propafenone']",0.0007692278775484,"Question: Is atrial fibrillation (disease) an indication for Propafenone?
+Answer: YES"
+15956,39773,Dyphylline,allergic asthma,disease-protein-drug,indication,"['allergic asthma', 'PDE4B', 'Dyphylline']",0.0005841991671621,"Question: Is allergic asthma an indication for Dyphylline?
+Answer: YES"
+14381,83791,Levocetirizine,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'HRH1', 'Levocetirizine']",0.0005341775830895,"Question: Is vasomotor rhinitis an indication for Levocetirizine?
+Answer: YES"
+15294,83875,Tacrine,bladder neck obstruction,disease-protein-drug,contraindication,"['bladder neck obstruction', 'PTGS2', 'Tacrine']",0.0004499580813162,"Question: Is bladder neck obstruction an indication for Tacrine?
+Answer: NO"
+14060,32622,Levothyroxine,thyroid gland undifferentiated (anaplastic) carcinoma,disease-phenotype-protein-drug,indication,"['thyroid gland undifferentiated (anaplastic) carcinoma', 'Pain', 'ALB', 'Levothyroxine']",0.0029445860689791,"Question: Is thyroid gland undifferentiated (anaplastic) carcinoma an indication for Levothyroxine?
+Answer: YES"
+14884,83760,Phenelzine,dysthymic disorder,disease-protein-drug,indication,"['dysthymic disorder', 'MAOA', 'Phenelzine']",0.0007470246513636,"Question: Is dysthymic disorder an indication for Phenelzine?
+Answer: YES"
+15413,83822,Gemcitabine,"theca steroid-producing cell malignant tumor of ovary, not further specified",disease-protein-drug,indication,"['theca steroid-producing cell malignant tumor of ovary, not further specified', 'TYMS', 'Gemcitabine']",0.0016148066309535,"Question: Is theca steroid-producing cell malignant tumor of ovary, not further specified an indication for Gemcitabine?
+Answer: YES"
+15511,39773,Pranlukast,allergic asthma,disease-protein-drug,indication,"['allergic asthma', 'IL5', 'Pranlukast']",0.0007461233104129,"Question: Is allergic asthma an indication for Pranlukast?
+Answer: YES"
+14042,33534,Hydrocortisone acetate,pediatric systemic lupus erythematosus,disease-phenotype-protein-drug,indication,"['pediatric systemic lupus erythematosus', 'Vomiting', 'ABCB1', 'Hydrocortisone acetate']",0.0026265131226734,"Question: Is pediatric systemic lupus erythematosus an indication for Hydrocortisone acetate?
+Answer: YES"
+14175,33609,Nabumetone,osteoarthritis,disease-protein-drug,indication,"['osteoarthritis', 'AKR1C2', 'Nabumetone']",0.0006821372278672,"Question: Is osteoarthritis an indication for Nabumetone?
+Answer: YES"
+14905,37703,Pirlindole,neurotic disorder,disease-protein-drug,indication,"['neurotic disorder', 'MAOA', 'Pirlindole']",0.0004882064049874,"Question: Is neurotic disorder an indication for Pirlindole?
+Answer: YES"
+16179,32354,Turoctocog alfa,symptomatic form of hemophilia in female carriers,disease-protein-drug,indication,"['symptomatic form of hemophilia in female carriers', 'F9', 'Turoctocog alfa']",0.0004153587912701,"Question: Is symptomatic form of hemophilia in female carriers an indication for Turoctocog alfa?
+Answer: YES"
+15413,83820,Gemcitabine,maligant granulosa cell tumor of ovary,disease-protein-drug,indication,"['maligant granulosa cell tumor of ovary', 'TYMS', 'Gemcitabine']",0.0016148066309535,"Question: Is maligant granulosa cell tumor of ovary an indication for Gemcitabine?
+Answer: YES"
+14155,31116,Gefitinib,lung cancer,disease-protein-drug,indication,"['lung cancer', 'EGFR', 'Gefitinib']",0.0007065255497709,"Question: Is lung cancer an indication for Gefitinib?
+Answer: YES"
+14034,83791,Budesonide,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'ALB', 'Budesonide']",0.0020527121569516,"Question: Is vasomotor rhinitis an indication for Budesonide?
+Answer: YES"
+17568,33675,Tulobuterol,asthma,disease-protein-drug,indication,"['asthma', 'ADRB2', 'Tulobuterol']",0.0005741761378612,"Question: Is asthma an indication for Tulobuterol?
+Answer: YES"
+14023,27452,Triamcinolone,Diamond-Blackfan anemia,disease-phenotype-protein-drug,indication,"['Diamond-Blackfan anemia', 'Thrombocytopenia', 'ALB', 'Triamcinolone']",0.0038410161945998,"Question: Is Diamond-Blackfan anemia an indication for Triamcinolone?
+Answer: YES"
+15511,37888,Pranlukast,allergic rhinitis,disease-phenotype-protein-drug,indication,"['allergic rhinitis', 'Allergy', 'TNF', 'Pranlukast']",0.0023199375124962,"Question: Is allergic rhinitis an indication for Pranlukast?
+Answer: YES"
+16341,84087,Iron,iron deficiency anemia,disease-protein-drug,indication,"['iron deficiency anemia', 'TFRC', 'Iron']",0.0007633907261189,"Question: Is iron deficiency anemia an indication for Iron?
+Answer: YES"
+14839,28313,Sulpiride,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'DRD2', 'Sulpiride']",0.0008703071362585,"Question: Is schizophrenia an indication for Sulpiride?
+Answer: YES"
+15291,32974,Ropinirole,atypical juvenile parkinsonism,disease-phenotype-protein-drug,indication,"['atypical juvenile parkinsonism', 'Seizure', 'DRD3', 'Ropinirole']",0.0029937633704765,"Question: Is atypical juvenile parkinsonism an indication for Ropinirole?
+Answer: YES"
+17241,37888,Diphenylpyraline,allergic rhinitis,disease-protein-drug,indication,"['allergic rhinitis', 'HRH1', 'Diphenylpyraline']",0.0005204477862606,"Question: Is allergic rhinitis an indication for Diphenylpyraline?
+Answer: YES"
+14411,83868,Ibrutinib,Richter syndrome,disease-protein-drug,indication,"['Richter syndrome', 'BTK', 'Ibrutinib']",0.0005280390935524,"Question: Is Richter syndrome an indication for Ibrutinib?
+Answer: YES"
+14737,39603,Carboplatin,malignant sex cord stromal tumor of ovary,disease-protein-drug,indication,"['malignant sex cord stromal tumor of ovary', 'SOD1', 'Carboplatin']",0.0022002757991623,"Question: Is malignant sex cord stromal tumor of ovary an indication for Carboplatin?
+Answer: YES"
+14990,83791,Chlorpheniramine,vasomotor rhinitis,disease-protein-drug,indication,"['vasomotor rhinitis', 'HRH1', 'Chlorpheniramine']",0.0007049172369573,"Question: Is vasomotor rhinitis an indication for Chlorpheniramine?
+Answer: YES"
+16690,83823,Lisinopril,coronary thrombosis,disease-protein-drug,indication,"['coronary thrombosis', 'REN', 'Lisinopril']",0.0005941384961149,"Question: Is coronary thrombosis an indication for Lisinopril?
+Answer: YES"
+16842,33241,Pramipexole,hereditary late onset Parkinson disease,disease-protein-drug,indication,"['hereditary late onset Parkinson disease', 'DRD2', 'Pramipexole']",0.0009182979097994,"Question: Is hereditary late onset Parkinson disease an indication for Pramipexole?
+Answer: YES"
+14275,37334,Doxorubicin,breast carcinoma,disease-protein-drug,indication,"['breast carcinoma', 'ABCG2', 'Doxorubicin']",0.0022708435420857,"Question: Is breast carcinoma an indication for Doxorubicin?
+Answer: YES"
+14275,37466,Doxorubicin,ovarian small cell carcinoma,disease-protein-drug,indication,"['ovarian small cell carcinoma', 'CYP1B1', 'Doxorubicin']",0.0023089951968736,"Question: Is ovarian small cell carcinoma an indication for Doxorubicin?
+Answer: YES"
+15116,83760,Paroxetine,dysthymic disorder,disease-protein-drug,indication,"['dysthymic disorder', 'DRD2', 'Paroxetine']",0.0011526366387548,"Question: Is dysthymic disorder an indication for Paroxetine?
+Answer: YES"
+15100,28313,Prochlorperazine,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'ADRA1A', 'Prochlorperazine']",0.0004557467338521,"Question: Is schizophrenia an indication for Prochlorperazine?
+Answer: YES"
+14789,29863,Daunorubicin,monocytic leukemia,disease-protein-drug,indication,"['monocytic leukemia', 'TOP2B', 'Daunorubicin']",0.0008181905358864,"Question: Is monocytic leukemia an indication for Daunorubicin?
+Answer: YES"
+15333,28547,Rasagiline,Parkinson disease,disease-protein-drug,indication,"['Parkinson disease', 'MAOB', 'Rasagiline']",0.0006918117212005,"Question: Is Parkinson disease an indication for Rasagiline?
+Answer: YES"
+14223,31912,Risperidone,autism susceptibility 1,disease-phenotype-protein-drug,indication,"['autism susceptibility 1', 'Seizure', 'DRD1', 'Risperidone']",0.0030588817713906,"Question: Is autism susceptibility 1 an indication for Risperidone?
+Answer: YES"
+15185,32740,Tetrabenazine,Huntington disease-like syndrome due to C9ORF72 expansions,disease-phenotype-protein-drug,indication,"['Huntington disease-like syndrome due to C9ORF72 expansions', 'Memory impairment', 'DRD2', 'Tetrabenazine']",0.0012990103361232,"Question: Is Huntington disease-like syndrome due to C9ORF72 expansions an indication for Tetrabenazine?
+Answer: YES"
+15101,29078,Celecoxib,rheumatoid arthritis,disease-protein-drug,indication,"['rheumatoid arthritis', 'PTGS2', 'Celecoxib']",0.0014769376517987,"Question: Is rheumatoid arthritis an indication for Celecoxib?
+Answer: YES"
+15887,29078,Certolizumab pegol,rheumatoid arthritis,disease-protein-drug,indication,"['rheumatoid arthritis', 'TNF', 'Certolizumab pegol']",0.0020817155692204,"Question: Is rheumatoid arthritis an indication for Certolizumab pegol?
+Answer: YES"
+20147,27933,Setiptiline,anxiety disorder,disease-protein-drug,indication,"['anxiety disorder', 'HTR2A', 'Setiptiline']",0.0009304856207414,"Question: Is anxiety disorder an indication for Setiptiline?
+Answer: YES"
+15194,28313,Cariprazine,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'CYP2D6', 'Cariprazine']",0.0017222965638211,"Question: Is schizophrenia an indication for Cariprazine?
+Answer: YES"
+18230,39728,Ustekinumab,parapsoriasis,disease-protein-drug,indication,"['parapsoriasis', 'IL23A', 'Ustekinumab']",0.0004623247072352,"Question: Is parapsoriasis an indication for Ustekinumab?
+Answer: YES"
+15057,32617,Rucaparib,hereditary breast ovarian cancer syndrome,disease-protein-drug,indication,"['hereditary breast ovarian cancer syndrome', 'PARP1', 'Rucaparib']",0.0011870537508093,"Question: Is hereditary breast ovarian cancer syndrome an indication for Rucaparib?
+Answer: YES"
+14275,37423,Doxorubicin,ovarian clear cell adenocarcinoma,disease-protein-drug,indication,"['ovarian clear cell adenocarcinoma', 'CYP1B1', 'Doxorubicin']",0.002310775191136,"Question: Is ovarian clear cell adenocarcinoma an indication for Doxorubicin?
+Answer: YES"
+14207,33089,Imatinib,dermatofibrosarcoma protuberans,disease-phenotype-protein-drug,indication,"['dermatofibrosarcoma protuberans', 'Erythema', 'PTGS1', 'Imatinib']",0.0022061595414337,"Question: Is dermatofibrosarcoma protuberans an indication for Imatinib?
+Answer: YES"
+15232,83840,Brexpiprazole,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'HTR1A', 'Brexpiprazole']",0.0008944972977975,"Question: Is unipolar depression an indication for Brexpiprazole?
+Answer: YES"
+14799,33575,Insulin human,diabetes mellitus (disease),disease-protein-drug,indication,"['diabetes mellitus (disease)', 'CYP1A2', 'Insulin human']",0.0015521988803819,"Question: Is diabetes mellitus (disease) an indication for Insulin human?
+Answer: YES"
+14340,29078,Magnesium salicylate,rheumatoid arthritis,disease-phenotype-protein-drug,indication,"['rheumatoid arthritis', 'Fever', 'PTGS2', 'Magnesium salicylate']",0.0025287625171346,"Question: Is rheumatoid arthritis an indication for Magnesium salicylate?
+Answer: YES"
+14885,83760,Moclobemide,dysthymic disorder,disease-protein-drug,indication,"['dysthymic disorder', 'MAOB', 'Moclobemide']",0.0005447528990725,"Question: Is dysthymic disorder an indication for Moclobemide?
+Answer: YES"
+15018,83853,Midostaurin,acute myeloblastic leukemia without maturation,disease-protein-drug,indication,"['acute myeloblastic leukemia without maturation', 'KIT', 'Midostaurin']",0.0015886829939584,"Question: Is acute myeloblastic leukemia without maturation an indication for Midostaurin?
+Answer: YES"
+14060,32719,Levothyroxine,congenital hypothyroidism,disease-phenotype-protein-drug,indication,"['congenital hypothyroidism', 'Growth delay', 'THRA', 'Levothyroxine']",0.0013009007780789,"Question: Is congenital hypothyroidism an indication for Levothyroxine?
+Answer: YES"
+14141,29865,Phenytoin,Lennox-Gastaut syndrome,disease-phenotype-protein-drug,indication,"['Lennox-Gastaut syndrome', 'Mental deterioration', 'CACNA1C', 'Phenytoin']",0.0019199058211251,"Question: Is Lennox-Gastaut syndrome an indication for Phenytoin?
+Answer: YES"
+14420,28313,Blonanserin,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'HTR2A', 'Blonanserin']",0.0006166381146168,"Question: Is schizophrenia an indication for Blonanserin?
+Answer: YES"
+14758,37273,Capecitabine,gastric carcinoma,disease-protein-drug,indication,"['gastric carcinoma', 'DPYD', 'Capecitabine']",0.0008692418641502,"Question: Is gastric carcinoma an indication for Capecitabine?
+Answer: YES"
+14993,39815,Phenobarbital,visual epilepsy,disease-protein-drug,indication,"['visual epilepsy', 'ABCC2', 'Phenobarbital']",0.0011101465360659,"Question: Is visual epilepsy an indication for Phenobarbital?
+Answer: YES"
+16825,39484,Ardeparin,purpura fulminans,disease-protein-drug,indication,"['purpura fulminans', 'SERPINC1', 'Ardeparin']",0.0008052135837723,"Question: Is purpura fulminans an indication for Ardeparin?
+Answer: YES"
+14197,29078,Fenoprofen,rheumatoid arthritis,disease-phenotype-protein-drug,indication,"['rheumatoid arthritis', 'Fever', 'PTGS2', 'Fenoprofen']",0.0026916416292649,"Question: Is rheumatoid arthritis an indication for Fenoprofen?
+Answer: YES"
+15311,39815,Primidone,visual epilepsy,disease-protein-drug,indication,"['visual epilepsy', 'CHRNA7', 'Primidone']",0.0011054453063626,"Question: Is visual epilepsy an indication for Primidone?
+Answer: YES"
+14544,84229,Bupropion,nicotine dependence,disease-protein-drug,indication,"['nicotine dependence', 'CHRNA3', 'Bupropion']",0.00071693535691,"Question: Is nicotine dependence an indication for Bupropion?
+Answer: YES"
+14936,33297,Erythromycin,listeriosis,disease-phenotype-protein-drug,indication,"['listeriosis', 'Nausea', 'ABCB1', 'Erythromycin']",0.0019606593342205,"Question: Is listeriosis an indication for Erythromycin?
+Answer: YES"
+14945,83870,Sorafenib,undifferentiated carcinoma of liver and intrahepatic biliary tract,disease-protein-drug,indication,"['undifferentiated carcinoma of liver and intrahepatic biliary tract', 'CYP2C8', 'Sorafenib']",0.0012346414940327,"Question: Is undifferentiated carcinoma of liver and intrahepatic biliary tract an indication for Sorafenib?
+Answer: YES"
+14786,32875,Lansoprazole,Zollinger-Ellison syndrome,disease-phenotype-protein-drug,indication,"['Zollinger-Ellison syndrome', 'Nausea', 'ABCB1', 'Lansoprazole']",0.0018528111326186,"Question: Is Zollinger-Ellison syndrome an indication for Lansoprazole?
+Answer: YES"
+14190,83899,Fluorouracil,gastric linitis plastica,disease-protein-drug,indication,"['gastric linitis plastica', 'UMPS', 'Fluorouracil']",0.0012229518170459,"Question: Is gastric linitis plastica an indication for Fluorouracil?
+Answer: YES"
+14194,83769,Methotrexate,precursor T-cell acute lymphoblastic leukemia,disease-protein-drug,indication,"['precursor T-cell acute lymphoblastic leukemia', 'ABCG2', 'Methotrexate']",0.0018257881452383,"Question: Is precursor T-cell acute lymphoblastic leukemia an indication for Methotrexate?
+Answer: YES"
+14797,36209,Imipenem,arthropathy,disease-protein-drug,indication,"['arthropathy', 'DPEP1', 'Imipenem']",0.000512762179712,"Question: Is arthropathy an indication for Imipenem?
+Answer: YES"
+15596,32909,Cabozantinib,medullary thyroid gland carcinoma,disease-protein-drug,indication,"['medullary thyroid gland carcinoma', 'RET', 'Cabozantinib']",0.0006405568456143,"Question: Is medullary thyroid gland carcinoma an indication for Cabozantinib?
+Answer: YES"
+15233,83840,Dosulepin,unipolar depression,disease-protein-drug,indication,"['unipolar depression', 'SLC6A4', 'Dosulepin']",0.0007578261319928,"Question: Is unipolar depression an indication for Dosulepin?
+Answer: YES"
+16842,28801,Pramipexole,juvenile onset Parkinson disease 19A,disease-protein-drug,indication,"['juvenile onset Parkinson disease 19A', 'DRD2', 'Pramipexole']",0.0009201030351219,"Question: Is juvenile onset Parkinson disease 19A an indication for Pramipexole?
+Answer: YES"
+14784,83781,Theophylline,intrinsic asthma,disease-protein-drug,indication,"['intrinsic asthma', 'PDE4B', 'Theophylline']",0.0009551519826769,"Question: Is intrinsic asthma an indication for Theophylline?
+Answer: YES"
+15101,32325,Celecoxib,juvenile idiopathic arthritis,disease-phenotype-protein-drug,indication,"['juvenile idiopathic arthritis', 'Fever', 'PTGS2', 'Celecoxib']",0.0025322737735914,"Question: Is juvenile idiopathic arthritis an indication for Celecoxib?
+Answer: YES"
+18160,29161,Emapalumab,hemophagocytic lymphohistiocytosis,disease-phenotype-protein-drug,indication,"['hemophagocytic lymphohistiocytosis', 'Hyponatremia', 'IFNG', 'Emapalumab']",0.0013121319185446,"Question: Is hemophagocytic lymphohistiocytosis an indication for Emapalumab?
+Answer: YES"
+15878,28208,Mitiglinide,type 2 diabetes mellitus,disease-protein-drug,indication,"['type 2 diabetes mellitus', 'ABCC8', 'Mitiglinide']",0.0004172978833057,"Question: Is type 2 diabetes mellitus an indication for Mitiglinide?
+Answer: YES"
+16341,33622,Iron,microcytic anemia,disease-protein-drug,indication,"['microcytic anemia', 'TFRC', 'Iron']",0.0007633907261189,"Question: Is microcytic anemia an indication for Iron?
+Answer: YES"
+14188,32999,Ciprofloxacin,shigellosis,disease-phenotype-protein-drug,indication,"['shigellosis', 'Thrombocytopenia', 'ALB', 'Ciprofloxacin']",0.0031893903992707,"Question: Is shigellosis an indication for Ciprofloxacin?
+Answer: YES"
+14831,30093,Droxidopa,parkinsonian-pyramidal syndrome,disease-phenotype-protein-drug,indication,"['parkinsonian-pyramidal syndrome', 'Tremor', 'ADRB2', 'Droxidopa']",0.0009277228768453,"Question: Is parkinsonian-pyramidal syndrome an indication for Droxidopa?
+Answer: YES"
+16054,33241,Trihexyphenidyl,hereditary late onset Parkinson disease,disease-phenotype-protein-drug,indication,"['hereditary late onset Parkinson disease', 'Resting tremor', 'CHRM4', 'Trihexyphenidyl']",0.0007428260177956,"Question: Is hereditary late onset Parkinson disease an indication for Trihexyphenidyl?
+Answer: YES"
+15232,28313,Brexpiprazole,schizophrenia,disease-protein-drug,indication,"['schizophrenia', 'HTR1A', 'Brexpiprazole']",0.0008949956960297,"Question: Is schizophrenia an indication for Brexpiprazole?
+Answer: YES"
+14194,29078,Methotrexate,rheumatoid arthritis,disease-protein-drug,indication,"['rheumatoid arthritis', 'ATIC', 'Methotrexate']",0.0017358071580212,"Question: Is rheumatoid arthritis an indication for Methotrexate?
+Answer: YES"
+15739,83859,Ivosidenib,acute myeloid leukemia with t(9;11)(p22;q23),disease-protein-drug,indication,"['acute myeloid leukemia with t(9;11)(p22;q23)', 'IDH1', 'Ivosidenib']",0.0007582791276713,"Question: Is acute myeloid leukemia with t(9;11)(p22;q23) an indication for Ivosidenib?
+Answer: YES"
