@@ -18,8 +18,8 @@ mkdir -p "$LOGS_DIR" "$MODELS_DIR"
 # ────────────────────────────────────────────────────────────────
 # 2)  Hyper‑parameters (same for every job)
 # ────────────────────────────────────────────────────────────────
-NUM_ITERATIONS=2
-NUM_GENERATIONS=16
+NUM_ITERATIONS=1
+NUM_GENERATIONS=8
 BATCH_SIZE=12
 GRAD_ACCUM=4
 LEARNING_RATE=2e-5
@@ -69,7 +69,7 @@ train_one () {
   fi
 
   if [[ "$model_name" == *kpath* ]]; then
-    csv_prefix="k_path"
+      csv_prefix="k_path"
   elif [[ "$model_name" == *balancepath* ]]; then
       csv_prefix="balance_path"
   else
@@ -120,7 +120,7 @@ export BASE_DIR DATA_ROOT RESULTS_DIR LOGS_DIR MODELS_DIR            \
 # ────────────────────────────────────────────────────────────────
 # 4)  Fire off all eight jobs in the background, each on one GPU
 # ────────────────────────────────────────────────────────────────
-GPU_IDS=(4 5 6 7)   
+GPU_IDS=(0 1 2 3)   
 # GPU_IDS=(1 4 6)   
 pids=()
 for idx in "${!MODELS[@]}"; do

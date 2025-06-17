@@ -3,7 +3,7 @@
 
 BASE_RESULTS="/playpen/jesse/drug_repurpose/grpo_startup/results"
 
-PARENTS=(20250610_1214)
+PARENTS=(20250614_0031)
 GPUS=(0 1 2 3)
 OUTPUT_ROOT="/playpen/jesse/drug_repurpose/eval_results/results"
 LOG_ROOT="/playpen/jesse/drug_repurpose/eval_results/log"
@@ -39,21 +39,29 @@ for PARENT in "${PARENTS[@]}"; do
     # else
     #   BASE_MODEL="meta-llama/Llama-3.2-3B-Instruct"
     # fi
-    if [[ "$LORA_NAME" == *"3b"* ]]; then
-      BASE_MODEL="Qwen/Qwen2.5-3B-Instruct"
+    if [[ "$LORA_NAME" == *"base"* ]]; then
+      BASE_MODEL="Qwen/Qwen2.5-3B"
     else
       BASE_MODEL="Qwen/Qwen2.5-3B-Instruct"
     fi
 
     if [[ "$LORA_NAME" == *"kpath"* ]]; then
-      INPUT_FILE="/playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_baseline.csv"
+      if [[ "$LORA_NAME" == *"naive"* ]]; then
+        INPUT_FILE="/playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_naive.csv"
+      else
+        INPUT_FILE="/playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_baseline.csv"
+      fi
     else
-      INPUT_FILE="/playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_baseline.csv"
+      if [[ "$LORA_NAME" == *"naive"* ]]; then
+        INPUT_FILE="/playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_naive.csv"
+      else
+        INPUT_FILE="/playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_baseline.csv"
+      fi
     fi
 
     ADAPTER="$LORA_FINAL"
-    OUTDIR="$OUTPUT_ROOT/${PARENT}_${LORA_NAME}"
-    LOGFILE="$LOG_ROOT/${PARENT}_${LORA_NAME}.log"
+    OUTDIR="$OUTPUT_ROOT/${PARENT}_${LORA_NAME}_final_model"
+    LOGFILE="$LOG_ROOT/${PARENT}_${LORA_NAME}_final_model.log"
     GPU_ID="${GPUS[$(( COUNTER % ${#GPUS[@]} ))]}"
 
     echo "---------------------------------------------"

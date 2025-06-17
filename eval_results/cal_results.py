@@ -153,26 +153,30 @@ def main():
         result_df.to_csv(args.output_file, index=False)
     
     print("\nMETRICS SUMMARY:")
-    for metric in ['accuracy', 'f1', 'token_variance']:
-        print(f"\n{metric.upper()}:")
+    with open("metrics_summary.txt", "w") as f:
+        f.write("\nMETRICS SUMMARY:\n")
+        for metric in ['accuracy', 'f1', 'token_variance']:
+            f.write(f"\n{metric.upper()}:\n")
+            pivot = pd.pivot_table(
+                result_df, 
+                values=metric,
+                index='model',
+                columns='prompt_type',
+                aggfunc='mean'
+            )
+            f.write(pivot.round(4).to_string())
+            f.write("\n")
+
+        f.write("\nPREDICTION DISTRIBUTION (YES %):\n")
         pivot = pd.pivot_table(
             result_df, 
-            values=metric,
+            values='yes_ratio',
             index='model',
             columns='prompt_type',
             aggfunc='mean'
         )
-        print(pivot.round(4))
-    
-    print("\nPREDICTION DISTRIBUTION (YES %):")
-    pivot = pd.pivot_table(
-        result_df, 
-        values='yes_ratio',
-        index='model',
-        columns='prompt_type',
-        aggfunc='mean'
-    )
-    print((pivot * 100).round(1))
+        f.write(((pivot * 100).round(1)).to_string())
+        f.write("\n")
 
 if __name__ == "__main__":
     main()
