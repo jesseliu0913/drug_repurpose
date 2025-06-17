@@ -9,8 +9,8 @@ parser.add_argument("--path_type", type=str, default=None, help="Set Path Type")
 
 args = parser.parse_args()
 
-negative_sample = pd.read_csv("negative_path.csv")
-positive_sample = pd.read_csv("diverse_paths_output.csv")
+negative_sample = pd.read_csv("negative_path_norepeat.csv")
+positive_sample = pd.read_csv("diverse_paths_output_norepeat.csv")
 # combined_sample = pd.concat([positive_sample, negative_sample], ignore_index=True)
 
 def add_neg(neg):
@@ -119,4 +119,4 @@ final_sample = pd.concat([pos_1000, neg_1000], ignore_index=True).sample(frac=1,
 # final_sample = pd.concat([yes_samples, no_samples], ignore_index=True).sample(frac=1, random_state=42)
 
 # Save to CSV
-final_sample.to_csv(f"train_grpo_{args.path_type}.csv", index=False)
+final_sample.to_csv(f"train_grpo_{args.path_type}_norepeat.csv", index=False)
