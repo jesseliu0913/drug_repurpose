@@ -45,3 +45,7 @@ CUDA_VISIBLE_DEVICES=0 nohup python train_baseline.py --model "Qwen/Qwen2.5-3B" 
 CUDA_VISIBLE_DEVICES=1 nohup python train_baseline.py --model "Qwen/Qwen2.5-3B" --task 'qwen25-3b-base' --training_data 'pagerank' --tunning_type 'baseline' > ./log/llama323b_pagerank_baseline.log 2>&1 &
 CUDA_VISIBLE_DEVICES=2 nohup python train_baseline.py --model "Qwen/Qwen2.5-3B" --task 'qwen25-3b-base' --training_data 'kpath' --tunning_type 'naive' > ./log/llama321b_kpath_naive.log 2>&1 &
 CUDA_VISIBLE_DEVICES=3 nohup python train_baseline.py --model "Qwen/Qwen2.5-3B" --task 'qwen25-3b-base' --training_data 'pagerank' --tunning_type 'naive' > ./log/llama321b_pagerank_naive1.log 2>&1 &
+
+
+CUDA_VISIBLE_DEVICES=2,3,4,5,6,7 nohup python train_baseline.py --model "Qwen/Qwen2.5-7B" --task 'qwen25-7b-base' --training_data 'kpath' --tunning_type 'naive' > ./log/qwen327b_kpath_naive.log 2>&1 &
+CUDA_VISIBLE_DEVICES=3 nohup python train_baseline.py --model "Qwen/Qwen2.5-3B" --task 'qwen25-3b-base' --training_data 'pagerank' --tunning_type 'naive' > ./log/llama321b_pagerank_naive1.log 2>&1 &

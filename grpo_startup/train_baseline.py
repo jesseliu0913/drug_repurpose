@@ -30,7 +30,7 @@ set_seed(42)
 parser = argparse.ArgumentParser(description="Casual Tuning based on case report")
 parser.add_argument("--model", type=str, default=None, help="Set model weights")
 parser.add_argument("--task", type=str, default=None, help="Set Task Name")
-parser.add_argument("--batch_size", type=int, default=8, help="Set Batch Size")
+parser.add_argument("--batch_size", type=int, default=1, help="Set Batch Size")
 parser.add_argument("--training_data", type=str, default=None, help="Set Training Data")
 parser.add_argument("--tunning_type", type=str, default=None, help="Set Tunning Type")
 
@@ -129,14 +129,14 @@ if args.model == "Qwen/Qwen2.5-3B":
         model_name,
         torch_dtype=torch.bfloat16,
         token=user_token,
-        device_map="auto",
+        # device_map="auto",
     )
 else:
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         torch_dtype=torch.bfloat16,
         token=user_token,
-        device_map="auto",
+        # device_map="auto",
         rope_scaling={"type": "dynamic", "factor": 32.0}
     )
 
@@ -175,7 +175,7 @@ training_args = TrainingArguments(
     save_steps=200,
     learning_rate=2e-4,
     weight_decay=0.01,
-    fp16=False,
+    fp16=True,
     bf16=False,
     per_device_train_batch_size=args.batch_size,
     per_device_eval_batch_size=args.batch_size,
@@ -189,6 +189,9 @@ training_args = TrainingArguments(
     max_grad_norm=1.0,
     save_total_limit=3, 
     lr_scheduler_type="cosine",
+    dataloader_num_workers=6,
+    # deepspeed="ds_config_zero3.json",
+    ddp_find_unused_parameters=False,
 )
 
 trainer = Trainer(

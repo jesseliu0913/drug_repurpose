@@ -1,6 +1,2 @@
 nohup: ignoring input
-==> [GPU 0] Training qwen25-3b-base-pagerank-naive with /playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_naive.csv
-==> [GPU 1] Training qwen25-3b-base-pagerank-baseline with /playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_baseline.csv
-==> [GPU 2] Training qwen25-3b-base-kpath-naive with /playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_naive.csv
-==> [GPU 3] Training qwen25-3b-base-kpath-baseline with /playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_baseline.csv
-✅  All eight trainings finished.
+==> [GPU 5] Training qwen25-3b-base-pagerank-naive with /playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_naive.csv

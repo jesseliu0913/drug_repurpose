@@ -60,8 +60,10 @@ def is_lora_repo(repo: str) -> bool:
 
 
 def extract_question(text: str) -> str:
-    m = re.search(r"Question:(.*?)Reasoning:", text, re.S)
-    return (m.group(1) if m else text).strip()
+    # m = re.search(r"Question:(.*?)Reasoning:", text, re.S)
+    # return (m.group(1) if m else text).strip()
+    m = text.split("\n")[0:-1]
+    return "\n".join(m)
 
 
 def load_base_and_merge(adapter_repo: str, tokenizer):
@@ -101,40 +103,6 @@ def get_lora_targets(model_name: str) -> List[str]:
 # data  — prompt + ground-truth answer
 # ─────────────────────────────────────────────────────────────────────────────
 
-FILTERING_PATH = "/playpen/jesse/drug_repurpose/eval_results/results/"
-if args.model_name=="JesseLiu/qwen25-3b-pagerank-naive":
-    correct_folder = "qwen25_3b_pagerank_naive/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-pagerank-baseline":
-    correct_folder = "qwen25_3b_pagerank_baseline/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-kpath-naive":
-    correct_folder = "qwen25_3b_kpath_naive/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-kpath-baseline":
-    correct_folder = "qwen25_3b_kpath_baseline/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-base-pagerank-naive":
-    correct_folder = "qwen25_3b_base_pagerank_naive/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-base-pagerank-baseline":
-    correct_folder = "qwen25_3b_base_pagerank_baseline/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-base-kpath-naive":
-    correct_folder = "qwen25_3b_base_kpath_naive/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-base-kpath-baseline":
-    correct_folder = "qwen25_3b_base_kpath_baseline/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-base-pagerank-naive-cleaned":
-    correct_folder = "qwen25_3b_base_pagerank_naive_cleaned/raw.jsonl" 
-elif args.model_name=="JesseLiu/qwen25-3b-base-kpath-naive-cleaned":
-    correct_folder = "qwen25_3b_base_kpath_naive_cleaned/raw.jsonl" 
-
-filter_file = os.path.join(FILTERING_PATH, correct_folder) 
-print(filter_file)
-
-def read_filtering_results(filter_file):
-    """Read the filtering results from the specified folder."""
-    with open(filter_file, "r") as f:
-        lines = f.readlines()
-    results = [json.loads(line) for line in lines]
-    return results
-
-COMPLETION_RE = re.compile(r'\b(YES|NO)\b', re.I)
-
 def extract_answer(text: str) -> Optional[str]:
     """Extract YES/NO answer from text, handling various formats."""
     if not text:
@@ -150,31 +118,20 @@ def extract_answer(text: str) -> Optional[str]:
         
     return None
 
-prompts = []
-answers_gt = []
-def filter_results(filter_file):
-    results = read_filtering_results(filter_file)
-    for line in results:
-        disease_name = line.get("disease_name")
-        drug_name = line.get("drug_name")
-        answer = extract_answer(line.get("answer"))
-        label = line.get("label")
-        gt = "YES" if label == "indication" else "NO"
-        # if answer == gt and answer != None:
-        line_prompt = f"Is {disease_name} an indication for {drug_name}?\nAnswer:"
-        prompts.append(line_prompt)
-        answers_gt.append(gt)
- 
-    return prompts, answers_gt
+df = pd.read_csv(args.train_csv).iloc[:2000]
 
-prompts, answers_gt = filter_results(filter_file)
-print(f"#examples kept: {len(prompts)}")
+raw_prefixes = df["prefix"].tolist()
+prompts      = [extract_question(t) for t in raw_prefixes]
+
+answers_gt = [
+    (m.group(1).upper() if (m := ANS_TAG_RE.search(t)) else None)
+    for t in raw_prefixes
+]
 
 train_ds, eval_ds = Dataset.from_dict(
     {"prompt": prompts, "answer": answers_gt}
 ).train_test_split(0.1, seed=42).values()
-
-
+print(prompts, answers_gt)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # tokenizer
