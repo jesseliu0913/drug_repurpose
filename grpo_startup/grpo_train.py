@@ -118,6 +118,10 @@ elif args.model_name=="JesseLiu/qwen25-3b-base-kpath-naive":
     correct_folder = "qwen25_3b_base_kpath_naive/raw.jsonl" 
 elif args.model_name=="JesseLiu/qwen25-3b-base-kpath-baseline":
     correct_folder = "qwen25_3b_base_kpath_baseline/raw.jsonl" 
+elif args.model_name=="JesseLiu/qwen25-3b-base-pagerank-naive-cleaned":
+    correct_folder = "qwen25_3b_base_pagerank_naive_cleaned/raw.jsonl" 
+elif args.model_name=="JesseLiu/qwen25-3b-base-kpath-naive-cleaned":
+    correct_folder = "qwen25_3b_base_kpath_naive_cleaned/raw.jsonl" 
 
 filter_file = os.path.join(FILTERING_PATH, correct_folder) 
 print(filter_file)
