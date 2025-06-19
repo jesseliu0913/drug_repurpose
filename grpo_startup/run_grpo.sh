@@ -31,7 +31,8 @@ LORA_DROPOUT=0.05
 
 # Models stay in a fixed order so we can map them to GPU 0‑7
 MODELS=(
-  'JesseLiu/qwen25-3b-base-pagerank-naive'
+  'JesseLiu/qwen25-3b-base-pagerank-naive-refine'
+  'JesseLiu/qwen25-3b-base-kpath-naive-refine'
   # 'JesseLiu/qwen25-3b-base-pagerank-baseline'
   # 'JesseLiu/qwen25-3b-base-kpath-naive'
   # 'JesseLiu/qwen25-3b-base-kpath-baseline'
@@ -120,7 +121,7 @@ export BASE_DIR DATA_ROOT RESULTS_DIR LOGS_DIR MODELS_DIR            \
 # ────────────────────────────────────────────────────────────────
 # 4)  Fire off all eight jobs in the background, each on one GPU
 # ────────────────────────────────────────────────────────────────
-GPU_IDS=(5)   
+GPU_IDS=(0 1)   
 # GPU_IDS=(1 4 6)   
 pids=()
 for idx in "${!MODELS[@]}"; do

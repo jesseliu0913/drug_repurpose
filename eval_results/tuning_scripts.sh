@@ -76,3 +76,7 @@ CUDA_VISIBLE_DEVICES=5 nohup python eval_model.py --model_name "Qwen/Qwen2.5-3B-
 
 CUDA_VISIBLE_DEVICES=4 nohup python eval_model.py --model_name "Qwen/Qwen2.5-3B" --adapter_name "/playpen/jesse/drug_repurpose/grpo_startup/results/20250618_0034/models/qwen25-3b-base-pagerank-naive-grpo-lora/checkpoint-250" --output_path "results/qwen25_3b_base_pagegrank_naive_fix/" --prompt_type "raw" --shuffle_num 1 > "./log/qwen25_3b_base_kpath_naivec.log" 2>&1 &
 CUDA_VISIBLE_DEVICES=5 nohup python eval_model.py --model_name "Qwen/Qwen2.5-3B" --adapter_name "JesseLiu/qwen25-3b-base-pagerank-naive-cleaned" --output_path "results/qwen25_3b_base_pagerank_naive_cleaned/" --prompt_type "raw" --shuffle_num 1 > "./log/qwen25_3b_base_pagerank_naivec.log" 2>&1 &
+
+
+CUDA_VISIBLE_DEVICES=5 nohup python eval_model.py --model_name "Qwen/Qwen2.5-3B" --adapter_name "JesseLiu/qwen25-3b-base-pagerank-naive-refine" --output_path "results/qwen25_3b_base_pagerank_naive_refine/" --prompt_type "raw" --shuffle_num 1 > "./log/qwen25_3b_base_pagerank_naivec.log" 2>&1 &
+CUDA_VISIBLE_DEVICES=6 nohup python eval_model.py --model_name "Qwen/Qwen2.5-3B" --adapter_name "JesseLiu/qwen25-3b-base-kpath-naive-refine" --output_path "results/qwen25_3b_base_kpath_naive_refine/" --prompt_type "raw" --shuffle_num 1 > "./log/qwen25_3b_base_kpath_naivec.log" 2>&1 &
