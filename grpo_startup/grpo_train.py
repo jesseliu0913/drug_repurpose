@@ -297,31 +297,37 @@ def eval_mode(module):
     finally:
         module.train(was_training)
 
-def build_kl_reward(model, ref_model, tokenizer, beta=0.01):
-    @torch.no_grad()
+FIRST_YES_NO_RE = re.compile(r"\b(YES|NO)\b", re.IGNORECASE)
+
+def extract_pred(completion: str) -> Optional[str]:
+    match = FIRST_YES_NO_RE.search(completion)
+    return match.group(1).upper() if match else None
+
+def build_kl_reward(model, ref_model, tokenizer, beta=0.05):
     def kl_reward(prompts, completions, answer, **kw):
         rewards = []
-        for prompt, comp_ids, gt in zip(prompts, completions, answer):
-            comp_text = comp_ids if isinstance(comp_ids, str) else tokenizer.decode(comp_ids, skip_special_tokens=True)
-            pred = extract_answer(comp_text)
-            if pred is None:
-                rewards.append(None)
+        for gt, comp, prompt in zip(answer, completions, prompts):
+            pred = extract_pred(comp)
+            if gt is None or pred is None:
+                rewards.append(None)         
                 continue
-            correctness = 1.0 if pred == gt else 0.0
 
-            full_text = prompt + " " + comp_text
-            ids_full = tokenizer(full_text, return_tensors="pt").to(model.device)
-            ids_prompt = tokenizer(prompt, return_tensors="pt").to(model.device)
-            prompt_len = ids_prompt.input_ids.shape[1]
+            r = 1.0 if gt == pred else 0.0
+            full_text = f"{prompt} {comp}"
+            inputs = tokenizer(full_text, return_tensors="pt").to(model.device)
 
-            logits_model = model(**ids_full).logits[:, prompt_len:-1]
-            logits_ref   = ref_model(**ids_full).logits[:, prompt_len:-1]
+            with eval_mode(model), torch.no_grad():
+                logits_model = model(**inputs).logits
+            with torch.no_grad():
+                logits_ref = ref_model(**inputs).logits
 
-            logp = torch.log_softmax(logits_model, dim=-1)
-            pref = torch.softmax(logits_ref, dim=-1)
-            kl = torch.nn.functional.kl_div(logp, pref, reduction="batchmean")
-            rewards.append(correctness - beta * kl.item())
+            logp_m = F.log_softmax(logits_model[:, -1], dim=-1)
+            prob_r = F.softmax(logits_ref[:, -1], dim=-1)
+            kl = F.kl_div(logp_m, prob_r, reduction="batchmean").item()
+
+            rewards.append(r - beta * kl)
         return rewards
+
     kl_reward.__name__ = f"kl_reward_beta_{beta}"
     return kl_reward
 
