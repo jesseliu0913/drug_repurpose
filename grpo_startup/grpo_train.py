@@ -119,9 +119,9 @@ def extract_answer(text: str) -> Optional[str]:
     return None
 
 df = pd.read_csv(args.train_csv).iloc[:2000]
-
+print(f"Current training path is {args.train_csv}")
 raw_prefixes = df["prefix"].tolist()
-prompts      = [extract_question(t) for t in raw_prefixes]
+prompts = [extract_question(t) for t in raw_prefixes]
 
 answers_gt = [
     (m.group(1).upper() if (m := ANS_TAG_RE.search(t)) else None)
@@ -247,6 +247,7 @@ wandb.init(
         "lora_r": args.lora_r,
         "lora_alpha": args.lora_alpha,
         "lora_dropout": args.lora_dropout,
+        "clip_eps": args.clip_eps,
     },
 )
 
@@ -296,7 +297,7 @@ def eval_mode(module):
     finally:
         module.train(was_training)
 
-def build_kl_reward(model, ref_model, tokenizer, beta=0.05):
+def build_kl_reward(model, ref_model, tokenizer, beta=0.01):
     @torch.no_grad()
     def kl_reward(prompts, completions, answer, **kw):
         rewards = []
@@ -331,8 +332,8 @@ def build_kl_reward(model, ref_model, tokenizer, beta=0.05):
 # ─────────────────────────────────────────────────────────────────────────────
 cfg = GRPOClippedConfig(
     output_dir=args.output_dir,
-    save_strategy="steps",
-    save_steps=10,
+    # save_strategy="steps",
+    # save_steps=10,
     num_iterations=args.num_iterations,
     num_generations=args.num_generations,
     per_device_train_batch_size=args.per_device_train_batch_size,

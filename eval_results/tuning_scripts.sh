@@ -80,3 +80,18 @@ CUDA_VISIBLE_DEVICES=5 nohup python eval_model.py --model_name "Qwen/Qwen2.5-3B"
 
 CUDA_VISIBLE_DEVICES=5 nohup python eval_model.py --model_name "Qwen/Qwen2.5-3B" --adapter_name "JesseLiu/qwen25-3b-base-pagerank-naive-refine" --output_path "results/qwen25_3b_base_pagerank_naive_refine/" --prompt_type "raw" --shuffle_num 1 > "./log/qwen25_3b_base_pagerank_naivec.log" 2>&1 &
 CUDA_VISIBLE_DEVICES=6 nohup python eval_model.py --model_name "Qwen/Qwen2.5-3B" --adapter_name "JesseLiu/qwen25-3b-base-kpath-naive-refine" --output_path "results/qwen25_3b_base_kpath_naive_refine/" --prompt_type "raw" --shuffle_num 1 > "./log/qwen25_3b_base_kpath_naivec.log" 2>&1 &
+
+
+CUDA_VISIBLE_DEVICES=0 nohup python eval_model.py --model_name "meta-llama/Llama-3.2-1B-Instruct" --adapter_name "JesseLiu/llama32-1b-kpath-baseline" --output_path "results/llama32_1b_kpath_baseline/" --prompt_type "raw" --shuffle_num 1 > "./log/llama32_1b_kpath_baseline.log" 2>&1 &
+CUDA_VISIBLE_DEVICES=0 nohup python eval_model.py --model_name "meta-llama/Llama-3.2-1B-Instruct" --adapter_name "JesseLiu/llama32-1b-kpath-naive" --output_path "results/llama32_1b_kpath_naive/" --prompt_type "raw" --shuffle_num 1 > "./log/llama32_1b_kpath_naive.log" 2>&1 &
+CUDA_VISIBLE_DEVICES=1 nohup python eval_model.py --model_name "meta-llama/Llama-3.2-1B-Instruct" --adapter_name "JesseLiu/llama32-1b-pagerank-baseline" --output_path "results/llama32_1b_pagerank_baseline/" --prompt_type "raw" --shuffle_num 1 > "./log/llama32_1b_pagerank_baseline.log" 2>&1 &
+CUDA_VISIBLE_DEVICES=1 nohup python eval_model.py --model_name "meta-llama/Llama-3.2-1B-Instruct" --adapter_name "JesseLiu/llama32-1b-pagerank-naive" --output_path "results/llama32_1b_pagerank_naive/" --prompt_type "raw" --shuffle_num 1 > "./log/llama32_1b_pagerank_naive.log" 2>&1 &
+
+CUDA_VISIBLE_DEVICES=2 nohup python eval_model.py --model_name "meta-llama/Llama-3.2-3B-Instruct" --adapter_name "JesseLiu/llama32-3b-kpath-baseline" --output_path "results/llama32_3b_kpath_baseline/" --prompt_type "raw" --shuffle_num 1 > "./log/llama32_3b_kpath_baseline.log" 2>&1 &
+CUDA_VISIBLE_DEVICES=2 nohup python eval_model.py --model_name "meta-llama/Llama-3.2-3B-Instruct" --adapter_name "JesseLiu/llama32-3b-kpath-naive" --output_path "results/llama32_3b_kpath_naive/" --prompt_type "raw" --shuffle_num 1 > "./log/llama32_3b_kpath_naive.log" 2>&1 &
+CUDA_VISIBLE_DEVICES=3 nohup python eval_model.py --model_name "meta-llama/Llama-3.2-3B-Instruct" --adapter_name "JesseLiu/llama32-3b-pagerank-baseline" --output_path "results/llama32_3b_pagerank_baseline/" --prompt_type "raw" --shuffle_num 1 > "./log/llama32_3b_pagerank_baseline.log" 2>&1 &
+CUDA_VISIBLE_DEVICES=3 nohup python eval_model.py --model_name "meta-llama/Llama-3.2-3B-Instruct" --adapter_name "JesseLiu/llama32-3b-pagerank-naive" --output_path "results/llama32_3b_pagerank_naive/" --prompt_type "raw" --shuffle_num 1 > "./log/llama32_3b_pagerank_naive.log" 2>&1 &
+
+CUDA_VISIBLE_DEVICES=2 nohup python eval_model.py --model_name "meta-llama/Llama-3.2-3B-Instruct" --adapter_name "JesseLiu/llama32-3b-kpath-naive" --eval_type train --input_file "/playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_naive.csv" --output_path "results_train/llama32_3b_kpath_naive/" --prompt_type "raw" --shuffle_num 1 > "./log/llama32_3b_kpath_naive.log" 2>&1 &
+CUDA_VISIBLE_DEVICES=3 nohup python eval_model.py --model_name "meta-llama/Llama-3.2-3B-Instruct" --adapter_name "JesseLiu/llama32-3b-pagerank-naive" --eval_type train --input_file "/playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_naive.csv" --output_path "results_train/llama32_3b_pagerank_naive/" --prompt_type "raw" --shuffle_num 1 > "./log/llama32_3b_pagerank_naive.log" 2>&1 &
+

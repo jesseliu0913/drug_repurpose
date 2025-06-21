@@ -18,11 +18,14 @@ mkdir -p "$LOGS_DIR" "$MODELS_DIR"
 # ────────────────────────────────────────────────────────────────
 # 2)  Hyper‑parameters (same for every job)
 # ────────────────────────────────────────────────────────────────
-NUM_ITERATIONS=1
+NUM_ITERATIONS=10
 NUM_GENERATIONS=8
-BATCH_SIZE=12
+BATCH_SIZE=8
+CLIP_EPS=0.8
+# BATCH_SIZE=8
+# BATCH_SIZE=24
 GRAD_ACCUM=4
-LEARNING_RATE=2e-5
+LEARNING_RATE=2e-4
 
 USE_LORA=true
 LORA_R=16
@@ -31,8 +34,8 @@ LORA_DROPOUT=0.05
 
 # Models stay in a fixed order so we can map them to GPU 0‑7
 MODELS=(
-  'JesseLiu/qwen25-3b-base-pagerank-naive-refine'
-  'JesseLiu/qwen25-3b-base-kpath-naive-refine'
+  # 'JesseLiu/qwen25-3b-base-pagerank-naive-refine'
+  # 'JesseLiu/qwen25-3b-base-kpath-naive-refine'
   # 'JesseLiu/qwen25-3b-base-pagerank-baseline'
   # 'JesseLiu/qwen25-3b-base-kpath-naive'
   # 'JesseLiu/qwen25-3b-base-kpath-baseline'
@@ -43,12 +46,12 @@ MODELS=(
 #   'JesseLiu/llama32-1b-balancepath-partial-baseline'
 #   'JesseLiu/llama32-1b-balancepath-partial-naive'
 # )
-# MODELS=(
-#   'JesseLiu/llama32-1b-pagerank-partial-baseline'
-#   'JesseLiu/llama32-1b-kpath-partial-baseline'
-#   'JesseLiu/llama32-1b-kpath-partial-naive'
-#   'JesseLiu/llama32-1b-pagerank-partial-naive'
-# )
+MODELS=(
+  'JesseLiu/llama32-3b-pagerank-baseline'
+  'JesseLiu/llama32-3b-kpath-baseline'
+  # 'JesseLiu/llama32-3b-kpath-naive'
+  # 'JesseLiu/llama32-3b-pagerank-naive'
+)
 
 # ────────────────────────────────────────────────────────────────
 # 3)  Helper that launches ONE model on the requested GPU
@@ -90,16 +93,22 @@ train_one () {
 
   CUDA_VISIBLE_DEVICES=${gpu_id} \
   python "${BASE_DIR}/grpo_train.py" \
-          --model_name "$model" \
-          --train_csv "$csv_file" \
-          --output_dir "$output_dir" \
-          --per_device_train_batch_size $BATCH_SIZE \
-          --gradient_accumulation_steps $GRAD_ACCUM \
-          --num_iterations $NUM_ITERATIONS \
-          --num_generations $NUM_GENERATIONS \
-          --learning_rate $LEARNING_RATE \
-          $( $USE_LORA && echo "--use_lora --lora_r $LORA_R --lora_alpha $LORA_ALPHA --lora_dropout $LORA_DROPOUT" ) \
-          > "${LOGS_DIR}/grpo_${output_name}.log" 2>&1
+      --model_name          "$model" \
+      --train_csv           "$csv_file" \
+      --output_dir          "$output_dir" \
+      --per_device_train_batch_size $BATCH_SIZE \
+      --gradient_accumulation_steps  $GRAD_ACCUM \
+      --num_iterations      $NUM_ITERATIONS \
+      --num_generations     $NUM_GENERATIONS \
+      --learning_rate       $LEARNING_RATE \
+      --clip_eps            $CLIP_EPS \
+      $( $USE_LORA && echo \
+        "--use_lora \
+        --lora_r $LORA_R \
+        --lora_alpha $LORA_ALPHA \
+        --lora_dropout $LORA_DROPOUT" \
+      ) \
+      > "${LOGS_DIR}/grpo_${output_name}.log" 2>&1
 
   # ── push to Hub on success ────────────────────────────────────
   if [ -d "${output_dir}/final_model" ]; then
@@ -121,7 +130,7 @@ export BASE_DIR DATA_ROOT RESULTS_DIR LOGS_DIR MODELS_DIR            \
 # ────────────────────────────────────────────────────────────────
 # 4)  Fire off all eight jobs in the background, each on one GPU
 # ────────────────────────────────────────────────────────────────
-GPU_IDS=(0 1)   
+GPU_IDS=(6 7)   
 # GPU_IDS=(1 4 6)   
 pids=()
 for idx in "${!MODELS[@]}"; do

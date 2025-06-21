@@ -1,4 +1,4 @@
 from huggingface_hub import create_repo, upload_folder
 
-create_repo("JesseLiu/qwen25-3b-base-pagerank-naive-refine", exist_ok=True)
-upload_folder(folder_path="/playpen/jesse/drug_repurpose/grpo_startup/model_weights/qwen25-3b-base-refine-pagerank-finalnaive", path_in_repo="", repo_id="JesseLiu/qwen25-3b-base-pagerank-naive-refine")
+create_repo("JesseLiu/llama32-3b-pagerank-baseline", exist_ok=True)
+upload_folder(folder_path="/playpen/jesse/drug_repurpose/grpo_startup/model_weights/llama32-3b-pagerank-finalbaseline", path_in_repo="", repo_id="JesseLiu/llama32-3b-pagerank-baseline")
