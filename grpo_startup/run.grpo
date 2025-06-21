@@ -1,4 +1,5 @@
 nohup: ignoring input
-==> [GPU 0] Training qwen25-3b-base-pagerank-naive-refine with /playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_naive.csv
-==> [GPU 1] Training qwen25-3b-base-kpath-naive-refine with /playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_naive.csv
+==> [GPU 6] Training llama32-3b-pagerank-baseline with /playpen/jesse/drug_repurpose/grpo_part_path/page_rank/train_grpo_baseline.csv
+==> [GPU 7] Training llama32-3b-kpath-baseline with /playpen/jesse/drug_repurpose/grpo_part_path/k_path/train_grpo_baseline.csv
 ✅  All eight trainings finished.
+run_grpo.sh: line 149: unexpected EOF while looking for matching `"'
