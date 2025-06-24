@@ -47,7 +47,7 @@ parser.add_argument("--clip_eps", type=float, default=0.2, help="ε_c for reward
 args = parser.parse_args()
 os.makedirs(args.output_dir, exist_ok=True)
 
-
+beta = 0.05
 # ─────────────────────────────────────────────────────────────────────────────
 # helpers
 # ─────────────────────────────────────────────────────────────────────────────
@@ -62,8 +62,8 @@ def is_lora_repo(repo: str) -> bool:
 def extract_question(text: str) -> str:
     # m = re.search(r"Question:(.*?)Reasoning:", text, re.S)
     # return (m.group(1) if m else text).strip()
-    m = text.split("\n")[0:-1]
-    return "\n".join(m)
+    m = text.split("\n")[0]
+    return m
 
 
 def load_base_and_merge(adapter_repo: str, tokenizer):
@@ -248,6 +248,7 @@ wandb.init(
         "lora_alpha": args.lora_alpha,
         "lora_dropout": args.lora_dropout,
         "clip_eps": args.clip_eps,
+        "beta": beta,
     },
 )
 
@@ -303,7 +304,7 @@ def extract_pred(completion: str) -> Optional[str]:
     match = FIRST_YES_NO_RE.search(completion)
     return match.group(1).upper() if match else None
 
-def build_kl_reward(model, ref_model, tokenizer, beta=0.05):
+def build_kl_reward(model, ref_model, tokenizer, beta=beta):
     def kl_reward(prompts, completions, answer, **kw):
         rewards = []
         for gt, comp, prompt in zip(answer, completions, prompts):
@@ -321,8 +322,8 @@ def build_kl_reward(model, ref_model, tokenizer, beta=0.05):
             with torch.no_grad():
                 logits_ref = ref_model(**inputs).logits
 
-            logp_m = F.log_softmax(logits_model[:, -1], dim=-1)
-            prob_r = F.softmax(logits_ref[:, -1], dim=-1)
+            logp_m = F.log_softmax(logits_model, dim=-1)
+            prob_r = F.softmax(logits_ref, dim=-1)
             kl = F.kl_div(logp_m, prob_r, reduction="batchmean").item()
 
             rewards.append(r - beta * kl)
@@ -349,8 +350,8 @@ cfg = GRPOClippedConfig(
     max_prompt_length=256,
     clip_eps=args.clip_eps,
     max_completion_length=128,
-    temperature=0.8,
-    top_k=50,
+    temperature=0.2,
+    top_k=10,
     top_p=0.92,
     repetition_penalty=1.1,
     log_completions=True,

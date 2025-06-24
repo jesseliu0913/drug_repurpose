@@ -18,7 +18,7 @@ mkdir -p "$LOGS_DIR" "$MODELS_DIR"
 # ────────────────────────────────────────────────────────────────
 # 2)  Hyper‑parameters (same for every job)
 # ────────────────────────────────────────────────────────────────
-NUM_ITERATIONS=10
+NUM_ITERATIONS=1
 NUM_GENERATIONS=4
 BATCH_SIZE=8
 CLIP_EPS=0.3
@@ -130,7 +130,7 @@ export BASE_DIR DATA_ROOT RESULTS_DIR LOGS_DIR MODELS_DIR            \
 # ────────────────────────────────────────────────────────────────
 # 4)  Fire off all eight jobs in the background, each on one GPU
 # ────────────────────────────────────────────────────────────────
-GPU_IDS=(6 7)   
+GPU_IDS=(4 5)   
 # GPU_IDS=(1 4 6)   
 pids=()
 for idx in "${!MODELS[@]}"; do
