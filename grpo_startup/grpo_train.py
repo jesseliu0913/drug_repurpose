@@ -228,6 +228,8 @@ run_name = (
     f"-r{args.lora_r}"
     f"-alpha{args.lora_alpha}"
     f"-dr{args.lora_dropout}"
+    f"-clip_eps{args.clip_eps}"
+    f"-beta{beta}"
     f"-{timestamp}"
 )
 
