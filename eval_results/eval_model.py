@@ -1,161 +1,141 @@
 import os
-import json
-import torch
-import json
 import ast
 import argparse
 import jsonlines
 
 import pandas as pd
-from peft import PeftModel,PeftConfig
-from datasets import load_dataset
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
-token = os.getenv("HF_TOKEN")
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM
+from peft import PeftModel, PeftConfig
 
 
-parser = argparse.ArgumentParser(description="Baseline Experiments")
-parser.add_argument("--model_name", type=str, help="Model Name")
-parser.add_argument("--adapter_name", type=str, default="", help="Adapter Name")
-parser.add_argument("--output_path", type=str, help="Input output path")
-parser.add_argument("--eval_type", type=str, default="test", help="Input Eval Type")
-parser.add_argument("--input_file", type=str, default="../split_data/data_analysis/test_data_new.csv", help="Input file path")
-parser.add_argument("--prompt_type", type=str, help="Input the Prompt Type (raw, cot, phenotype, gene...)")
-parser.add_argument("--shuffle_num", type=int, help="For one question, shufflue x times")
-args = parser.parse_args()
-
-two_shot = """
-Question: Is Fosinopril an indication for hypertensive disorder?
-REASONING: Fosinopril is indicated for hypertensive disorders because it functions as an angiotensin-converting enzyme (ACE) inhibitor, which blocks the conversion of angiotensin I to angiotensin II—a potent vasoconstrictor. By reducing angiotensin II levels, Fosinopril promotes vasodilation, decreases peripheral vascular resistance, and ultimately lowers blood pressure. This mechanism directly addresses the pathophysiology of hypertension, making Fosinopril an effective and commonly prescribed medication for managing high blood pressure and reducing the risk of associated cardiovascular complications.
-ANSWER:$YES$
-Question: Is Rotigotine an indication for hypertensive disorder?
-REASONING: Rotigotine is a dopamine agonist primarily used to treat Parkinson’s disease and restless legs syndrome (RLS). It works by stimulating dopamine receptors in the brain to help manage motor symptoms. While it may have some effects on blood pressure as a side effect (e.g., causing orthostatic hypotension), it is not approved or used as a treatment for hypertension or other hypertensive disorders.
-ANSWER:$NO$
-"""
-
-raw_shot = """
-Question: Is Fosinopril an indication for hypertensive disorder?
-ANSWER:$YES$
-Question: Is Rotigotine an indication for hypertensive disorder?
-ANSWER:$NO$
-"""
-
-model_name = args.model_name
-adapter_name = args.adapter_name
-user_token = os.getenv("HF_API_TOKEN")
-print(f"Model Name: {model_name}")
-print(f"Adapter Name: {adapter_name}")
+def parse_args():
+    parser = argparse.ArgumentParser(description="Baseline Experiments")
+    parser.add_argument("--model_name", type=str, required=True, help="HuggingFace base model or adapter name")
+    parser.add_argument("--adapter_name", type=str, default="", help="PEFT adapter name (optional)")
+    parser.add_argument("--input_file", type=str, default="../split_data/data_analysis/test_data_new.csv", help="CSV file with test/train data")
+    parser.add_argument("--nodes_file", type=str, default="../PrimeKG/nodes.csv", help="CSV file with node index-to-name mapping")
+    parser.add_argument("--output_path", type=str, required=True, help="Directory to save JSONL outputs")
+    parser.add_argument("--prompt_type", type=str, choices=["raw", "cot", "fcot", "phenotype", "gene", "fraw", "raw3"], required=True, help="Prompt style to use")
+    parser.add_argument("--shuffle_num", type=int, default=1, help="Number of samples per query for ensembling")
+    return parser.parse_args()
 
 
-if adapter_name and "grpo" not in adapter_name:
-    peft_cfg = PeftConfig.from_pretrained(adapter_name, use_auth_token=token)
-    base_name = peft_cfg.base_model_name_or_path or model_name
-    tokenizer = AutoTokenizer.from_pretrained(adapter_name, use_auth_token=token)
-
-    base_model = AutoModelForCausalLM.from_pretrained(base_name, torch_dtype="auto", use_auth_token=token)
-    model = PeftModel.from_pretrained(base_model, adapter_name, torch_dtype="auto")
-else:
-    tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=token)
-    model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype="auto", use_auth_token=token)
-
-if tokenizer.pad_token_id is None:
-    tokenizer.pad_token_id = tokenizer.eos_token_id
-
-device = "cuda" if torch.cuda.is_available() else "cpu"
-model.to(device)
-os.makedirs(args.output_path, exist_ok=True)
-prompt_type = args.prompt_type
-file_path = f"{args.output_path}/{prompt_type}.jsonl"
-
-if args.eval_type == "test":
-    test_file = "../split_data/data_analysis/test_data_new.csv"
-elif args.eval_type == "train":
-    test_file = args.input_file
-else:
-    raise ValueError("Invalid eval_type. Choose 'test' or 'train'.")
-
-test_data = pd.read_csv(test_file)
-node_data = pd.read_csv("../PrimeKG/nodes.csv")
-print(f"Test file:{args.input_file}")
-existing_pairs = set()
-if os.path.exists(file_path):
-    with jsonlines.open(file_path, "r") as f_read:
-        for line in f_read:
-            existing_pairs.add((line["drug_name"], line["disease_name"]))
-
-with jsonlines.open(file_path, "a") as f_write:
-    for index, row in test_data.iterrows():
-        drug_name = row.drug_name
-        disease_name = row.disease_name
-        disease_index = row.disease_index
-        relation = row.relation if "relation" in row else row.original_relation
-        gene = []
-        phenotype = []
-
-        if (drug_name, disease_name) in existing_pairs:
-            print(f"Skipping {drug_name} - {disease_name}, already processed.")
-            continue
-        if "related_phenotypes" in row:  
-            related_phenotypes = ast.literal_eval(row.related_phenotypes)
-            for pheno_index in related_phenotypes:
-                node_name = node_data.loc[pheno_index, 'node_name']
-                phenotype.append(node_name)
-
-            phenotype = phenotype[:] if len(phenotype) < 10 else phenotype[:10]
-
-        if "related_proteins" in row:  
-            related_proteins = ast.literal_eval(row.related_proteins)
-            for gene_index in related_proteins:
-                node_name = node_data.loc[gene_index, 'node_name']
-                gene.append(node_name)
-
-            gene = gene[:] if len(gene) < 10 else gene[:10]
-        
-        
-        if prompt_type == "phenotype":
-            prefix = f"{disease_name} have several phenotypes like: {phenotype}"
-            question = f"{prefix}\nIs {disease_name} an indication for {drug_name}?"
-            input_text = f"Question: {question} directly answer me with $YES$ or $NO$\nANSWER:"
-            inputs = tokenizer(input_text, return_tensors="pt").to(device)
-        elif prompt_type == "cot":  
-            question = f"Is {disease_name} an indication for {drug_name}?"
-            input_text = f"Question: {question} let's think step by step and then answer me with $YES$ or $NO$\nREASONING:\nANSWER:"
-            inputs = tokenizer(input_text, return_tensors="pt").to(device)
-        elif prompt_type == "fcot":  
-            question = f"Is {disease_name} an indication for {drug_name}?"
-            input_text = f"{two_shot}\nQuestion: {question}."
-            inputs = tokenizer(input_text, return_tensors="pt").to(device)
-        elif prompt_type == "gene":  
-            prefix = f"{disease_name} associate with several genes like: {gene}"
-            question = f"{prefix}\nIs {disease_name} an indication for {drug_name}?"
-            input_text = f"Question: {question} directly answer me with $YES$ or $NO$\nANSWER:"
-            inputs = tokenizer(input_text, return_tensors="pt").to(device)
-        elif prompt_type == "fraw":  
-            question = f"Is {disease_name} an indication for {drug_name}?"
-            input_text = f"{raw_shot}\nQuestion: {question} directly answer me with $YES$ or $NO$\nANSWER:"
-            inputs = tokenizer(input_text, return_tensors="pt").to(device)
-        elif prompt_type == "raw3":  
-            question = f"Is {disease_name} an indication for {drug_name}?"
-            input_text = f"{raw_shot}\nQuestion: {question} directly answer me with $YES$, $NO$ or $Not Sure$\nANSWER:"
-            inputs = tokenizer(input_text, return_tensors="pt").to(device)
-        else: 
-            question = f"Is {disease_name} an indication for {drug_name}?"
-            input_text = f"Question: {question} directly answer me with $YES$ or $NO$\nANSWER:"
-            inputs = tokenizer(input_text, return_tensors="pt").to(device)
-        
-        if args.shuffle_num == 1:
-            output = model.generate(**inputs, max_new_tokens=100, do_sample=True, temperature=0.2)
-            answer = tokenizer.decode(output[0], skip_special_tokens=True)
-            answer = answer.replace(input_text, "").strip()
-
-            line_dict = {"drug_name": drug_name, "disease_name": disease_name, "answer": answer, "prompt": input_text, "label": relation}
-            f_write.write(line_dict)
+def load_model_and_tokenizer(model_name, adapter_name, hf_token):
+    # Load tokenizer and model (with optional PEFT adapter)
+    if adapter_name:
+        if "grpo" not in adapter_name.lower():
+            cfg = PeftConfig.from_pretrained(adapter_name, use_auth_token=hf_token)
+            base_name = cfg.base_model_name_or_path or model_name
+            tokenizer = AutoTokenizer.from_pretrained(adapter_name, use_auth_token=hf_token)
+            base = AutoModelForCausalLM.from_pretrained(base_name, torch_dtype="auto", use_auth_token=hf_token)
+            model = PeftModel.from_pretrained(base, adapter_name, torch_dtype="auto")
         else:
-            answer_lst = []
-            for _ in range(args.shuffle_num):
-                output = model.generate(**inputs, max_new_tokens=1000, do_sample=True, temperature=0.2, top_k=50, top_p=0.9)
-                answer = tokenizer.decode(output[0], skip_special_tokens=False)
-                answer = answer.replace(input_text, "").strip()
-                answer_lst.append(answer)
-                
-            line_dict = {"drug_name": drug_name, "disease_name": disease_name, "answer": answer_lst, "prompt": input_text, "label": relation}
-            f_write.write(line_dict)
+            tokenizer = AutoTokenizer.from_pretrained(adapter_name, use_auth_token=hf_token)
+            model = AutoModelForCausalLM.from_pretrained(adapter_name, torch_dtype="auto", use_auth_token=hf_token)
+    else:
+        tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=hf_token)
+        model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype="auto", use_auth_token=hf_token)
+
+    if tokenizer.pad_token_id is None:
+        tokenizer.pad_token_id = tokenizer.eos_token_id
+
+    return model, tokenizer
+
+
+def main():
+    args = parse_args()
+    hf_token = os.getenv("HF_TOKEN")
+    os.makedirs(args.output_path, exist_ok=True)
+    output_file = os.path.join(args.output_path, f"{args.prompt_type}.jsonl")
+
+    print(f"Loading model: {args.model_name}, adapter: {args.adapter_name}")
+    model, tokenizer = load_model_and_tokenizer(args.model_name, args.adapter_name, hf_token)
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    model.to(device)
+    model.eval()
+
+    # Load data
+    data = pd.read_csv(args.input_file)
+    nodes = pd.read_csv(args.nodes_file)
+    print(f"Data file: {args.input_file}, {len(data)} samples")
+
+    existing = set()
+    if os.path.exists(output_file):
+        with jsonlines.open(output_file, 'r') as r:
+            for obj in r:
+                existing.add((obj.get("drug_name"), obj.get("disease_name")))
+
+    two_shot = """
+        Question: Is Fosinopril an indication for hypertensive disorder?
+        REASONING: Fosinopril is indicated for hypertensive disorders because it functions as an angiotensin-converting enzyme (ACE) inhibitor, which blocks the conversion of angiotensin I to angiotensin II—a potent vasoconstrictor. By reducing angiotensin II levels, Fosinopril promotes vasodilation, decreases peripheral vascular resistance, and ultimately lowers blood pressure. This mechanism directly addresses the pathophysiology of hypertension, making Fosinopril an effective and commonly prescribed medication for managing high blood pressure and reducing the risk of associated cardiovascular complications.
+        ANSWER:$YES$
+        Question: Is Rotigotine an indication for hypertensive disorder?
+        REASONING: Rotigotine is a dopamine agonist primarily used to treat Parkinson’s disease and restless legs syndrome (RLS). It works by stimulating dopamine receptors in the brain to help manage motor symptoms. While it may have some effects on blood pressure as a side effect (e.g., causing orthostatic hypotension), it is not approved or used as a treatment for hypertension or other hypertensive disorders.
+        ANSWER:$NO$
+        """
+    raw_shot = (
+        "Question: Is Fosinopril an indication for hypertensive disorder?\nANSWER:$YES$\n"
+        "Question: Is Rotigotine an indication for hypertensive disorder?\nANSWER:$NO$"
+    )
+
+    with jsonlines.open(output_file, 'a') as writer:
+        for _, row in data.iterrows():
+            drug = row.drug_name
+            disease = row.disease_name
+            label = row.get("relation", row.get("original_relation"))
+            if (drug, disease) in existing:
+                continue
+
+            phenos, genes = [], []
+            if "related_phenotypes" in data.columns and pd.notna(row.related_phenotypes):
+                for idx in ast.literal_eval(row.related_phenotypes):
+                    phenos.append(nodes.loc[idx, 'node_name'])
+                phenos = phenos[:10]
+            if "related_proteins" in data.columns and pd.notna(row.related_proteins):
+                for idx in ast.literal_eval(row.related_proteins):
+                    genes.append(nodes.loc[idx, 'node_name'])
+                genes = genes[:10]
+
+            question = f"Is {disease} an indication for {drug}?"
+            if args.prompt_type == "phenotype":
+                prefix = f"{disease} has phenotypes: {phenos}\n"
+                prompt = f"Question: {prefix}{question} DIRECTLY ANSWER $YES$ or $NO$\nANSWER:"
+            elif args.prompt_type == "gene":
+                prefix = f"{disease} associated genes: {genes}\n"
+                prompt = f"Question: {prefix}{question} DIRECTLY ANSWER $YES$ or $NO$\nANSWER:"
+            elif args.prompt_type == "cot":
+                prompt = f"Question: {question} let's think step by step then answer $YES$ or $NO$\nREASONING:\nANSWER:"
+            elif args.prompt_type == "fcot":
+                prompt = f"{two_shot}\nQuestion: {question}\nANSWER:"
+            elif args.prompt_type == "fraw":
+                prompt = f"{raw_shot}\nQuestion: {question}\nANSWER:"
+            elif args.prompt_type == "raw3":
+                prompt = f"{raw_shot}\nQuestion: {question} answer $YES$, $NO$ or $Not Sure$\nANSWER:"
+            else:  
+                prompt = f"Question: {question} DIRECTLY ANSWER $YES$ or $NO$\nANSWER:"
+
+            inputs = tokenizer(prompt, return_tensors="pt", padding=True)
+            inputs = {k: v.to(device) for k, v in inputs.items()}
+
+            answers = []
+            for _ in range(max(1, args.shuffle_num)):
+                out = model.generate(**inputs, max_new_tokens=200, do_sample=True, temperature=0.2, top_k=50, top_p=0.9)
+                txt = tokenizer.decode(out[0], skip_special_tokens=True)
+                ans = txt.replace(prompt, "").strip()
+                answers.append(ans)
+            result = answers[0] if args.shuffle_num == 1 else answers
+
+            writer.write({
+                "drug_name": drug,
+                "disease_name": disease,
+                "prompt": prompt,
+                "answer": result,
+                "label": label
+            })
+
+    print("Done. Results written to", output_file)
+
+
+if __name__ == "__main__":
+    main()
