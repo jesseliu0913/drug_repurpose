@@ -13,6 +13,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Baseline Experiments")
     parser.add_argument("--model_name", type=str, required=True, help="HuggingFace base model or adapter name")
     parser.add_argument("--adapter_name", type=str, default="", help="PEFT adapter name (optional)")
+    parser.add_argument("--eval_type", type=str, default="test", help="Eval Type")
     parser.add_argument("--input_file", type=str, default="../split_data/data_analysis/test_data_new.csv", help="CSV file with test/train data")
     parser.add_argument("--nodes_file", type=str, default="../PrimeKG/nodes.csv", help="CSV file with node index-to-name mapping")
     parser.add_argument("--output_path", type=str, required=True, help="Directory to save JSONL outputs")
@@ -58,6 +59,7 @@ def main():
     # Load data
     data = pd.read_csv(args.input_file)
     nodes = pd.read_csv(args.nodes_file)
+    print(f"Currently eval type is {args.eval_type}")
     print(f"Data file: {args.input_file}, {len(data)} samples")
 
     existing = set()

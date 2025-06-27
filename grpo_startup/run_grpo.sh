@@ -19,12 +19,13 @@ mkdir -p "$LOGS_DIR" "$MODELS_DIR"
 # 2)  Hyper‑parameters (same for every job)
 # ────────────────────────────────────────────────────────────────
 NUM_ITERATIONS=1
-NUM_GENERATIONS=4
+NUM_GENERATIONS=16
 BATCH_SIZE=8
 CLIP_EPS=0.3
 # BATCH_SIZE=8
 # BATCH_SIZE=24
-GRAD_ACCUM=4
+GRAD_ACCUM=8
+BETA=0.3
 LEARNING_RATE=1e-4
 
 USE_LORA=true
@@ -100,6 +101,7 @@ train_one () {
       --gradient_accumulation_steps  $GRAD_ACCUM \
       --num_iterations      $NUM_ITERATIONS \
       --num_generations     $NUM_GENERATIONS \
+      --beta $BETA \
       --learning_rate       $LEARNING_RATE \
       --clip_eps            $CLIP_EPS \
       $( $USE_LORA && echo \
@@ -130,7 +132,7 @@ export BASE_DIR DATA_ROOT RESULTS_DIR LOGS_DIR MODELS_DIR            \
 # ────────────────────────────────────────────────────────────────
 # 4)  Fire off all eight jobs in the background, each on one GPU
 # ────────────────────────────────────────────────────────────────
-GPU_IDS=(4 5)   
+GPU_IDS=(0 1)   
 # GPU_IDS=(1 4 6)   
 pids=()
 for idx in "${!MODELS[@]}"; do

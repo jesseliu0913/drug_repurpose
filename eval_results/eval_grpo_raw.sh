@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 BASE_RESULTS="/playpen/jesse/drug_repurpose/grpo_startup/results"
-PARENTS=(20250621_2202 20250621_2229)
-GPUS=(4 5 2 3)
+PARENTS=(20250626_1638)
+GPUS=(4 5)
 
 OUTPUT_ROOT="/playpen/jesse/drug_repurpose/eval_results/results"
 LOG_ROOT="/playpen/jesse/drug_repurpose/eval_results/log"
@@ -79,6 +79,7 @@ for PARENT in "${PARENTS[@]}"; do
       --model_name   "$BASE_MODEL" \
       --adapter_name "$LORA_FINAL" \
       --nodes_file   "$NODES_FILE" \
+      --eval_type   "test" \
       --input_file   "$INPUT_FILE" \
       --output_path  "$OUTDIR" \
       --prompt_type  "raw" \

@@ -30,6 +30,7 @@ HF_TOKEN = os.getenv("HF_API_TOKEN")
 # CLI
 # ─────────────────────────────────────────────────────────────────────────────
 parser = argparse.ArgumentParser()
+parser.add_argument("--data_filtering", type=str, default="yes")
 parser.add_argument("--model_name", default="JesseLiu/llama32-3b-cold")
 parser.add_argument("--train_csv",
                     default="/playpen/hongxuan/drug_repurpose/grpo_path/page_rank/train_grpo.csv")
@@ -43,11 +44,12 @@ parser.add_argument("--use_lora", action="store_true")
 parser.add_argument("--lora_r", type=int, default=16)
 parser.add_argument("--lora_alpha", type=int, default=32)
 parser.add_argument("--lora_dropout", type=float, default=0.05)
+parser.add_argument("--beta", type=float, default=0.05)
 parser.add_argument("--clip_eps", type=float, default=0.2, help="ε_c for reward / ratio clipping in GRPO")
 args = parser.parse_args()
 os.makedirs(args.output_dir, exist_ok=True)
 
-beta = 0.05
+beta = args.beta
 # ─────────────────────────────────────────────────────────────────────────────
 # helpers
 # ─────────────────────────────────────────────────────────────────────────────
@@ -118,15 +120,37 @@ def extract_answer(text: str) -> Optional[str]:
         
     return None
 
-df = pd.read_csv(args.train_csv).iloc[:2000]
-print(f"Current training path is {args.train_csv}")
-raw_prefixes = df["prefix"].tolist()
-prompts = [extract_question(t) for t in raw_prefixes]
+# ─────────────────────────────────────────────────────────────────────────────
+# filtering data
+# ─────────────────────────────────────────────────────────────────────────────
+if args.data_filtering:
+    model_name = args.model_name
+    parent_folder = "../eval_results/results_train"
+    train_folder = model_name.split("/")[-1].replace("-", "_")
+    train_path = f"{parent_folder}/{train_folder}/raw.jsonl"
+    print(f"Current training path is {train_path}")
 
-answers_gt = [
-    (m.group(1).upper() if (m := ANS_TAG_RE.search(t)) else None)
-    for t in raw_prefixes
-]
+    prompts = []
+    answers_gt = []
+    with open(train_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            obj = json.loads(line)
+            label = "YES" if obj['label'] == "indication" else "NO"
+            output = extract_answer(obj['answer'])
+            if output.upper() == label:
+                prompts.append(obj['prompt'])
+                answers_gt.append(label) 
+
+else:
+    df = pd.read_csv(args.train_csv).iloc[:2000]
+    print(f"Current training path is {args.train_csv}")
+    raw_prefixes = df["prefix"].tolist()
+    prompts = [extract_question(t) for t in raw_prefixes]
+
+    answers_gt = [
+        (m.group(1).upper() if (m := ANS_TAG_RE.search(t)) else None)
+        for t in raw_prefixes
+    ]
 
 train_ds, eval_ds = Dataset.from_dict(
     {"prompt": prompts, "answer": answers_gt}
