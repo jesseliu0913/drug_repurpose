@@ -50,9 +50,6 @@ if args.data_type == "ddinter":
             f"Question: What is the interaction severity between {train_data[i]['drug1_name']} and {train_data[i]['drug2_name']}?\n\n",
             f"Choices:[Major, Moderate, Minor, No Interaction]\n\n",
             f"Possible Reasoning Chains:\n",
-            # f"Drug ({train_data[i]['drug1_name']}): {train_data[i]['drug1_desc']}\n",
-            # f"Drug ({train_data[i]['drug2_name']}): {train_data[i]['drug2_desc']}\n",
-            # f"From the knowledge graph:\n",
             f"{['\n'.join(reasoning_path)]}\n\n",
             f"Answer: {train_data[i]['label']}"
         )
@@ -63,8 +60,6 @@ elif args.data_type == "drugbank":
         prefix = (
             f"Question: What is the pharmacological interaction between {train_data[i]['drug1_name']} and {train_data[i]['drug2_name']}?\n\n",
             f"Possible Reasoning Chains:\n",
-            # f"Drug ({train_data[i]['drug1_name']}): {train_data[i]['drug1_desc']}\n",
-            # f"Drug ({train_data[i]['drug2_name']}): {train_data[i]['drug2_desc']}\n",
             f"{['\n'.join(reasoning_path)]}\n\n",
             f"Answer: {train_data[i]['label']}"
         )
@@ -76,9 +71,6 @@ elif args.data_type == "pharmaDB":
             f"Question: What is the therapeutic relationship between {train_data[i]['drug_name']} and {train_data[i]['disease_name']}?\n\n",
             f"Choices:[disease-modifying, palliates, non-indication]\n\n",
             f"Possible Reasoning Chains:\n",
-            # f"Drug ({train_data[i]['drug_name']}): {train_data[i]['drug_desc']}\n",
-            # f"Disease ({train_data[i]['disease_name']}): {train_data[i]['disease_desc']}\n",
-            # f"From the knowledge graph:\n",
             f"{['\n'.join(reasoning_path)]}\n\n",
             f"Answer: {train_data[i]['label']}"
         )
