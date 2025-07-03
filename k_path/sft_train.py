@@ -46,32 +46,35 @@ prompts = []
 if args.data_type == "ddinter":
     for i in range(len(train_data)):
         reasoning_path = train_data[i]['path_str'].split("\n")[0:6]
+        reasoning_path = [';\n '.join(reasoning_path)]
         prefix = (
             f"Question: What is the interaction severity between {train_data[i]['drug1_name']} and {train_data[i]['drug2_name']}?\n\n",
             f"Choices:[Major, Moderate, Minor, No Interaction]\n\n",
             f"Possible Reasoning Chains:\n",
-            f"{['\n'.join(reasoning_path)]}\n\n",
+            f"{reasoning_path}\n\n",
             f"Answer: {train_data[i]['label']}"
         )
         prompts.append("".join(prefix))
 elif args.data_type == "drugbank":
     for i in range(len(train_data)):
         reasoning_path = train_data[i]['path_str'].split("\n")[0:6]
+        reasoning_path = [';\n '.join(reasoning_path)]
         prefix = (
             f"Question: What is the pharmacological interaction between {train_data[i]['drug1_name']} and {train_data[i]['drug2_name']}?\n\n",
             f"Possible Reasoning Chains:\n",
-            f"{['\n'.join(reasoning_path)]}\n\n",
+            f"{reasoning_path}\n\n",
             f"Answer: {train_data[i]['label']}"
         )
         prompts.append("".join(prefix))
 elif args.data_type == "pharmaDB":
     for i in range(len(train_data)):
         reasoning_path = train_data[i]['path_str'].split("\n")[0:6]
+        reasoning_path = [';\n '.join(reasoning_path)]
         prefix = (
             f"Question: What is the therapeutic relationship between {train_data[i]['drug_name']} and {train_data[i]['disease_name']}?\n\n",
             f"Choices:[disease-modifying, palliates, non-indication]\n\n",
             f"Possible Reasoning Chains:\n",
-            f"{['\n'.join(reasoning_path)]}\n\n",
+            f"{reasoning_path}\n\n",
             f"Answer: {train_data[i]['label']}"
         )
         prompts.append("".join(prefix))

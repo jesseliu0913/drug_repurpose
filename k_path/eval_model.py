@@ -72,7 +72,7 @@ def main():
             if args.data_type == "ddinter":
                 type_A = test_data[i]['drug1_name']
                 type_B = test_data[i]['drug2_name']
-                prompt = f"Question: What is the interaction severity between {type_A} and {type_B}?"
+                prompt = f"Question: What is the interaction severity between {type_A} and {type_B}?\nChoices:[Major, Moderate, Minor, No Interaction]\n\n"
             elif args.data_type == "drugbank":
                 type_A = test_data[i]['drug1_name']
                 type_B = test_data[i]['drug2_name']
@@ -80,7 +80,7 @@ def main():
             elif args.data_type == "pharmaDB":
                 type_A = test_data[i]['drug_name']
                 type_B = test_data[i]['disease_name']
-                prompt = f"Question: What is the therapeutic relationship between {type_A} and {type_B}?"
+                prompt = f"Question: What is the therapeutic relationship between {type_A} and {type_B}?\nChoices:[disease-modifying, palliates, non-indication]\n\n"
 
             inputs = tokenizer(prompt, return_tensors="pt", padding=True)
             inputs = {k: v.to(device) for k, v in inputs.items()}
