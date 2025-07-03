@@ -1,0 +1,5 @@
+/eval_results/*
+/model_weights/*
+/log/*
+/results/*
+/wandb/*
