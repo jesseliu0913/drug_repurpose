@@ -6,8 +6,6 @@ from huggingface_hub import hf_hub_download
 import argparse, json, os, os.path as osp, re
 
 import pandas as pd
-from pathlib import Path
-from datetime import datetime
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel, PeftConfig
@@ -97,11 +95,8 @@ def load_model_and_tokenizer(task, model_name, adapter_name, hf_token):
 def main():
     args = parse_args()
     hf_token = os.getenv("HF_API_TOKEN")
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_dir = Path(args.output_path) / timestamp
-
-    os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, f"{args.data_type}.jsonl")
+    os.makedirs(args.output_path, exist_ok=True)
+    output_file = os.path.join(args.output_path, f"{args.data_type}.jsonl")
     if args.adapter_path and 'grpo' not in args.task.lower():
        task_folder = f"{args.task}-final{args.data_type}"
        adapter_name = f"{args.adapter_path}/{task_folder}"

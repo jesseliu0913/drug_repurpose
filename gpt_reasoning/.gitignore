@@ -1,0 +1,6 @@
+/trainer_output/*
+/wandb/*
+/reasoning_data/*
+/model_weights/*
+/logs/*
+/eval_results/*

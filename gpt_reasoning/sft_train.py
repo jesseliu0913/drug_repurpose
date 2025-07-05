@@ -39,63 +39,57 @@ args = parser.parse_args()
 user_token = os.getenv("HF_API_TOKEN")
 
 assert args.data_type in ["ddinter", "drugbank", "pharmaDB"], "Invalid data type. Choose from ['ddinter', 'drugbank', 'pharmaDB']"
-path_data = load_dataset(f"Tassy24/K-Paths-inductive-reasoning-{args.data_type}")
+data_path = Path(f"./reasoning_data/{args.data_type}.csv")
 
-train_data = path_data["train"]
-if len(train_data) > 2000:
-    train_data = train_data.select(range(2000))  
-    
+train_data = pd.read_csv(data_path)
 prompts = []
 if args.data_type == "ddinter":
-    for i in range(len(train_data)):
+    for index, row in train_data.iterrows():
         label_to_letter = {
             "Major": "A",
             "Moderate": "B",
             "Minor": "C",
             "No Interaction": "D"
         }
-        label = train_data[i]['label']
+        label = row['label']
         letter = label_to_letter.get(label, "")
-        
-        reasoning_path = train_data[i]['path_str'].split("\n")[0:4]
-        reasoning_path = [';\n '.join(reasoning_path)]
+
+        reasoning_path = row['reason_path']
         prefix = (
-            f"Question: What is the interaction severity between {train_data[i]['drug1_name']} and {train_data[i]['drug2_name']}?\n\n",
+            f"Question: What is the interaction severity between {row['drug1_name']} and {row['drug2_name']}?\n\n",
             f"Choices:[Major, Moderate, Minor, No Interaction]\n\n",
-            f"Possible Reasoning Chains (be concise and clear):\n",
+            f"Reasoning:\n",
             f"{reasoning_path}\n\n",
-            f"Answer: {letter}.{train_data[i]['label']}"
+            f"Answer: {letter}.{label}"
         )
         prompts.append("".join(prefix))
 elif args.data_type == "drugbank":
-    for i in range(len(train_data)):
-        reasoning_path = train_data[i]['path_str'].split("\n")[0:4]
-        reasoning_path = [';\n '.join(reasoning_path)]
+    for index, row in train_data.iterrows():
+        reasoning_path = row['reason_path']
         prefix = (
-            f"Question: What is the pharmacological interaction between {train_data[i]['drug1_name']} and {train_data[i]['drug2_name']}?\n\n",
-            f"Possible Reasoning Chains (be concise and clear):\n",
+            f"Question: What is the pharmacological interaction between {row['drug1_name']} and {row['drug2_name']}?\n\n",
+            f"Reasoning:\n",
             f"{reasoning_path}\n\n",
-            f"Answer: {train_data[i]['label']}"
+            f"Answer: {row['label']}"
         )
         prompts.append("".join(prefix))
 elif args.data_type == "pharmaDB":
-    for i in range(len(train_data)):
+    for index, row in train_data.iterrows():
         label_to_letter = {
             "Disease-modifying": "A",
             "Palliates": "B",
             "Non-indication": "C",
         }
-        label = train_data[i]['label']
+        label = row['label']
         letter = label_to_letter.get(label, "")
-
-        reasoning_path = train_data[i]['path_str'].split("\n")[0:4]
-        reasoning_path = [';\n '.join(reasoning_path)]
+        
+        reasoning_path = row['reason_path']
         prefix = (
-            f"Question: What is the therapeutic relationship between {train_data[i]['drug_name']} and {train_data[i]['disease_name']}?\n\n",
-            f"Choices:[disease-modifying, palliates, non-indication]\n\n",
-            f"Possible Reasoning Chains (be concise and clear):\n",
+            f"Question: What is the therapeutic relationship between {row['drug_name']} and {row['disease_name']}?\n\n",
+            f"Choices:[Disease-modifying, Palliates, Non-indication]\n\n",
+            f"Reasoning:\n",
             f"{reasoning_path}\n\n",
-            f"Answer: {letter}.{train_data[i]['label']}"
+            f"Answer: {letter}.{label}"
         )
         prompts.append("".join(prefix))
 
@@ -214,7 +208,7 @@ training_args = TrainingArguments(
     logging_steps=5,
     # save_strategy="none",
     # save_steps=200,
-    learning_rate=2e-4,
+    learning_rate=4e-5,
     weight_decay=0.01,
     fp16=True,
     bf16=False,
@@ -249,23 +243,4 @@ trainer.train()
 model.save_pretrained(f"./model_weights/{args.task}-final{args.data_type}")
 tokenizer.save_pretrained(f"./model_weights/{args.task}-final{args.data_type}")
 
-# CUDA_VISIBLE_DEVICES=0 nohup python train.py > ./log/train_1b.log 2>&1 &
-"""
-Question: What is the interaction severity between Lansoprazole and Lapatinib?
-
-Reasoning:
-Drug (Lansoprazole): Lansoprazole marketed under the brand Prevacid, is a proton pump inhibitor (PPI) and is structurally classified as a substituted benzimidazole. It reduces gastric acid secretion by targeting gastric H,K-ATPase pumps and is thus effective at promoting healing in ulcerative diseases, and treating gastroesophageal reflux disease (GERD) along with other pathologies caused by excessive acid secretion.
-Drug (Lapatinib): Lapatinib is an anti-cancer drug developed by GlaxoSmithKline (GSK) as a treatment for solid tumours such as breast and lung cancer. It was approved by the FDA on March 13, 2007, for use in patients with advanced metastatic breast cancer in conjunction with the chemotherapy drug capecitabine. Lapatinib is a human epidermal growth factor receptor type 2 (HER2/ERBB2) and epidermal growth factor receptor (HER1/EGFR/ERBB1) tyrosine kinases inhibitor. It binds to the intracellular phosphorylation domain to prevent receptor autophosphorylation upon ligand binding.
-From the knowledge graph:
-Lansoprazole (Compound) binds ABCB1 (Gene) and ABCB1 (Gene) is bound by Lapatinib (Compound)
-Lansoprazole (Compound) downregulates SUPV3L1 (Gene) and SUPV3L1 (Gene) is downregulated by Lapatinib (Compound)
-Lansoprazole (Compound) causes Nail disorder (Side Effect) and Nail disorder (Side Effect) is caused by Lapatinib (Compound)
-Lansoprazole may lead to a major life threatening interaction when taken with Neratinib and Neratinib may cause a moderate interaction that could exacerbate diseases when taken with Lapatinib
-Lansoprazole may cause a moderate interaction that could exacerbate diseases when taken with Aprepitant and Aprepitant may cause a moderate interaction that could exacerbate diseases when taken with Lapatinib
-Lansoprazole may cause a minor interaction that can limit clinical effects when taken with Axitinib and Axitinib may cause a moderate interaction that could exacerbate diseases when taken with Lapatinib
-Lansoprazole may cause a moderate interaction that could exacerbate diseases when taken with Fluvoxamine and Fluvoxamine may cause a moderate interaction that could exacerbate diseases when taken with Lapatinib
-Lansoprazole may cause a moderate interaction that could exacerbate diseases when taken with Fosaprepitant and Fosaprepitant may cause a moderate interaction that could exacerbate diseases when taken with Lapatinib
-Lansoprazole may lead to a major life threatening interaction when taken with Erlotinib and Erlotinib may cause a moderate interaction that could exacerbate diseases when taken with Lapatinib
-
-Answer: Moderate
-"""
+# CUDA_VISIBLE_DEVICES=0 nohup python train.py > ./logs/train_1b.log 2>&1 &

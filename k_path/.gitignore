@@ -1,5 +1,8 @@
 /eval_results/*
 /model_weights/*
 /log/*
+/logs/*
 /results/*
 /wandb/*
+/trainer_output/*
+/grpo_runs/*
